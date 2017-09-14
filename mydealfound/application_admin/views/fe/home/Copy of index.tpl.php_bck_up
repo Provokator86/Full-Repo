@@ -1,0 +1,317 @@
+<script type="text/javascript">
+/**************************For nivoslider*******************************/	
+	$(window).load(function()
+	{
+		$('#slider').nivoSlider();
+	});
+	
+	function opentt(strtt)
+	{
+		//alert(strtt);
+		document.getElementById(strtt).style.display='';
+	}
+	function closett(strtt)
+	{
+		document.getElementById(strtt).style.display='none';
+	}
+</script>
+
+<div class="banner_select_cat">
+                    <div class="slider">
+                    	<div class="cotation-tab">
+                        	<h3>Get Upto 40% Disscount</h3>
+                            <input type="button" class="getur-cod-btn"  value="" />
+                        </div>
+                    	<div class="slider-wrapper theme-default">
+                            <div id="slider" class="nivoSlider">
+                            <?php
+								if(!empty($home_banner))
+								{
+									foreach($home_banner as $key=>$val)
+									{
+										echo '<img src="'.$home_banner_image_path.$val['s_image'].'" />';
+									}
+								}
+							?>
+                               
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="select_cat">
+                    
+                        <h2>Select a<span> Category</span></h2>
+                        <ul>
+                        <?php 
+							if(!empty($category))
+							{
+								foreach($category as $key=>$val)
+									{
+						?>
+                                <li><a href="#"><div class="item"><img src="<?php echo $category_image_path.$val['s_image']?>"><br><span><?php echo $val['s_category'];?></span></div></a></li>
+    						<?php
+									}
+								}
+							?>
+    
+                        </ul>
+                    </div>
+                    <div class="clear">
+            	
+            		</div>     	
+                </div>
+
+<div id="body_container">
+            <div class="separator"></div>
+        	<div class="f_body">
+            	
+                <div class="fav_brand_store">
+                	<div class="fav_brand">
+                    <h2>Favourite<span>Brands</span></h2>
+                    	<ul>
+                        	<?php 
+								if(!empty($brand))
+								{
+									foreach($brand as $key=>$val)
+									{
+							?>
+                        			<li><a href="#" onMouseOver="opentt('<?php echo $val['i_id']?>');" onMouseOut="closett('<?php echo $val['i_id']?>');"><img src="<?php echo $brand_image_path.$val['s_brand_logo']?>" title="<?php echo my_showtext($val['s_brand_title'])?>" ></a>
+                                    <div id="<?php echo $val['i_id']?>" class="tooltip" style=" display:none;">
+    	<div class="tooltip1">&nbsp;</div>
+        <div class="tooltip2">
+        	<?php echo my_showtext($val['s_brand_title'])?>
+        </div>
+        <div class="tooltip3">&nbsp;</div>
+    </div>
+                                    
+                                    </li>
+                                    
+                            <?php
+									}
+								}
+							?>
+                            <div class="clear"></div>
+                            <a href="#" class="view_all width_ie">View all Brands</a>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature_store">
+                    	<h2>Featured<span>Stores</span></h2>
+                    	<ul>
+                        	<?php 
+								if(!empty($store))
+								{
+									foreach($store as $key=>$val)
+									{
+							?>
+                        			<li><a href="#"><img src="<?php echo $store_image_path.$val['s_store_logo']?>" title="<?php echo my_showtext($val['s_store_title'])?>"></a>
+                                    
+                                    </li>
+                                    
+                            <?php
+							
+									}
+								}
+							?>
+                            
+                            <div class="clear"></div>
+                            <a href="<?php echo base_url().'store'?>" class="view_all">View all Stores</a>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="coupons_add">
+                	<div class="left_panel">
+                    	<h2>Top<span>Coupons</span></h2>
+                        <ul>
+                        <?php 
+							if(!empty($top_coupons))
+							{
+								foreach($top_coupons as $key=>$val)
+								{
+						?>
+                        	<li><div class="c_logo"><a href="#"><img src="<?php echo $top_coupons_store_image_path.$val['s_store_logo']?>" alt="9eras"></a>
+                            </div><div>			
+                            <a href="#"><span class="coupon_code"> <?php echo $val['i_coupon_type']==2? $val["i_coupon_code"]:'Activated Coupon'?></span></a></div>
+                            <div class="off"><a href="#">Rs 350 OFF ON Rs 1,699</a></div>
+                            <div class="all_same_coup"><a href="#">See all <?php echo my_showtext($val['s_store_title'])?> coupons</a></div>
+                            </li>
+                            <?php
+								}
+							}
+							?>
+                            
+                            <div class="clear"></div>
+                            <a href="<?php echo base_url()?>top-coupon" class="view_all">View all Top Coupons</a>
+                            
+                            
+                            
+                        </ul>
+                        <div class="clear"></div>
+                        <h2>Latest<span>Coupons</span></h2>
+                        <ul>
+                        	<?php 
+							if(!empty($latest_coupons))
+							{
+								foreach($latest_coupons as $key=>$val)
+								{
+						?>
+                        		<li><div class="c_logo"><a href="#"><img src="<?php echo $latest_coupons_store_image_path.$val['s_store_logo']?>" alt="9eras"></a>
+                            </div><div>			
+                            <a href="#"><span class="coupon_code"> <?php echo $val['i_coupon_type']==2? $val["i_coupon_code"]:'Activated Coupon'?></span></a></div>
+                            <div class="off"><a href="#">Rs 350 OFF ON Rs 1,699</a></div>
+                            <div class="all_same_coup"><a href="#">See all <?php echo my_showtext($val['s_store_title'])?> coupons</a></div>
+                            </li>
+                            <?php
+								}
+							}
+							?>
+                           
+                            
+                            <div class="clear"></div>
+                            
+                            <a href="#" class="view_all">View all Latest Coupons</a>
+                            
+                            
+                            
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="right_panel">
+                    <div class="join_us">
+                            <h2>Join<span>Us</span></h2>
+                            <ul>
+                                <li><a class="facebook" href="#"></a></li>
+                                <li><a class="twitter" href="#"></a></li>
+                                <li><a class="google_plus" href="#"></a></li>
+                            </ul>
+                        	
+                        </div>
+                    	<div class="ad">
+                        	<img src="<?php echo base_url(); ?>images/fe/advertisement.png" alt="advertisement"/>
+                        </div>
+                        <div class="fav_coup">
+                        	<a href="javascript:" onclick="openlightbox();">Let us guess Your Favourite Coupons</a>
+                        </div>
+                        <div class="subscribe" >
+                        	<h2>Subscribe for<span>good deals</span></h2>
+                            <div id="msg"></div>
+                            <form name="newsletter_subscribe" action="" id="newsletter_subscribe" method="post">
+                            	<input type="text" value="Provide Your Email Address"  id="email_id" onclick="if(this.value=='Provide Your Email Address')this.value='';" onblur="if(this.value=='')this.value='Provide Your Email Address';"/>
+                               
+                            	<input type="button" value="submit" onclick="subscribe('newsletter_subscribe')"/>
+                            </form>
+                            <div class="clear"></div>
+                        </div>
+                        
+                        <div class="max_dis">
+                       <h2>Maximum <span>Discount Store </span></h2>
+                            <ul>
+                            	<?php 
+								if(!empty($store_discount))
+								{
+									foreach($store_discount as $key=>$val)
+									{
+								?>
+                            	<li><a href="#"><?php echo my_showtext($val['s_store_title']);?></a></li>
+                                <?php
+									}
+								}
+								?>
+                            </ul>
+                        	
+                        </div>
+                        <div class="ad2">
+                        	<a href="#"><img src="<?php echo base_url(); ?>images/fe/ad.png" alt="ad"/></a>
+                        </div>
+                        <div class="ad2">
+                        	<a href="#"><img src="<?php echo base_url(); ?>images/fe/ad.png" alt="ad"/></a>
+                        </div>
+                    </div>
+                    <div class="clear">
+                    	
+                    </div>
+                    
+                </div>
+               
+            </div>
+            </div>
+            
+            
+<div class="let_fav_coup">
+    	<div class="lightbox-inner">
+    	<h2>Let us guess Your <span>Favourite Coupons</span></h2>
+        <div style="float:right; position:absolute;left:97%;top:-7%"> <a href="javascript:" onclick="coselightbox();"><img src="<?php echo base_url();?>images/fe/close_lightbox.png" alt="close"/></a></div>
+        <div  class="clear"></div>
+        <div class="fav">
+        	<div class="lb-left-side">
+            	<h3>Your favourite Category:</h3>
+                <select id="fev_select">
+                	<option>Select</option>
+                	<option>Select</option>
+                	<option>Select</option>
+                </select>
+                
+            </div>
+           
+            <div class="lb-right-side">
+            	<h3>Your favourite brand:</h3>
+                <select id="fev_select2">
+                	<option>Select</option>
+                	<option>Select</option>
+                	<option>Select</option>
+                </select>
+                
+            </div>
+            <div class="clear"></div>
+            <div style="text-align:center; margin-top:25px; margin-right:55px;">
+            	<input type="submit" class="lb-submit-btn" value="Submit" />
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="lightbox-cover" onclick="coselightbox();"></div>
+    
+<script language="javascript">
+
+function subscribe(frmid)
+{
+	var frm_data	= $('#'+frmid).serialize();
+	var email_id= $('#email_id').val();
+	if(email_id!='')
+	{
+			var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+				if(reg.test($.trim($("#email_id").val())) == false) 
+					{
+						$("#msg").html('<div class="error_massage">Please provide proper email</div>');	
+					}
+				else
+					{		
+					$.ajax({
+							type: 'POST',
+							url : '<?php echo base_url()?>home/newsletter_subscribe',
+							data: 'email_id='+email_id,
+							dataType: 'text',
+							success: function(msg)
+							{
+								$("#msg").html(msg);
+								$("#email_id").val("");
+							}			
+						});
+					}
+	}
+	else
+	{
+		$("#msg").html('<div class="error_massage">Please provide your email</div>');
+	}
+}
+
+</script>    
+
+<!--<div id="tooltip" style="display:none; position:absolute; top:60px; left:25px; color:#fff;">
+    	<div class="tooltip1" style="background:url(images/img1_01.png) no-repeat; float:left; height:30px;">&nbsp;</div>
+        <div class="tooltip2" style="background:url(images/img1_02.png) no-repeat; float:left; height:30px; line-height:36px; font-size:15px; font-weight:bold;">
+        	Nike
+        
+        </div>
+        <div class="tooltip3" style="background:url(images/img1_03.png) no-repeat; float:left; width:6px; height:30px;">&nbsp;</div>
+    </div>-->

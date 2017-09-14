@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'BerlinSansFBDemiBold';
+    src: url('brlnsdb.eot');
+    src: url('brlnsdb.eot') format('embedded-opentype'),
+         url('brlnsdb.woff') format('woff'),
+         url('brlnsdb.ttf') format('truetype'),
+         url('brlnsdb.svg#BerlinSansFBDemiBold') format('svg');
+}

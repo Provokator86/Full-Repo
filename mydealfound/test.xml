@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report p1:schemaLocation="LeadSummary http://83.142.224.99/ReportServer?%2fRelational+Reports%2fLeadSummary&amp;rs%3aFormat=XML&amp;rc%3aSchema=True" Name="LeadSummary" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="LeadSummary">
+  <Report>
+    <Report_Details_Group_Collection>
+      <Report_Details_Group Row="1" ClickTime="2014-03-11T08:06:52" TransactionTime="2014-03-11T08:19:44" TransactionId="23802633" MID="333137" Merchant="Wego.co.in" PID="9410" Product="Hotels CPC" SR="0.06" VR="0.06" NVR="0.06" Status="Validated" Paid="" Completed="2014-03-11T08:19:44" UKey="396095011381944" TransactionValue="0.07" />
+      <Report_Details_Group Row="2" ClickTime="2014-03-14T15:44:45" TransactionTime="2014-03-14T15:54:53" TransactionId="23829308" UID="DUTTA01001991" MID="304697" Merchant="Jabong.com" PID="9170" Product="Sales" SR="39.92" VR="39.92" NVR="39.92" Status="Validated" Paid="" Completed="2014-03-14T15:54:53" UKey="3960910143155453DUTTA01001991" TransactionValue="499.00" />
+    </Report_Details_Group_Collection>
+  </Report>
+</Report>

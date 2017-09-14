@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+/*-------header---------*/
+.logo img{width:220px;}
+.mid_right h1{padding-bottom:13px;}
+.mid_right .search{width:610px;}
+.mid_right .search_field{}
+.mid_right .search_input{width:432px;}
+
+/*-------end of header---------*/
+
+
+
+/**************************Reset style End***********************/
+/********************************* Links**********************************/
+a {color:#617189; outline:none; text-decoration:none; background-color:inherit;}
+a:hover, a:active, a:focus {outline:none; outline-width:0; text-decoration:none;}
+.link{ color:#e20026; font-weight:normal; background-color:inherit;}
+.link:hover{text-decoration:underline;}
+.block{ display:block;}
+.inline-block{ display:inline-block;}
+.none{display:none;}
+.floatleft{float:left;}
+.float-right{float:right!important;}
+.clear {clear:both; width:100%; line-height:0; font-size:0;}
+.spacer{height:10px;}
+.cnt_mar{	margin:20px 0 0 0;}
+.text_orange{	color:#f07318;}
+.coupon_box{ width:915px;	border:1px solid #979797;	box-shadow:1px 5px 4px #cccbcb; margin:0 0 18px 0;	border-radius: 5px;}
+.coupn_box_1{	margin:15px;}
+.coupn_box_2{	background:#e9eae9;	border-bottom-right-radius: 5px;	border-bottom-left-radius: 5px;}
+.coupn_img{	width:150px;	float:left;	padding:5px 0 0 0;}
+.coupn_info{	width:540px;	float:left;}
+.coupn_heading{	border-bottom:1px solid #d0d0d0; font-size:24px; color:#F07318;	width:735px; padding:0 0 4px 0;	margin:0 0 10px 0;}
+.coupn_heading_details{	border-bottom:1px solid #d0d0d0;	font-size:24px;	color:#00355f;	width:544px;	padding:0 0 4px 0;}
+.mid_cnt{	width:535px;}
+.copn_btn{	width:187px;	float:left;}
+.vw_fld{	width:215px;	padding:2px 0 0 0;}
+.cd_rwt{	width:540px;	padding:15px 0 0 0px;}
+.view_code{	background-color:#f07318; width:193px; cursor:pointer; border-radius: 5px; color:#fff; font-size:20px; padding:2px 0;	border:none;}
+.view_code_bg{ background:url(../images/cod_bg.jpg) no-repeat; border:0; width:200px; height:35px; color:#fff; padding:0 0 0 10px;}
+coupn_details{	font-size:14px;	color:#555555;	width:545px; text-align:justify;	margin:10px 0 0 0;}
+.coupn_date{	width:320px;	float:left;	padding:15px;	color:#666666;	font-size:14px;}
+.coupn_like_twt{	width:320px;	float:left;	padding:15px;}
+
+/*--------coupon page index--------*/
+.coupon_box2{	margin:6px 0 18px 6px;}
+
+
+/********************************************  tab css  ******************************************8*/
+/**************  tab css  *****************/
+
+ul.tabs {	margin:0;	padding:0;	float:left;	list-style:none; height: 32px; border-bottom:1px solid #a5a5a5;	width:950px;}
+ul.tabs li { float:left; margin:0; cursor: pointer; padding:0px 9px ; height:32px;	line-height:31px;	border-left: none;		font-family:Arial, Helvetica, sans-serif; background: #f07318;	overflow: hidden; position: relative; border-top-left-radius: 10px;		border-top-right-radius: 10px;	margin:0 10px 0 0;	color:#fff;	font-size:18px;	width:176px; text-align:center;	}
+ul.tabs li:hover {	background: #fff; color:#000;	}	
+ul.tabs li.active{	background:#fff; border-top-left-radius: 10px;	border-top-right-radius: 10px;	padding:0;	text-align:center;	width:176px; border-left:1px solid #a5a5a5;	border-right:1px solid #a5a5a5;	border-top:1px solid #a5a5a5;	font-size:18px;		color:#00355f;	margin-top:-1px; padding:0 9px;	}
+.tab_container_cu{	border: 1px solid #a5a5a5; border-top:none; clear:both; float:left;  width:748px; background:#FFFFFF; margin:0 0 38px 0;}	
+.content_details{ border: 1px solid #a5a5a5; clear: both; float: left; 	width:736px; background:#FFFFFF; margin:0 0 15px 0; padding:10px 0 0 10px;}
+.tab_content { padding:8px 0 8px 9px; font-size: 1.2em; display: none;}
+.tab_content_details{ padding:8px 0 8px 9px; border:1px solid #a5a5a5;}
+#container_cu{ width:750px;	float:left; margin-bottom:146px;}
+.padding{padding:0px 0 7px 0; width:100px; float:left; margin-right:7px;}
+
+
+/*************************  banner start ****************************/
+#slider_container{	height:250px;	border:1px solid #a5a5a5;	width:639px;}
+.cu_bansec{	margin:20px 0 0 0;}
+.cu_ban{	width:641px;	float:left;	border:8px solid #f8f8f8;	height:253px;}
+.cu_ban:hover{	border:8px solid #efedeb;}
+.cu_email{	width:330px;	float:left;	margin-left:13px;	position:relative;}
+.ribon{	position:absolute;	height:88px;	width:88px;	left:4px;	top:12px;}
+.bandfld{	background: none repeat scroll 0 0 #FFFFFF;	border-radius: 5px 5px 5px 5px;	margin: 15px 0 0;	width: 978px;}
+.band{	background: none repeat scroll 0 0 #FFFFFF;	border: 1px solid #A5A5A5;	border-radius: 3px 3px 3px 3px;	box-shadow: 1px 5px 4px #CCCBCB;	float: left;	margin-right: 18px;	padding: 5px;}
+.band img{	height: 75px;	width: 100px;}
+.mar_9{margin-left:2px;}
+.mar_5{margin-bottom:5px !important;}
+.margin_0{	margin-right:0;}
+.right_add_cu{	float: left;    margin: 20px 0 0 10px;    width: 240px;}
+
+
+/*********************************   flip animation brand  *****************************/
+#note {	font-size:11px;	color:#333;	padding:10px;	border:1px solid #b99f35; background:#f4eccb;	border-radius: 3px;	}
+#container_flip{width:978px  !important;}
+.thumb {	display:block;	width:93px;	height:75px;	position:relative;	margin-right:17px;	float:left;}
+.thumb-wrapper {	display:block;	width:100%;	height:100%;}
+.thumb img,.thumb .flip_animate{	width:100%;	height:100%;	position:absolute;	display:block;}
+.thumb .thumb-detail { display:block; width:100px; height:73px;	position:absolute; background:#fff;	font-family:arial; font-size:16px;}
+.thumb .thumb-detail a {display:block; text-transform:uppercase; font-weight:bold;	 color:#333; text-decoration:none;	font-family: 'Open Sans', sans-serif;letter-spacing:-1px;	font-size:14px;	height:90px; width:100px; border-radius: 5px;}		
+.thumb.scroll {overflow: hidden;}	
+.thumb.scroll .thumb-detail {	bottom:-280px;}
+/*
+* CSS3 Flip
+*/	
+.thumb.flip {-webkit-perspective:800px;  -moz-perspective:800px;  -ms-perspective:800px; -o-perspective:800px; perspective:800px;width:100px !important;}
+.thumb.flip .thumb-wrapper { -webkit-transition: -webkit-transform 1s;   -moz-transition: -moz-transform 1s;  -ms-transition: -moz-transform 1s;   -o-transition: -moz-transform 1s;  transition: -moz-transform 1s; -webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d; -ms-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d;}
+.thumb.flip .thumb-detail { -webkit-transform: rotateY(-180deg); -moz-transform: rotateY(-180deg);  -ms-transform: rotateY(-180deg) -o-transform: rotateY(-180deg); transform: rotateY(-180deg);			   			}
+.thumb.flip img,
+.thumb.flip .thumb-detail,.thumb.flip > div {-webkit-backface-visibility: hidden; -moz-backface-visibility: hidden;  -ms-backface-visibility: hidden; -o-backface-visibility: hidden;  backface-visibility: hidden;}
+.thumb.flip .flip_animate{/*display:none;*/}
+.thumb.flip .flipIt {-webkit-transform: rotateY(-180deg); -moz-transform: rotateY(-180deg); -ms-transform: rotateY(-180deg);			
+ -o-transform: rotateY(-180deg); transform: rotateY(-180deg);}
+	
+
+
+/**********************************  catagory css  ***************************/
+.categories_button a.select_cat{color:#fff;}
+.categories_button {   margin: 0 0 0 5px; position: relative;  z-index: 10000; width:122px; height:46px; font-family:Arial, Helvetica, sans-serif;}
+.categories_button a {   color: #000000; display: block;  font-size: 15px;  padding: 12px 25px;  width: 77px; text-decoration:none;}
+.categories_button2 a.select_cat{	color:#f07318 !important;}
+.categories_button2 {  margin: 0 0 0 5px; position: relative; z-index: 10000; width:122px; height:46px;font-family:Arial, Helvetica, sans-serif;}
+.categories_button2 a { color: #000000; display: block; font-size: 15px;  padding: 12px 25px; width:45px;text-decoration:none;}
+li.parent_cat{width:130px;}
+li.parent_cat2{width:100px;}
+.categories_button > a {color:#fff !important;	font-size:16px !important;}
+.categories_button a:hover {   color: #f07318 !important;   text-decoration: none;}
+.categories_button a.select_cat {   color: #f07318 !important;}
+.categories_button2 > a {color:#fff !important;	font-size:16px !important;}
+.categories_button2 a:hover {    color: #f07318 !important;    text-decoration: none;}
+.categories_button2 a.select_cat {   color: #f07318 !important;}
+.category_dropbox ul li a:hover {  color: #000 !important;  text-shadow: none; background:#ffd6b7; width: auto; border-left:2px solid #ffd6b7;}
+.activecategory_dropbox { color: #000 !important;  text-shadow: none;  width: auto;background:#ffd6b7;}
+.category_dropbox ul li a.seletc_drop {   color: #000 !important;  text-shadow: none;  width: auto;background:#ffd6b7;}
+.category_dropbox ul li a.travel{background:url(../images/travel1.png) 5px center no-repeat;padding:8px 0px 8px 30px;}
+.category_dropbox ul li a.mobile{	background:url(../images/mobile.png) 5px center no-repeat;	padding:8px 0px 8px 30px;}
+.category_dropbox ul li a.men{	background:url(../images/men.png) 5px center no-repeat;	padding:8px 0px 8px 30px;}
+.category_dropbox ul li a.computer{	background:url(../images/computer.png) 5px center no-repeat;	padding:8px 0px 8px 30px;}
+.category_dropbox ul li a.gifts{	background:url(../images/gifts.png) 5px center no-repeat;	padding:8px 0px 8px 30px;}
+.category_dropbox ul li a.home{background:url(../images/home_decorf.png) 5px center no-repeat !important; padding:8px 0px 8px 30px;}
+.category_dropbox ul li a.music{background:url(../images/music.png) 5px center no-repeat;padding:8px 0px 8px 30px;}
+.category_dropbox ul li a.going{background:url(../images/restaurent.png) 5px center no-repeat;padding:8px 0px 8px 30px;}
+.category_dropbox ul li a.beauty{background:url(../images/fashionf.png) 5px center no-repeat;padding:8px 0px 8px 30px;}
+.category_dropbox ul li a.baby{	background:url(../images/baby.png) 5px center no-repeat;padding:8px 0px 8px 30px;}
+.category_dropbox ul li a.women{background:url(../images/women.png) 5px center no-repeat;padding:8px 0px 8px 30px;}
+.categories_button img{width:220px;}
+.category_dropbox ul li .dropchild { background: none repeat scroll 0 0 #FFFFFF; border-right:1px solid #f07318 !important; border-top:4px solid  #f07318 !important;	border-bottom:1px solid #f07318 !important;  display: block;  height: 369px; left:230px;padding-right:250px;  position:absolute;  top: -4px; z-index:10;}
+.category_dropbox ul li .dropchild img { position: absolute;    right: 0;  top: 0;}
+.category_dropbox ul li .dropchild ul {  display: block;  float: left !important;  padding: 0;  width: 170px !important;}
+.dropwidth { width: 350px;}
+.category_dropbox a.all_cat {  border-top: 1px solid #EDEDED;  color: #0077CC !important; display: block;  font-size: 12px;  height:auto; padding: 10px 15px;  text-decoration: none;  text-shadow: none; width: auto;}
+.category_dropbox {  background: none repeat scroll 0 0 #FFFFFF;  border-color: #f07318 #cdcdcd #cdcdcd;  border-image: none;  border-right: 1px solid #EDEDED; border-style:solid; border-width:4px 1px 1px;  left:2px;  position:absolute;  top:43px; width:230px; z-index: 10;}
+.category_dropbox ul { list-style-type:none; margin:0;  padding:0;  position:relative;}
+.category_dropbox ul li {}
+.category_dropbox ul li a { background:none repeat scroll 0 0 transparent;  border-left:2px solid #FFFFFF; color:#3A3A3A; display:block; font-size:12px;  height:auto;  padding:6px 14px;  text-decoration:none; width:auto;}
+.category_dropbox ul li:hover { color:#000 !important;  text-shadow:none;  width:auto; background:#ffd6b7;}
+.activecategory_dropbox {  color: #000 !important; text-shadow: none;  width: auto; background:#ffd6b7;}
+.category_dropbox ul li a.seletc_drop {  color: #000 !important;  text-shadow: none; width: auto;background:#ffd6b7;}
+.category_dropbox ul li .dropchild img {   position: absolute;  right: 0;  top: 0;}
+.category_dropbox ul li .dropchild ul {  display: block;  float: left !important;  padding: 0; width: 170px !important;}
+.category_dropbox ul li .dropchild ul li a:hover {  background: none repeat scroll 0 0 transparent;  text-decoration: none;	background:#ffd6b7;}
+.dropwidth { width: 350px;}
+.category_dropbox a.all_cat { border-top:1px solid #EDEDED; color:#0077CC !important; display:block; font-size:12px; height:auto;padding:10px 15px; text-decoration: none; text-shadow: none; width: auto;}
+#container_cu ul li.active{font-size:14px;}
+
+/***************************************  coupon  details  **********************************/
+.color35{color:#353535;}
+.margin_top{margin:10px 0 0 0;}
+.details_rate{width:120px;	color:#f07318;	float:left;	font-size:16px;}
+.details_star{	width:200px;	float:left;}
+.share_coupon{	background-color:#f07318;	width:193px;	cursor:pointer;	border-radius: 5px;	color:#fff;	font-size:20px;	padding:2px 0;	border:none;}
+.heading_details{ background:url(../images/product_headr_bg.jpg) repeat-x;	border-top-left-radius: 10px; border-top-right-radius: 10px; padding:6px 0; text-align:center; width:164px; border-left:1px solid #a5a5a5; border-right:1px solid #a5a5a5; border-top:1px solid #a5a5a5;	font-size:18px;	color:#00355f;}
+.detail_right{	width:216px;	border:1px solid #a5a5a5;	background:#fff;	padding:10px;	margin:0 0 20px 0;}
+.right_heading{	color:#00355f;	font-size:16px;	margin:0 0 5px 0;}
+.right_heading a{	color:#00355f;	font-size:16px;	margin:0 0 5px 0;	clear:both;	width:190px;}
+.padng_5{	padding:0 0 5px 0;}
+.coupn_cde{	background:url(../images/coupon_hover.png) no-repeat;	height:54px;	width:300px;	cursor:pointer;	float:left;}
+.get_code{	background:url(../images/get_code.png) no-repeat;	height:54px;	width:126px;	cursor:pointer;	float:left;}
+.off50{	background:url(../images/50off_blue.png) no-repeat;	width:120px; height:113px; text-align:center; padding:28px 0 0 0;	line-height:30px;}
+.off50_orange{	background:url(../images/50off_ornge.png) no-repeat; width:120px; height:113px;	text-align:center;	padding:20px 0 0 0;	line-height:37px;}
+.blue_color{	color:#00355f;	font-weight:bold;}
+.orange_color{	color:#f07318;}
+.text_30{	font-size:32px;}
+.text_25{	font-size:20px;}
+
+
+/***********************************  shop page css (17.7.2013)  *****************************************/
+.cashback_heading{	color: #F07318;	float: left; font-family: Arial,Helvetica,sans-serif; font-size: 30px; font-weight: bold; line-height: 36px; width: 810px;}
+.cashback_subheading{ float:left; width:750px; padding:16px 0 16px 0; font-family:Arial,Helvetica,sans-serif;font-size: 16px;font-weight: bold; line-height: 20px;}
+.shop_cat_clm{ width:350px;	float:left;}
+.shop_cat_clm_2{	width:350px;	float:left;	margin-left:20px;}
+.tradus_heading{	color: #00355f;	float: left;	font-family: Arial,Helvetica,sans-serif;	font-size: 18px;	font-weight: bold;	line-height: 40px;	width:400px;}
+.tradus_info{	border-top:1px solid #a5a5a5;	padding:10px 0;}
+.tradus_value{	color: #00355f; float: left; font-family: Arial,Helvetica,sans-serif; font-size: 22px; font-weight: bold;	line-height: 18px;	width: 100px;}
+.value_info{	float: left;	font-size: 14px;	text-align: left;	width: 250px;}
+.xpires{	color: #ff7900;	font: bold 14px Arial,Helvetica,sans-serif;	padding: 5px 0 10px 0;}
+.coupon_terms{	width:164px;	float:right;	padding:10px 0;}
+.coupon_terms a{	color:#000;	text-decoration:underline;	}
+.reaveal{	width:187px;	float:right;}
+.cashback{	width:187px;	padding:10px 10px 20px 100px;}
+.reveal_coupon{	width:187px;	height:30px;	background:#F07318;	cursor:pointer;	-webkit-border-radius: 5px;	-moz-border-radius: 5px;	border-radius: 5px;	color:#fff;	border:0;}
+.reveal_coupon_blue{	width:187px; height:30px;	background:#00355f;	cursor:pointer;	-webkit-border-radius: 5px;	-moz-border-radius: 5px;	border-radius: 5px;	color:#fff;	border:0;}
+.reveal_coupon2{	width:117px;	height:30px;	background:#F07318;	cursor:pointer;	-webkit-border-radius: 5px;	-moz-border-radius: 5px;	border-radius: 5px;	color:#fff;	border:0;}
+.reveal_coupon3{	width:187px;	height:30px;	background:#00355f;	cursor:pointer;	-webkit-border-radius: 5px;	-moz-border-radius: 5px;	border-radius: 5px;	color:#fff;	border:0;}
+.reveal_coupon4{	width:187px;	height:30px;	background:#F07318;	cursor:pointer;	-webkit-border-radius: 5px;	-moz-border-radius: 5px;	border-radius: 5px;	color:#fff;	border:0;}
+.reveal_coupon4:hover{	background:#de5e02;}
+.reveal_coupon:hover{	background:#de5e02;}
+.reveal_coupon2:hover{	background:#de5e02;}
+.right_logo{	margin:0 0 20px 0;	width:240px;	clear:both;	text-align:center;}
+
+
+/********************************* 20/07/2013  **************************/
+
+.coupon_codes{border: 1px solid #a5a5a5;margin-left: 8px; padding-bottom: 8px; width: 736px;margin:0 0 20px 0;padding:10px 0 10px 10px;}
+.about_comp{float: left; width:500px;}
+.brand_hheading{font-size:20px;}
+.rate_it{background:#f5f5f5; border: 1px solid #a5a5a5; border-radius: 8px 8px 8px 8px; margin: 20px 0 0 0px; padding:10px; width:430px;}
+.shop_str{padding:5px 0;}
+.shop_1{width:222px;float:left;background:url(../images/wize.png) no-repeat;cursor:pointer;height:50px;margin:0 20px 0 0;}
+.shop_1_left{width:100px;float:left;padding:6px 0 0 9px;}
+.shop_1_right{width:100px;float:left;color:#fff;padding:8px 0 0 0;text-align:center;}
+.shop_2{width:110px;float:left;font-size:18px;}
+.shop_3{width:160px;float:left;}
+.comp_logo{width:198px;float:left;}
+.shop_details{width:450px;text-align:justify;}
+.show_more{width:80px;height:28px;background:#00355f;cursor:pointer;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;color:#fff;border:0;}
+.show_morefld{width:134px;float:right;padding:10px 0 0 0;}
+.shop_rate{width:110px;float:left;}
+.rate_details{width:280px;float:left;padding:2px 0 0 0;}
+#top_offer_slider_wrapper .bx-wrapper .bx-prev {left:-32px !important;background:url(../images/arrow_lft.jpg) no-repeat !important;}
+#top_offer_slider_wrapper .bx-wrapper .bx-next {right:-46px !important;background:url(../images/arrow_rgt.jpg) no-repeat !important}
+#top_offer_slider_wrapper .bx-wrapper .bx-controls-direction a{z-index:0 !important;}
+#modal{position:absolute; top:290px; background:#fff; overflow:hidden; width:300px; border:1px solid #a5a5a5; padding:10px;}
+.close{position:absolute;right:6px;top:1px;font-size:20px;font-weight:bold;cursor:pointer;background:0;}
+.wize_details{padding:5px 0 0 5px;}
+.modal_wize{background:url(../images/wize.png) no-repeat;width:250px;height:30px;margin:0 0 0 5px;}
+.wize_best{padding:2px 0;}
+.wize_review{padding:10px 0 0 0;}
+.wize_review a{color:#00355f;font-weight:bold;}
+.wize_best a{color:#00355f;font-weight:bold;}
+.wize_slider{padding:7px 0 0 5px;}
+.rt_pro{width:200px;background:#fff;position:absolute;border:1px solid #a5a5a5;box-shadow: 0 0 5px rgba(27, 27, 27, 0.8);padding:20px 10px 10px 10px;text-align:center;left:210px;top:29px;}
+.q_heading{font-size:16px;font-weight:bold;}
+.q_rate_sub{padding:0 0 5px 0;}
+.rate_bg{width:180px;margin:0 auto;background:#fde3cf;border:1px solid #fac6a0;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;height:20px;}
+.for_rate{width:100px;float:left;}
+.rate_comt{width:60px;float:left;}
+.view_review{padding:5px 0;}
+.view_review_1{width:95px;float:left;}
+.view_review_2{width:100px;float:left;}
+.rate_clm{padding:10px 0;}
+.rate_input{width:180px;height:60px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border:1px solid #a5a5a5;}
+.btm_arw{position:absolute;top:238px;left:83px;}

@@ -1,0 +1,11 @@
+/* CSS Document */
+
+.search_field{
+	width:320px !important;
+}
+
+.search_field input{
+	padding:10px 0 0 0 !important;
+}
+
+.search_input{ height:28px !important;}

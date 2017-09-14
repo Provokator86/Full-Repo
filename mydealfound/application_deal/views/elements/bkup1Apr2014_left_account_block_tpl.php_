@@ -1,0 +1,70 @@
+<div class="ac_info">
+    <div class="er_1st" style="border-bottom:none;">
+        <?php /*?><div class="ac_sub_heading">My Activity</div>
+        <? foreach ($earningData as $earningKey => $earningMeta): ?>
+
+            <div class="earning">
+                <div class="earning_left"><?= $earningKey ?></div>
+                <div class="earning_right" style="font-size:12px;"><?= $earningMeta ?></div>
+                <div class="clear"></div>
+            </div>
+        <? endforeach; ?><?php */?>
+		
+		 	<?php /*?> Below New menus added 18Mar 2014<?php */?>
+			<div class="ac_sub_heading">Account Settings</div>
+            <div class="earning">
+                <div class="earning_left"><a href="<?php echo base_url().'user/details';?>">Personal Details</a></div>
+                <div class="clear"></div>
+            </div>
+			<div class="earning">
+                <div class="earning_left"><a href="javascript:">Payment Settings</a></div>
+                <div class="clear"></div>
+            </div>
+			<div class="earning">
+                <div class="earning_left"><a href="<?php echo base_url().'user/password';?>">Change Password</a></div>
+                <div class="clear"></div>
+            </div>
+			
+			<div class="ac_sub_heading">My Earning</div>
+            <div class="earning">
+                <div class="earning_left"><a href="javascript:">My Earning</a></div>
+                <div class="clear"></div>
+            </div>
+			
+			<div class="ac_sub_heading">Payment</div>
+			<div class="earning">
+                <div class="earning_left"><a href="javascript:">Payment</a></div>
+                <div class="clear"></div>
+            </div>
+			<div class="ac_sub_heading">Refer Friends</div>
+			<div class="earning">
+                <div class="earning_left"><a href="javascript:">Refer Friends</a></div>
+                <div class="clear"></div>
+            </div>
+			
+			<div class="ac_sub_heading">Deals</div>
+            <div class="earning">
+                <div class="earning_left"><a href="<?php echo base_url().'user/favouritedeals';?>">Favourite Deals</a></div>
+                <div class="clear"></div>
+            </div>
+			<div class="earning">
+                <div class="earning_left"><a href="<?php echo base_url().'user/subscribedeals';?>">My Subscribed Deals</a></div>
+                <div class="clear"></div>
+            </div>
+			<div class="earning">
+                <div class="earning_left"><a href="<?php echo base_url().'user/trackdeals';?>">Tracked</a></div>
+                <div class="clear"></div>
+            </div>
+			
+			<?php /*?>Below New menus added 18Mar 2014<?php */?>
+        
+    </div>
+
+    <?php /*?><div class="er_1st">
+        <div class="ac_sub_heading"><?php echo $earningCms['s_title'] ?></div>
+        <div class="earning"><?php cho $earningCms['s_description'] ?></div>
+    </div><?php */?>
+	
+
+	
+</div>

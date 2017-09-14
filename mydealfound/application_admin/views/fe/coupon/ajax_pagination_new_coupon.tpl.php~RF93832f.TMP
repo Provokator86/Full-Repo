@@ -1,0 +1,52 @@
+<?php  pr($new_coupons);?>
+
+                
+                    
+                    <div class="active_coupons top_coupons">
+                    	<h2>New<span> Coupons</span></h2>
+                        <?php if($new_coupons){
+							foreach($new_coupons as $val) { ?>
+                         
+                        <div class="product_active_coupon">
+                        	<div class="det_offer">
+                            	<div class="float_left">
+                                	<img src="<?php echo base_url().'uploaded/store/thumb/thumb_'.$val['s_store_logo']?>" alt="logo"/>
+                                </div>
+                                <div class="offer">
+                                	<h3><a href="javascript:window.open('<?php echo base_url().'product_land/index/'.$val['s_url']?>','mywindowtitle','width=500,height=150,scrollbars=yes')"><?php echo $val['s_title']?></a></h3>
+                                    <div class="get_code"><a href="product_land.html">Click here to view code</a></div><a class="offer_code" href="#"></a>
+                                    <p><?php echo substr($val['s_summary'],0,100);?></p>
+                                    <a href="<?php echo base_url()?>product_detail/index/<?php echo $val['s_url']?>" class="spcl_land">View more from this store</a>
+                                </div>
+                                
+                                <div class="clear"></div>
+                            </div>
+                            <div class="shared_comment">
+                            	<div class="comnt">
+                                	<span>Added <?php echo date('d-m-y', strtotime($val['dt_of_live_coupons']));?>, Expires <?php echo date('d-m-y', strtotime($val['dt_exp_date']));?> </span>
+                                    <span class="image_like"><a href="#" > <iframe src="//www.facebook.com/plugins/like.php?href=<?php echo rawurlencode($val['s_url']);?>&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe> </a></span>
+                                    
+                                    <div class="clear"></div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                                                
+                    <?php }
+						}?>    
+                        
+                        
+                        <ul class="pagination">
+                        	<!--<li><a href="#"><<</a></li>
+                        	<li><a href="#" class="first">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">>></a></li>-->
+                            <?php echo $page_links;?>
+                        </ul>
+                        
+                        <div class="clear"></div>  
+                    </div>

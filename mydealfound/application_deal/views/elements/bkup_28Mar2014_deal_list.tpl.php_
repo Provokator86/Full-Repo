@@ -1,0 +1,422 @@
+<?php
+
+/*
+
+ * To change this template, choose Tools | Templates
+
+ * and open the template in the editor.
+
+ */
+
+?>
+
+<div class="deal_list_wrapper">
+
+    <script>
+
+    
+
+        function dealClockGenerater($timeOfExp){
+		
+			$colckHtml = '';
+
+            //$timeOfExp = '2013-10-3';
+
+            $timestampObj = new Date();
+			//$timeOfExpObj = new Date($timeOfExp.toString());
+			
+			separateDateTime	= $timeOfExp.split(' ');
+			
+			dateVal				= separateDateTime[0].split('-');
+			
+			year	= dateVal[0];
+			
+			mnth	= dateVal[1]-1;
+			
+			day		= dateVal[2];
+			
+			timeVal				= separateDateTime[1].split(':');
+			
+			hour	= timeVal[0];
+			
+			mins	= timeVal[1];
+			
+			sec		= timeVal[2];
+			
+			$timeOfExpObj	= new Date(year,mnth,day,hour,mins,sec);
+			
+			//console.log($timeOfExpObj);
+			
+			//console.log(parseInt($timestampObj.getTime()));
+			
+
+            //console.log(parseInt($timeOfExpObj.getTime()) > parseInt($timestampObj.getTime()));
+
+            if(parseInt($timeOfExpObj.getTime()) >= parseInt($timestampObj.getTime())){
+			
+				seconds = Math.floor(($timeOfExpObj - ($timestampObj))/1000);
+				minutes = Math.floor(seconds/60);
+				hours = Math.floor(minutes/60);
+				days = Math.floor(hours/24);
+				
+				hours = hours-(days*24);
+				minutes = minutes-(days*24*60)-(hours*60);
+				seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+			
+
+                $colckHtml +=   '<h3>Expires in:</h3>';
+
+                $colckHtml +=   '<span class="dday"> ';
+
+                //$colckHtml +=   (($timeOfExpObj.getTime()-$timestampObj.getTime())/ (1000 * 60 * 60 * 24));
+				
+				$colckHtml +=   days;
+
+                $colckHtml +=   '</span> days <span class="dmnth"> ';
+
+                //$colckHtml +=   (23 -$timestampObj.getHours());
+				
+				$colckHtml +=   hours;
+
+                $colckHtml +=    '</span> hrs <span class="dmin"> ';
+
+                //$colckHtml +=    (59 -$timestampObj.getMinutes());
+				
+				$colckHtml +=   minutes;
+
+                $colckHtml +=    '</span> min<span class="dsec"> ';
+
+                //$colckHtml +=    (59 -$timestampObj.getSeconds());
+				
+				$colckHtml +=    seconds;
+
+                $colckHtml +=    '</span> sec' ;
+
+                //console.log($colckHtml);
+
+                return $colckHtml;
+
+            } else {
+
+                $colckHtml +=   '<h3>Expired on:</h3>';
+
+                $colckHtml +=   '<span class="dday"> ';
+
+                $colckHtml +=   ($timestampObj.getDay() - $timeOfExpObj.getDay());
+
+                $colckHtml +=   '</span> days <span class="dmnth"> ';
+
+                $colckHtml +=    $timestampObj.getHours();
+
+                $colckHtml +=    '</span> hrs <span class="dmin"> ';
+
+                $colckHtml +=    $timestampObj.getMinutes();
+
+                $colckHtml +=    '</span> min<span class="dsec"> ';
+
+                $colckHtml +=    $timestampObj.getSeconds();
+
+                $colckHtml +=    '</span> sec' ;
+
+                return $colckHtml;
+
+            }
+
+    
+
+        }
+
+        function calculateTime(){
+
+            $('.deal_clock').each(function(){
+
+                $(this).html(dealClockGenerater($(this).attr('clockData')));
+
+                //console.log($(this).attr('clockData'));
+
+            });
+
+        }
+
+        $(document).ready(function(){
+
+            setInterval(function(){calculateTime()},1000);
+			
+			$(".product").show();
+
+        });
+
+    </script>
+
+    <div class="prodct1">
+
+        <div class="prodct_heading"><?= $dealListData['title'] ?></div>
+
+        <div class="product_box <?php echo ($cntrlr=='home')?'sub_product_box':''?>">
+
+            <?
+				
+				$current_dt	= now();
+				if (count($dealListData['dealList'])) { ?>
+					
+                <? 
+					foreach ($dealListData['dealList'] as $dealMeta): 
+					
+					?>
+
+                    <div class="product">
+
+                        <div class="pro_extend">	
+
+                            <div class="in_pro">
+
+                               <?php /*?> <img style="height:180px;padding:5px" src="<?= base_url() ?>uploaded/deal/<?= $dealMeta['s_image_url'] ?>" alt="<?= $dealMeta['s_image_url'] ?>" /> <?php */?>  
+							   
+							   <?php if($dealMeta['s_image_url']!="") { ?>
+							    <img style="height:180px;padding:5px" src="<?= $dealMeta['s_image_url'] ?>" alt="<?= $dealMeta['s_image_url'] ?>" />                   
+								<?php } else { ?>
+								<img style="height:180px;padding:5px" src="<?= base_url() ?>uploaded/deal/no-image.png" alt="No image" />
+								<?php } ?>               
+                                
+                            </div>
+
+                            <div class="product_info">
+
+                                <div class="product_info_head"><?= $dealMeta['s_title'] ?></div>
+
+                                <div class="pro_detls"><?= $dealMeta['coupon_meta'] ?></div>
+
+                                <div class="look_in">
+
+                                    <div class="look_off_in">
+
+                                        <p class="font17_in line_thr">Rs <?= number_format($dealMeta['d_list_price']) ?></p>
+
+                                    </div>
+
+                                    <div class="look_price_in">
+
+                                        <p class="font17_in">Rs <?= number_format($dealMeta['d_selling_price']) ?></p>
+
+                                    </div>
+
+                                    <div class="clear"></div>
+
+                                </div>
+
+                                <div class="store_image">                                            
+
+                                    <img src="<?= base_url() ?>uploaded/store/<?= $dealMeta['s_store_logo'] ?>" class="snap" alt="Store" />
+
+                                </div>
+
+                                <div class="clear"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="pro_extend_ho">
+
+                            <div class="like">
+
+                                <img onclick="favourite_deal(<?= $dealMeta['i_id'] ?>)" src="<?= base_url() ?>images/like.png" alt="" height="37" />
+
+                            </div>
+
+                            <div class="watch">
+
+                                <?php /*?><img onclick="subscribe_deal(<?= $dealMeta['i_id'] ?>)" src="<?= base_url() ?>images/watch.png" alt="" /><?php */?>
+								<img onclick="setPriceAlertDeal(<?= $dealMeta['i_id'] ?>)" src="<?= base_url() ?>images/watch.png" alt="" />
+
+                            </div>
+                            <?php
+								if($dealMeta['d_discount']>0)
+								{
+							?>
+                            		<h2 style="color:#FFFFFF;"> <?= number_format($dealMeta['d_discount']) ?>%<br/> Off  </h2>
+                            <?php
+								}
+								else if(!empty($dealMeta['s_discount_txt']))
+								{
+							?>
+                            		<h2 style="color:#FFFFFF;"> <?= $dealMeta['s_discount_txt']; ?>  </h2>
+                            <?php
+								}
+							?>
+
+							<?php
+								if($current_dt < $dealMeta['dt_exp_date'] || $dealMeta['dt_exp_date']=='0000-00-00 00:00:00' )	
+								{
+									$button_text	= "View Details";
+									$detail_url		= base_url() . $dealMeta['s_seo_url'];
+							
+								}
+								else
+								{
+									$button_text	= "Expired";
+									$detail_url		= "javascript:void(0)";
+							
+								}
+								if($current_dt < $dealMeta['dt_exp_date'])
+								{
+							?>
+                            		<p class="deal_clock" clockData="<?= $dealMeta['dt_exp_date'] ?>"></p>
+                            <?php
+								}
+								else
+								{
+							?>
+                            		<p></p>
+                            <?php
+								}
+							?>
+                            <h4>see deal or</h4>
+
+                            <a href="<?= $detail_url ?>">
+
+                                <input style="cursor: pointer" name="" type="button" value="<?php echo $button_text;?>" class="button"/>
+
+                            </a>    
+
+                        </div>
+
+                        <? if (intval($dealMeta['i_cashback'])): ?>
+
+                            <div class="cash_back_ribbon">Rs <?= $dealMeta['i_cashback'] ?> Cashback</div>
+
+                            <img src="<?= base_url() ?>images/cashback_offer.png" class="cash_back" />	
+
+                        <? endif; ?>
+
+                    </div>
+
+                <? endforeach; ?> 
+
+            <? } else { ?>
+
+                <div style="text-align: center">No Result Found</div>
+
+            <? } ?>
+
+            <div class="clear"></div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <?
+
+    $config['num_links'] = 2;
+
+
+
+    $config['cur_tag_open'] = '<li><a class="act" href="#">';
+
+    $config['cur_tag_close'] = '</a></li>';
+
+
+
+    $config['num_tag_open'] = '<li>';
+
+    $config['num_tag_close'] = '</li>';
+
+
+
+    $config['prev_link'] = '&lsaquo; Previous';
+
+    $config['prev_tag_open'] = '<li>';
+
+    $config['prev_tag_close'] = '</li>';
+
+
+
+    $config['next_link'] = 'Next &rsaquo;';
+
+    $config['next_tag_open'] = '<li>';
+
+    $config['next_tag_close'] = '</li>';
+
+
+
+
+
+    $config['last_link'] = 'Last &raquo;';
+
+    $config['last_tag_open'] = '<li>';
+
+    $config['last_tag_close'] = '</li>';
+
+
+
+    $config['first_link'] = '&laquo; First';
+
+    $config['first_tag_open'] = '<li>';
+
+    $config['first_tag_close'] = '</li>';
+
+
+
+    $config['full_tag_open'] = '<ul>';
+
+    $config['full_tag_close'] = '</ul>';
+	
+	$config['div'] = '#deal_list';
+
+
+	if ($config['is_ajax'])
+	{
+		$this->jquery_pagination->initialize($config);
+		$pagging	= $this->jquery_pagination->create_links();
+	}
+	else
+	{
+   		$this->pagination->initialize($config);
+		$pagging	= $this->pagination->create_links();
+	}
+
+    ?>    
+
+    <div class="pagination">
+
+    	<?php echo $pagging;?>
+
+    </div>
+
+        <?php /*?><? if ($config['is_ajax']): echo 3;?>
+
+        <script>
+
+            $('.pagination ul li a').click(function(e){
+
+                e.preventDefault();
+
+                console.log($(this).attr('href'));
+
+                if($(this).attr('href')=='#'){
+
+                    return;
+
+                }
+
+                targetObj = $(this);
+
+                $.post($(this).attr('href'),null,function(resData){
+
+                    $(targetObj).parent().parent().parent().parent().html(resData);
+
+                },'html');
+
+                return;
+
+            });
+
+        </script>
+
+<? echo 4; endif; ?><?php */?>
+
+</div>

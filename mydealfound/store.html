@@ -1,0 +1,1437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/templatestyle.css" type="text/css" />
+        <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
+        <link rel="stylesheet" href="css/style_slider.css" type="text/css" />
+        <link rel="stylesheet" href="css/default.css" type="text/css" />
+        <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+        <link rel="stylesheet" href="css/jslider.css" type="text/css"/>
+        <link rel="stylesheet" href="css/ui_custom.css" type="text/css"/>
+
+        <!--[if lt IE 9]>
+                <link href="css/ie7.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.checkbox.min.js"></script>
+        <script type="text/javascript" src="js/jquery.dd.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.multiselect.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-timepicker.js"></script>
+
+
+
+
+        <!--for price range slider start -->
+        <script type="text/javascript" src="js/jshashtable-2.1_src.js"></script>
+        <script type="text/javascript" src="js/jquery.numberformatter-1.2.3.js"></script>
+        <script type="text/javascript" src="js/tmpl.js"></script>
+        <script type="text/javascript" src="js/jquery.dependClass-0.1.js"></script>
+        <script type="text/javascript" src="js/draggable-0.1.js"></script>
+
+        <!--for price range slider end -->
+
+
+
+        <!--<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+        -->
+        <title>My Coupon Found</title>
+
+        <script type="text/javascript" src="js/scriptbreaker-multiple-accordion-1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+	
+                /*------------for top login--------------*/
+                $(".topnav").accordion({
+                    accordion:false,
+                    speed: 500,
+                    closedSign: '',
+                    openedSign: ''
+                });
+	
+
+                $('input.safari-like-checkbox').checkbox({
+                    cls:'jquery-safari-checkbox'
+                });
+	
+            });
+
+        </script>
+
+        <script type="text/javascript">
+            /*var menu=new menu.dd("menu");
+                menu.init("menu","menuhover");*/
+        </script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#fev_select").msDropDown();//(engineSize)=select tab ID;
+                $("#fev_select").hide();
+                $('#fev_select_msdd').css("width", "181px");
+                $('#fev_select_child').css("width", "484px");
+                $('#fev_select_child').css("top", "0px");
+
+
+                $("div.categories_button").mouseenter(function(){
+                    $("#categorylist").show();   
+                    $("#categories").addClass('select_cat'); 
+                    $('#manu_bg_trans').fadeIn();
+	  
+                }).mouseleave(function(){
+                    $("#categorylist").hide('fast');    
+                    $("#categories").removeClass('select_cat');
+                    $('#manu_bg_trans').fadeOut();   
+                });
+                $("div.categories_button2").mouseenter(function(){
+                    $("#categorylist2").show();   
+                    $("#categories2").addClass('select_cat');
+                    $('#manu_bg_trans').fadeIn(); 
+	  
+                }).mouseleave(function(){
+          
+                    $("#categorylist2").hide('fast');    
+                    $("#categories2").removeClass('select_cat');  
+                    $('#manu_bg_trans').fadeOut();    
+                });
+
+
+                $("#bx-pager").bxSlider({
+                    slideWidth: 137,
+                    minSlides: 4,
+                    maxSlides: 4,
+                    moveSlides: 4,
+                    slideMargin: 10,
+                    pager: false
+                });
+                //sliders
+    
+  
+                //sliders
+                $( '#deals-price-slider' ).slider({
+                    range: true,
+                    min: 0,
+                    max: 500,
+                    values: [ 75, 300 ],
+                    slide: function( event, ui ) {
+                        $( '#deals-price-slider-amount-min' ).val( '$'+ui.values[0] );
+                        $( '#deals-price-slider-amount-max' ).val( '$'+ui.values[1] );
+                    }
+                });
+    
+                /*$( '#deals-price-slider' ).slider({
+                range: true,
+                values: [0,300],
+                min: 0,
+                max: 300,
+                slide: function( event, ui ) {
+                    $( '#deals-price-slider-amount-min' ).val( '$'+ui.values[0] );
+                    $( '#deals-price-slider-amount-max' ).val( '$'+ui.values[1] );
+                },
+                change: function(event, ui){
+                  //  var t = this;
+            
+                }
+            });
+                 */
+                $( '#deals-discount-slider' ).slider({
+                    range: true,
+                    values: [0,100],
+                    min: 0,
+                    max: 100,
+                    slide: function( event, ui ) {
+                        $( '#deals-discount-slider-amount-min' ).val( ui.values[0]+'%' );
+                        $( '#deals-discount-slider-amount-max' ).val( ui.values[1]+'%' );
+                    },
+                    change: function(event, ui){
+                        oDEALS.range($(this).attr('id'), ui.values[0], ui.values[1]);
+                    }
+                });
+                $( '#discount-price-slider' ).slider({
+                    range: true,
+                    values: [0,100],
+                    min: 0,
+                    max: 100,
+                    slide: function( event, ui ) {
+                        $( '#discount-price-slider-amount-min' ).val( ui.values[0]+'%' );
+                        $( '#discount-price-slider-amount-max' ).val( ui.values[1]+'%' );
+                    },
+                    change: function(event, ui){
+                        oDEALS.range($(this).attr('id'), ui.values[0], ui.values[1]);
+                    }
+                });
+                $("#most_poplar").bxSlider({
+                    slideWidth: 200,
+                    minSlides: 1,
+                    maxSlides: 1,
+                    moveSlides: 1,
+                    slideMargin: 10,
+                    pager: false
+                });
+                /*------------all_cat_collaps_expand--------------*/
+		
+                $('.form-item_group a').click(function(){
+                    $('.form-item_group a').removeClass('select');
+                    $('.fil_sub_cat').slideUp();
+                    if($(this).next('.fil_sub_cat').hasClass("selected")){
+                        $(this).next('.fil_sub_cat').slideUp().removeClass("selected");
+                        $(this).removeClass("select");
+				
+                    }
+                    else
+                    {
+                        $(this).next('.fil_sub_cat').slideDown().addClass("selected");
+                        $(this).addClass("select");
+                    }	
+                });
+		
+		
+                var selectedIndex	=	-1 ;
+		
+                $(".cat_box").click(function(){
+                    $('.filter_categories').slideUp();
+                    var tabIndex	=	$(this).attr('index');
+			
+                    if(tabIndex==selectedIndex)
+                    {
+                        selectedIndex	=	-1 ;
+                        return;
+				
+                    }
+                    else
+                    {
+                        selectedIndex	=	tabIndex ;
+                        $('.filter_categories').filter(':eq('+tabIndex+')').slideDown();
+                    }		
+                });
+		
+		
+                $('.close_btn').click(function(){
+                    selectedIndex	=	-1 ;
+                    $(this).parent().slideUp();
+                });
+		
+		
+                /* For all Check box */
+                $(".chk_all").click(function(){
+                    var ckeckedStatus	=	$(this).is(':checked');
+			
+                    var parentObj	=	$(this).parent().parent().parent() ;
+			
+                    $(parentObj).find("input[type=checkbox]").each(function(i,obj){
+				
+                        if(ckeckedStatus){
+                            $(obj).prop('checked','checked');
+                        }
+                        else{
+                            $(obj).prop('checked','');
+                        }
+                    });
+			
+		
+                });
+		 
+  
+            });
+
+            // prease refer http://egorkhmelev.github.io/jslider/
+
+$(document).ready(function(){
+    $('.like22').mouseover(function(){
+        $(this).parent().children('.custome-tooltip').show();
+    });
+     $('.like22').mouseout(function(){
+          $(this).parent().children('.custome-tooltip').hide();
+    });
+});	
+
+        </script>
+
+    </head>
+
+
+
+
+
+
+    <body>
+
+
+        <div class="top_header">
+            <div class="wrapper">
+                <div class="top_left">
+                    <ul>
+                        <li><a class="twittr" href="#"></a></li>
+                        <li><a class="facebk" href="#"></a></li>
+                        <li><a class="ggle" href="#"></a></li>
+                        <li><a class="pin" href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="top_right">
+                    <ul class="topnav">
+                        <li class="tell"><a href="#">Tell A Friend</a></li>
+                        <li class="deal"><a href="#">Submit A Deal</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Login</a>
+                            <ul>
+
+                                <li>
+                                    <img src="images/login_arr.png" alt="" class="login_arr" />
+                                    <form action="" method="post">
+                                        <input name="" type="text" class="input" value="E-Mail Adresse" onclick="if(this.value=='E-Mail Adresse')this.value='';" onblur="if(this.value=='') this.value='E-Mail Adresse'; " />
+                                        <input name="" type="text" class="input" value="Passwort" onclick="if(this.value=='Passwort')this.value='';" onblur="if(this.value=='') this.value='Passwort'; " />
+
+                                        <input class="sub" name="Submit" type="button" value="Submit" />
+                                    </form>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper">
+
+
+            <div class="mid_header">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <div class="mid_right">
+                    <div class="location">
+                        <form action="" class="location_box">
+                            <select name="cars" id="fev_select">
+                                <option value="volvo">Select Location</option>
+                                <option value="saab">Kolkata</option>
+                                <option value="fiat">Mumbai</option>
+                                <option value="audi">Delhi</option>
+                                <option value="saab">Kolkata</option>
+                                <option value="fiat">Mumbai</option>
+                                <option value="audi">Delhi</option>
+                                <option value="saab">Kolkata</option>
+                                <option value="fiat">Mumbai</option>
+                                <option value="audi">Delhi</option>
+                                <option value="saab">Kolkata</option>
+                                <option value="fiat">Mumbai</option>
+                                <option value="audi">Delhi</option>
+                                <option value="saab">Kolkata</option>
+                                <option value="fiat">Mumbai</option>
+                                <option value="audi">Delhi</option>
+                                <option value="saab">Kolkata</option>
+                                <option value="fiat">Mumbai</option>
+                            </select>
+                        </form>
+
+
+                    </div>
+                    <div class="search">
+                        <div class="search_field"><input class="search_input" name="Type in a store or product, e.g. Yatra, tickets" type="text" placeholder="Type in a store or product, e.g. Yatra, tickets" /></div>
+                        <div class="search_btn"><input src="images/sarch_btn.jpg" name="" type="image" /></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+
+            <div class="clear"></div>
+
+
+            <div class="nav">
+                <ul>
+                    <li><a href="#" class="active home"></a></li>
+                    <li class="parent_cat">
+                        <div class="categories_button"> <a href="javascript:void(0)" class="" id="categories">Categories</a>
+                            <div class="category_dropbox" id="categorylist" style="display: none;">
+                                <ul>
+                                    <li  id="activecategory_dropbox1"  onmouseover="$('#submerchant1001').show();"    onmouseout="$('#submerchant1001').hide();"><a href="#" class="travel" >Travel</a>
+                                        <div class="dropchild  dropwidth" id="submerchant1001" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li> <a href="#" >Makemytrip </a> </li>
+                                                <li><a href="#">GoIbibo</a></li>
+                                                <li> <a href="#">Expedia</a> </li>
+                                                <li><a href="#">ClearTrip</a> </li>
+                                                <li><a href="#">Yatra</a> </li>
+                                                <li><a href="#">VIA</a> </li>
+                                                <li><a href="#">Redbus</a></li>
+                                                <li><a href="#">Travelyaari</a></li>
+                                                <li><a href="#">TravelGuru</a></li>
+                                                <li><a href="#">Travelocity</a></li>
+                                                <li><a href="#">Jet Airways</a></li>
+                                                <li><a href="#">Indigo</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Goair</a> </li>
+                                                <li><a href="#">Hotels.com</a> </li>
+                                                <li><a href="#">Spicejet</a></li>
+                                                <li><a href="#">PayTM</a></li>
+                                                <li><a href="#">Thomascook</a></li>
+                                                <li><a href="#">Abhi Bus</a></li>
+                                                <li><a href="#">Ola Cabs</a> </li>
+                                            </ul>
+                                            <img src="images/woman-travel.jpg" style="width:275px;" alt="" />
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li  id="activecategory_dropbox2"  onmouseover="$('#submerchant1002').show();"    onmouseout="$('#submerchant1002').hide();"><a href="#" class="mobile" >Mobiles</a>
+                                        <div class="dropchild dropwidth" id="submerchant1002" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li><a href="#">eBay India</a></li>
+                                                <li><a href="#" >Rediff</a></li>
+                                                <li><a href="#" >Infibeam</a></li>
+                                                <li><a href="#" >Gadgetsguru</a></li>
+                                                <li><a href="#" >Zoomin</a></li>
+                                                <li><a href="#" >Greendust</a></li>
+                                                <li><a href="#" >Naaptol</a></li>
+                                                <li><a href="#" >Homeshop18</a></li>
+                                                <li><a href="#" >NEXT</a></li>
+                                                <li><a href="#" >Ezone</a></li>
+                                                <li><a href="#" >Egully</a></li>
+                                                <li><a href="#" >Saholic</a> </li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#" >ShopClues=</a></li>
+                                                <li><a href="#" >Snapdeal</a></li>
+                                                <li><a href="#" >Shoppingoutlet</a></li>
+                                                <li><a href="#" >Gadget</a></li>
+                                                <li><a href="#" >Iluvshopping</a></li>
+                                            </ul>
+                                            <img src="images/mobile.jpg" style=" top:30px; width:300px;" alt="" />
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li  id="activecategory_dropbox3"  onmouseover="$('#submerchant1006').show();"    onmouseout="$('#submerchant1006').hide();"><a href="#" class="men" >Men's Fashion</a>
+                                        <div class="dropchild  dropwidth" id="submerchant1006" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li><a href="#" >Myntra</a></li>
+                                                <li><a href="#" >Jabong</a></li>
+                                                <li><a href="#" >Flipkart</a></li>
+                                                <li><a href="#" >Freecultr</a></li>
+                                                <li><a href="#" >Snapdeal</a></li>
+                                                <li><a href="#" >Yebhi</a></li>
+                                                <li><a href="#" >Yepme</a></li>
+                                                <li><a href="#" >Zovi</a></li>
+                                                <li><a href="#" >WatchKart</a></li>
+                                                <li><a href="#" >Tradus</a></li>
+                                                <li><a href="#" >Rock.in</a></li>
+                                                <li><a href="#" >Bestylish</a> </li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#" >99tshirts.com</a></li>
+                                                <li><a href="#" >99 Label</a></li>
+                                                <li><a href="#" >100BestBuy</a></li>
+                                                <li><a href="#" >Fashionandyou</a></li>
+                                                <li><a href="#" >Rediff</a></li>
+                                                <li><a href="#" >Sunglasses India</a></li>
+                                                <li><a href="#" >Teesort</a></li>
+                                                <li><a href="#" >Bata</a> </li>
+                                            </ul>
+                                            <img src="images/Mens-Fashion-1.jpg" style=" width:210px;" alt=""/>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li  id="activecategory_dropbox4"  onmouseover="$('#submerchant1004').show();"    onmouseout="$('#submerchant1004').hide();"> <a href="#" class="computer">Electronics And Computers</a>
+                                        <div class="dropchild  dropwidth"id="submerchant1004" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li><a href="#" >Flipkart</a></li>
+                                                <li><a href="#" >Snapdeal</a></li>
+                                                <li><a href="#" >Seventymm.com</a></li>
+                                                <li><a href="#" >Tradus</a></li>
+                                                <li><a href="#" >Infibeam</a></li>
+                                                <li><a href="#" >eBay India</a></li>
+                                                <li><a href="#" >Futurebazaar</a></li>
+                                                <li><a href="#" >Egully</a></li>
+                                                <li><a href="#" >Gadgetsguru</a></li>
+                                                <li><a href="#" >Gadgets Station</a></li>
+                                                <li><a href="#" >Gadget</a></li>
+                                                <li><a href="#" >Ezone</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#" >GoDaddy</a></li>
+                                                <li><a href="#" >Greendust</a> </li>
+                                                <li><a href="#" >NEXT </a> </li>
+                                                <li><a href="#" >BuyThePrice</a> </li>
+                                                <li><a href="#" >BigRock=</a></li>
+                                                <li><a href="#" >BagItToday</a></li>
+                                            </ul>
+                                            <img src="images/computer1.png" style="top:120px; width:300px;" alt="" />
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li  id="activecategory_dropbox5"  onmouseover="$('#submerchant1007').show();"    onmouseout="$('#submerchant1007').hide();"><a href="#" class="gifts" >Gifts And Flowers</a>
+                                        <div class="dropchild  dropwidth" id="submerchant1007" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li><a href="#" >Surat Diamond Jewellery</a> </li>
+                                                <li><a href="#" >21Diamonds</a> </li>
+                                                <li><a href="#" >Ferns N Petals</a> </li>
+                                                <li><a href="#" >Book my flowers</a> </li>
+                                                <li><a href="#" >Florist in India</a> </li>
+                                                <li><a href="#" >Infibeam</a> </li>
+                                                <li><a href="#" >Pepperfry</a> </li>
+                                                <li><a href="#" >Printland</a> </li>
+                                                <li><a href="#" >PrintStop</a> </li>
+                                                <li><a href="#" >Printvenue</a> </li>
+                                                <li><a href="#" >ShopClues</a> </li>
+                                                <li><a href="#" >Snapdeal</a> </li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Zoomin</a> </li>
+                                            </ul>
+                                            <img src="images/Flowers.png" style="top:15px; width:400px;" alt="" />
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li  id="activecategory_dropbox6"  onmouseover="$('#submerchant1010').show();"    onmouseout="$('#submerchant1010').hide();"><a href="#" class="home">Home Decor</a>
+                                        <div class="dropchild  dropwidth" id="submerchant1010" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li><a href="#" >Pepperfry</a></li>
+                                                <li><a href="#" >Fabfurnish</a> </li>
+                                                <li><a href="#" >Craftykart</a> </li>
+                                                <li><a href="#" >GoodLife</a> </li>
+                                                <li><a href="#" >Flipkart</a> </li>
+                                                <li><a href="#" >eBay India</a> </li>
+                                                <li><a href="#" >Printvenue</a> </li>
+                                                <li><a href="#" >Rediff</a> </li>
+                                                <li><a href="#" >Snapdeal </a> </li>
+                                                <li><a href="#" >Star CJ </a> </li>
+                                                <li><a href="#" >Tradus</a> </li>
+                                                <li><a href="#" >Zansaar</a> </li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#" >Zoomin</a> </li>
+                                                <li><a href="#" >BagItToday</a> </li>
+                                                <li><a href="#" >Homeshop18</a> </li>
+                                                <li><a href="#" >Indiatimes</a> </li>
+                                                <li><a href="#" >Infibeam</a> </li>
+                                                <li><a href="#" >Kaunsa</a> </li>
+                                                <li><a href="#" >CraftsGallery</a> </li>
+                                                <li><a href="#" >CraftAdda</a> </li>
+                                            </ul>
+                                            <img src="images/room.png" style="top:110px; width:300px;" alt="" />
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li  id="activecategory_dropbox7"  onmouseover="$('#submerchant1008').show();"    onmouseout="$('#submerchant1008').hide();"><a href="#"  class="music">Books, Music, Games And Movies</a>
+                                        <div class="dropchild  dropwidth" id="submerchant1008" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li><a href="#" >Flipkart</a> </li>
+                                                <li><a href="#" >Zoomin</a> </li>
+                                                <li><a href="#" >StationeryShop</a> </li>
+                                                <li><a href="#" >Star CJ</a> </li>
+                                                <li><a href="#" >Snapdeal</a></li>
+                                                <li><a href="#" >ShopClues </a></li>
+                                                <li><a href="#" >Seventymm.com </a></li>
+                                                <li><a href="#" >Printvenue </a></li>
+                                                <li><a href="#" >PrintStop </a></li>
+                                                <li><a href="#" >Printland </a></li>
+                                                <li><a href="#" >Pepperfry </a></li>
+                                                <li><a href="#" >Infibeam </a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#" >Indiatimes </a></li>
+                                                <li><a href="#" >Indiaplaza </a></li>
+                                                <li><a href="#" >IndiaMags </a></li>
+                                                <li><a href="#" >India Today </a></li>
+                                            </ul>
+                                            <img src="images/music.jpg" style="top:110px; width:300px;" alt="" />
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+
+
+
+                                    <li  id="activecategory_dropbox8"  onmouseover="$('#submerchant1030').show();"    onmouseout="$('#submerchant1030').hide();"><a href="#" class="going" >Going Out</a>
+                                        <div class="dropchild " id="submerchant1030" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li><a href="#" >McDonalds </a></li>
+                                                <li><a href="#" >Dominos </a></li>
+                                                <li><a href="#">Pizza Hut </a></li>
+                                                <li><a href="#" >Snapdeal </a></li>
+                                                <li><a href="#" >FoodPanda </a></li>
+                                                <li><a href="#" >Bigbite </a></li>
+                                                <li><a href="#" >BookMyShow </a></li>
+                                                <li><a href="#" >DeliveryChef </a></li>
+                                                <li><a href="#" >GhadiWala </a></li>
+                                                <li><a href="#">JustEat </a></li>
+                                            </ul>
+                                            <img src="images/Miscallaneous-Cocktails.png" style="top:50px; width:300px;" alt="" />
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li  id="activecategory_dropbox9"  onmouseover="$('#submerchant1031').show();"    onmouseout="$('#submerchant1031').hide();"><a href="#" class="beauty" >Health And Beauty</a>
+                                        <div class="dropchild "
+                                             id="submerchant1031" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li><a href="#">Flipkart </a></li>
+                                                <li><a href="#">eBay India </a></li>
+                                                <li><a href="#">GoodLife </a></li>
+                                                <li><a href="#">Zansaar </a></li>
+                                                <li><a href="#">Tradus </a></li>
+                                                <li><a href="#">Indiatimes </a></li>
+                                                <li><a href="#">Naturalkart </a></li>
+                                                <li><a href="#">NaturalMantra </a></li>
+                                            </ul>
+                                            <img src="images/beauty.jpg" style="top:20px; width:300px;" alt="" />
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li  id="activecategory_dropbox10"  onmouseover="$('#submerchant1032').show();"    onmouseout="$('#submerchant1032').hide();"><a href="#" class="baby">Baby And Child</a>
+                                        <div class="dropchild  dropwidth"
+                                             id="submerchant1032" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li><a href="#">Firstcry </a></li>
+                                                <li><a href="#">Babyoye </a></li>
+                                                <li><a href="#">Hushbabies </a></li>
+                                                <li><a href="#">Hoopos </a></li>
+                                                <li><a href="#">AllSchoolStuff </a></li>
+                                                <li><a href="#">Disney Store </a></li>
+                                                <li><a href="#">Kidloo </a></li>
+                                                <li><a href="#">Yapaa </a></li>
+                                                <li><a href="#">Bata </a></li>
+                                                <li><a href="#">eBay India </a></li>
+                                                <li><a href="#">GoodLife </a></li>
+                                                <li><a href="#">Flipkart </a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Myntra </a></li>
+                                                <li><a href="#">Homeshop18 </a></li>
+                                                <li><a href="#">Tradus </a></li>
+                                                <li><a href="#">Snapdeal </a></li>
+                                                <li><a href="#">Star CJ </a></li>
+                                                <li><a href="#">Jabong </a></li>
+                                                <li><a href="#">Letsbekids </a></li>
+                                                <li><a href="#">KinderSpaces </a></li>
+                                            </ul>
+                                            <img src="images/baby.jpg" style="top:0px; width:370px;" alt="" />
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li  id="activecategory_dropbox11"  onmouseover="$('#submerchant1033').show();"    onmouseout="$('#submerchant1033').hide();"><a href="#" class="women" >Women's Fashion</a>
+                                        <div class="dropchild  dropwidth" id="submerchant1033" style="display: none;"  onmouseover="$(\'#submerchant'.$categoryID.'\').show();">
+                                            <ul>
+                                                <li><a href="#">Myntra </a></li>
+                                                <li><a href="#">Jabong </a></li>
+                                                <li><a href="#">Snapdeal </a></li>
+                                                <li><a href="#">Yebhi </a></li>
+                                                <li><a href="#">Freecultr </a></li>
+                                                <li><a href="#">Teesort </a></li>
+                                                <li><a href="#">21Diamonds </a></li>
+                                                <li><a href="#">99 Label </a></li>
+                                                <li><a href="#">Bestylish </a></li>
+                                                <li><a href="#">Flipkart </a></li>
+                                                <li><a href="#">Fashionara </a></li>
+                                                <li><a href="#">WatchKart </a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Bwitch </a></li>
+                                                <li><a href="#">Zovi </a></li>
+                                                <li><a href="#">Star CJ </a></li>
+                                                <li><a href="#">Rediff </a></li>
+                                                <li><a href="#">Juvalia and You </a></li>
+                                                <li><a href="#">Fashionandyou </a></li>
+                                                <li><a href="#">100BestBuy </a></li>
+                                                <li><a href="#">Surat Diamond Jewellery </a></li>
+                                            </ul>
+                                            <img src="images/girl.jpg" style="right:20px; top:0px; width:205px; " alt="" />
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!--start new dropdown 1/10/12-->
+                                </ul>
+                                <a href="#" class="all_cat">See All
+                                    Categories</a> </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Top Deals</a></li>
+                    <li><a href="#">Daily Deals</a></li>
+                    <li><a href="#">Popular Deals</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Forums</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="clear"></div>
+
+
+            <div class="store_page">
+                <div class="store_page_left">
+                    <div class="ste_lft_details">
+                        <div class="store_catagory11">
+                            <div class="sideBox2 sideBoxCat categories-leftpane-box">
+                                <div class="top-wrap">
+                                    <h1>CATEGORIES</h1>
+                                    <span class="categories-select-all">Select All</span> <span>|</span> <span class="categories-unselect-all">Unselect All</span>
+                                </div>
+
+                                <div class="categories-leftpane-wrap padd3">
+                                    <div class="category-pane for-locals" style="display: block;">
+                                        <ul class="categories">
+                                            <li class="checkbox activities">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Activities &amp; Events"   id="category-id1" >
+
+                                                        <label for="category-id1" class="selected">Activities &amp; Events</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox dining">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Food &amp; Dining" checked="checked" value="2" id="category-id2" ">
+
+                                                        <label for="category-id2" class="selected">Food &amp; Dining</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox beauty">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Hair &amp; Beauty" checked="checked" value="3" id="category-id3" ">
+
+                                                        <label for="category-id3" class="selected">Hair &amp; Beauty</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox health">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Health &amp; Fitness" checked="checked" value="4" id="category-id4" ">
+
+                                                        <label for="category-id4" class="selected">Health &amp; Fitness</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox retail">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Services" checked="checked" value="6" id="category-id6" ">
+
+                                                        <label for="category-id6" class="selected">Services</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Travel" checked="checked" value="travel" id="category-idtravel" ">
+
+                                                        <label for="category-idtravel" class="selected">Travel</label>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="category-pane for-online" style="display: none;">
+                                        <ul class="categories">
+                                            <li class="checkbox online">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Clothing &amp; Accessories" checked="checked" value="28" id="category-id28" ">
+
+                                                        <label for="category-id28" class="selected">Clothing &amp; Accessories</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox online">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Health &amp; Fitness" checked="checked" value="37" id="category-id37" ">
+
+                                                        <label for="category-id37" class="selected">Health &amp; Fitness</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox online">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Kids" checked="checked" value="35" id="category-id35" ">
+
+                                                        <label for="category-id35" class="selected">Kids</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox online">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Pets" checked="checked" value="34" id="category-id34" ">
+
+                                                        <label for="category-id34" class="selected">Pets</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox online">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Home &amp; Garden" checked="checked" value="33" id="category-id33" ">
+
+                                                        <label for="category-id33" class="selected">Home &amp; Garden</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox online">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Hair &amp; Beauty" checked="checked" value="32" id="category-id32" ">
+
+                                                        <label for="category-id32" class="selected">Hair &amp; Beauty</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox online">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Games &amp; Entertainment" checked="checked" value="31" id="category-id31" ">
+
+                                                        <label for="category-id31" class="selected">Games &amp; Entertainment</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox online">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Food &amp; Wine" checked="checked" value="30" id="category-id30" ">
+
+                                                        <label for="category-id30" class="selected">Food &amp; Wine</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox online">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Gadgets &amp; Tech" checked="checked" value="29" id="category-id29" ">
+
+                                                        <label for="category-id29" class="selected">Gadgets &amp; Tech</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox online">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Art &amp; Photography" checked="checked" value="38" id="category-id38" ">
+
+                                                        <label for="category-id38" class="selected">Art &amp; Photography</label>
+                                                </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="category-pane for-travels" style="display: none;">
+                                        <ul class="categories">
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="VIC" checked="checked" value="15" id="category-id15" ">
+
+                                                        <label for="category-id15" class="selected">VIC</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="NSW" checked="checked" value="16" id="category-id16" ">
+
+                                                        <label for="category-id16" class="selected">NSW</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="QLD" checked="checked" value="17" id="category-id17" ">
+
+                                                        <label for="category-id17" class="selected">QLD</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="NT" checked="checked" value="20" id="category-id20" ">
+
+                                                        <label for="category-id20" class="selected">NT</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="SA" checked="checked" value="21" id="category-id21" ">
+
+                                                        <label for="category-id21" class="selected">SA</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="WA" checked="checked" value="19" id="category-id19" ">
+
+                                                        <label for="category-id19" class="selected">WA</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="TAS" checked="checked" value="18" id="category-id18" ">
+
+                                                        <label for="category-id18" class="selected">TAS</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Bali" checked="checked" value="22" id="category-id22" ">
+
+                                                        <label for="category-id22" class="selected">Bali</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Pacific" checked="checked" value="23" id="category-id23" ">
+
+                                                        <label for="category-id23" class="selected">Pacific</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Asia" checked="checked" value="24" id="category-id24" ">
+
+                                                        <label for="category-id24" class="selected">Asia</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="Europe" checked="checked" value="25" id="category-id25" ">
+
+                                                        <label for="category-id25" class="selected">Europe</label>
+                                                </p>
+                                            </li>
+                                            <li class="checkbox travel">
+                                                <p>
+                                                    <input type="checkbox" class="safari-like-checkbox" data-name="World" checked="checked" value="11" id="category-id11" >
+
+                                                        <label for="category-id11" class="selected">World</label>
+                                                </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- end .height1 -->
+
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="store_catagory33">
+
+                            <div class="sideBox left-side-box left-side-box-slider" style="margin-top:17px;">
+                                <div class="sideboxContent">
+                                    <h1>PRICE RANGE</h1>
+
+                                    <input type="text" id="deals-price-slider-value" style="border: 0; color: #f6931f; font-weight: bold; display: none"  />
+                                    <div id="deals-price-slider"></div>
+                                </div>
+                                <p class="min">
+                                    <input type="text" id="deals-price-slider-amount-min" class="input-slider-amount" value="$0"/>
+                                </p>
+                                <p class="max">
+                                    <input type="text" id="deals-price-slider-amount-max" class="input-slider-amount" value="$300"/>
+                                </p>
+                                <!-- end .height1 -->
+                                <div class="sideBoxBot">
+                                </div>
+                                <!-- end .sidebBoxBot --> 
+                            </div>
+
+                            <div class="clear"></div>
+
+                        </div>
+
+                        <div class="clear"></div>
+
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="store_catagory33">
+
+                        <div class="sideBox left-side-box left-side-box-slider" style="margin-top:17px;">
+                            <div class="sideboxContent">
+                                <h1>DISCOUNT</h1>
+
+                                <input type="text" id="discount-price-slider-value" style="border: 0; color: #f6931f; font-weight: bold; display: none"  />
+                                <div id="discount-price-slider"></div>
+                            </div>
+                            <p class="min">
+                                <input type="text" id="discount-price-slider-amount-min" class="input-slider-amount" value="$0"/>
+                            </p>
+                            <p class="max">
+                                <input type="text" id="discount-price-slider-amount-max" class="input-slider-amount" value="$300"/>
+                            </p>
+                            <!-- end .height1 -->
+                            <div class="sideBoxBot">
+                            </div>
+                            <!-- end .sidebBoxBot --> 
+                        </div>
+
+                        <div class="clear"></div>
+
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="stre_details22">
+                        <div id="TopDealsWidget" class="hidden contentWidget" style="display: block;">
+
+                            <div class="widgetHeader">Most Popular</div>
+                            <div class="clear"></div>
+
+                            <a href="#" target="_blank">
+                                <div class="deal local">
+                                    <div class="numDeal">1</div>
+
+                                    <div class="numberBought">206 bought</div>
+                                    <div class="clr"></div>
+
+                                    <img src="http://images.onespout.com/6/1447/l1447280.jpeg" width="182px" height="80px">
+                                        <div class="company">Tasty Tours</div>
+                                        <div class="clr"></div>
+                                        <div class="title">$18 for a Kensington Market Sweets Tour from Tasty Tours (a $30 Value)</div>
+                                        <div class="clr"></div>
+                                </div>
+                            </a>
+
+                            <a href="#" target="_blank">
+                                <div class="deal local">
+                                    <div class="numDeal">2</div>
+
+                                    <div class="numberBought">206 bought</div>
+                                    <div class="clr"></div>
+
+                                    <img src="http://images.onespout.com/6/1447/l1447280.jpeg" width="182px" height="80px">
+                                        <div class="company">Tasty Tours</div>
+                                        <div class="clr"></div>
+                                        <div class="title">$18 for a Kensington Market Sweets Tour from Tasty Tours (a $30 Value)</div>
+                                        <div class="clr"></div>
+                                </div>
+                            </a>
+
+                            <a href="#" target="_blank">
+                                <div class="deal local">
+                                    <div class="numDeal">3</div>
+
+                                    <div class="numberBought">1000 bought</div>
+                                    <div class="clr"></div>
+
+                                    <img src="http://images.onespout.com/1/1449/l1449557.jpeg" width="182px" height="80px">
+                                        <div class="company">Courtyard Cafe at Windsor Arms Hotel</div>
+                                        <div class="clr"></div>
+                                        <div class="title">$37 for Sunday Brunch at Courtyard Cafe at Windsor Arms Hotel ($50 Value)</div>
+                                        <div class="clr"></div>
+                                </div>
+                            </a>
+                            <div class="clear"></div>
+
+                            <a href="#" target="_blank">
+                                <div class="deal local">
+                                    <div class="numDeal">4</div>
+
+                                    <div class="numberBought">1000 bought</div>
+                                    <div class="clr"></div>
+
+                                    <img src="http://images.onespout.com/1/1449/l1449557.jpeg" width="182px" height="80px">
+                                        <div class="company">Courtyard Cafe at Windsor Arms Hotel</div>
+                                        <div class="clr"></div>
+                                        <div class="title">$37 for Sunday Brunch at Courtyard Cafe at Windsor Arms Hotel ($50 Value)</div>
+                                        <div class="clr"></div>
+                                </div>
+                            </a>
+                            <div class="clear"></div>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                </div>
+                <div class="store_page_right">
+
+                    <div class="srch_stre">
+                        <div class="sortby-menu local"> 
+                            <div class="dealsCallout">
+                                <div class="local" style="display: block;">
+                                    <h1>LOCALS DEALS NEAR BRISBANE</h1>
+                                    <!--<div class="stre_loc">
+                                            <div class="dropdown-choose-city-wrap">
+                                                    <dl id="dropdown-choose-city" class="dropdown-animated">
+                                                            <dt><a href="#"><span>Brisbane</span></a></dt>
+                                                            <dd>
+                                                                    <ul class="show">
+                                                                               <li>
+                                                                                            <a href="#" data-cid="2" data-cname="melbourne">Melbourne</a>													</li>
+                                                                                    <li>
+                                                                                            <a href="#" data-cid="3" data-cname="sydney">Sydney</a>													</li>
+                                                                                    <li>
+                                                                                            <a href="#" data-cid="4" data-cname="brisbane">Brisbane</a>													</li>
+                                                                                    <li>
+                                                                                            <a href="#" data-cid="5" data-cname="gold coast">Gold Coast</a>													</li>
+                                                                                    <li>
+                                                                                            <a href="#" data-cid="6" data-cname="perth">Perth</a>													</li>
+                                                                                    <li>
+                                                                                            <a href="#" data-cid="7" data-cname="adelaide">Adelaide</a>													</li>
+                                                                                    <li>
+                                                                                            <a href="#" data-cid="11" data-cname="newcastle">Newcastle</a>													</li>
+                                                                                    <li>
+                                                                                            <a href="#" data-cid="12" data-cname="geelong">Geelong</a>													</li>
+                                                                            </ul>
+                                                                            </dd>
+                                                                            <div class="clear"></div>
+                                                                    </dl>
+                                                    <div class="clear"></div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                            </div>-->
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="sortBox">
+                                <p>SORT BY</p>
+
+                                <div class="dropdown-sortby-wrap">
+                                    <dl id="dropdown-sortby" class="dropdown-animated">
+                                        <dt>
+                                            <a href="#">
+                                                <span rel="popularity" class="left dd-selected">Popularity</span>
+                                                <div class="arrow-dd-wrap"><div class="arrow-dd"></div></div>
+                                            </a>                                </dt>
+                                        <dd>
+                                            <ul class="hide" style="">
+                                                <li><a href="#" rel="popularity">Popularity</a></li>
+                                                <li><a href="#" rel="categories">Categories</a></li>
+                                                <li><a href="#" rel="ending">Ending Soonest</a></li>
+                                                <li><a href="#" rel="pricelow">Price(Lowest first)</a></li>
+                                                <li><a href="#" rel="pricehigh">Price(Highest first)</a></li>
+                                                <li><a href="#" rel="discount">Discount</a></li>
+                                                <li><a href="#" rel="date_added">Date added</a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="store_dtil">
+
+                        <div class="deal_box">
+                            <div style="position:relative">
+                                <div class="disTag"><p>56% <span>off</span></p></div>
+                                <img id="image_406443" class="deal_image" width="275" alt="savvymummys national" src="images/stre1.jpg" />
+                                <div class="like22"><img src="images/like.png" alt="" height="37"></div>
+                                <div class="custome-tooltip" style="display: none"><img src="images/save_for.png" alt=""></div>
+                                <div style="position:absolute;left:7px;top:198px"></div>
+                            </div>
+                            <div class="deal_info">
+                                <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold;" class="deal_title"> <a class="windowme" href="http://www.dealsextra.co.uk/update_popularity2.php?id=NDA2NDQz&amp;==&amp;enc=true" rel="nofollow" onclick="">63% off a Bobo, Kids iPad Case Available In Pink Or Blue  Only £14.95</a> </p>
+                                <div class="deal_text">63% off a Bobo, kids iPad case  just £14.95.
+                                    Fits: iPad, iPad 2,3 and 4.
+                                    Free-standing &amp; kid-friendly.
+                                    Made of safe, nontoxic EVA foam.
+                                    Super Protection for your iPad.
+                                    Available in blue or pink.<br><br><a style="text-decoration:none; font-weight:bold; color:#2BBDE9;" href="">   </a></div>
+                                            <div align="left">
+                                                <div class="price_div">
+                                                    <div class="price_tag_gray">£39</div>
+                                                </div>
+                                                <div class="price_div">
+                                                    <div class="discount_tag">62% OFF</div>
+                                                    <div class="arrow_new">→</div>
+                                                </div>
+                                                <div class="price_div">
+                                                    <div class="price_tag">£14 </div>
+                                                </div>
+                                                <div class="button_div">
+                                                    <a href="" rel="nofollow" onclick="" class="buyit_btn windowme">Details</a>										</div>
+                                                <div class="time_div">
+                                                    <div class="time_left" style="font-family: Helvetica; font-size:12px; color:#666666;text-align:center; position:relative; padding:9px 0 0 
+                                                         0;"><div id="tot_406443">1:34:7</div>
+                                                        TIME LEFT </div>
+                                                    <div class="timer_info" style="display:none;">2013,10,29,14,50,406443</div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="source_logo"><img src="images/savvymummys.png"></div>
+                                            <div style="float:left; margin:5px 10px 20px 0;">
+                                                <img src="images/star(1).png" />
+                                                <img src="images/star(1).png" />
+                                                <img src="images/star(1).png" />
+                                                <img src="images/star(2).png" />
+                                                <img src="images/star(2).png" />
+                                            </div>
+                                            <div class="share_buttons" style="width:95px; display:inline; float:left; margin-bottom:20px;"> <a onclick=""> <img src="images/stre_fb_like.jpg" /></a></div>
+                                            <div class="clear_left"></div>
+                                            </div><!-- end of deal_info -->
+                                            <div class="clear"></div>
+                                            </div>
+
+								<div class="deal_box">
+									<div style="position:relative">
+										<div class="disTag"><p>56% <span>off</span></p></div>
+										<img id="image_406443" class="deal_image" width="275" alt="savvymummys national" src="images/stre2.jpg" />
+										 <div class="like22"><img src="images/like.png" alt="" height="37"></div>
+					<div class="custome-tooltip" style="display: none"><img src="images/save_for.png" alt=""></div>
+					<div style="position:absolute;left:7px;top:198px"></div>
+									</div>
+									<div class="deal_info">
+										<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold;" class="deal_title"> <a class="windowme" href="http://www.dealsextra.co.uk/update_popularity2.php?id=NDA2NDQz&amp;==&amp;enc=true" rel="nofollow" onclick="">63% off a Bobo, Kids iPad Case Available In Pink Or Blue  Only £14.95</a> </p>
+										<div class="deal_text">63% off a Bobo, kids iPad case  just £14.95.
+											Fits: iPad, iPad 2,3 and 4.
+											Free-standing &amp; kid-friendly.
+											Made of safe, nontoxic EVA foam.
+											Super Protection for your iPad.
+											Available in blue or pink.<br><br><a style="text-decoration:none; font-weight:bold; color:#2BBDE9;" href="">   </a></div>
+													<div align="left">
+														<div class="price_div">
+															<div class="price_tag_gray">£39</div>
+														</div>
+														<div class="price_div">
+															<div class="discount_tag">62% OFF</div>
+															<div class="arrow_new">→</div>
+														</div>
+														<div class="price_div">
+															<div class="price_tag">£14 </div>
+														</div>
+														<div class="button_div">
+															<a href="" rel="nofollow" onclick="" class="buyit_btn windowme">Details</a>										</div>
+														<div class="time_div">
+															<div class="time_left" style="font-family: Helvetica; font-size:12px; color:#666666;text-align:center; position:relative; padding:9px 0 0 
+																 0;"><div id="tot_406443">1:34:7</div>
+																TIME LEFT </div>
+															<div class="timer_info" style="display:none;">2013,10,29,14,50,406443</div>
+														</div>
+													</div>
+													<div class="clear"></div>
+													<div class="source_logo"><img src="images/savvymummys.png"></div>
+													<div style="float:left; margin:5px 10px 20px 0;">
+														<img src="images/star(1).png" />
+														<img src="images/star(1).png" />
+														<img src="images/star(1).png" />
+														<img src="images/star(2).png" />
+														<img src="images/star(2).png" />
+													</div>
+													<div class="share_buttons" style="width:95px; display:inline; float:left; margin-bottom:20px;"> <a onclick="">  <img src="images/stre_fb_like.jpg" /> </a></div>
+													<div class="clear_left"></div>
+													</div><!-- end of deal_info -->
+													<div class="clear"></div>
+													</div>
+
+										<div class="deal_box">
+											<div style="position:relative">
+												<div class="disTag"><p>56% <span>off</span></p></div>
+												<img id="image_406443" class="deal_image" width="275" alt="savvymummys national" src="images/stre3.jpg" />
+												 <div class="like22"><img src="images/like.png" alt="" height="37"></div>
+		<div class="custome-tooltip" style="display: none"><img src="images/save_for.png" alt=""></div>
+		<div style="position:absolute;left:7px;top:198px"></div>
+											</div>
+											<div class="deal_info">
+												<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold;" class="deal_title"> <a class="windowme" href="http://www.dealsextra.co.uk/update_popularity2.php?id=NDA2NDQz&amp;==&amp;enc=true" rel="nofollow" onclick="">63% off a Bobo, Kids iPad Case Available In Pink Or Blue  Only £14.95</a> </p>
+												<div class="deal_text">63% off a Bobo, kids iPad case  just £14.95.
+													Fits: iPad, iPad 2,3 and 4.
+													Free-standing &amp; kid-friendly.
+													Made of safe, nontoxic EVA foam.
+													Super Protection for your iPad.
+													Available in blue or pink.<br><br><a style="text-decoration:none; font-weight:bold; color:#2BBDE9;" href="">   </a></div>
+															<div align="left">
+																<div class="price_div">
+																	<div class="price_tag_gray">£39</div>
+																</div>
+																<div class="price_div">
+																	<div class="discount_tag">62% OFF</div>
+																	<div class="arrow_new">→</div>
+																</div>
+																<div class="price_div">
+																	<div class="price_tag">£14 </div>
+																</div>
+																<div class="button_div">
+																	<a href="" rel="nofollow" onclick="" class="buyit_btn windowme">Details</a>										</div>
+																<div class="time_div">
+																	<div class="time_left" style="font-family: Helvetica; font-size:12px; color:#666666;text-align:center; position:relative; padding:9px 0 0 
+																		 0;"><div id="tot_406443">1:34:7</div>
+																		TIME LEFT </div>
+																	<div class="timer_info" style="display:none;">2013,10,29,14,50,406443</div>
+																</div>
+															</div>
+															<div class="clear"></div>
+															<div class="source_logo"><img src="images/savvymummys.png"></div>
+															<div style="float:left; margin:5px 10px 20px 0;">
+																<img src="images/star(1).png" />
+																<img src="images/star(1).png" />
+																<img src="images/star(1).png" />
+																<img src="images/star(2).png" />
+																<img src="images/star(2).png" />
+															</div>
+															<div class="share_buttons" style="width:95px; display:inline; float:left; margin-bottom:20px;"> <a onclick=""> <img src="images/stre_fb_like.jpg" /></a></div>
+															<div class="clear_left"></div>
+															</div><!-- end of deal_info -->
+															<div class="clear"></div>
+															</div>
+
+										<div class="deal_box">
+											<div style="position:relative">
+												<div class="disTag"><p>56% <span>off</span></p></div>
+												<img id="image_406443" class="deal_image" width="275" alt="savvymummys national" src="images/stre4.jpg" />
+												<div style="position:absolute;left:7px;top:198px"></div>
+												 <div class="like22"><img src="images/like.png" alt="" height="37"></div>
+<div class="custome-tooltip" style="display: none"><img src="images/save_for.png" alt=""></div>
+<div style="position:absolute;left:7px;top:198px"></div>
+											</div>
+											<div class="deal_info">
+												<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold;" class="deal_title"> <a class="windowme" href="http://www.dealsextra.co.uk/update_popularity2.php?id=NDA2NDQz&amp;==&amp;enc=true" rel="nofollow" onclick="">63% off a Bobo, Kids iPad Case Available In Pink Or Blue  Only £14.95</a> </p>
+												<div class="deal_text">63% off a Bobo, kids iPad case  just £14.95.
+													Fits: iPad, iPad 2,3 and 4.
+													Free-standing &amp; kid-friendly.
+													Made of safe, nontoxic EVA foam.
+													Super Protection for your iPad.
+													Available in blue or pink.<br><br><a style="text-decoration:none; font-weight:bold; color:#2BBDE9;" href="">   </a></div>
+															<div align="left">
+																<div class="price_div">
+																	<div class="price_tag_gray">£39</div>
+																</div>
+																<div class="price_div">
+																	<div class="discount_tag">62% OFF</div>
+																	<div class="arrow_new">→</div>
+																</div>
+																<div class="price_div">
+																	<div class="price_tag">£14 </div>
+																</div>
+																<div class="button_div">
+																	<a href="" rel="nofollow" onclick="" class="buyit_btn windowme">Details</a>										</div>
+																<div class="time_div">
+																	<div class="time_left" style="font-family: Helvetica; font-size:12px; color:#666666;text-align:center; position:relative; padding:9px 0 0 
+																		 0;"><div id="tot_406443">1:34:7</div>
+																		TIME LEFT </div>
+																	<div class="timer_info" style="display:none;">2013,10,29,14,50,406443</div>
+																</div>
+															</div>
+															<div class="clear"></div>
+															<div class="source_logo"><img src="images/savvymummys.png"></div>
+															<div style="float:left; margin:5px 10px 20px 0;">
+																<img src="images/star(1).png" />
+																<img src="images/star(1).png" />
+																<img src="images/star(1).png" />
+																<img src="images/star(2).png" />
+																<img src="images/star(2).png" />
+															</div>
+															<div class="share_buttons" style="width:95px; display:inline; float:left; margin-bottom:20px;"> <a onclick=""> <img src="images/stre_fb_like.jpg" /></a></div>
+															<div class="clear_left"></div>
+															</div><!-- end of deal_info -->
+															<div class="clear"></div>
+															</div>
+
+							<div class="deal_box">
+								<div style="position:relative">
+									<div class="disTag"><p>56% <span>off</span></p></div>
+									<img id="image_406443" class="deal_image" width="275" alt="savvymummys national" src="images/stre5.jpg" />
+									 <div class="like22"><img src="images/like.png" alt="" height="37"></div>
+						<div class="custome-tooltip" style="display: none"><img src="images/save_for.png" alt=""></div>
+						<div style="position:absolute;left:7px;top:198px"></div>
+									<div style="position:absolute;left:7px;top:198px"></div>
+								</div>
+								<div class="deal_info">
+									<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold;" class="deal_title"> <a class="windowme" href="http://www.dealsextra.co.uk/update_popularity2.php?id=NDA2NDQz&amp;==&amp;enc=true" rel="nofollow" onclick="">63% off a Bobo, Kids iPad Case Available In Pink Or Blue  Only £14.95</a> </p>
+									<div class="deal_text">63% off a Bobo, kids iPad case  just £14.95.
+										Fits: iPad, iPad 2,3 and 4.
+										Free-standing &amp; kid-friendly.
+										Made of safe, nontoxic EVA foam.
+										Super Protection for your iPad.
+										Available in blue or pink.<br><br><a style="text-decoration:none; font-weight:bold; color:#2BBDE9;" href="">   </a></div>
+												<div align="left">
+													<div class="price_div">
+														<div class="price_tag_gray">£39</div>
+													</div>
+													<div class="price_div">
+														<div class="discount_tag">62% OFF</div>
+														<div class="arrow_new">→</div>
+													</div>
+													<div class="price_div">
+														<div class="price_tag">£14 </div>
+													</div>
+													<div class="button_div">
+														<a href="" rel="nofollow" onclick="" class="buyit_btn windowme">Details</a>										</div>
+													<div class="time_div">
+														<div class="time_left" style="font-family: Helvetica; font-size:12px; color:#666666;text-align:center; position:relative; padding:9px 0 0 
+															 0;"><div id="tot_406443">1:34:7</div>
+															TIME LEFT </div>
+														<div class="timer_info" style="display:none;">2013,10,29,14,50,406443</div>
+													</div>
+												</div>
+												<div class="clear"></div>
+												<div class="source_logo"><img src="images/savvymummys.png"></div>
+												<div style="float:left; margin:5px 10px 20px 0;">
+													<img src="images/star(1).png" />
+													<img src="images/star(1).png" />
+													<img src="images/star(1).png" />
+													<img src="images/star(2).png" />
+													<img src="images/star(2).png" />
+												</div>
+												<div class="share_buttons" style="width:95px; display:inline; float:left; margin-bottom:20px;"> <a onclick=""> <img src="images/stre_fb_like.jpg" /></a></div>
+												<div class="clear_left"></div>
+												</div><!-- end of deal_info -->
+												<div class="clear"></div>
+												</div>
+                                    </div>
+
+                                  <div class="clear"></div>
+                                                                                                                            
+										<div class="social_box">
+																																																<div class="social_info">
+																																																	<h1 class="color">Connect With Us</h1>
+																																																	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>                                </div>
+                                                                                                                                <div class="social_icon">
+                                                                                                                                    <span class="social_img"><a href="http://facebook.com"><img alt="" src="http://192.168.1.229/mydeal/images/fb.jpg"></a></span>
+                                                                                                                                    <span class="social_img_ltr"><a href="http://facebook.com">Like Us On Facebook</a></span>
+                                                                                                                                </div>
+                                                                                                                                <div class="social_icon">
+                                                                                                                                    <span class="social_img"><a href="http://twitter.com"><img alt="" src="http://192.168.1.229/mydeal/images/tweet.jpg"></a></span>
+                                                                                                                                    <span class="social_img_ltr"><a href="http://twitter.com">Follow Us On Twitter</a></span>
+                                                                                                                                </div>
+																																					<div class="social_icon">
+																																						<span class="social_img"><a href="http://googleplus.com"><img alt="" src="http://192.168.1.229/mydeal/images/googl.jpg"></a></span>
+																																						<span class="social_img_ltr"><a href="http://googleplus.com">Join Us On Google+</a></span>
+																																					</div>
+																																			<div class="social_icon border_rgt">
+																																				<span class="social_img"><a href="http://facebook.com"><img alt="" src="http://192.168.1.229/mydeal/images/pin.jpg"></a></span>
+																																				<span class="social_img_ltr"><a href="http://facebook.com">Find Us On Pinterest</a></span>
+																																			</div>
+                                                                                                                                <div class="clear"></div>
+                                                                                                                            </div> 
+																															
+									     <div class="clear"></div>
+
+                                                                                                                            </div>
+                                                                                                                            </div>
+
+                                                                                                                            <div class="clear"></div>
+                                                                                                                            </div>
+                                                                                                                            <div class="clear"></div>
+                                                                                                                            </div>
+
+
+                                                                                                                            <div class="clear"></div>
+                                                                                                                            <div class="footer">
+                                                                                                                                <div class="wrapper">
+                                                                                                                                    <div class="footer_text">© Deal Aggregator</div>
+                                                                                                                                </div>
+                                                                                                                                <div class="clear"></div>
+                                                                                                                            </div>
+
+                                                                                                                            <div class="fade_inout" id="manu_bg_trans">
+
+
+                                                                                                                            </div>
+
+
+                                                                                                                            </body>
+
+<script>
+	$('.dropdown-animated').mouseover(function(){
+		$(this).find('.hide').show();
+	});
+	$('.dropdown-animated').mouseout(function(){
+		$(this).find('.hide').hide();
+	});
+	$('.hide li a').click(function(){
+		$('.dd-selected').attr('rel',$(this).attr('rel'));
+		$('.dd-selected').html($(this).html());
+
+	});
+
+
+	$('.dropdown-animated').mouseover(function(){
+		$(this).find('.show').show();
+	});
+	$('.dropdown-animated').mouseout(function(){
+		$(this).find('.show').hide();
+	});
+
+</script>
+
+                                                                                                                            </html>

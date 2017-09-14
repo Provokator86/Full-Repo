@@ -1,0 +1,6 @@
+[11-Dec-2013 17:07:20 Asia/Calcutta] PHP Fatal error:  Call to a member function start_cache() on a non-object in /home/mydealfo/public_html/application_coupon/core/MY_Model.php on line 21
+[11-Dec-2013 17:07:25 Asia/Calcutta] PHP Fatal error:  Call to a member function start_cache() on a non-object in /home/mydealfo/public_html/application_coupon/core/MY_Model.php on line 21
+[11-Dec-2013 17:20:51 Asia/Calcutta] PHP Fatal error:  Call to a member function start_cache() on a non-object in /home/mydealfo/public_html/application_coupon/core/MY_Model.php on line 21
+[11-Dec-2013 17:20:52 Asia/Calcutta] PHP Fatal error:  Call to a member function start_cache() on a non-object in /home/mydealfo/public_html/application_coupon/core/MY_Model.php on line 21
+[11-Dec-2013 17:21:01 Asia/Calcutta] PHP Fatal error:  Call to a member function start_cache() on a non-object in /home/mydealfo/public_html/application_coupon/core/MY_Model.php on line 21
+[11-Dec-2013 17:21:02 Asia/Calcutta] PHP Fatal error:  Call to a member function start_cache() on a non-object in /home/mydealfo/public_html/application_coupon/core/MY_Model.php on line 21
