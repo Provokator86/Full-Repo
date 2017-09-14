@@ -1,0 +1,244 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1175px) {
+	.row-top .wrapper, .nav-wrapper, #header .sub-catog, #mid-panel .wrapper, #header .categories {width:980px;}
+	
+	.nav-wrapper .search{ width:28%;}
+	.nav ul li a{ padding:0 10px;}
+	.nav-wrapper .search input[type="text"]{ width:74%;}
+	.nav-2 ul li a{ padding:0 13px;}
+	.article-square{ margin:0 16px 0;}
+	.article-square:nth-of-type(4n+1){ margin-left:0px;}
+	.article-square:nth-of-type(4n+4){ margin-right:0px;}
+	
+	.sub-catog ul li{ margin: 2px 10px 2px 0;}
+	.trading_people{ margin:5px 0 15px;}
+	.trading_product ul li{ width:31.7%;}
+	.brand_product .overlay h4 span a, .brand_product .overlay .brand a{ font-size:12px;}
+	.brand_product .overlay h4 a{ font-size:15px;}
+	.brand_product .overlay h3 span{ font-size:28px;}
+	.brand_product .overlay h3{ font-size:18px;}
+	.brand_product .overlay .butn-overlay{ font-size:11px; height:32px;}
+	
+	.product_dtls_btm{ margin:0 32px;}
+	#slide_thumb{ margin:0 9% 40px;}
+	.comment_area.odd .input1{ width:270px;}
+	.brand_product.odd ul li:nth-child(3n+3){margin-right:14px;}
+	.people_story_rht_bottom{ width:560px;}
+	.trading_product { margin: 0 !important;}
+	.brand_product{ margin:0 25px;}
+	.personal_block{ width:32%;}
+	.followers{ width:65%;}
+	
+	.main-box { float: left; width: 245px;}
+	.main-box2 { float: left; width: 148px; position:relative;}
+	.article2{ width:130px;}
+	.brand_product.odd ul li{ width:15%;}
+
+}
+   
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	.row-top .wrapper, .nav-wrapper, #header .sub-catog, #mid-panel .wrapper, #header .categories {width:748px;}
+	
+	.nav-wrapper .search{ width:28%;}
+	.nav ul li a{ padding:0 5px; font-size:14px;}
+	.nav-wrapper .search input[type="text"]{ width:67%; font-size:14px;}
+	.row-top ul.link-login li a{ font-size:20px;}
+	.nav-2 ul li a{ padding:0 13px;}
+	.article-square{ margin:0 16px 15px;}
+	.article-square:nth-of-type(4n+1){ margin-left:0px;}
+	.article-square:nth-of-type(4n+4){ margin-right:0px;}
+	.nav-2 ul li a{ padding:0 7px; font-size:12px;}
+	.article-square{ margin:0 15px 15px !important;}
+	#footer ul li a{ padding:8px 20px;}
+	
+	.sub-catog ul li{ margin: 2px 10px 2px 0;}
+	ul.select_drop{ width: auto; padding:10px;}
+	ul.select_drop li{ width:100%;;}
+	ul.select_drop li label{ display:inline; font-size:13px;}
+	span.ui-checkbox{ margin-right:5px;}
+	ul.select_drop li.blank{ height:0px;}
+	
+	.trading_people{ margin:5px 0px 15px;}
+	.trading_people .box{ width:96.6%; padding:12px 1% 9px}
+	.trading_product ul li{ width:31.8%;}
+	.brand_product .overlay h4 a{ padding:0 10%;}
+	
+	.header_post{ width:200px; top:20px;}
+	.trading_product { margin: 0 !important;}
+	.brand_product{ margin:0 0;}
+	.brand_product.odd{margin: 0 30px;}
+	.pro_dtls_rht h3{ font-size:16px;}
+	.comment_area.odd .input1{ width:auto;}
+	#slide_thumb{ margin:0 5% 40px;}
+	#slide_thumb > a { display: inline-block; width: 23%;}
+	.followers ul li{ padding:5px; font-size:18px;}
+	.followers{ width:63%; margin-left:-8%;}
+	.personal_block{ width:35%;}
+	
+	.people_story_rht, .people_story_lt, .people_story_rht_bottom{ width:auto; float:none;}
+}
+
+@media only screen and (max-width: 767px) {
+	.row-top .wrapper, .nav-wrapper, #header .sub-catog, #mid-panel .wrapper, #header .categories {width:98%; padding:0 1%;}
+	
+	#logo{ float:left; width:auto; margin:0;}
+	.nav-wrapper .search{ width:28%;}
+	.nav ul li a{ padding:0 5px; font-size:14px;}
+	.nav-wrapper .search input[type="text"]{ width:67%; font-size:14px;}
+	.row-top ul.link-login li a{ font-size:20px;}
+	.nav-2 ul li a{ padding:0 13px;}
+	.article-square{ margin:0 16px 15px;}
+	.article-square:nth-of-type(4n+1){ margin-left:0px;}
+	.article-square:nth-of-type(4n+4){ margin-right:0px;}
+	.nav-2 ul li a{ padding:0 7px; font-size:12px;}
+	.article-square{ margin:0 15px 15px !important;}
+	#footer ul{ display:block;}
+	#footer ul li a{ padding:8px 20px;}
+	#footer ul li h2{ text-decoration:underline;}
+	
+	.nav ul{ float:none; width:100%;}
+	.nav ul li a{ padding:0 12px;}
+	.nav-wrapper .search { width: auto;}
+	.article-square { margin: 0 48px 15px !important;}
+	.nav-2 ul{ float:none;}
+	.nav-2 ul li{ display:block; background:#999; text-align:left; margin:3px 0;}
+	.nav-2 ul li a{ font-size:14px; line-height:26px; display:block;}
+	#header .sub-catog h4, #header .sub-catog h3{ float:none; text-align:center; padding:10px 0;}
+	.sub-catog{ margin:20px 0 !important;}
+	
+	.sub-catog ul li{ margin: 2px 10px 2px 0;}
+	.categories ul li{ width:22%;}
+	ul.select_drop{ width: auto; padding:10px;}
+	ul.select_drop li{ width:100%;}
+	ul.select_drop li label{ display:inline; font-size:13px;}
+	span.ui-checkbox{ margin-right:5px;}
+	.categories ul li{ width:99%; margin-bottom:5px;}
+	.categories ul li a{ width:auto;}
+	ul.select_drop li.blank{ height:0px;}
+	.sub-catog ul li{ display:block;}
+	
+	.personal_dtls_lft { float: none; width: auto; margin-bottom:20px; text-align:center;}
+	.personal_dtls_rht { float: none; width: auto;}
+	.personal_block { float: none; width: auto; margin:0;}
+	.followers { float: none; width: 100%; margin:20px auto 20px;}
+	
+	.people_story_lt, .people_story_rht{ float:none; width:auto; margin-bottom:10px;}
+	.comment_area .input1{ width:60%;}
+	.post_story_popup{ width:auto;}
+	.post_story_popup ul li a{ padding:10px;}
+	.post_story_popup ul li a img{ width:80%;}
+	.trading_people .box{ width:96.5%;}
+	.trading_product ul li{ margin:0 10px;}
+	.people_story_rht_bottom{ width:auto;}
+	
+	.pro_dtls_lft, .pro_dtls_rht{ width:auto; float:none;}
+	#slide_thumb { margin: 0 auto; width: 51%;}
+	.bx-wrapper{ text-align:center !important;}
+	.bx-wrapper img{ display:inline-block;}
+	.pro_dtls_lft .social_info{ margin:20px 0;}
+	.product_dtls_top h2{ text-align:left;}
+	.brand_product.odd{ margin:0 20px;}
+	.comment_area{ clear:both; overflow:hidden;}
+	.comment_area.odd .post{ margin:0 0 0 10px;}
+}
+
+@media only screen and (max-width: 639px){
+	
+	#logo{ float:none; width:100%; text-align:center; margin-bottom:62px;}
+	.row-top{ min-height:120px;}
+	.row-top ul.link-login{ width:auto; float:right; top:auto; bottom:-60px; background:#eee;}
+	.row-top ul.link-login li{ float:none; display:inline-block; border:0px; padding:5px;}
+	.row-top ul.link-login li a{ line-height:26px; font-size:14px;}
+	.nav-wrapper .search { width: 99%;}
+	.nav-wrapper .search input[type="text"]{ width:85%;}
+	.article-square { margin: 0 124px 15px !important;}
+	#footer p.copyright{ font-size:14px;}
+	#footer ul li:first-child{ padding-bottom:5px;}
+	
+	.product_dtls_top img{ width:15%;}
+	.product_dtls_top h2{ font-size:19px;}
+	#slide_thumb{ width:69%;}
+	.pro_dtls_rht h2{ font-size:20px;}
+	.pro_dtls_rht h3, .pro_dtls_rht h3 span{ font-size:15px;}
+	.brand_product.odd ul li{ margin:6px 20px}
+	.brand_product.odd ul li:nth-child(3n+3){ margin-right:20px;}
+	.comment_area.odd .input1{ width:auto;}
+	.header_post{ top:90px !important;}
+	#logo{ margin-bottom:90px;}
+	.followers ul li{ padding:7px;}
+	.brand_product ul li{ margin:16px;}
+	.trending_lft{ margin:0px;}
+	ul li.trending_rht a, .trending ul li a{ padding-left:10px; padding-right:10px; font-size:15px;}
+	.trending ul li a span{ font-size:20px;}
+	.sub-catog ul li{ display:block;}
+	.trading_product ul li:last-child{ margin:16px;}
+	.brand_product.odd{ margin:0;}
+	.product_dtls_btm{ margin:0 20px;}
+	.post_blog ul li p{ overflow:hidden;}
+	.product_dtls_btm h2{ text-align:center;}
+	.post_story_popup ul li span{ font-size:18px;}
+	.post_story{ width:auto;}
+	.post_story a.facebook, .post_story a.twitter{ width:41%;}
+	a.add_product{ text-align:center;}
+	.comment_area img{ margin-left:0px;}
+	.comment_area .input1{ width:auto;}
+	.login p a, .login p{ font-size:18px !important;}
+	.login h1{ font-size:30px !important;}
+	
+	9851891463-mou
+	
+
+}
+
+@media only screen and (max-width: 479px) {
+	.row-top .wrapper, .nav-wrapper, #header .sub-catog, #mid-panel .wrapper, #header .categories {width:96%; padding:0 2%;}
+	.article-square { margin: 0 49px 15px !important;}
+	.nav-wrapper .search input[type="text"]{ width:78%;}
+	.row-top{ min-height:120px; }
+	.row-top ul.link-login{ bottom:-70px;}
+	
+	.brand_product{ margin:0 10px;}
+	.brand_product ul li{ margin:15px auto; float:none;}
+	.trading_product ul li:last-child { margin:10px auto;}
+	.brand_product.odd ul li{ margin:10px auto;}
+	#slide_thumb{ width:auto;}
+	#slide_thumb img{ width:24%;}
+	.comment_area .input1{ font-size:12px; padding:17px; width:45%;}
+	.pro_dtls_rht h2{ font-size:16px; float:left;}
+	.pro_dtls_rht h3, .pro_dtls_rht h3 span{ font-size:12px; float:left;}
+	.comment_area .post{ font-size:12px; padding:17px 2px;}
+	.pro_dtls_rht a.blank_box2, .pro_dtls_rht a.full_box, .pro_dtls_rht a.blank_box, .pro_dtls_rht a.total_box{ padding:15px; font-size:15px;}
+	.pro_dtls_rht .social_area a span, .product_dtls_btm h2{ font-size:14px;}
+	.other_products { margin: 20px 0 0;}
+	
+	.post_story_popup ul li span{ font-size:14px;}
+	.post_story a.facebook, .post_story a.twitter{ width:36%; font-size:16px; background-size:25%;}
+	.header_post{ top:80px !important;}
+	.followers ul li{ font-size:12px; height:auto; padding:3px;}
+	.personal_dtls{ margin:20px 0 10px;}
+	.trending{ margin:0;}
+	.trending ul li a{ font-size:12px;}
+	.trending ul li a span{ font-size:18px;}
+	.trending_lft ul li{ height:61px;}
+	.trading_product ul li:last-child{ margin:15px auto;}
+	.comment_area img{ margin-left:0px;}
+	.followers ul li a{ padding:4px; margin:0;}
+	.people_story{ margin:25px 20px 5px;}
+	.people_story_rht_bottom .like_share span, .people_story_rht_bottom .like_share a{ font-size:13px; text-align:left;}
+	.brand_product.odd{ margin:0 15px;}
+	.personal_dtls_rht h2{ font-size:20px;}
+	.trending_lft ul li, ul li.trending_rht{ float:none; height:auto; width:auto;}
+	ul li.trending_rht a, .trending ul li a{ font-size:14px; padding:10px 15px; text-align:left;}
+	.trending ul li a span{ display:inline-block;}
+	.brand_product .overlay h4{ margin:0 14%;}
+	.trading_people .box .box_head h2{ font-size:17px;}
+	.trading_people .box .box_head a.follow{ font-size:16px; width:auto; padding:5px 8px;}
+	.brand_product.odd ul li:nth-child(3n+3){ margin-right:0px;}
+	
+	.login h1{ font-size:26px !important;}
+
+}

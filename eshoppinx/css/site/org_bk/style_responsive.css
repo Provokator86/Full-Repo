@@ -1,0 +1,1711 @@
+
+
+.tag, .save{
+	width:102px;
+}
+
+@media all and (max-width: 3900px){
+	
+.main{
+	width:3740px;
+}
+	
+	
+}
+
+@media all and (max-width: 2900px){
+	
+.main{
+	width:2640px;
+}
+	
+	
+}
+
+@media all and (max-width: 2400px){
+	
+.main{
+	width:2200px;
+}
+	
+	
+}
+
+@media all and (max-width: 2200px){
+	
+.main{
+	width:1980px;
+}
+	
+	
+}
+
+@media all and (max-width: 1920px){
+	
+.main{
+	width:1760px;
+}
+	
+	
+}
+
+@media all and (max-width: 1800px){
+	
+.main{
+	width:1540px;
+}
+	
+	
+}
+
+@media all and (max-width: 1590px){
+	
+.main{
+	width:1540px;
+}
+.product_thumb li{
+	width:190px;
+	height:190px;
+}
+	
+	
+}
+
+@media all and (max-width: 1500px){
+	
+.main{
+	width:1260px;
+}
+	
+	
+}
+
+@media all and (max-width: 1365px){
+	
+.main{
+	width:1320px;
+}
+.product_thumb li{
+	width:199px;
+	height:199px;
+}
+	
+	
+}
+@media all and (max-width: 1300px){
+	
+.main{
+	width:1100px;
+}
+	
+	
+}
+@media all and (max-width: 1200px){
+	
+.main{
+	width:1100px;
+}
+.product_thumb li{
+	width:194px;
+}
+	
+	
+}
+
+@media all and (max-width: 1150px){
+	
+.main{
+	width:1100px;
+}
+.product_thumb li{
+	width:191px;
+}
+	
+	
+}
+@media all and (max-width: 1050px){
+	
+.main{
+	width:880px;
+}
+	
+	
+}
+
+
+
+@media 
+only screen and (max-width: 1250px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+.search_main{
+	margin-left:15px;
+}
+.top_nav{
+	width: 285px !important;
+}	
+.product_main_thumb li
+{
+	margin-left:25px;
+	margin-right:25px;
+}
+
+/* ============================= Stories  ====================== */
+
+
+#inner {
+    padding: 0 10px;
+    width: 95%;
+}
+.activity-feed{
+	width:70%;
+}
+
+
+/* ============================= Stores  ====================== */
+
+.product_main{
+	width: 97.4%;
+	padding:10px;
+}	
+.store_list_follow li{
+	width:107px;
+}
+.cart_tab{
+	width:66%;
+}
+.top_nav {
+    width: 312px !important;
+}
+
+
+
+/* ============================= Profile  ====================== */
+
+.profile_left{
+	width:54%;
+}
+.edit_btn{
+	margin-top:10px;
+}
+
+
+/* ============================= Cart  ====================== */
+
+
+.cart-list {
+    padding: 5px;
+    width: 98%;
+}
+.cart-order-depth li{
+	width:194px !important;
+}
+
+
+
+/* ============================= product_detail  ====================== */
+
+
+
+.tweet_comments_links {
+    width: 341px;
+}
+
+
+.realted_product_main{
+	min-width:inherit;
+}
+.tweet_comments_links1{
+	width:299px;
+}
+
+.main_box{
+	float:left;
+	width:100%;
+	/*margin-top:75px;*/
+}
+.gv_galleryWrap, .gv_gallery, .gv_panelWrap, .gv_panel{
+	width:100% !important;
+}
+.left_detail{
+	width: 51.5%;
+}
+.you_link{
+	width:100%;
+}
+.detail_show_img img {
+    width: 100% !important;
+}
+.gv_galleryWrap{
+	height:595px !important;
+}
+.slider_1{
+	width: 92% !important;
+}
+.slider_1 ul li{
+	margin:0 9px 0 5px;
+}
+.comments_detail_content{
+	width: 91%;
+}
+.realted_product_title{
+	width: 98%;
+}
+
+.tweet_comments_links1 {
+    width: 84%;
+}
+
+
+
+
+
+
+
+
+
+	
+}
+
+
+@media all and (max-width: 1015px){
+	
+.main{
+	width:880px;
+}
+	
+	
+}
+
+
+
+
+
+/* ============================= 980px  ====================== */
+
+@media all and (max-width: 980px){
+	
+.top_nav{
+	float:right;
+	margin-right:15px;
+}
+	
+	
+}
+
+
+
+
+/* ============================= 980px  ====================== */
+
+@media all and (max-width: 900px){
+	
+	
+
+.tweet_comments_links1 {
+    width: 81%;
+}
+
+.header_fixed{
+	position:relative;
+}
+.product_main_landing{
+	margin-top:0px;
+}
+
+
+
+	
+}
+
+
+
+
+
+
+/* ============================= 980px  ====================== */
+
+@media all and (max-width: 800px){
+	
+.tab_box {
+    float: left;
+    width: 46%;
+}
+.cart_tab{
+	width:auto;
+}
+.tab_box li a{
+	padding:16px 14px;
+}
+.top_nav {
+    width: 316px !important;
+}
+
+
+/* ============================= Stories  ====================== */
+
+
+#inner {
+    padding: 0 10px;
+    width: 95%;
+}
+.activity-feed-item{
+	width:97%;
+	padding:30px 0 10px 15px;
+}
+.tabs li a, #activity-feed-tabs li a{
+	padding:20px 15px;
+}
+.product_main_thumb1{
+	width:95%;
+}
+.product_main_thumb1 li{
+	width:94%;
+}
+.product_thumb li{
+	width:157px;
+}
+.activity-feed-story-item-comments .submit-comment-form-body {
+    float: left;
+    width:560px;
+}
+.activity-feed{
+	width:100%;
+	margin-right:0px;
+}
+.activity-feed-suggestions {
+    width: 100%;
+}
+.product_main_thumb1 li {
+    width: 47%;
+}
+
+
+/* ============================= Stores  ====================== */
+
+.product_main{
+	width: 96.4%;
+	padding:10px;
+}	
+.follow_main{
+	width:94%;
+	margin:0px 0px 10px 0px;
+	padding:10px;
+}
+.store_list {
+    margin-right: 10px;
+    width: 48%;
+}
+.store_list_follow li{
+	width:103px;
+}
+
+
+/* ============================= Profile  ====================== */
+
+
+.profile_tab .tab_product .tab_box{
+	width:100%;
+}
+
+
+/* ============================= Setting  ====================== */
+
+
+.set_area #content{
+	width:73%;
+	margin-right:20px;
+}
+.set_area .section.credit .credit-step li{
+	margin-bottom:5px;
+}
+
+
+/* ============================= Cart  ====================== */
+
+
+.cart-order-depth li.depth1 span {
+    left: 14px;
+}
+.cart-order-depth li.depth1 {
+    padding-left: 54px;
+}
+.cart-order-depth li.depth2 span {
+    left: 14px;
+}
+.cart-order-depth li.depth2 {
+    padding-left: 54px;
+}
+.cart-order-depth li.depth3 span {
+    left: 14px;
+}
+.cart-order-depth li.depth3 {
+    padding-left: 54px;
+}
+.cart-list{
+	width:92%;
+}
+.cart-list .table-cart-wrap{
+	width:100%;
+}
+.cart-list .cart-payment{
+	width:100%;
+}
+.cart-list .note textarea{
+	width:95%;
+}
+
+.cart-list .table-cart thead th.product {
+    width: 61% !important;
+}
+
+.cart-list .table-cart tbody td.title{
+	padding:20px 19px 0;
+}
+
+
+
+
+
+/* ============================= Checkout  ====================== */
+
+
+.hotel-booking-left{
+	width:63.7%;
+}
+.payment-personal{
+	width: 92% !important;
+	margin-bottom:0px;
+	padding-bottom:0px !important;
+}
+.cart-list.chept2 .card-payment .hotel-booking-left dl.payment-card{
+	width:92%;
+	padding-left:20px;
+}
+.payment-card dt{
+	display:none;
+}
+.payment-card{
+	margin-top:0px;
+	padding-bottom:0px !important;
+}
+#complete-payment .cart-payment{
+	width:36%;
+}
+
+
+
+/* ============================= product_detail  ====================== */
+
+
+
+.tweet_comments_links {
+    width: 225px;
+}
+.post_btn{
+	margin-left:0px;
+	float:right;
+}
+.realted_product_main{
+	min-width:inherit;
+}
+
+.comments_detail_content{
+	margin-left:0px;
+}
+.tweet_comments_links1{
+	width:79%;
+}
+.main_box{
+	float:left;
+	width:100%;
+	/*margin-top:78px;*/
+}
+
+
+
+
+.left_detail{
+	width: 96%;
+}
+.right_detail {
+    float: left;
+    margin-top: 10px;
+    width: 97.5%;
+}
+.detail_save{
+	width: 50%;
+}
+.gv_galleryWrap, .gv_gallery, .gv_panelWrap, .gv_panel{
+	width:100% !important;
+}
+.detail_products{
+	 margin-top: 80px;
+}
+.you_link{
+	width:100%;
+}
+.detail_show_img img {
+    width: 100% !important;
+}
+.gv_galleryWrap{
+	height:595px !important;
+}
+.slider_1{
+	width: 92% !important;
+}
+.slider_1 ul li{
+	margin:0 9px 0 5px;
+}
+.comments_detail_content{
+	width: 91%;
+}
+
+
+
+
+
+	
+}
+
+
+
+/* ============================= 768px  ====================== */
+
+
+@media all and (max-width: 768px){
+	
+	
+.banner_container_heading{
+	font-size:3em;
+}
+.product_main_thumb li{
+	margin-left:22px;
+	margin-right:22px;
+}
+
+
+
+
+
+
+
+	
+}
+
+
+
+
+
+/* ============================= 720px  ====================== */
+
+
+@media all and (max-width: 720px){
+
+.slider_1 {
+    width: 90% !important;
+}
+.slider_1 ul li {
+    margin: 0 15px 0 14px;
+}
+.tweet_comments_links1 {
+    width: 78%;
+}
+
+
+}
+
+
+/* ============================= 690px  ====================== */
+
+@media all and (max-width:690px){
+	
+
+#slideshow img{
+	display:none;
+}
+.product_thumb li{
+	width:130px;
+}
+.product_thumb li{
+	min-height:inherit;
+}
+.product_thumb li a{
+	height:auto;
+}
+.join_main{
+	padding:10px 0px;
+}
+.join_text{
+	width:100%;
+	text-align:center;
+	float:left;
+}
+.post {
+    padding: 8px 0 0;
+}
+.top_nav{
+	width:250px !important;
+	float:left;
+	margin-right:0px;
+}
+.nav_tab li a {
+	background:#F2F2F2;
+	border-left:1px solid #E4E4E4;
+	border-right:1px solid #E4E4E4;
+	padding:13px 20px;
+	margin-right:5px;
+}
+.top_nav{
+	width: 230px !important;
+}
+
+
+
+/* ============================= Stories  ====================== */
+
+
+#inner {
+    padding: 0 10px;
+    width: 93%;
+}
+.activity-feed-item{
+	width:97%;
+	padding:30px 0 10px 15px;
+}
+.tabs li a, #activity-feed-tabs li a{
+	padding:20px 15px;
+}
+.product_main_thumb1{
+	width:95%;
+}
+.product_main_thumb1 li{
+	width:94%;
+}
+.activity-feed-story-item-comments .submit-comment-form-body {
+    float: left;
+    width:405px;
+}
+.activity-feed{
+	width:100%;
+	margin-right:0px;
+}
+.activity-feed-suggestions {
+    width: 100%;
+}
+.product_main_thumb1 li {
+    width: 46%;
+}
+
+
+/* ============================= Stores  ====================== */
+
+.store_list {
+    width: 100%;
+	margin-right:0px;
+}
+.store_list_follow li{
+	width:115px;
+}
+
+
+/* ============================= Profile  ====================== */
+
+
+
+.profile_left {
+    float: left;
+    width: 53%;
+}
+.profile_left_avatar {
+    height: 125px;
+    width: 125px;
+}
+.profile_right {
+    padding: 13px;
+    width: 42%;
+}
+.edit_btn{
+	margin-top:10px;
+}
+.product_main_thumb li{
+	width:185px;
+}
+.save strong{
+	font-size:12px;
+}
+.tag strong{
+	font-size:12px;
+}
+.feed-notification{
+	width:252px !important;
+}
+
+/* ============================= Setting  ====================== */
+
+
+
+.set_area #sidebar {
+    width: 99%;
+}
+.set_area #content{
+	width:99%;
+	margin-top:10px;
+	float:left;
+}
+
+
+
+/* ============================= Cart  ====================== */
+
+.cart-order-depth li{
+	width:240px !important;
+}
+.cart-list .table-cart tbody td.thumnail{
+	display:none;
+}
+.cart-list .table-cart thead th.product{
+	width:1% !important;
+}
+
+
+
+/* ============================= Checkout  ====================== */
+
+
+.hotel-booking-left{
+	width:99.4%;
+	border-right:none;
+}
+.payment-personal{
+	width: 92% !important;
+	margin-bottom:0px;
+	padding-bottom:0px !important;
+}
+.cart-list.chept2 .card-payment .hotel-booking-left dl.payment-card{
+	width:92%;
+	padding-left:20px;
+}
+.payment-card dt{
+	display:none;
+}
+.payment-card{
+	margin-top:0px;
+	padding-bottom:0px !important;
+}
+#complete-payment .cart-payment{
+	width:100%;
+	border-left:none;
+}
+
+
+/* ============================= product_detail  ====================== */
+
+
+
+.product-attribution-container .product-attribution-container-info-message{
+	font-size:16px;
+}
+.main2{
+	width:auto;
+}
+.detail_products{
+	width:96.3%;
+	padding:10px;
+}
+.left_detail{
+	margin-right:0px;
+	width:100%;
+}
+.comments_detail_content{
+	width:78%;
+}
+
+.tweet_comments_links {
+    width: 402px;
+}
+.post_btn{
+	margin-left:0px;
+	float:right;
+}
+.right_detail{
+	width:100%;
+}
+.save_amount_box{
+	margin-left:4px;
+}
+.buy_amount_box{
+	margin-left:4px;
+}
+
+
+
+/* ============================= sign in  ====================== */
+
+
+.user-login-support-email-field label{
+	width:20%;
+}
+.post_product{
+	border-right:none;
+}
+.post_product {
+    margin: 5px;
+}
+.signup_scroll_1{
+	width:205px !important;
+}
+.start_btn_1{
+	width:156px !important;
+}
+
+
+.main_box{
+	float:left;
+	width:100%;
+	/*margin-top:135px;*/
+}
+
+	
+	
+}
+
+
+
+
+
+
+
+/* ============================= 600px  ====================== */
+
+
+
+@media all and (max-width:600px){
+	
+	
+.search_main {
+    margin-left: 5px;
+}
+.top_nav {
+    width: 213px !important;
+}
+.cart_tab li ul{width:300px;}
+.menu-contain-cart .summary{width:275px;}
+
+.res_nav {
+    margin: 0 0 0 40px;
+    width: 500px !important;
+}
+
+.product_main_thumb li {
+    width: 165px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav_tab{margin-left:175px;}
+.post_tab {
+    margin: 0 3px;
+}
+.tab_box {
+    width: 62%;
+}
+
+.non-mobile-detail {
+	display:none;	
+}
+.mobile-detail{
+	display:block;	
+}
+.deal_tag_title{margin-top:12px;}
+
+.detail_products {
+    margin-top: 135px;
+}
+.left_detail {
+    margin-right: 0;
+    width: 98%;
+}
+.detail_save {
+    width: 100%;
+}
+.slider_1 ul li {
+    margin: 0 4px 0 8px;
+}
+.comments_detail_content {
+    width: 89%;
+}
+.tweet_comments_links1 {
+    width: 73%;
+}
+.slider_1 {
+    width: 89% !important;
+}
+.slider_1 ul li {
+    margin: 0 17px;
+}
+
+
+	
+}
+
+@media all and (max-width:568px){
+
+header{position:relative;}
+
+.main_box{margin-top:0;}
+.nav_tab {
+    margin-left: 135px;
+}
+.res_nav{   margin: 0 16px 0 40px;
+    width: 85% !important;}
+
+.cart_tab li ul{width:260px}
+.menu-contain-cart .summary{width:235px;}
+
+.product_main_thumb li {
+    margin-left:40px;
+	width:185px;
+	margin-right:40px;
+}
+.deal_tag_title {
+    margin-top: 42px;
+}
+.detail_products {
+    margin-top: 20px;
+}
+.slider_1 {
+    width: 89% !important;
+}
+.slider_1 ul li {
+    margin: 0 7px 0 24px;
+}
+
+.tweet_comments_links1 {
+    width: 70%;
+}
+.slider_1 ul li {
+    margin: 0 7px 0 21px;
+}
+
+
+}
+
+
+
+
+@media all and (max-width:534px){
+	
+	
+.slider_1 {
+    width: 88% !important;
+}
+.slider_1 ul li {
+    margin: 0 7px 0 24px;
+}
+
+.tweet_comments_links1 {
+    width: 70%;
+}	
+.main3, .header_subtitle{
+	width: 500px;
+}
+	
+	
+}
+
+
+/* ============================= 480px  ====================== */
+
+
+
+@media all and (max-width:480px){
+	
+.logo_main{
+	float:left;
+	width:100%;
+}
+.product_thumb li{
+	width:119px;
+}
+.nav_tab {
+    margin-left: 15px;
+}
+
+.product_main_thumb li {
+    margin-left: 10px;
+    margin-right: 10px;
+	width:185px;
+}
+.deal_tag_title {
+    margin-top: 42px;
+}
+.search_main{
+	margin-left:0px;
+	width:210px;
+	margin-top:15px;
+}
+.nav_tab{width:236px;}
+.scroll-5{
+	padding: 8px 0 4px 8px;
+    width: 171px;
+}
+header{position:relative;}
+.tab_box{
+	width:100%;
+}
+.top_nav{
+  margin: 0 22px 0 0;
+    width: 288px !important;
+}
+.tab_box li a {
+	background: none repeat scroll 0 0 #FFFFFF;
+    padding: 16px 18px;
+	margin-right:5px;
+}
+.product_main{
+	width: 92.4%;
+	padding:10px;
+}
+.footer_links2 li
+{
+	text-align:center;
+	width:100%;
+}
+
+.footer_links2 {
+    float: left;
+    width: 98%;
+}
+
+
+/* ============================= Stories  ====================== */
+
+
+.activity-feed-item{
+	width:95%;
+}
+.story_txt{
+	width:94%;
+}
+.submit-comment-form-actions{
+	width:100%;
+}
+.activity-feed-container{
+	width:100%;
+}
+.activity-feed {
+    float: left;
+    margin-right: 0px;
+    width: 100%;
+}
+.boxcaption1{
+	width:100%;
+}
+
+
+/* ============================= Stores  ====================== */
+
+
+
+.store_list {
+    width: 99%;
+}
+.follow_main{
+	width:96%;
+	margin:0px 0px 10px 0px;
+	padding:10px;
+}
+.left_follow{
+	width:100% !important;
+}
+.right_follow{
+	float:left;
+}
+
+
+/* ============================= Profile  ====================== */
+
+
+.profile_left_avatar{
+	width:100px;
+	height:100px;
+}
+.profile_left{
+	width:96%;
+}
+.profile_left h1{
+	font-size:22px;
+}
+.profile_right {
+    float: left;
+    padding: 11px;
+    width: 94%;
+}
+.edit_btn{
+	margin-top:0px;
+}
+
+
+/* ============================= Setting  ====================== */
+
+
+
+.set_area #sidebar {
+    margin-left: 10px;
+    width: 93%;
+}
+.set_area #content{
+	float:left;
+	width:93%;
+	margin-left: 10px;
+	margin-top:10px;
+}
+.set_area .section .frm{
+	float:left;
+	width:90%;
+}
+.set_area .section .stit{
+	padding-left:9px;
+}
+.set_area .btn-area{
+	margin:0px;
+	width:79%;
+}
+.set_area .btn-area .btn-deactivate{
+	float:left;
+	padding:0px;
+}
+.credit .status{
+	display:none;
+}
+.set_area .section.credit .credit-step li{
+	margin-bottom:5px;
+	width:87%;
+}
+
+.user_transaction{
+	width:98%;
+}
+.user_payment_type{
+	width:98%;
+}
+.order_date{
+	width:98%;
+}
+.credit_amount{
+	width:98%;
+}
+.set_area .section .frm textarea{
+	width:245px;
+}
+.set_area .section .frm label{
+	width:100%;
+}
+.set_area .section .frm input[type="text"], .set_area .section .frm input[type="password"], .set_area .section .frm textarea{
+	width:242px;
+}
+
+
+
+
+
+
+/* ============================= product_detail  ====================== */
+
+
+
+.detail_products{
+	width:91.3%;
+	padding:10px;
+}
+
+.tweet_comments_links{
+	width:260px;
+}
+
+.slider_1 {
+    width: 85% !important;
+}
+
+.comments_detail_content {
+    width: 86%;
+}
+
+.tweet_comments_links1 {
+    width: 64%;
+}
+
+
+
+/* ============================= Edit_product  ====================== */
+
+
+.tabs1{
+	border-bottom:none;
+}
+.tabs1 li.active{
+	float:left;
+	width:89%;
+	padding:10px;
+	background:#F61F67;
+	color:#FFF;
+	border:none;
+	margin-bottom:5px;
+}
+.tabs1 li.active a{
+	color:#FFF;
+}
+.tabs1 li{
+	float:left;
+	width:89%;
+	padding:10px;
+	background:#E9E5E5;
+	color:#555555;
+	border:none;
+	margin-bottom:5px;
+}
+.tabs1 li a{
+	color:#555555;
+}
+.tab-content{
+	width:87% !important;
+	border:1px solid #CCCCCC;
+}
+.form_fields label{
+	float:left;
+	width:100%;
+}
+.form_fields .form_fieldsgroup{
+	float:left;
+	width:100%;
+}
+.form_fieldsgroup textarea.global-input{
+	width:89%;
+}
+
+table.display td{
+	padding:8px 2px !important;
+}
+
+
+
+
+/* ============================= Notifications  ====================== */
+
+
+#content, .wrapper-content{
+	float:left;
+	width:92%;
+	padding:10px;
+}
+
+
+/* ============================= sign in  ====================== */
+
+
+.user-login-support{
+	padding:10px;
+	width:92%;
+}
+.user-login-support-email-field label{
+	width:98%;
+}
+.user-login-support .user-login-support-email-field input{
+	margin-left:0px;
+	margin-top:10px;
+	width:252px;
+}
+
+
+
+
+/* ============================= Popup  ====================== */
+
+
+.popup_header{
+	font-size:28px;
+}
+.popup_deals_header{
+	width:89.2%;
+	float:left;
+}
+.send_main{
+	width:100%;
+	margin-top:10px;
+}
+.popup_follow_header{
+	width:93%;
+}
+.popup_follow_header h2{
+	width:91%;
+	line-height:25px;
+	padding:0 0 0 15px;
+}
+.popup_check{
+	margin-right:0px;
+	margin-top:0px;
+	width:95%;
+	float:left;
+}
+.popup_check .send_main{
+	margin-top:0px;
+	width:auto;
+}
+.product_popup_follow li{
+	width:96px;
+	min-height: 60px;
+}
+.product_popup_follow li:nth-child(2n+1) {
+    margin-left: 0;
+}
+.add_friend{
+	width:100% !important;
+}
+.centered{
+	text-align:left;
+}
+.chart .shipping_default{
+	display:none;
+}
+.chart .shipping_phone{
+	display:none;
+}
+.set_area .chart thead th{
+	padding:5px 18px 5px 28px;
+}
+.set_area .section .chart tbody tr td{
+	text-align:center;
+}
+
+.main_box{
+	float:left;
+	width:100%;
+	margin-top:0px;
+}
+
+.main3, .header_subtitle {
+    width: 440px;
+}
+
+.header_subtitle {
+    font-size: 28px;
+}
+
+	
+	
+}
+
+
+
+/* ============================= 480px  ====================== */
+
+
+
+@media all and (max-width:468px){
+	
+	
+.slider_1 ul li {
+    margin: 0 9px 0 10px;
+}
+	
+	
+}
+
+/* ============================= 384px  ====================== */
+
+
+
+@media all and (max-width:384px){
+
+.search_main{margin-left: 80px;}
+
+.logo_main {
+    float: left;
+    width: 50%;
+}
+
+.nav_tab {
+    width: 176px;
+	margin-left:0;
+}
+.nav_tab li a{
+	padding:9px 5px;
+	margin:4px 0 0;
+}
+.top_nav {
+    margin: 0 20px 0 30px;
+    width: 295px;
+}
+
+.product_main_thumb li {
+    width: 165px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.deal_tag_title{margin-top:10px;}
+
+.gv_panel img{
+	height:auto !important;
+}
+.gv_galleryWrap, .gv_gallery, .gv_panelWrap{
+    height: 385px !important;
+}
+.gv_panel {
+    height: 290px !important;
+}
+.gv_filmstripWrap {
+    bottom: 0 !important;
+    height: 82px !important;
+    left: 0 !important;
+    overflow: hidden;
+    position: absolute;
+    width: 100% !important;
+}
+
+.product-attribution-container .product-attribution-container-info-message {
+    font-size: 10px;
+}
+.save_btn{
+	padding:12px 22px;
+}
+.buy_btn{
+	padding: 12px 35px;
+}
+.you_link{
+	height:auto;
+}
+.description_text p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    width: 98%;
+}
+.description_text ul li{
+	 width: 95%;
+	 font-size: 13px;
+}
+.slider_1 {
+    width: 80% !important;
+}
+
+.slider_1 ul li {
+    margin:0 8px 0 10px;
+}
+.comments_detail_content {
+    width: 79%;
+}
+.tweet_comments_links1 {
+    width: 98%;
+}
+
+
+.main3, .header_subtitle {
+    width: 350px;
+}
+
+
+	
+}
+
+
+
+
+/* ============================= 360px  ====================== */
+
+
+
+@media all and (max-width:360px){
+
+.logo_main{
+	width:auto;
+}
+.product_thumb li{
+	width:116px;
+}
+.nav_tab {
+    margin-top: 15px;
+}	
+.search_main{
+	margin-left:16px;
+	margin-top:10px;
+	margin-right:40px;
+}
+.top_nav{
+	width:198px !important;
+	margin:0;
+}
+.cart_tab li{
+	margin:0px;
+}
+.post_tab{
+	margin:0px;
+}
+.feed-notification{
+	width:182px !important; 
+}
+.right_tab li {
+    float: left;
+    margin: 9px 14px 5px 0;
+}
+.find_btn{
+	padding:10px 20px;
+}
+.product_main{
+	width: 92.4%;
+	padding:10px;
+}
+.product_main_thumb {
+    margin-left: 25px;
+    width: 85%;
+}
+.cart_tab li ul{
+	width:300px;
+}
+.menu-contain-cart .summary{
+	width:92%;
+}
+
+/* ============================= Stories  ====================== */
+
+
+.story_txt{
+	width:90%;
+}
+.activity-feed-story-item-comments .submit-comment-form-body {
+    width: 270px;
+}
+
+
+/* ============================= Stores  ====================== */
+
+.follow_main{
+	width:94%;
+}
+
+
+/* ============================= Profile  ====================== */
+
+.profile_right {
+    padding: 20px;
+    width: 83%;
+}
+.edit_btn{
+	margin-top:10px;
+}
+.profile_tab .tab_product .tab_box li a{
+	margin-bottom:0px;
+	padding:11px 2px;
+	font-size:14px;
+	width:97px;
+}
+
+
+/* ============================= product_detail  ====================== */
+
+
+
+.tweet_comments_links {
+    width: 251px;
+}
+
+.main_box{
+	float:left;
+	width:100%;
+	margin-top:245px;
+}
+
+	
+}
+
+
+
+/* ============================= 320px  ====================== */
+
+
+
+@media all and (max-width:320px){
+	
+.search_main{
+	margin-right:0px;
+}
+.main_box{
+	float:left;
+	width:100%;
+	margin-top:0px;
+}
+
+.nav_tab {
+    width: 236px;
+}
+.nav_tab li a
+{
+	padding:13px 20px;
+	margin:0;
+}
+	
+.top_nav li ul
+{
+	right:-5px;
+	width:130px;
+}
+header{position:relative;}
+.feed-notification li{padding:10px 10px 10px 0px !important;}
+.feed-notification{width:220px !important;}
+.top_nav li li a
+{
+	width:70%;
+}
+
+.product_main_thumb li {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 185px;
+}
+.deal_tag_title {
+    margin-top: 42px;
+}
+.tab_box li a {
+    margin: 0 0 0 4px;
+    padding: 16px 15px;
+}
+.right_tab li {
+    margin: 9px 3px 5px 5px;
+}
+.footer_links2 li
+{
+	text-align:center;
+	width:100%;
+}
+.res_more{float:left !important;  margin:0 0 0 30px;}
+.res_arrow{left: 90px;}
+.footer_links2 {
+    float: left;
+    width: 98%;
+}
+
+
+/* ============================= product_detail  ====================== */
+
+
+.tweet_comments_links {
+    width: 216px;
+}	
+.save_amount{
+	padding: 0 16px;
+	font-size: 23px;
+}
+.buy_amount{
+	padding: 0 19px;
+	font-size: 23px;
+}
+
+
+.main3, .header_subtitle {
+    width: 285px;
+}
+
+	
+}
+
+
+

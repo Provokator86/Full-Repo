@@ -1,0 +1,19 @@
+# Use PHP5.4 Single php.ini as default
+AddHandler application/x-httpd-php54s .php
+RewriteEngine On
+RewriteBase /
+Options +ExecCGI
+addhandler x-httpd-php5-cgi .php
+SetHandler application/x-httpd-php
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|javascript|images|robots\.txt)
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+
+
+
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]

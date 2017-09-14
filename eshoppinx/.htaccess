@@ -1,0 +1,24 @@
+Options +FollowSymLinks
+
+RewriteBase /eshoppinx/
+
+RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^codeuridea\.net [NC]
+#RewriteRule (.*) http://www.codeuridea.net/isubtech/site/$1 [L,R=301]
+
+RewriteCond $1 !(^index\.php|gif$|GIF$|jpg$|JPG$|jpeg$|JPEG$|png$|PNG$|bmp$|zip$|videos$|avi$|BMP$|ico$|js$|php$|htm$|html$|css$|ttf$|txt$|pdf$|swf$|flv$|mp3$|mp4$|doc$|docx$|xls$|xlsx$|dxf$|dwg$|tap$|robots\.txt$|video_chat$)
+
+RewriteRule ^(?!resource\/js\/tinymce)(?!html)(?!font)(?!resource)(?!uploaded)(?!paypal)(.*?)(\.html|\.php|\/)?$ index.php/$1 [NC,L]
+
+#RewriteRule ^(.*?)(\.html|\.php|\/)?$ index.php/$1 [NC,L]
+
+RewriteRule ^(.*)$ - [NC,L]
+
+#php_value session.gc_maxlifetime 86400
+
+#php_value  max_file_uploads  200M
+#php_value  max_execution_time  7200M
+#php_value  max_input_time  3600M
+#php_value  memory_limit  512M
+#php_value  post_max_size  512M
+#php_value upload_max_filesize 100M
