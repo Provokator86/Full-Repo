@@ -1,0 +1,1075 @@
+[10/19/2011 7:59 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=07:28:16 Oct 19, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&18, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A8HweZnIT8cdrtWqAZAXkJVbD0-pACGQRuM6vAGgAKiqz6ONUZK0I64P, mc_shipping1=0.00, tax1=0.00, txn_id=5LJ480765E6594818, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&18, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Wed, 19 Oct 2011 14:29:10 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=HErDIze3I0ask23eoNMjDVIA23FZ3hqMlDhl3pJQioNXSdwMIpPApmYKGNJJjmH7B2obnCz2j3FjO8LKJboMd5MaA6t2jYj4dDOxXa1trSP89xJ2Kcr_NRSEQh-XDB7TJOvUAG%7cVz8gkRRgJ9X3YBp5beP9K9SAvMxgjw_jHGyXcvb8HxjuiY56MBTD6bvfya8vQ53k6Y2E60%7cplMEvDp6Ca9tt-zEJUqGz6wn2CQ2nvSU1U287Nvra8z8EPSvt-N7Nl9Ts490W94tMRWg70%7c1319034550; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 16-Oct-2021 14:29:10 GMT; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 14-Oct-2031 14:29:10 GMT; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: Apache=10.72.109.11.1319034550114830; path=/; expires=Fri, 11-Oct-41 14:29:10 GMT
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
+[10/19/2011 8:09 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=07:28:16 Oct 19, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&18, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A8HweZnIT8cdrtWqAZAXkJVbD0-pACGQRuM6vAGgAKiqz6ONUZK0I64P, mc_shipping1=0.00, tax1=0.00, txn_id=5LJ480765E6594818, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&18, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Wed, 19 Oct 2011 14:39:32 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=ePE4QWNuDCIDPRQ7_i4pcwQ2nvm-I-J2JtqdhJXq1BhVuTpqXassf7zi0rsYi5ApbmrbyMo6v9NXyry8kzFGblERILfjdBT24BqfKTHMhi-NuTIhxcJW7Qhb934YG03kVkSRBG%7cn3VbNjMkWwV_uCGokbxbZybC74iI-FDGMsAaRmddXeBTxXgvxJHEk22_AcH6uxd86-RWHG%7cowDoWbiGRKXkK6VF7shZWZ9ZUENsABCdjXtL0OJ1WexA4a1jcrndx0uLFgqpPsgsY_xji0%7c1319035172; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 16-Oct-2021 14:39:32 GMT; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 14-Oct-2031 14:39:32 GMT; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: Apache=10.72.109.11.1319035172172133; path=/; expires=Fri, 11-Oct-41 14:39:32 GMT
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
+[10/19/2011 8:10 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=07:28:16 Oct 19, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&18, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A8HweZnIT8cdrtWqAZAXkJVbD0-pACGQRuM6vAGgAKiqz6ONUZK0I64P, mc_shipping1=0.00, tax1=0.00, txn_id=5LJ480765E6594818, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&18, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Wed, 19 Oct 2011 14:40:20 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=jMaQwpmaBPZwr1DMq60Ae-8ylrbCx-U8eWNkz-62yLeQkxk7MRpFzlI_SC90HUzJTNt78oP08cA6rNEb3KYaDBT1u4dQe7Ygyw-lYLW8SoofOZUQ5kbn6g_M_5u6IGM_GP-MWm%7cTfOYtIMpINVHYOwxh2OwaEHdAAH4TfMLEPpxHhnYqy35UM-kxbLq3C5d2rmsa_p7if_A3G%7cFh1ScpKK64R29r7wShku138EmbfeKTZbABZz4Xpsg8qhfFMK0AvIe4eAuaMIkCwvf99f_W%7c1319035221; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 16-Oct-2021 14:40:21 GMT; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 14-Oct-2031 14:40:21 GMT; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: Apache=10.72.109.11.1319035220494531; path=/; expires=Fri, 11-Oct-41 14:40:20 GMT
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
+[10/19/2011 8:10 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=07:28:16 Oct 19, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&18, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A8HweZnIT8cdrtWqAZAXkJVbD0-pACGQRuM6vAGgAKiqz6ONUZK0I64P, mc_shipping1=0.00, tax1=0.00, txn_id=5LJ480765E6594818, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&18, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Wed, 19 Oct 2011 14:40:45 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=w_xUZq4MBclKKdJNcHhszU2k4Id6aeFc50vs89OmBr8Eph3sUSRYecDZ5yuEd6WBMj013AwroEPH4q2mk9j7yI0dPKBOfFV77Tr-sdRpTb3KfuOP3olDgQFtE_NJEqQSVp-yiW%7czWTJ6ljNlL5Pt9JUF2GHuu6luBMM6xn2bjRYMSaXTIk5WEog5-UaBIlgxDn8iI08WS0Ydm%7c0ND-jx7LKij73kdKBPTPPiXf8Q_eqo-DkOp6APgc_u7YMLQesKcOK9uli0zNdJtKA9dDgG%7c1319035245; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 16-Oct-2021 14:40:45 GMT; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 14-Oct-2031 14:40:45 GMT; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: Apache=10.72.109.11.1319035245188340; path=/; expires=Fri, 11-Oct-41 14:40:45 GMT
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
+[10/19/2011 8:19 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=07:28:16 Oct 19, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&18, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A8HweZnIT8cdrtWqAZAXkJVbD0-pACGQRuM6vAGgAKiqz6ONUZK0I64P, mc_shipping1=0.00, tax1=0.00, txn_id=5LJ480765E6594818, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&18, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Wed, 19 Oct 2011 14:49:32 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=na7zwfAFAMpCq1I0xEXZ2VhdZBVo2dIeKhKrY-XDUYsj_cZZnzHlJBLBUx0DU1jE0c0Lgk1gTccKOVPWJAZJ_4HffgUiAktx9-cs9nv1dStCtqPZXS72BnIiMhdDSh4zBE7gQ0%7cJe3uExf5uUoBuzYKaHgSurgyva0i1zN9FLzdk11kclABAfw4aPsVZTZ3AF0mgHjkaVAAa0%7cpOypJBXt9i9lsmzrVkdaObLnu92GUrFsaunzZbnhMBqn_RbwfbW4_YGxzGM064X6r8QuWm%7c1319035772; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 16-Oct-2021 14:49:32 GMT; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 14-Oct-2031 14:49:32 GMT; domain=.paypal.com; path=/; HttpOnly
+Set-Cookie: Apache=10.72.109.11.1319035772195985; path=/; expires=Fri, 11-Oct-41 14:49:32 GMT
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
+[10/21/2011 11:50 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:19:58 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacA4nRPwnGwzCzm.14SmOUl-suF0SP, mc_shipping1=0.00, tax1=0.00, txn_id=8HU62788841168415, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:02 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:31:59 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Arc.2-eBTsv46tuVrm5K1w.8Bm1F, mc_shipping1=0.00, tax1=0.00, txn_id=6B973866599188041, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:03 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:33:11 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AMGROuBgax11Jrv5mXNgsk5akVLt, mc_shipping1=0.00, tax1=0.00, txn_id=9YT76729JL9174216, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:03 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:33:11 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AMGROuBgax11Jrv5mXNgsk5akVLt, mc_shipping1=0.00, tax1=0.00, txn_id=9YT76729JL9174216, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:04 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:33:11 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AMGROuBgax11Jrv5mXNgsk5akVLt, mc_shipping1=0.00, tax1=0.00, txn_id=9YT76729JL9174216, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:04 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:33:11 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AMGROuBgax11Jrv5mXNgsk5akVLt, mc_shipping1=0.00, tax1=0.00, txn_id=9YT76729JL9174216, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:06 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:33:11 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AMGROuBgax11Jrv5mXNgsk5akVLt, mc_shipping1=0.00, tax1=0.00, txn_id=9YT76729JL9174216, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:07 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:33:11 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AMGROuBgax11Jrv5mXNgsk5akVLt, mc_shipping1=0.00, tax1=0.00, txn_id=9YT76729JL9174216, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:07 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:33:11 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AMGROuBgax11Jrv5mXNgsk5akVLt, mc_shipping1=0.00, tax1=0.00, txn_id=9YT76729JL9174216, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:08 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:33:11 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AMGROuBgax11Jrv5mXNgsk5akVLt, mc_shipping1=0.00, tax1=0.00, txn_id=9YT76729JL9174216, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:10 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:33:11 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AMGROuBgax11Jrv5mXNgsk5akVLt, mc_shipping1=0.00, tax1=0.00, txn_id=9YT76729JL9174216, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/21/2011 12:11 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:33:11 Oct 20, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AMGROuBgax11Jrv5mXNgsk5akVLt, mc_shipping1=0.00, tax1=0.00, txn_id=9YT76729JL9174216, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:35 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:04:57 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&15, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAXJf7rCheRWIgP3iHJRT5yCzPbJn, mc_shipping1=0.00, tax1=0.00, txn_id=24E99830F3278771M, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&15, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:35 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:04:57 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&15, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAXJf7rCheRWIgP3iHJRT5yCzPbJn, mc_shipping1=0.00, tax1=0.00, txn_id=24E99830F3278771M, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&15, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:36 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:04:57 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&15, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAXJf7rCheRWIgP3iHJRT5yCzPbJn, mc_shipping1=0.00, tax1=0.00, txn_id=24E99830F3278771M, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&15, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:36 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:04:57 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&15, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAXJf7rCheRWIgP3iHJRT5yCzPbJn, mc_shipping1=0.00, tax1=0.00, txn_id=24E99830F3278771M, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&15, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:36 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:04:57 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&15, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAXJf7rCheRWIgP3iHJRT5yCzPbJn, mc_shipping1=0.00, tax1=0.00, txn_id=24E99830F3278771M, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&15, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:39 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:08:53 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&11, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ai1PaghZh5FmBLCDCTQpwG8jB264AyffAwe48YeTkwWCurBOxPFUntXc, mc_shipping1=0.00, tax1=0.00, txn_id=1KX20250YP519091X, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&11, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:40 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:08:53 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&11, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ai1PaghZh5FmBLCDCTQpwG8jB264AyffAwe48YeTkwWCurBOxPFUntXc, mc_shipping1=0.00, tax1=0.00, txn_id=1KX20250YP519091X, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&11, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:40 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:08:53 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&11, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ai1PaghZh5FmBLCDCTQpwG8jB264AyffAwe48YeTkwWCurBOxPFUntXc, mc_shipping1=0.00, tax1=0.00, txn_id=1KX20250YP519091X, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&11, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:41 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:08:53 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&11, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ai1PaghZh5FmBLCDCTQpwG8jB264AyffAwe48YeTkwWCurBOxPFUntXc, mc_shipping1=0.00, tax1=0.00, txn_id=1KX20250YP519091X, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&11, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:42 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:08:53 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&11, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ai1PaghZh5FmBLCDCTQpwG8jB264AyffAwe48YeTkwWCurBOxPFUntXc, mc_shipping1=0.00, tax1=0.00, txn_id=1KX20250YP519091X, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&11, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:42 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:08:53 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&11, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ai1PaghZh5FmBLCDCTQpwG8jB264AyffAwe48YeTkwWCurBOxPFUntXc, mc_shipping1=0.00, tax1=0.00, txn_id=1KX20250YP519091X, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&11, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:43 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:08:53 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&11, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ai1PaghZh5FmBLCDCTQpwG8jB264AyffAwe48YeTkwWCurBOxPFUntXc, mc_shipping1=0.00, tax1=0.00, txn_id=1KX20250YP519091X, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&11, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/25/2011 4:43 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:08:53 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&11, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ai1PaghZh5FmBLCDCTQpwG8jB264AyffAwe48YeTkwWCurBOxPFUntXc, mc_shipping1=0.00, tax1=0.00, txn_id=1KX20250YP519091X, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&11, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/26/2011 11:51 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=120.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:21:31 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&10, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AdrvcO33pRfTyJA332iN.58AWAUNAJpR.xq46qB9nhbbB9hfNj.yTJYt, mc_shipping1=0.00, tax1=0.00, txn_id=9YR372752H546241G, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=120.00, residence_country=US, test_ipn=1, transaction_subject=2&10, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/26/2011 11:51 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=120.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:21:31 Oct 25, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&10, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AdrvcO33pRfTyJA332iN.58AWAUNAJpR.xq46qB9nhbbB9hfNj.yTJYt, mc_shipping1=0.00, tax1=0.00, txn_id=9YR372752H546241G, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=120.00, residence_country=US, test_ipn=1, transaction_subject=2&10, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/26/2011 1:10 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=36.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=00:38:56 Oct 26, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=ACUe-E7Hjxmeel8FjYAtjnx-yjHAAdZN73AnOPaBAWVEx3tFSII4iN-9, mc_shipping1=0.00, tax1=0.00, txn_id=27M09622KL7019729, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=36.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[10/26/2011 1:19 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=160.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=00:49:31 Oct 26, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&5, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AWywtXx9bLquM8l906UdaSkDs3LeA5OB5nQ7LLISBjgASD6KSuJLg4Py, mc_shipping1=0.00, tax1=0.00, txn_id=23R491077S466143G, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=160.00, residence_country=US, test_ipn=1, transaction_subject=2&5, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 4:39 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:09:08 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&12, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=ARTEyuYsiUBJL2cv1QSzUTYZ0FqIAEzqcwL2V3Q0o83dU69G4xBlADob, mc_shipping1=0.00, tax1=0.00, txn_id=65C86718KJ629035D, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&12, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 4:41 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:09:08 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&12, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=ARTEyuYsiUBJL2cv1QSzUTYZ0FqIAEzqcwL2V3Q0o83dU69G4xBlADob, mc_shipping1=0.00, tax1=0.00, txn_id=65C86718KJ629035D, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&12, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 4:41 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:09:08 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&12, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=ARTEyuYsiUBJL2cv1QSzUTYZ0FqIAEzqcwL2V3Q0o83dU69G4xBlADob, mc_shipping1=0.00, tax1=0.00, txn_id=65C86718KJ629035D, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&12, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 4:47 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=24.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:17:06 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&3, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AxaSXQPqptuODVztOHwR-nNuAKLGA4K4RA8nkx56itTYFKSwjaqSk3hb, mc_shipping1=0.00, tax1=0.00, txn_id=6J166715NE825934V, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=24.00, residence_country=US, test_ipn=1, transaction_subject=2&3, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 5:11 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=60.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:40:45 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&30, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A9vEB4gQvPGgwnYeYdjS94CyBiXYAUL0grODEiETGCwmZmoadngodtGv, mc_shipping1=0.00, tax1=0.00, txn_id=7PE55495TG262002C, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=60.00, residence_country=US, test_ipn=1, transaction_subject=2&30, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 5:12 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=60.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:40:45 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&30, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A9vEB4gQvPGgwnYeYdjS94CyBiXYAUL0grODEiETGCwmZmoadngodtGv, mc_shipping1=0.00, tax1=0.00, txn_id=7PE55495TG262002C, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=60.00, residence_country=US, test_ipn=1, transaction_subject=2&30, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 5:13 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=60.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:40:45 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&30, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A9vEB4gQvPGgwnYeYdjS94CyBiXYAUL0grODEiETGCwmZmoadngodtGv, mc_shipping1=0.00, tax1=0.00, txn_id=7PE55495TG262002C, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=60.00, residence_country=US, test_ipn=1, transaction_subject=2&30, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 5:13 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=60.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:40:45 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&30, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A9vEB4gQvPGgwnYeYdjS94CyBiXYAUL0grODEiETGCwmZmoadngodtGv, mc_shipping1=0.00, tax1=0.00, txn_id=7PE55495TG262002C, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=60.00, residence_country=US, test_ipn=1, transaction_subject=2&30, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 7:11 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=40.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:40:40 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&33, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AbT1vCJu.dZK3kJ.N7RhFS3cOVDC, mc_shipping1=0.00, tax1=0.00, txn_id=2L847334CC190294M, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=40.00, residence_country=US, test_ipn=1, transaction_subject=2&33, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 7:15 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=40.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:45:06 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&33, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ae3JBE995gkcbuUwcH2l44VI6FTVAPcXGJiWfaGqcTWC80Q8bQThYosP, mc_shipping1=0.00, tax1=0.00, txn_id=8AP36446EL427740G, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=40.00, residence_country=US, test_ipn=1, transaction_subject=2&33, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/01/2011 7:16 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=40.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:46:25 Nov 01, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&33, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AK8qu-r2mWrvODHymcmTYHhOOlpmAl6BdDuLHCphTjP6i9jage0hujwF, mc_shipping1=0.00, tax1=0.00, txn_id=44B50837AR768290G, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=40.00, residence_country=US, test_ipn=1, transaction_subject=2&33, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/02/2011 1:34 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=16.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=01:04:17 Nov 02, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&28, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AS2Vy75wu2by3YX8Q2k75QOCCm8IAHEJuWCvztPqKBeEskJ8OJ2WXtaX, mc_shipping1=0.00, tax1=0.00, txn_id=8MM63194NV5468607, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=16.00, residence_country=US, test_ipn=1, transaction_subject=2&28, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/02/2011 1:34 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=16.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=01:04:17 Nov 02, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&28, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AS2Vy75wu2by3YX8Q2k75QOCCm8IAHEJuWCvztPqKBeEskJ8OJ2WXtaX, mc_shipping1=0.00, tax1=0.00, txn_id=8MM63194NV5468607, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=16.00, residence_country=US, test_ipn=1, transaction_subject=2&28, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/02/2011 1:35 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=16.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=01:04:17 Nov 02, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&28, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AS2Vy75wu2by3YX8Q2k75QOCCm8IAHEJuWCvztPqKBeEskJ8OJ2WXtaX, mc_shipping1=0.00, tax1=0.00, txn_id=8MM63194NV5468607, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=16.00, residence_country=US, test_ipn=1, transaction_subject=2&28, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/02/2011 1:35 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=16.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=01:04:17 Nov 02, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&28, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AS2Vy75wu2by3YX8Q2k75QOCCm8IAHEJuWCvztPqKBeEskJ8OJ2WXtaX, mc_shipping1=0.00, tax1=0.00, txn_id=8MM63194NV5468607, payment_type=instant, last_name=User, address_state=CA, item_name1=Job payment, receiver_email=aacu@paypal.info, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_gross_1=16.00, mc_currency=CAD, residence_country=US, test_ipn=1, transaction_subject=2&28, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/02/2011 1:36 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=16.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=01:04:17 Nov 02, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&28, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AS2Vy75wu2by3YX8Q2k75QOCCm8IAHEJuWCvztPqKBeEskJ8OJ2WXtaX, mc_shipping1=0.00, tax1=0.00, txn_id=8MM63194NV5468607, payment_type=instant, last_name=User, address_state=CA, item_name1=Job payment, receiver_email=aacu@paypal.info, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_gross_1=16.00, mc_currency=CAD, residence_country=US, test_ipn=1, transaction_subject=2&28, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/02/2011 1:36 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=16.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=01:04:17 Nov 02, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&28, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AS2Vy75wu2by3YX8Q2k75QOCCm8IAHEJuWCvztPqKBeEskJ8OJ2WXtaX, mc_shipping1=0.00, tax1=0.00, txn_id=8MM63194NV5468607, payment_type=instant, last_name=User, address_state=CA, item_name1=Job payment, receiver_email=aacu@paypal.info, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_gross_1=16.00, mc_currency=CAD, residence_country=US, test_ipn=1, transaction_subject=2&28, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/02/2011 1:36 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=16.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=01:04:17 Nov 02, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&28, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AS2Vy75wu2by3YX8Q2k75QOCCm8IAHEJuWCvztPqKBeEskJ8OJ2WXtaX, mc_shipping1=0.00, tax1=0.00, txn_id=8MM63194NV5468607, payment_type=instant, last_name=User, address_state=CA, item_name1=Job payment, receiver_email=aacu@paypal.info, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_gross_1=16.00, mc_currency=CAD, residence_country=US, test_ipn=1, transaction_subject=2&28, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/02/2011 2:01 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=40.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=01:28:53 Nov 02, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&33, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ao8UMvcPyEepM1HoZd3kXLqipVnOAC-74gLheKJCIvmFtOqM8Ct04nib, mc_shipping1=0.00, tax1=0.00, txn_id=50902598T18752117, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=40.00, residence_country=US, test_ipn=1, transaction_subject=2&33, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/02/2011 2:01 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=40.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=01:28:53 Nov 02, 2011 PDT, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&33, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ao8UMvcPyEepM1HoZd3kXLqipVnOAC-74gLheKJCIvmFtOqM8Ct04nib, mc_shipping1=0.00, tax1=0.00, txn_id=50902598T18752117, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=40.00, residence_country=US, test_ipn=1, transaction_subject=2&33, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/08/2011 10:35 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=40.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=09:04:50 Nov 08, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&34, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AKQHN.WVyT3S14ezip.rLoNcyFZ6ALZyu.wrdZ76XUvSqbFOvs5S9dpU, mc_shipping1=0.00, tax1=0.00, txn_id=64R51037RB100472B, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=40.00, residence_country=US, test_ipn=1, transaction_subject=2&34, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/09/2011 2:43 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=48.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=13:12:53 Nov 08, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&40, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AJ8CLsRsKBqqzNNJ5525FhJkVR3-, mc_shipping1=0.00, tax1=0.00, txn_id=7FA85067VU829532U, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=48.00, residence_country=US, test_ipn=1, transaction_subject=2&40, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/09/2011 10:03 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=96.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=20:33:20 Nov 08, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&41, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A5gXHmHMBuZPqj1RF7X1jvEbA66mATRupuAqSmbFIq75voXHvlhx1k3h, mc_shipping1=0.00, tax1=0.00, txn_id=4E790938JL566413A, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=96.00, residence_country=US, test_ipn=1, transaction_subject=2&41, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[11/09/2011 10:04 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=96.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=20:33:20 Nov 08, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&41, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A5gXHmHMBuZPqj1RF7X1jvEbA66mATRupuAqSmbFIq75voXHvlhx1k3h, mc_shipping1=0.00, tax1=0.00, txn_id=4E790938JL566413A, payment_type=instant, last_name=User, receiver_email=aacu@paypal.info, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=CAD, mc_gross_1=96.00, residence_country=US, test_ipn=1, transaction_subject=2&41, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 11:43 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=10.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=22:13:18 Dec 01, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&2, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AHKosg2TnXeD-NXSIppZDknEBzkFAOgWG896kd.i545nOERj4IfGM21R, mc_shipping1=0.00, tax1=0.00, txn_id=70933873L8014914B, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=10.00, residence_country=US, test_ipn=1, transaction_subject=2&2, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 12:35 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:05:49 Dec 01, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&1, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=Ax39QvR0ywsIVcqLQtApBD44ZN5TA3xPrMZv2WJk3ryMd1CdAMWUUne6, mc_shipping1=0.00, tax1=0.00, txn_id=6GK82190DN6816244, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&1, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 7:39 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 7:40 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 7:43 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 7:44 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 7:46 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 7:53 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 7:59 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 8:11 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 8:11 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 8:12 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 8:13 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 8:15 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/02/2011 8:21 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=06:09:47 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&4, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31Av1FOjR53eYPSpSWesnSROVYhN7., mc_shipping1=0.00, tax1=0.00, txn_id=7JK9073956789794Y, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&4, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/03/2011 12:12 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=0.50, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=22:42:04 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&3, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AEiLHophMZaJekSQ58dDQ6Oejhs6A-72vrrrTeSZn50zysCHs5PJMvBD, mc_shipping1=0.00, tax1=0.00, txn_id=72W67246U1175633M, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=0.50, residence_country=US, test_ipn=1, transaction_subject=2&3, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/03/2011 1:27 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:57:06 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&5, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AjHEdThVMzGOYyKN5fBU.ROwTpOTAr4mREnq3em7lydGWRbO.9wAJdwc, mc_shipping1=0.00, tax1=0.00, txn_id=1GB585699F786042U, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&5, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/03/2011 1:28 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:57:06 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&5, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AjHEdThVMzGOYyKN5fBU.ROwTpOTAr4mREnq3em7lydGWRbO.9wAJdwc, mc_shipping1=0.00, tax1=0.00, txn_id=1GB585699F786042U, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&5, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/03/2011 1:31 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=23:57:06 Dec 02, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&5, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AjHEdThVMzGOYyKN5fBU.ROwTpOTAr4mREnq3em7lydGWRbO.9wAJdwc, mc_shipping1=0.00, tax1=0.00, txn_id=1GB585699F786042U, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&5, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/03/2011 1:45 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=3.75, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=00:15:12 Dec 03, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&6, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AUtUxyhUN.Wy6-AeImK9fso57YMI, mc_shipping1=0.00, tax1=0.00, txn_id=6RF73451GR812054X, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=3.75, residence_country=US, test_ipn=1, transaction_subject=2&6, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/03/2011 12:12 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:11:53 Dec 03, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&6, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AkPrukfVtSuvSeCvL46pt2bqx60BAYwfhOoM1GmG-f1QD0Srpop1ZxIk, mc_shipping1=0.00, tax1=0.00, txn_id=07W52742SU935074C, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=4.00, residence_country=US, test_ipn=1, transaction_subject=2&6, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/03/2011 12:12 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:11:53 Dec 03, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&6, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AkPrukfVtSuvSeCvL46pt2bqx60BAYwfhOoM1GmG-f1QD0Srpop1ZxIk, mc_shipping1=0.00, tax1=0.00, txn_id=07W52742SU935074C, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=4.00, residence_country=US, test_ipn=1, transaction_subject=2&6, payment_gross=, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/06/2011 1:08 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=05:07:57 Dec 06, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&9, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AXbCetbKLipVcUOOFhwjPkXF2muA, mc_shipping1=0.00, tax1=0.00, txn_id=7E262451P9213151D, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&9, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/07/2011 11:07 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=03:07:11 Dec 07, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&10, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=AFSlhKNeDkMLYdYa2W8No7TlSK--APv5D60TiHzoxG8BKv.YK-cbYLYo, mc_shipping1=0.00, tax1=0.00, txn_id=6GD65433EX8288934, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&10, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/07/2011 1:23 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=3.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=05:23:07 Dec 07, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&8, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A6zGq.mQ36jqUWP3aOU9ewpGT.C3A1UY28T1oO-Tms1IDb-k.xA-mlv8, mc_shipping1=0.00, tax1=0.00, txn_id=14X3242537615701C, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=3.00, residence_country=US, test_ipn=1, transaction_subject=2&8, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/09/2011 12:28 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=5.00, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:28:05 Dec 09, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&13, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=An5ns1Kso7MWUdW4ErQKJJJ4qi4-AL594Xwg-J4XQwo5sXh6t.kiRySm, mc_shipping1=0.00, tax1=0.00, txn_id=7SN99893SX0902101, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=5.00, residence_country=US, test_ipn=1, transaction_subject=2&13, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[12/09/2011 12:36 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=3.03, protection_eligibility=Ineligible, address_status=confirmed, item_number1=, payer_id=YCJ4UCDBUME9L, tax=0.00, address_street=1 Main St, payment_date=04:36:36 Dec 09, 2011 PST, payment_status=Pending, charset=windows-1252, address_zip=95131, mc_shipping=0.00, mc_handling=0.00, first_name=Test, address_country_code=US, address_name=Test User, notify_version=3.4, custom=2&15, payer_status=verified, address_country=United States, num_cart_items=1, mc_handling1=0.00, address_city=San Jose, payer_email=nabaru_1316066674_per@gmail.com, verify_sign=A3wG0Mu4KV4vviIEavkfLfPC4iqMAABJ8iTSRIy2m6NZMAX453p8ZkDp, mc_shipping1=0.00, tax1=0.00, txn_id=7TA51702UJ3206101, payment_type=instant, last_name=User, receiver_email=admin@jobshoppa.com, item_name1=Job payment, address_state=CA, quantity1=1, pending_reason=unilateral, txn_type=cart, mc_currency=GBP, mc_gross_1=3.03, residence_country=US, test_ipn=1, transaction_subject=2&15, payment_gross=, merchant_return_link=click here, form_charset=UTF-8, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+

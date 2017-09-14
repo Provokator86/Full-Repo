@@ -1,0 +1,2814 @@
+<?xml version="1.0"?>
+<tmx version="1.4">
+ <header creationtool="TMXWriter" creationtoolversion="0.1" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="en" o-tmf="ABCTransMem"></header>
+ <body>
+  <tu tuid="password changed successfully." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>cGFzc3dvcmQgY2hhbmdlZCBzdWNjZXNzZnVsbHku</seg>
+   </tuv>
+  </tu>
+  <tu tuid="password changed could not saved." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>cGFzc3dvcmQgY2hhbmdlZCBjb3VsZCBub3Qgc2F2ZWQu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="existing password does not match." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>ZXhpc3RpbmcgcGFzc3dvcmQgZG9lcyBub3QgbWF0Y2gu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="comment saved successfully." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>Y29tbWVudCBzYXZlZCBzdWNjZXNzZnVsbHku</seg>
+   </tuv>
+  </tu>
+  <tu tuid="failed to save comment." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>ZmFpbGVkIHRvIHNhdmUgY29tbWVudC4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="email setting saved successfully." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>ZW1haWwgc2V0dGluZyBzYXZlZCBzdWNjZXNzZnVsbHku</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" contact details saved succesfully" datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>IGNvbnRhY3QgZGV0YWlscyBzYXZlZCBzdWNjZXNmdWxseQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" profile details saved succesfully" datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>IHByb2ZpbGUgZGV0YWlscyBzYXZlZCBzdWNjZXNmdWxseQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" profile details could not saved" datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>IHByb2ZpbGUgZGV0YWlscyBjb3VsZCBub3Qgc2F2ZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="testimonial saved successfully." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>dGVzdGltb25pYWwgc2F2ZWQgc3VjY2Vzc2Z1bGx5Lg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="testimonial saved failure." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>dGVzdGltb25pYWwgc2F2ZWQgZmFpbHVyZS4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote days saved successfully." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUgZGF5cyBzYXZlZCBzdWNjZXNzZnVsbHku</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote days saved failure." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUgZGF5cyBzYXZlZCBmYWlsdXJlLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job not exist." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIG5vdCBleGlzdC4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job deleted successfully." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIGRlbGV0ZWQgc3VjY2Vzc2Z1bGx5Lg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job not deleted." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIG5vdCBkZWxldGVkLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote accepted successfully." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUgYWNjZXB0ZWQgc3VjY2Vzc2Z1bGx5Lg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote acceptance failed." datatype="plaintext">
+   <prop type="page">/controllers/buyer.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUgYWNjZXB0YW5jZSBmYWlsZWQu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Time left" datatype="plaintext">
+   <prop type="page">/controllers/cron/radar_job.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGltZSBsZWZ0</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Budget" datatype="plaintext">
+   <prop type="page">/controllers/cron/radar_job.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnVkZ2V0</seg>
+   </tuv>
+  </tu>
+  <tu tuid="No information found about latest news." datatype="plaintext">
+   <prop type="page">/controllers/home.php</prop>
+   <tuv xml:lang="en">
+    <seg>Tm8gaW5mb3JtYXRpb24gZm91bmQgYWJvdXQgbGF0ZXN0IG5ld3Mu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job not found." datatype="plaintext">
+   <prop type="page">/controllers/job.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIG5vdCBmb3VuZC4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Only Buyer can post job." datatype="plaintext">
+   <prop type="page">/controllers/job.php</prop>
+   <tuv xml:lang="en">
+    <seg>T25seSBCdXllciBjYW4gcG9zdCBqb2Iu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="You can\'t place quote without login." datatype="plaintext">
+   <prop type="page">/controllers/job.php</prop>
+   <tuv xml:lang="en">
+    <seg>WW91IGNhblwndCBwbGFjZSBxdW90ZSB3aXRob3V0IGxvZ2luLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Buyer can\'t place quote." datatype="plaintext">
+   <prop type="page">/controllers/job.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnV5ZXIgY2FuXCd0IHBsYWNlIHF1b3RlLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote placed successfully." datatype="plaintext">
+   <prop type="page">/controllers/job.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUgcGxhY2VkIHN1Y2Nlc3NmdWxseS4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote not placed successfully." datatype="plaintext">
+   <prop type="page">/controllers/job.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUgbm90IHBsYWNlZCBzdWNjZXNzZnVsbHku</seg>
+   </tuv>
+  </tu>
+  <tu tuid="You have already placed quote." datatype="plaintext">
+   <prop type="page">/controllers/job.php</prop>
+   <tuv xml:lang="en">
+    <seg>WW91IGhhdmUgYWxyZWFkeSBwbGFjZWQgcXVvdGUu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="message deleted successfull" datatype="plaintext">
+   <prop type="page">/controllers/private_message.php</prop>
+   <tuv xml:lang="en">
+    <seg>bWVzc2FnZSBkZWxldGVkIHN1Y2Nlc3NmdWxs</seg>
+   </tuv>
+  </tu>
+  <tu tuid="unable to delete message" datatype="plaintext">
+   <prop type="page">/controllers/private_message.php</prop>
+   <tuv xml:lang="en">
+    <seg>dW5hYmxlIHRvIGRlbGV0ZSBtZXNzYWdl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="message status changed successfully." datatype="plaintext">
+   <prop type="page">/controllers/private_message.php</prop>
+   <tuv xml:lang="en">
+    <seg>bWVzc2FnZSBzdGF0dXMgY2hhbmdlZCBzdWNjZXNzZnVsbHku</seg>
+   </tuv>
+  </tu>
+  <tu tuid="You can\'t access this page" datatype="plaintext">
+   <prop type="page">/controllers/private_message.php</prop>
+   <tuv xml:lang="en">
+    <seg>WW91IGNhblwndCBhY2Nlc3MgdGhpcyBwYWdl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="recommend send successfully." datatype="plaintext">
+   <prop type="page">/controllers/recommend.php</prop>
+   <tuv xml:lang="en">
+    <seg>cmVjb21tZW5kIHNlbmQgc3VjY2Vzc2Z1bGx5Lg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="failed to send recommend." datatype="plaintext">
+   <prop type="page">/controllers/recommend.php</prop>
+   <tuv xml:lang="en">
+    <seg>ZmFpbGVkIHRvIHNlbmQgcmVjb21tZW5kLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" profile details could not saved " datatype="plaintext">
+   <prop type="page">/controllers/tradesman.php</prop>
+   <tuv xml:lang="en">
+    <seg>IHByb2ZpbGUgZGV0YWlscyBjb3VsZCBub3Qgc2F2ZWQg</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" album details saved succesfully" datatype="plaintext">
+   <prop type="page">/controllers/tradesman.php</prop>
+   <tuv xml:lang="en">
+    <seg>IGFsYnVtIGRldGFpbHMgc2F2ZWQgc3VjY2VzZnVsbHk=</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" album details could not saved " datatype="plaintext">
+   <prop type="page">/controllers/tradesman.php</prop>
+   <tuv xml:lang="en">
+    <seg>IGFsYnVtIGRldGFpbHMgY291bGQgbm90IHNhdmVkIA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job radar saved successfully." datatype="plaintext">
+   <prop type="page">/controllers/tradesman.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIHJhZGFyIHNhdmVkIHN1Y2Nlc3NmdWxseS4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job radar saved failure." datatype="plaintext">
+   <prop type="page">/controllers/tradesman.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIHJhZGFyIHNhdmVkIGZhaWx1cmUu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Payment" datatype="plaintext">
+   <prop type="page">/controllers/tradesman.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGF5bWVudA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Payment Success" datatype="plaintext">
+   <prop type="page">/controllers/tradesman.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGF5bWVudCBTdWNjZXNz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="postal code" datatype="plaintext">
+   <prop type="page">/controllers/tradesman.php</prop>
+   <tuv xml:lang="en">
+    <seg>cG9zdGFsIGNvZGU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="radius" datatype="plaintext">
+   <prop type="page">/controllers/tradesman.php</prop>
+   <tuv xml:lang="en">
+    <seg>cmFkaXVz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="category" datatype="plaintext">
+   <prop type="page">/controllers/tradesman.php</prop>
+   <tuv xml:lang="en">
+    <seg>Y2F0ZWdvcnk=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Invalid user name or password. Please try again." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>SW52YWxpZCB1c2VyIG5hbWUgb3IgcGFzc3dvcmQuIFBsZWFzZSB0cnkgYWdhaW4u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Successfully logged in." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>U3VjY2Vzc2Z1bGx5IGxvZ2dlZCBpbi4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Invalid user name or email. Please try again." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>SW52YWxpZCB1c2VyIG5hbWUgb3IgZW1haWwuIFBsZWFzZSB0cnkgYWdhaW4u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="A new password has generated and send to your email successfully." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>QSBuZXcgcGFzc3dvcmQgaGFzIGdlbmVyYXRlZCBhbmQgc2VuZCB0byB5b3VyIGVtYWlsIHN1Y2Nlc3NmdWxseS4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Mail not delivered." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>TWFpbCBub3QgZGVsaXZlcmVkLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Email already exist." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>RW1haWwgYWxyZWFkeSBleGlzdC4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Username already exist." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>VXNlcm5hbWUgYWxyZWFkeSBleGlzdC4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="give a proper username with minnimum 6 character" datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>Z2l2ZSBhIHByb3BlciB1c2VybmFtZSB3aXRoIG1pbm5pbXVtIDYgY2hhcmFjdGVy</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Account not validated." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWNjb3VudCBub3QgdmFsaWRhdGVkLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Account validated you can login now ." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWNjb3VudCB2YWxpZGF0ZWQgeW91IGNhbiBsb2dpbiBub3cgLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Invalid captcha." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>SW52YWxpZCBjYXB0Y2hhLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Registration successfull." datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVnaXN0cmF0aW9uIHN1Y2Nlc3NmdWxsLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="image deleted succesfully" datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>aW1hZ2UgZGVsZXRlZCBzdWNjZXNmdWxseQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="image could not deleted" datatype="plaintext">
+   <prop type="page">/controllers/user.php</prop>
+   <tuv xml:lang="en">
+    <seg>aW1hZ2UgY291bGQgbm90IGRlbGV0ZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Summary" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U3VtbWFyeQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total Number of Buyers" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgTnVtYmVyIG9mIEJ1eWVycw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total Number of Tradesman" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgTnVtYmVyIG9mIFRyYWRlc21hbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total Buyers Signup" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgQnV5ZXJzIFNpZ251cA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total Tradesman Signup" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgVHJhZGVzbWFuIFNpZ251cA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total Quotes have been placed" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgUXVvdGVzIGhhdmUgYmVlbiBwbGFjZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total Message have been posted" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgTWVzc2FnZSBoYXZlIGJlZW4gcG9zdGVk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total Jobs have been Accepted by the Tradesman" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgSm9icyBoYXZlIGJlZW4gQWNjZXB0ZWQgYnkgdGhlIFRyYWRlc21hbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total Payments have been made" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgUGF5bWVudHMgaGF2ZSBiZWVuIG1hZGU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Jobs Completed Today" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9icyBDb21wbGV0ZWQgVG9kYXk=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="No Record Found" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Tm8gUmVjb3JkIEZvdW5k</seg>
+   </tuv>
+  </tu>
+  <tu tuid="New Jobs to be Approved" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TmV3IEpvYnMgdG8gYmUgQXBwcm92ZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Active Jobs" datatype="plaintext">
+   <prop type="page">/views/admin/dashboard/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWN0aXZlIEpvYnM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Download" datatype="plaintext">
+   <prop type="page">/views/admin/job_overview/show_detail.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RG93bmxvYWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Active" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/active_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWN0aXZl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/active_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9icw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="All jobs that you have posted and have been approved by admin are listed below" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/active_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWxsIGpvYnMgdGhhdCB5b3UgaGF2ZSBwb3N0ZWQgYW5kIGhhdmUgYmVlbiBhcHByb3ZlZCBieSBhZG1pbiBhcmUgbGlzdGVkIGJlbG93</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Jobs Details" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_active_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9icyBEZXRhaWxz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_active_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Options" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_active_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>T3B0aW9ucw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Category" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_active_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q2F0ZWdvcnk=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Posted on" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_active_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zdGVkIG9u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="No job found" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_active_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Tm8gam9iIGZvdW5k</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Status" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_all_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U3RhdHVz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman Details" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_assigned_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFuIERldGFpbHM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Action" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_assigned_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWN0aW9u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Assigned on" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_assigned_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXNzaWduZWQgb24=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Accept" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_assigned_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWNjZXB0</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Deny" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_assigned_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RGVueQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Terminate" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_assigned_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGVybWluYXRl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Expired on" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/ajax_expired_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RXhwaXJlZCBvbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="All" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/all_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWxs</seg>
+   </tuv>
+  </tu>
+  <tu tuid="This section consists of all jobs and their history posted by you" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/all_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGhpcyBzZWN0aW9uIGNvbnNpc3RzIG9mIGFsbCBqb2JzIGFuZCB0aGVpciBoaXN0b3J5IHBvc3RlZCBieSB5b3U=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Assigned" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/assign_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXNzaWduZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="This section consists of jobs that are under progress, and declared as completed" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/assign_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGhpcyBzZWN0aW9uIGNvbnNpc3RzIG9mIGpvYnMgdGhhdCBhcmUgdW5kZXIgcHJvZ3Jlc3MsIGFuZCBkZWNsYXJlZCBhcyBjb21wbGV0ZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote(s)" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_quotes.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUocyk=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Overview" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_quotes.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIE92ZXJ2aWV3</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Lowest Bid" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_quotes.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TG93ZXN0IEJpZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total no. of Quote(s) placed" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_quotes.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgbm8uIG9mIFF1b3RlKHMpIHBsYWNlZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="View Quote(s)" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_quotes.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VmlldyBRdW90ZShzKQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_quotes.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="City" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_quotes.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q2l0eQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Accept Quote" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_quotes.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWNjZXB0IFF1b3Rl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="My" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_testimonial.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TXk=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Testimonial" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_testimonial.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGVzdGltb25pYWw=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Please drop a line about our services, we sincerely hope you have had a wonderful experience" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_testimonial.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGxlYXNlIGRyb3AgYSBsaW5lIGFib3V0IG91ciBzZXJ2aWNlcywgd2Ugc2luY2VyZWx5IGhvcGUgeW91IGhhdmUgaGFkIGEgd29uZGVyZnVsIGV4cGVyaWVuY2U=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Previous  Testimonials" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_testimonial.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UHJldmlvdXMgIFRlc3RpbW9uaWFscw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Date" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/buyer_testimonial.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RGF0ZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Change" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/change_password.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q2hhbmdl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Password" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/change_password.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGFzc3dvcmQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Required field" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/change_password.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVxdWlyZWQgZmllbGQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Please take a moment and fill the form out below." datatype="plaintext">
+   <prop type="page">/views/fe/buyer/change_password.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGxlYXNlIHRha2UgYSBtb21lbnQgYW5kIGZpbGwgdGhlIGZvcm0gb3V0IGJlbG93Lg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Existing Password" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/change_password.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RXhpc3RpbmcgUGFzc3dvcmQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="New Password" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/change_password.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TmV3IFBhc3N3b3Jk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Confirm  New Password" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/change_password.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29uZmlybSAgTmV3IFBhc3N3b3Jk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Are you sure you want to delete the Job?" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/chk_del.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXJlIHlvdSBzdXJlIHlvdSB3YW50IHRvIGRlbGV0ZSB0aGUgSm9iPw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Are you sure you want to choose this tradesman for" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/confirm_job_assign.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXJlIHlvdSBzdXJlIHlvdSB3YW50IHRvIGNob29zZSB0aGlzIHRyYWRlc21hbiBmb3I=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Contact" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/contact_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29udGFjdA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Details" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/contact_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RGV0YWlscw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Contact Number" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/contact_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29udGFjdCBOdW1iZXI=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Example " datatype="plaintext">
+   <prop type="page">/views/fe/buyer/contact_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RXhhbXBsZSA=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Skype IM" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/contact_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2t5cGUgSU0=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="YAHOO IM" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/contact_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>WUFIT08gSU0=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="MSN IM" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/contact_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TVNOIElN</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Dashboard" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RGFzaGJvYXJk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Welcome" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2VsY29tZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Local time is " datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TG9jYWwgdGltZSBpcyA=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="My  Open Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TXkgIE9wZW4gSm9icw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Title" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIFRpdGxl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quotes" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGVz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Expiry Date" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RXhwaXJ5IERhdGU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Option" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>T3B0aW9u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="No record found" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Tm8gcmVjb3JkIGZvdW5k</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Completion Alert of Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29tcGxldGlvbiBBbGVydCBvZiBKb2Jz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman Name" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFuIE5hbWU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman declared" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFuIGRlY2xhcmVk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="job as completed" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>am9iIGFzIGNvbXBsZXRlZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Why do you want to deny this Job" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/deny_feedback.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2h5IGRvIHlvdSB3YW50IHRvIGRlbnkgdGhpcyBKb2I=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Comments" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/deny_feedback.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29tbWVudHM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Edit" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RWRpdA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Profile" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UHJvZmlsZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Name" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TmFtZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Email" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RW1haWw=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Address" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWRkcmVzcw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Province" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UHJvdmluY2U=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Select a province" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VsZWN0IGEgcHJvdmluY2U=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Select city" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VsZWN0IGNpdHk=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Postal code" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zdGFsIGNvZGU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Select postal code" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VsZWN0IHBvc3RhbCBjb2Rl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Buyer Profile" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnV5ZXIgUHJvZmlsZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Profile Photo" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UHJvZmlsZSBQaG90bw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="upload file type only jpg,jpeg,png" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>dXBsb2FkIGZpbGUgdHlwZSBvbmx5IGpwZyxqcGVnLHBuZw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="I would like to receive Newsletter" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SSB3b3VsZCBsaWtlIHRvIHJlY2VpdmUgTmV3c2xldHRlcg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Save" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2F2ZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Cancel" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q2FuY2Vs</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Settings" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2V0dGluZ3M=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="System would send you alert email to you in the following scenarios. If you would like to receive such emails, please check the following options" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U3lzdGVtIHdvdWxkIHNlbmQgeW91IGFsZXJ0IGVtYWlsIHRvIHlvdSBpbiB0aGUgZm9sbG93aW5nIHNjZW5hcmlvcy4gSWYgeW91IHdvdWxkIGxpa2UgdG8gcmVjZWl2ZSBzdWNoIGVtYWlscywgcGxlYXNlIGNoZWNrIHRoZSBmb2xsb3dpbmcgb3B0aW9ucw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman has placed Quote against your Job" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFuIGhhcyBwbGFjZWQgUXVvdGUgYWdhaW5zdCB5b3VyIEpvYg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman has accepted/rejected the Job offer" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFuIGhhcyBhY2NlcHRlZC9yZWplY3RlZCB0aGUgSm9iIG9mZmVy</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman has submitted message against your Job" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFuIGhhcyBzdWJtaXR0ZWQgbWVzc2FnZSBhZ2FpbnN0IHlvdXIgSm9i</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman has completed the Job and asked for your feedback" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFuIGhhcyBjb21wbGV0ZWQgdGhlIEpvYiBhbmQgYXNrZWQgZm9yIHlvdXIgZmVlZGJhY2s=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Admin has approved/rejected the Job you have posted" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWRtaW4gaGFzIGFwcHJvdmVkL3JlamVjdGVkIHRoZSBKb2IgeW91IGhhdmUgcG9zdGVk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Expired" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/expired_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RXhwaXJlZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="This section consists of all expired jobs you have posted" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/expired_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGhpcyBzZWN0aW9uIGNvbnNpc3RzIG9mIGFsbCBleHBpcmVkIGpvYnMgeW91IGhhdmUgcG9zdGVk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Why do you want to accept this Job" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/give_feedback.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2h5IGRvIHlvdSB3YW50IHRvIGFjY2VwdCB0aGlzIEpvYg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Rating" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/give_feedback.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmF0aW5n</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Positive" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/give_feedback.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zaXRpdmU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/job_edit.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9i</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote Period" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/job_edit.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUgUGVyaW9k</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Why do you want to terminate" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/job_terminate_box.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2h5IGRvIHlvdSB3YW50IHRvIHRlcm1pbmF0ZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Reason" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/job_terminate_box.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVhc29u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Feedback" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/job_terminate_box.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RmVlZGJhY2s=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Private Message Board" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/private_message_board.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UHJpdmF0ZSBNZXNzYWdlIEJvYXJk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Filter option" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/private_message_board.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RmlsdGVyIG9wdGlvbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Select" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/private_message_board.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VsZWN0</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Message" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/private_message_board.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TWVzc2FnZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Comment" datatype="plaintext">
+   <prop type="page">/views/fe/buyer/private_message_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29tbWVudA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Account" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWNjb3VudA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Edit Profile" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RWRpdCBQcm9maWxl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Change Password" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q2hhbmdlIFBhc3N3b3Jk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Contact Details" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29udGFjdCBEZXRhaWxz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Post a Job" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zdCBhIEpvYg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="All Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWxsIEpvYnM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Assigned Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXNzaWduZWQgSm9icw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Completed Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29tcGxldGVkIEpvYnM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Expired Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RXhwaXJlZCBKb2Jz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Board" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Qm9hcmQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="My Private Message Board" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TXkgUHJpdmF0ZSBNZXNzYWdlIEJvYXJk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Search / InviteTradesman" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VhcmNoIC8gSW52aXRlVHJhZGVzbWFu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Email Settings" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RW1haWwgU2V0dGluZ3M=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="General" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>R2VuZXJhbA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="My Alerts" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TXkgQWxlcnRz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Recommend Us" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVjb21tZW5kIFVz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="My Testimonial" datatype="plaintext">
+   <prop type="page">/views/fe/common/buyer_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TXkgVGVzdGltb25pYWw=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Home" datatype="plaintext">
+   <prop type="page">/views/fe/common/common_buyer_search.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SG9tZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="What Service Do You Need" datatype="plaintext">
+   <prop type="page">/views/fe/common/common_buyer_search.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2hhdCBTZXJ2aWNlIERvIFlvdSBOZWVk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="What Job Do You Need" datatype="plaintext">
+   <prop type="page">/views/fe/common/common_search.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2hhdCBKb2IgRG8gWW91IE5lZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Buyer Section" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnV5ZXIgU2VjdGlvbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Post a Job for free" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zdCBhIEpvYiBmb3IgZnJlZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="How it works" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SG93IGl0IHdvcmtz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="FAQ" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RkFR</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman Section" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFuIFNlY3Rpb24=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Search Job" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VhcmNoIEpvYg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="About Us" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWJvdXQgVXM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="About us" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWJvdXQgdXM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Mission-visions" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TWlzc2lvbi12aXNpb25z</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Careers" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q2FyZWVycw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Legal Section" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TGVnYWwgU2VjdGlvbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Privacy Policy" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UHJpdmFjeSBQb2xpY3k=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Terms &amp;amp; conditions" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGVybXMgJmFtcDsgY29uZGl0aW9ucw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Support" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U3VwcG9ydA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Help" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SGVscA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Contact us" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29udGFjdCB1cw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Abuse Report" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWJ1c2UgUmVwb3J0</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Copyright 2011 All Rights Reserved" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29weXJpZ2h0IDIwMTEgQWxsIFJpZ2h0cyBSZXNlcnZlZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Follow us" datatype="plaintext">
+   <prop type="page">/views/fe/common/footer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Rm9sbG93IHVz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Find Tradesmen" datatype="plaintext">
+   <prop type="page">/views/fe/common/header.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RmluZCBUcmFkZXNtZW4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Find a Job" datatype="plaintext">
+   <prop type="page">/views/fe/common/header.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RmluZCBhIEpvYg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Register" datatype="plaintext">
+   <prop type="page">/views/fe/common/header_top.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVnaXN0ZXI=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="How do you like to choose to use Quote Your Job" datatype="plaintext">
+   <prop type="page">/views/fe/common/header_top.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SG93IGRvIHlvdSBsaWtlIHRvIGNob29zZSB0byB1c2UgUXVvdGUgWW91ciBKb2I=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Buyer" datatype="plaintext">
+   <prop type="page">/views/fe/common/header_top.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnV5ZXI=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Registration" datatype="plaintext">
+   <prop type="page">/views/fe/common/header_top.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVnaXN0cmF0aW9u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Login" datatype="plaintext">
+   <prop type="page">/views/fe/common/header_top.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TG9naW4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Signup" datatype="plaintext">
+   <prop type="page">/views/fe/common/header_top.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2lnbnVw</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Signout" datatype="plaintext">
+   <prop type="page">/views/fe/common/header_top.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2lnbm91dA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Forgot your password" datatype="plaintext">
+   <prop type="page">/views/fe/common/header_top.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Rm9yZ290IHlvdXIgcGFzc3dvcmQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Keep me logged in" datatype="plaintext">
+   <prop type="page">/views/fe/common/header_top.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>S2VlcCBtZSBsb2dnZWQgaW4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Jobs " datatype="plaintext">
+   <prop type="page">/views/fe/common/job_category_list.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9icyA=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="by Category" datatype="plaintext">
+   <prop type="page">/views/fe/common/job_category_list.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>YnkgQ2F0ZWdvcnk=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesmen" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_category_list.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWVu</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" by Category" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_category_list.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>IGJ5IENhdGVnb3J5</seg>
+   </tuv>
+  </tu>
+  <tu tuid="All Categories" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_category_list.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWxsIENhdGVnb3JpZXM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Edit My Profile" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RWRpdCBNeSBQcm9maWxl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="View Trade Profile" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VmlldyBUcmFkZSBQcm9maWxl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="My Album" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TXkgQWxidW0=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Prospects" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UHJvc3BlY3Rz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job invitations" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIGludml0YXRpb25z</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Radar Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmFkYXIgSm9icw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Secured" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VjdXJlZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Pending Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGVuZGluZyBKb2Jz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="In Progress" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SW4gUHJvZ3Jlc3M=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Frozen Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RnJvemVuIEpvYnM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Feedbacks" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RmVlZGJhY2tz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Feedback Received" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RmVlZGJhY2sgUmVjZWl2ZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Radar" datatype="plaintext">
+   <prop type="page">/views/fe/common/tradesman_left_menu.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIFJhZGFy</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Positive feedback" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/ajax_tradesman_list.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zaXRpdmUgZmVlZGJhY2s=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Find" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RmluZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="a Tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>YSBUcmFkZXNtYW4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman(s) found" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFuKHMpIGZvdW5k</seg>
+   </tuv>
+  </tu>
+  <tu tuid="You can find Tradesman easily specifing job type, category and location" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>WW91IGNhbiBmaW5kIFRyYWRlc21hbiBlYXNpbHkgc3BlY2lmaW5nIGpvYiB0eXBlLCBjYXRlZ29yeSBhbmQgbG9jYXRpb24=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Radius" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmFkaXVz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Results / Page" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVzdWx0cyAvIFBhZ2U=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Sort by" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U29ydCBieQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Search" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VhcmNo</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Invite Tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/invite_tradesman.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SW52aXRlIFRyYWRlc21hbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="List of Active jobs for which you want to invite the Tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/invite_tradesman.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TGlzdCBvZiBBY3RpdmUgam9icyBmb3Igd2hpY2ggeW91IHdhbnQgdG8gaW52aXRlIHRoZSBUcmFkZXNtYW4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Invite" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/invite_tradesman.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SW52aXRl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="You don\'t have any active jobs." datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/invite_tradesman.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>WW91IGRvblwndCBoYXZlIGFueSBhY3RpdmUgam9icy4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Only Buyer can acces this feature" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/invite_tradesman.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>T25seSBCdXllciBjYW4gYWNjZXMgdGhpcyBmZWF0dXJl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Please login to acces this feature" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/invite_tradesman.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGxlYXNlIGxvZ2luIHRvIGFjY2VzIHRoaXMgZmVhdHVyZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Thank you for Submitting the job." datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/sucess_job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGhhbmsgeW91IGZvciBTdWJtaXR0aW5nIHRoZSBqb2Iu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Admin will review this job." datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/sucess_job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWRtaW4gd2lsbCByZXZpZXcgdGhpcyBqb2Iu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Location" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TG9jYXRpb24=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="- Member since" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>LSBNZW1iZXIgc2luY2U=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Last login" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TGFzdCBsb2dpbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="User Name" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VXNlciBOYW1l</seg>
+   </tuv>
+  </tu>
+  <tu tuid="What payment types do you accept?" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2hhdCBwYXltZW50IHR5cGVzIGRvIHlvdSBhY2NlcHQ/</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Would you like to Travel?" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V291bGQgeW91IGxpa2UgdG8gVHJhdmVsPw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Postal Code" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zdGFsIENvZGU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Qualification" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVhbGlmaWNhdGlvbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="About me" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWJvdXQgbWU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Skills" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2tpbGxz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Photo" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGhvdG8=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Recent Feedback" datatype="plaintext">
+   <prop type="page">/views/fe/find_tradesman/tradesman_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVjZW50IEZlZWRiYWNr</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Abuse" datatype="plaintext">
+   <prop type="page">/views/fe/home/abuse_report.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWJ1c2U=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Report" datatype="plaintext">
+   <prop type="page">/views/fe/home/abuse_report.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVwb3J0</seg>
+   </tuv>
+  </tu>
+  <tu tuid="First Name" datatype="plaintext">
+   <prop type="page">/views/fe/home/abuse_report.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Rmlyc3QgTmFtZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Last Name" datatype="plaintext">
+   <prop type="page">/views/fe/home/abuse_report.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TGFzdCBOYW1l</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Contact No" datatype="plaintext">
+   <prop type="page">/views/fe/home/abuse_report.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29udGFjdCBObw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Email Address" datatype="plaintext">
+   <prop type="page">/views/fe/home/abuse_report.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RW1haWwgQWRkcmVzcw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Please provide your comments" datatype="plaintext">
+   <prop type="page">/views/fe/home/abuse_report.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGxlYXNlIHByb3ZpZGUgeW91ciBjb21tZW50cw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Thank you" datatype="plaintext">
+   <prop type="page">/views/fe/home/abuse_report_success.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGhhbmsgeW91</seg>
+   </tuv>
+  </tu>
+  <tu tuid="your report send successfully. You will get reply soon" datatype="plaintext">
+   <prop type="page">/views/fe/home/abuse_report_success.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>eW91ciByZXBvcnQgc2VuZCBzdWNjZXNzZnVsbHkuIFlvdSB3aWxsIGdldCByZXBseSBzb29u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Us" datatype="plaintext">
+   <prop type="page">/views/fe/home/contact_us.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VXM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="( if you are a member of this site )" datatype="plaintext">
+   <prop type="page">/views/fe/home/contact_us.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>KCBpZiB5b3UgYXJlIGEgbWVtYmVyIG9mIHRoaXMgc2l0ZSAp</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Subject" datatype="plaintext">
+   <prop type="page">/views/fe/home/contact_us.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U3ViamVjdA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="for contacting us. You will get reply soon" datatype="plaintext">
+   <prop type="page">/views/fe/home/contact_us_success.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Zm9yIGNvbnRhY3RpbmcgdXMuIFlvdSB3aWxsIGdldCByZXBseSBzb29u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="How" datatype="plaintext">
+   <prop type="page">/views/fe/home/how_it_works_buyer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SG93</seg>
+   </tuv>
+  </tu>
+  <tu tuid="it works for buyers" datatype="plaintext">
+   <prop type="page">/views/fe/home/how_it_works_buyer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>aXQgd29ya3MgZm9yIGJ1eWVycw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Get Quotes From Tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/home/how_it_works_buyer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>R2V0IFF1b3RlcyBGcm9tIFRyYWRlc21hbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Hire the best Tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/home/how_it_works_buyer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SGlyZSB0aGUgYmVzdCBUcmFkZXNtYW4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Leave Feedback" datatype="plaintext">
+   <prop type="page">/views/fe/home/how_it_works_buyer.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TGVhdmUgRmVlZGJhY2s=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="it works for tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/home/how_it_works_tradesman.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>aXQgd29ya3MgZm9yIHRyYWRlc21hbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Search for Job" datatype="plaintext">
+   <prop type="page">/views/fe/home/how_it_works_tradesman.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VhcmNoIGZvciBKb2I=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Post your queries on the Jobs" datatype="plaintext">
+   <prop type="page">/views/fe/home/how_it_works_tradesman.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zdCB5b3VyIHF1ZXJpZXMgb24gdGhlIEpvYnM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote on the Job of your choice" datatype="plaintext">
+   <prop type="page">/views/fe/home/how_it_works_tradesman.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUgb24gdGhlIEpvYiBvZiB5b3VyIGNob2ljZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Search for Tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VhcmNoIGZvciBUcmFkZXNtYW4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="What Job Do You Need?" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2hhdCBKb2IgRG8gWW91IE5lZWQ/</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Popular Searches" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9wdWxhciBTZWFyY2hlcw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Handyman, Babysitter, Personal Trainer," datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SGFuZHltYW4sIEJhYnlzaXR0ZXIsIFBlcnNvbmFsIFRyYWluZXIs</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Where" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2hlcmU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="( City / Postal Code )" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>KCBDaXR5IC8gUG9zdGFsIENvZGUgKQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="What Service Do You Need?" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2hhdCBTZXJ2aWNlIERvIFlvdSBOZWVkPw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Handyman, Babysitter, Personal Trainer" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SGFuZHltYW4sIEJhYnlzaXR0ZXIsIFBlcnNvbmFsIFRyYWluZXI=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Let Local Tradesmans Completed for your job" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TGV0IExvY2FsIFRyYWRlc21hbnMgQ29tcGxldGVkIGZvciB5b3VyIGpvYg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Get Started now, it\'s free" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>R2V0IFN0YXJ0ZWQgbm93LCBpdFwncyBmcmVl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Get Quotes" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>R2V0IFF1b3Rlcw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Hire a Tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SGlyZSBhIFRyYWRlc21hbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Leave FeedBack" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TGVhdmUgRmVlZEJhY2s=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="News" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TmV3cw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="News Heading" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TmV3cyBIZWFkaW5n</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Client" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q2xpZW50</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Testimonials" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGVzdGltb25pYWxz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="View More" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VmlldyBNb3Jl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Newsletter" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TmV3c2xldHRlcg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Subscribe Now" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U3Vic2NyaWJlIE5vdw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Are " datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXJlIA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="you looking for a job to be done" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>eW91IGxvb2tpbmcgZm9yIGEgam9iIHRvIGJlIGRvbmU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Leave the hard work to us" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TGVhdmUgdGhlIGhhcmQgd29yayB0byB1cw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Receive multiple quotes into your inbox" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVjZWl2ZSBtdWx0aXBsZSBxdW90ZXMgaW50byB5b3VyIGluYm94</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Its Completely free" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SXRzIENvbXBsZXRlbHkgZnJlZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Review Feedback and Ratings" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmV2aWV3IEZlZWRiYWNrIGFuZCBSYXRpbmdz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Choose the Pro that suits you" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q2hvb3NlIHRoZSBQcm8gdGhhdCBzdWl0cyB5b3U=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="How it Works" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SG93IGl0IFdvcmtz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="you a Tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>eW91IGEgVHJhZGVzbWFu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Create your profile" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q3JlYXRlIHlvdXIgcHJvZmlsZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Receive job offers from clients" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVjZWl2ZSBqb2Igb2ZmZXJzIGZyb20gY2xpZW50cw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Grow your business" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>R3JvdyB5b3VyIGJ1c2luZXNz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Make more money" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TWFrZSBtb3JlIG1vbmV5</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Featured" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RmVhdHVyZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="View All Tradesman" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VmlldyBBbGwgVHJhZGVzbWFu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Member since" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TWVtYmVyIHNpbmNl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Main Skills &amp; Trades" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TWFpbiBTa2lsbHMgJiBUcmFkZXM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="jobs won" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>am9icyB3b24=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="feedback comments" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>ZmVlZGJhY2sgY29tbWVudHM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Just Completed" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SnVzdCBDb21wbGV0ZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="More" datatype="plaintext">
+   <prop type="page">/views/fe/home/index.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TW9yZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Questions" datatype="plaintext">
+   <prop type="page">/views/fe/home/job_poster_questions.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVlc3Rpb25z</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Read more.." datatype="plaintext">
+   <prop type="page">/views/fe/home/testimonial.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVhZCBtb3JlLi4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Jobs Title" datatype="plaintext">
+   <prop type="page">/views/fe/job/ajax_job_list.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9icyBUaXRsZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job(s) found" datatype="plaintext">
+   <prop type="page">/views/fe/job/find_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iKHMpIGZvdW5k</seg>
+   </tuv>
+  </tu>
+  <tu tuid="You can find jobs easily specifing job type, category and location" datatype="plaintext">
+   <prop type="page">/views/fe/job/find_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>WW91IGNhbiBmaW5kIGpvYnMgZWFzaWx5IHNwZWNpZmluZyBqb2IgdHlwZSwgY2F0ZWdvcnkgYW5kIGxvY2F0aW9u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Type" datatype="plaintext">
+   <prop type="page">/views/fe/job/find_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIFR5cGU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Other" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>T3RoZXI=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job(s)" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iKHMp</seg>
+   </tuv>
+  </tu>
+  <tu tuid="&lt;p&gt;No Record Found&lt;/p&gt;" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>PHA+Tm8gUmVjb3JkIEZvdW5kPC9wPg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Approved By Admin" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXBwcm92ZWQgQnkgQWRtaW4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Bidding Ends" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QmlkZGluZyBFbmRz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="left" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>bGVmdA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Creator" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIENyZWF0b3I=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total job(s) posted" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgam9iKHMpIHBvc3RlZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total job(s) awarded" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgam9iKHMpIGF3YXJkZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Description" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RGVzY3JpcHRpb24=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tradesman will provide material" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGVzbWFuIHdpbGwgcHJvdmlkZSBtYXRlcmlhbA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Tags" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGFncw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Attached File" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXR0YWNoZWQgRmlsZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Location" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIExvY2F0aW9u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Private Messages Board" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UHJpdmF0ZSBNZXNzYWdlcyBCb2FyZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote Now" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_details.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUgTm93</seg>
+   </tuv>
+  </tu>
+  <tu tuid="History" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_history.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SGlzdG9yeQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Post" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zdA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="a Job" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>YSBKb2I=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Required fields are indicated with a" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVxdWlyZWQgZmllbGRzIGFyZSBpbmRpY2F0ZWQgd2l0aCBh</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Try to give tradesmen as much information as possible in order to get a reasonable amount of quality bids" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJ5IHRvIGdpdmUgdHJhZGVzbWVuIGFzIG11Y2ggaW5mb3JtYXRpb24gYXMgcG9zc2libGUgaW4gb3JkZXIgdG8gZ2V0IGEgcmVhc29uYWJsZSBhbW91bnQgb2YgcXVhbGl0eSBiaWRz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Material Provide" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TWF0ZXJpYWwgUHJvdmlkZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Yes" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>WWVz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="No" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Tm8=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Doesn\'t Matter" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RG9lc25cJ3QgTWF0dGVy</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Keywords" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>S2V5d29yZHM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quoting Period" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGluZyBQZXJpb2Q=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="days" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>ZGF5cw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Budget if any" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnVkZ2V0IGlmIGFueQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Attach Pictures/Files" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXR0YWNoIFBpY3R1cmVzL0ZpbGVz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Permitted file formats: .jpg, .gif, .png, .pdf." datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGVybWl0dGVkIGZpbGUgZm9ybWF0czogLmpwZywgLmdpZiwgLnBuZywgLnBkZi4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Attach more file" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXR0YWNoIG1vcmUgZmlsZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Continue" datatype="plaintext">
+   <prop type="page">/views/fe/job/job_post.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29udGludWU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Overview" datatype="plaintext">
+   <prop type="page">/views/fe/job/quote_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>T3ZlcnZpZXc=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Poster" datatype="plaintext">
+   <prop type="page">/views/fe/job/quote_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIFBvc3Rlcg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Initial Price" datatype="plaintext">
+   <prop type="page">/views/fe/job/quote_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SW5pdGlhbCBQcmljZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Posted On" datatype="plaintext">
+   <prop type="page">/views/fe/job/quote_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zdGVkIE9u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Period Ends" datatype="plaintext">
+   <prop type="page">/views/fe/job/quote_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGVyaW9kIEVuZHM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Place" datatype="plaintext">
+   <prop type="page">/views/fe/job/quote_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGxhY2U=</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" Quote Price " datatype="plaintext">
+   <prop type="page">/views/fe/job/quote_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>IFF1b3RlIFByaWNlIA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Submit" datatype="plaintext">
+   <prop type="page">/views/fe/job/quote_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U3VibWl0</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Are you sure you want to delete the message?" datatype="plaintext">
+   <prop type="page">/views/fe/private_message/chk_del.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXJlIHlvdSBzdXJlIHlvdSB3YW50IHRvIGRlbGV0ZSB0aGUgbWVzc2FnZT8=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Recommend" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/buyer_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVjb21tZW5k</seg>
+   </tuv>
+  </tu>
+  <tu tuid="We hope this platform will make life easier for you, we are pretty sure you would want the same for your family, friends and neighbours. Please Recommend us" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/buyer_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2UgaG9wZSB0aGlzIHBsYXRmb3JtIHdpbGwgbWFrZSBsaWZlIGVhc2llciBmb3IgeW91LCB3ZSBhcmUgcHJldHR5IHN1cmUgeW91IHdvdWxkIHdhbnQgdGhlIHNhbWUgZm9yIHlvdXIgZmFtaWx5LCBmcmllbmRzIGFuZCBuZWlnaGJvdXJzLiBQbGVhc2UgUmVjb21tZW5kIHVz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Add more" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/buyer_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWRkIG1vcmU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Referral History" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/buyer_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVmZXJyYWwgSGlzdG9yeQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Recommend Date" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/buyer_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmVjb21tZW5kIERhdGU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Thank you." datatype="plaintext">
+   <prop type="page">/views/fe/recommend/success_message.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGhhbmsgeW91Lg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="a  mail has been send to referred email." datatype="plaintext">
+   <prop type="page">/views/fe/recommend/success_message.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>YSAgbWFpbCBoYXMgYmVlbiBzZW5kIHRvIHJlZmVycmVkIGVtYWlsLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" referral joins" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/tradesman_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>IHJlZmVycmFsIGpvaW5z</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" exemption" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/tradesman_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>IGV4ZW1wdGlvbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total No. you have referred" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/tradesman_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgTm8uIHlvdSBoYXZlIHJlZmVycmVk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Total Join" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/tradesman_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VG90YWwgSm9pbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Commission Free Waiver Status" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/tradesman_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29tbWlzc2lvbiBGcmVlIFdhaXZlciBTdGF0dXM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="You have to bring in " datatype="plaintext">
+   <prop type="page">/views/fe/recommend/tradesman_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>WW91IGhhdmUgdG8gYnJpbmcgaW4g</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" more persons to join this site to get the  next exemption" datatype="plaintext">
+   <prop type="page">/views/fe/recommend/tradesman_recommend.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>IG1vcmUgcGVyc29ucyB0byBqb2luIHRoaXMgc2l0ZSB0byBnZXQgdGhlICBuZXh0IGV4ZW1wdGlvbg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Details" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/ajax_completed_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIERldGFpbHM=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Awarded" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/ajax_frozen_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIEF3YXJkZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid=" No job found" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/ajax_invite_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>IE5vIGpvYiBmb3VuZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Creation Date" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/ajax_pending_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q3JlYXRpb24gRGF0ZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Buyer denied completion alert" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/ajax_pending_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnV5ZXIgZGVuaWVkIGNvbXBsZXRpb24gYWxlcnQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Completed" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/ajax_pending_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIENvbXBsZXRlZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Album" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/album.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWxidW0=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Upload Photo" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/album.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VXBsb2FkIFBob3Rv</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Title" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/album.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGl0bGU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Are you sure you want to delete the photo?" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/chk_del.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXJlIHlvdSBzdXJlIHlvdSB3YW50IHRvIGRlbGV0ZSB0aGUgcGhvdG8/</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Are you sure you want to delete the job?" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/chk_invite_job_del.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXJlIHlvdSBzdXJlIHlvdSB3YW50IHRvIGRlbGV0ZSB0aGUgam9iPw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Completed" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/completed_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29tcGxldGVk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="This Section consists of all the jobs that has been mutually agreed as complete" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/completed_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGhpcyBTZWN0aW9uIGNvbnNpc3RzIG9mIGFsbCB0aGUgam9icyB0aGF0IGhhcyBiZWVuIG11dHVhbGx5IGFncmVlZCBhcyBjb21wbGV0ZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="do you want to accept this Job" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/confirm_accept_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>ZG8geW91IHdhbnQgdG8gYWNjZXB0IHRoaXMgSm9i</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Are You Sure That The Job Has Been Completed" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/confirm_job_complete.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QXJlIFlvdSBTdXJlIFRoYXQgVGhlIEpvYiBIYXMgQmVlbiBDb21wbGV0ZWQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="My  Quotes" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TXkgIFF1b3Rlcw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Quote placed" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UXVvdGUgcGxhY2Vk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Pending Buyer Reviews" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/dashboard.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGVuZGluZyBCdXllciBSZXZpZXdz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="do you want to deny this Job" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/deny_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>ZG8geW91IHdhbnQgdG8gZGVueSB0aGlzIEpvYg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="My Profile" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TXkgUHJvZmlsZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Trade profile" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGUgcHJvZmlsZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Profile photo" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UHJvZmlsZSBwaG90bw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Website" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>V2Vic2l0ZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Help text" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SGVscCB0ZXh0</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Business Name" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnVzaW5lc3MgTmFtZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="select category" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>c2VsZWN0IGNhdGVnb3J5</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Add another Category" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QWRkIGFub3RoZXIgQ2F0ZWdvcnk=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Credit card" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q3JlZGl0IGNhcmQ=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Cheque" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q2hlcXVl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Cash" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/edit_profile.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q2FzaA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Job Invitations from Buyer" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9iIEludml0YXRpb25zIGZyb20gQnV5ZXI=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Buyer has posted Message" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnV5ZXIgaGFzIHBvc3RlZCBNZXNzYWdl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Jobs matching Radar Search Criteria" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Sm9icyBtYXRjaGluZyBSYWRhciBTZWFyY2ggQ3JpdGVyaWE=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Buyer has Awarded Job" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnV5ZXIgaGFzIEF3YXJkZWQgSm9i</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Buyer has provided Feedback" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnV5ZXIgaGFzIHByb3ZpZGVkIEZlZWRiYWNr</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Buyer has Terminated Job" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnV5ZXIgaGFzIFRlcm1pbmF0ZWQgSm9i</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Buyer has Cancelled Job in which you have placed Quote" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/email_settings.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>QnV5ZXIgaGFzIENhbmNlbGxlZCBKb2IgaW4gd2hpY2ggeW91IGhhdmUgcGxhY2VkIFF1b3Rl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Frozen" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/frozen_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RnJvemVu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Congratulations" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/frozen_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29uZ3JhdHVsYXRpb25z</seg>
+   </tuv>
+  </tu>
+  <tu tuid="From here you can view those jobs awarded to you by Buyers. The buyers have selected you as the winning bidder but you havent accepted the job offer yet. Please accept the job offer to win the auction." datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/frozen_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RnJvbSBoZXJlIHlvdSBjYW4gdmlldyB0aG9zZSBqb2JzIGF3YXJkZWQgdG8geW91IGJ5IEJ1eWVycy4gVGhlIGJ1eWVycyBoYXZlIHNlbGVjdGVkIHlvdSBhcyB0aGUgd2lubmluZyBiaWRkZXIgYnV0IHlvdSBoYXZlbnQgYWNjZXB0ZWQgdGhlIGpvYiBvZmZlciB5ZXQuIFBsZWFzZSBhY2NlcHQgdGhlIGpvYiBvZmZlciB0byB3aW4gdGhlIGF1Y3Rpb24u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Please provide postal code." datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/job_radar.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGxlYXNlIHByb3ZpZGUgcG9zdGFsIGNvZGUu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Please select radar value." datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/job_radar.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGxlYXNlIHNlbGVjdCByYWRhciB2YWx1ZS4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Please select a  category." datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/job_radar.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGxlYXNlIHNlbGVjdCBhICBjYXRlZ29yeS4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Radar" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/job_radar.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UmFkYXI=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="You dont want to miss out business within your reach." datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/job_radar.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>WW91IGRvbnQgd2FudCB0byBtaXNzIG91dCBidXNpbmVzcyB3aXRoaW4geW91ciByZWFjaC4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Pending" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/pending_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGVuZGluZw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="This section consists of the jobs that has been declared as incomplete by the Buyer" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/pending_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGhpcyBzZWN0aW9uIGNvbnNpc3RzIG9mIHRoZSBqb2JzIHRoYXQgaGFzIGJlZW4gZGVjbGFyZWQgYXMgaW5jb21wbGV0ZSBieSB0aGUgQnV5ZXI=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="In" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/progress_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SW4=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Progress" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/progress_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UHJvZ3Jlc3M=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Here you will find all the jobs that you have won and are in progress" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/progress_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SGVyZSB5b3Ugd2lsbCBmaW5kIGFsbCB0aGUgam9icyB0aGF0IHlvdSBoYXZlIHdvbiBhbmQgYXJlIGluIHByb2dyZXNz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="This section consists of all the bids you have placed in respect to all the jobs that are relevant to you" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/quote_jobs.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGhpcyBzZWN0aW9uIGNvbnNpc3RzIG9mIGFsbCB0aGUgYmlkcyB5b3UgaGF2ZSBwbGFjZWQgaW4gcmVzcGVjdCB0byBhbGwgdGhlIGpvYnMgdGhhdCBhcmUgcmVsZXZhbnQgdG8geW91</seg>
+   </tuv>
+  </tu>
+  <tu tuid="jobs found from your radar settings" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/tradesman_radar_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>am9icyBmb3VuZCBmcm9tIHlvdXIgcmFkYXIgc2V0dGluZ3M=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Show All" datatype="plaintext">
+   <prop type="page">/views/fe/tradesman/tradesman_radar_job.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2hvdyBBbGw=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Your account activated successfully" datatype="plaintext">
+   <prop type="page">/views/fe/user/active_account.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>WW91ciBhY2NvdW50IGFjdGl2YXRlZCBzdWNjZXNzZnVsbHk=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="now you can login." datatype="plaintext">
+   <prop type="page">/views/fe/user/active_account.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>bm93IHlvdSBjYW4gbG9naW4u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Here" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SGVyZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Username" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VXNlcm5hbWU=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Forget Password" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Rm9yZ2V0IFBhc3N3b3Jk</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Confirm Email Address" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29uZmlybSBFbWFpbCBBZGRyZXNz</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Login Details" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>TG9naW4gRGV0YWlscw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Confirm Password" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Q29uZmlybSBQYXNzd29yZA==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Security Code" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>U2VjdXJpdHkgQ29kZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Enter the two words below:" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>RW50ZXIgdGhlIHR3byB3b3JkcyBiZWxvdzo=</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Please inform me about latest saving tips and important news." datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UGxlYXNlIGluZm9ybSBtZSBhYm91dCBsYXRlc3Qgc2F2aW5nIHRpcHMgYW5kIGltcG9ydGFudCBuZXdzLg==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="I accept the" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SSBhY2NlcHQgdGhl</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Terms &amp;amp; Conditions" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGVybXMgJmFtcDsgQ29uZGl0aW9ucw==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="and the" datatype="plaintext">
+   <prop type="page">/views/fe/user/buyer_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>YW5kIHRoZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Forget" datatype="plaintext">
+   <prop type="page">/views/fe/user/forget_password.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>Rm9yZ2V0</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Thank you for Registration." datatype="plaintext">
+   <prop type="page">/views/fe/user/success_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VGhhbmsgeW91IGZvciBSZWdpc3RyYXRpb24u</seg>
+   </tuv>
+  </tu>
+  <tu tuid="a verify mail has been send to your email." datatype="plaintext">
+   <prop type="page">/views/fe/user/success_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>YSB2ZXJpZnkgbWFpbCBoYXMgYmVlbiBzZW5kIHRvIHlvdXIgZW1haWwu</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Trade Profile" datatype="plaintext">
+   <prop type="page">/views/fe/user/tradesman_registration.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>VHJhZGUgUHJvZmlsZQ==</seg>
+   </tuv>
+  </tu>
+ </body>
+</tmx>

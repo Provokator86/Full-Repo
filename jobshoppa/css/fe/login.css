@@ -1,0 +1,83 @@
+#signin_menu {
+	display:none;
+	background:url(../../images/fe/login_up.png) no-repeat top center;
+	padding-top:15px;
+	position:absolute;font-family:Arial, Helvetica, sans-serif;  
+	width:255px;
+	right:0px;
+	text-align:left;
+	clear:both;
+	top:25px;
+	z-index:2005 !important;
+}
+#signin_menu a {
+	font-size:13px;
+	color:#ababab;
+	line-height:14px;
+	z-index:1000;
+	float:right;
+}
+#signin_menu a:hover {
+	color:#000000;
+}
+#signin_menu h5 {
+	color:#444;
+	font-size:14px;
+	font-weight:normal;
+	padding-left:10px;
+	line-height:18px;
+	z-index:1000;
+}
+.signin_menu_content {
+	background:url(../../images/fe/login_down.png) no-repeat left bottom;
+	padding:5px 13px 15px;
+	z-index:1000;
+}
+.login_btn {
+	height:45px;
+	clear:both;
+	font-size:13px;
+	color: #444;
+	padding-top:15px;
+	line-height:50px;
+}
+#signin_menu input[type="text"] {
+	background:url(../../images/fe/text_fell_03.png) repeat-x scroll 0 0 transparent;
+	margin-bottom:5px;
+	border:1px solid #d1d1d1;
+	color:#8f8e8e;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	height:19px;
+	line-height:19px;
+	width:215px;
+	padding:3px 5px;
+}
+#signin_menu input[type="password"] {
+	background:url(../../images/fe/text_fell_03.png) repeat-x scroll 0 0 transparent;
+	margin-bottom:5px;
+	border:1px solid #d1d1d1;
+	color:#8f8e8e;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	height:19px;
+	line-height:19px;
+	width:215px;
+	padding:3px 5px;
+}
+.login_btn8 {
+	border:0;
+	color:#ffffff;
+	background:url(../../images/fe/login_btn.png) no-repeat scroll 0 0;
+	cursor:pointer;
+	font-family:Georgia;
+	font-style:italic;
+	font-size:14px;
+	height:32px;
+	margin-top:10px;
+	line-height:25px;
+	padding:0px;
+	padding-bottom:5px; font-weight:bold;
+	width:79px;
+	text-align:center;
+}

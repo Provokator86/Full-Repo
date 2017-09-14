@@ -1,0 +1,566 @@
+<script type="text/javascript">
+$(document).ready(function(){
+
+/*** generate category dropdown ***/
+		var max_allow_open = 3;
+		var cnt = 1;
+		$("#red_link").click(function(){
+			var str = '';			
+			str += '<select style="width:300px;margin-top:5px;" name="opd_category'+cnt+'" id="opd_category'+cnt+'"><option value="">select category</option>'+"<?php echo makeOptionCategory(" c.s_category_type='job' AND c.i_status=1 AND cc.i_lang_id =$i_lang_id",""); ?>"+'</select>';
+			$("#parent_category").append(str);
+			//$("#opd_category"+cnt).msDropDown();
+			//$("#opd_category"+cnt).hide();			
+			
+			cnt++;
+			
+			if(cnt>=max_allow_open)
+			{
+				$("#red_link").remove();
+			}
+		});
+	/*** end generate category ***/
+	
+	
+///////////Submitting the form/////////
+$("#form_buyer_reg").submit(function(){	
+    var b_valid=true;
+    var s_err="";
+	var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	var reg_contact =  /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+	//var reg_contact = /^[(\[]?\d{3}[)-\.\] ]*\d{3}[-\. ]?\d{4}$/;
+	var file_type = $("#f_image").val();
+    var address = $.trim($("#txt_email").val());
+	var con_address	=	$.trim($("#txt_con_email").val());
+   // $("#div_err").hide("slow");     
+   var pass	=	$.trim($("#txt_password").val());
+   var con_pass	=	$.trim($("#txt_con_password").val());
+	
+	//alert($.trim($("#txt_name").val()));
+	if($.trim($("#txt_name").val())=="") 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide name')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	
+	if(address== '')
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide email')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	else if(reg.test(address) == false) 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide valid email')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	/*confirm email validation*/
+	if(con_address== '')
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide confirm email')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	else if(reg.test(con_address) == false) 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide valid confirm email')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	else if(con_address != address)
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please give both email same')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	/*confirm email validation*/
+	
+	if($.trim($("#txt_username").val())== '')
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide username')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	
+	if(pass== '')
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide password')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	else if(pass!='' && pass.length<6)
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide password with minimum 6 characters')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	
+	if(con_pass== '')
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide confirm password')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	else if(pass != con_pass)
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide contact number')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	
+	if($.trim($("#txt_contact").val())== '')
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide contact number')?>.</strong></span></div>';
+		b_valid=false;
+	} 
+	else if(reg_contact.test($.trim($("#txt_contact").val())) == false) 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide valid contact number')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	if($.trim($("#txt_address").val())== '')
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide address')?>.</strong></span></div>';
+		b_valid=false;
+	}	
+	
+	if($.trim($("#opt_state").val())=="") 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please select province')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	if($.trim($("#opt_city").val())=="") 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please select city')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	if($.trim($("#opt_zip").val())=="") 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please select postal code')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	if($.trim($("#txt_about_me").val())=="") 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide about me')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	if($.trim($("#txt_skills").val())=="") 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide skills')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	if($.trim($("#txt_qualification").val())=="") 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide qualification')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	if($.trim($("#txt_business_name").val())=="") 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide business name')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	if($.trim($("#f_image").val())!="" && (!file_type.match(/(?:jpg|jpeg|png)$/)))
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please select proper image file type')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	
+	if($.trim($("#opd_category0").val())=="") 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please select category')?>.</strong></span></div>';
+		b_valid=false;
+	}	
+	if($.trim($("#recaptcha_response_field").val())=="") 
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please provide security code')?>.</strong></span></div>';
+		b_valid=false;
+	}
+	
+	if(!$("input[name=i_accept_terms]:checkbox").is(":checkbox:checked"))
+	{
+		s_err +='<div class="error"><span class="left"><strong><?php echo t('Please accept terms & conditions')?>.</strong></span></div>';
+		b_valid=false;
+	}	
+    /////////validating//////
+    if(!b_valid)
+    {
+       // $.unblockUI();  
+        $("#div_err").html(s_err).show("slow");
+    }
+    
+    return b_valid;
+}); 
+
+
+///////////end Submitting the form///////// 
+	/*$('#btn_reg').click(function(){
+		$("#form_buyer_reg").submit();
+	}); */
+
+});
+
+// Ajax call to populate city options
+function call_ajax_get_city(ajaxURL,item_id,cngDv)
+{
+	//jQuery.noConflict();///$ can be used by other prototype which is not jquery
+	//jQuery(function($) {
+		document.getElementById(cngDv).innerHTML='<img src="'+base_url+'images/admin/loading.gif" alt=""/>';
+		$.ajax({
+				type: "POST",
+				url: base_url+'home/'+ajaxURL,
+				data: "state_id="+item_id,
+				success: function(msg){
+				   if(msg!='')
+				   {
+					   document.getElementById(cngDv).innerHTML = msg;
+					   //$("#opt_city").msDropDown();
+				   }   
+				}
+			});
+	//});	
+}
+
+function call_ajax_get_zipcode(ajaxURL,item_id,state_id,cngDv)
+{
+	//jQuery.noConflict();///$ can be used by other prototype which is not jquery
+	//jQuery(function($) {
+		document.getElementById(cngDv).innerHTML='<img src="'+base_url+'images/admin/loading.gif" alt=""/>';	
+		$.ajax({
+				type: "POST",
+				url: base_url+'home/'+ajaxURL,
+				data: "city_id="+item_id+"&state_id="+state_id,
+				success: function(msg){
+				   if(msg!='')
+					   document.getElementById(cngDv).innerHTML = msg;
+					   //$("#opt_zip").msDropDown();
+				}
+			});
+	//});	
+}
+</script>
+
+<script type="text/javascript">
+    var RecaptchaOptions = {
+        theme : 'custom'
+    };
+</script>
+
+<div id="div_container">
+      <div class="body_bg">
+            <div class="banner">
+                  <?php include_once(APPPATH.'views/fe/common/common_search.tpl.php'); ?>
+            </div>
+				<?php include_once(APPPATH.'views/fe/common/message.tpl.php'); ?>
+            <div class="right_box_all">
+			 		<div id="div_err">
+						<?php
+							//show_msg("error");  
+							echo validation_errors();
+						?>
+					</div>	
+                  <div class="shadow_medium" style="width:290px;">
+                        <h1><?php echo t('Login')?> <span><?php echo t('Here')?></span></h1>
+                        <div class="right_box_all_inner">
+						<?php show_msg("error") ?>
+						<form name="login_form" action="<?php echo base_url().'user/login/TWlOaFkzVT0'?>" method="post">
+                              <div class="lable01" style="width:80px;"><?php echo t('Username')?><span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:165px;">
+                                    <input type="text"  name="txt_user_name" value="<?php echo $posted['txt_user_name'] ?>"  style="width:162px;" autocomplete="off" />
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01" style="width:80px;"><?php echo t('Password')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:165px;">
+                                    <input type="password"  name="txt_password"  style="width:162px;" />
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01" style="width:80px;"></div>
+                              <div class="fld01" style="width:145px; padding-top:0px;"> <a href="<?php echo base_url().'user/forget_password'?>" class="red_link"><?php echo t('Forget Password')?></a> </div>
+                              <div class="spacer"></div>
+                              <div class="lable01" style="width:80px;"></div>
+                              <div class="fld01" style="width:165px;">
+                                    <input name="submit" type="submit" value="<?php echo t('Login')?>"  class="button" />
+                              </div>
+                              <div class="spacer"></div>
+							  </form>
+                        </div>
+                  </div>
+                  <div class="shadow_big" style="width:660px; float:right">
+				 
+                        <h1><?php echo t('Register')?> </h1>
+                        <div class="right_box_all_inner">
+						<form id="form_buyer_reg" action="<?php echo base_url().'user/registration/TWlOaFkzVT0'?>" method="post" enctype="multipart/form-data">
+                              <div class="left_txt"><span>*</span> <?php echo t('Required field')?></div>
+                              <div class="brd"><?php echo t('Please take a moment and fill the form out below.')?></div>
+                              <div class="lable01"> <?php echo t('Name')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="text" name="txt_name" id="txt_name" value="<?php echo $posted["txt_name"] ?>"/>
+									
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"> <?php echo t('Email Address')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="text" name="txt_email" id="txt_email" value="<?php echo $posted["txt_email"] ?>"/>
+									
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Confirm Email Address')?> <span class="red_text"> *</span>: </div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="text" name="txt_con_email" id="txt_con_email" value="<?php echo $posted["txt_con_email"] ?>"/>
+									
+                              </div>
+                              <div class="spacer"></div>
+                              <br />
+                              <h3><?php echo t('Login Details')?> </h3>
+                              <div class="lable01"> <?php echo t('Username')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="text"  name="txt_username" id="txt_username" value="<?php echo $posted["txt_username"] ?>" autocomplete="off" />
+									
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"> <?php echo t('Password')?> <span class="red_text"> *</span> </div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="password"  name="txt_password" id="txt_password" value="<?php echo $posted["txt_password"] ?>" autocomplete="off" />
+									
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"> <?php echo t('Confirm Password')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="password"  name="txt_con_password" id="txt_con_password" value="<?php echo $posted["txt_con_password"] ?>" autocomplete="off" />
+									
+                              </div>
+                              <div class="spacer"></div>
+                              <br />
+                              <h3><?php echo t('Contact Details')?></h3>
+                              <div class="lable01"><?php echo t('Contact Number')?> <span class="red_text"> *</span>: </div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="text" name="txt_contact" id="txt_contact" value="<?php echo $posted["txt_contact"] ?>"/><br/>
+									[<?php echo t('Example ').': '.'(999) 999-9999' ?>]
+									
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Skype IM')?>  &nbsp;</div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="text" name="txt_skype" id="txt_skype" value="<?php echo $posted["txt_skype"] ?>"/>
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('MSN IM')?>  &nbsp;</div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="text" name="txt_msn" id="txt_msn" value="<?php echo $posted["txt_msn"] ?>"/>
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('YAHOO IM')?> &nbsp;</div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="text" name="txt_yahoo" id="txt_yahoo" value="<?php echo $posted["txt_yahoo"] ?>"/>
+                              </div>
+                              <div class="spacer"></div>
+                              <br />
+                              <h3><?php echo t('Address')?> </h3>
+                              <div class="lable01"><?php echo t('Address')?> <span class="red_text"> *</span>: </div>
+                              <div class="fld01" style="width:300px;">
+                                    <input type="text" name="txt_address" id="txt_address" value="<?php echo $posted["txt_address"] ?>"/>
+									
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Province')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:300px;">
+                                    <select id="opt_state" name="opt_state" style="width:192px;" onchange='call_ajax_get_city("ajax_change_city_option",this.value,"parent_city");'>
+                                          <option value=""><?php echo t('Select a province')?> </option>
+										  <?php echo makeOptionState('',decrypt($posted['opt_state'])) ?>
+                                    </select>
+                                    <!--<script type="text/javascript">
+										$(document).ready(function(arg) {
+											$("#opt_state").msDropDown();
+											$("#opt_state").hide();
+										})
+									</script>-->
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('City')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:300px;">
+                                     <div id="parent_city">
+                                    <select name="opt_city" id="opt_city" style="width:192px;" onchange='call_ajax_get_zipcode("ajax_change_zipcode_option",this.value,opt_state.value,"parent_zip");'>
+                                          <option value=""><?php echo t('Select city')?> </option>
+										  <?php echo makeOptionCity('',$posted['opt_city']) ?>
+                                    </select>
+							  </div>		
+                             <!-- <script type="text/javascript">
+								$(document).ready(function(arg) {
+									$("#opt_city").msDropDown();
+									$("#opt_city").hide();
+								})
+							  </script>-->
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Postal code')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:300px;">
+                                    <div id="parent_zip">
+                                    <select name="opt_zip" id="opt_zip" style="width:192px; ">
+                                          <option value=""><?php echo t('Select postal code')?> </option>
+										  <?php echo makeOptionZip(' city_id="'.decrypt($posted['opt_city']).'"',decrypt($posted['opt_zip'])) ?>
+                                    </select>
+							  </div>
+							  <!--<script type="text/javascript">
+								$(document).ready(function(arg) {
+									$("#opt_zip").msDropDown();
+									$("#opt_zip").hide();
+								})
+							  </script>	-->
+                              </div>
+                              <div class="spacer"></div>
+                              <br />
+                              <h3><?php echo t('Trade Profile')?> </h3>
+                              <div class="lable01"><?php echo t('Profile Photo')?> &nbsp;</div>
+                              <div class="fld01" style="width:380px;">
+							  <input type="file" name="f_image" id="f_image" size="34"/><br/>
+							  [<?php echo t('upload file type only jpg,jpeg,png') ?>]
+                                     <?php  
+								if(!empty($posted["f_image"]))
+								{
+									echo '<img src="'.base_url().'uploaded/user/thumb/thumb_'.$posted["f_image"].'" width="50" height="50"  border="0"/><br><br>';
+									echo '<input type="hidden" name="h_image_name" id="h_image_name" value="'.$posted["f_image"].'" />';
+								}								
+								?>
+                                    
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Website')?> &nbsp;</div>
+                              <div class="fld01" style="width:380px;">
+                                    <input type="text"  name="txt_website" id="txt_website" value="<?php echo $posted["txt_website"] ?>"/>
+                                    <a href="javascript:void(0);" style="margin-top:8px;" class="help"><img src="images/fe/help.png" alt="" /><span><?php echo t('Help text')?></span></a> </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('About me')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:380px;">
+                                    <textarea name="txt_about_me" id="txt_about_me" cols="" rows="" style="width:285px; height:100px;"><?php echo $posted["txt_about_me"] ?></textarea>
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Skills')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:380px;">
+                                    <input type="text"  name="txt_skills" id="txt_skills" value="<?php echo $posted["txt_skills"] ?>"/>
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Qualification')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:380px;">
+                                    <textarea name="txt_qualification" id="txt_qualification" cols="" rows="" style="width:285px; height:100px;"><?php echo $posted["txt_qualification"] ?></textarea>
+                              </div>
+                              <div class="spacer"></div>
+                              <br />
+                              <h3><?php echo t('Job Details')?></h3>
+                              <div class="lable01"><?php echo t('Business Name')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:380px;">
+                                    <input type="text"  name="txt_business_name" id="txt_business_name" value="<?php echo $posted["txt_business_name"] ?>" />
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Category')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:380px;">
+                                    <div style="padding-bottom:5px;">
+										<div id="parent_category">
+                                          <select name="opd_category0" id="opd_category0" style="width:300px;">
+                                                <option value=""> <?php echo t('select category')?></option>
+                                                <?php echo makeOptionCategory(" c.s_category_type='job' AND c.i_status=1 AND cc.i_lang_id =$i_lang_id",$posted['opt_category']) ?>
+                                          </select>
+										 </div> 
+                                          <!--<script type="text/javascript">
+                                                $(document).ready(function(arg) {
+                                                    $("#opd_category0").msDropDown();
+                                                    $("#opd_category0").hide();
+                                                })
+                                            </script>-->
+                                          <!--<a href="javascript:void(0);"><img src="images/fe/close.png" alt="" style="margin-top:8px;"/></a>-->
+                                          <div class="spacer"></div>
+                                    </div>
+                                    <!--<div style="padding-bottom:5px;">
+                                          <select name="category02" id="category02" style="width:300px;">
+                                                <option> Carpenters, Joiners, Handyman</option>
+                                                <option>Gardeners, Landscapers</option>
+                                                <option>Plumbers, Heating</option>
+                                                <option>Electricians</option>
+                                          </select>
+                                          <script type="text/javascript">
+                                                $(document).ready(function(arg) {
+                                                    $("#category02").msDropDown();
+                                                    $("#category02").hide();
+                                                })
+                                            </script>
+                                          <a href="#"><img src="images/fe/close.png" alt="" style="margin-top:8px;"/></a>
+                                          <div class="spacer"></div>
+                                    </div>-->
+                                    <a href="javascript:void(0);" class="red_link" id="red_link"><?php echo t('Add another Category')?> </a> </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('What payment types do you accept?')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:380px; padding-top:8px; ">
+                                   
+                              		 <input type="radio" name="RadioGroup1" value="1" id="RadioGroup1_0" <?php echo (!empty($posted['RadioGroup1']) && $posted['RadioGroup1']==1 ? 'checked="checked"' : '')?> />
+                                    <?php echo t('Credit card')?> &nbsp;
+                                    <input type="radio" name="RadioGroup1" value="2" id="RadioGroup1_1" <?php echo (!empty($posted['RadioGroup1']) && $posted['RadioGroup1']==2 ? 'checked="checked"' : '')?> />
+                                    <?php echo t('Cheque')?> &nbsp;
+                                    <input type="radio" name="RadioGroup1" value="0" id="RadioGroup1_2" <?php echo (empty($posted['RadioGroup1']) ? 'checked="checked"' : '')?> />
+                                    <?php echo t('Cash')?> <a href="javascript:void(0);" class="help"><img src="images/fe/help.png" alt="" /><span><?php echo t('Help text')?></span></a></div>
+							  <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Would you like to Travel?')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:380px; padding-top:8px; ">
+                                    <input type="radio" name="RadioGroup2" value="1" id="RadioGroup1_0" <?php echo (!empty($posted['RadioGroup2']) && $posted['RadioGroup2']==1 ? 'checked="checked"' : '')?> />
+                                    <?php echo t('Yes')?> &nbsp;
+                                    <input type="radio" name="RadioGroup2" value="0" id="RadioGroup1_1" <?php echo (empty($posted['RadioGroup1']) ? 'checked="checked"' : '')?> />
+                                    <?php echo t('No')?> <a href="javascript:void(0);" class="help"><img src="images/fe/help.png" alt="" /><span><?php echo t('Help text')?></span></a> </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Radius')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:380px;">
+                                    <select name="radius1" id="radius1" style="width:300px;">
+                                          <option>5</option>
+                                          <option>10</option>
+                                          <option>15</option>
+                                    </select>
+                                    <!--<script type="text/javascript">
+											$(document).ready(function(arg) {
+												$("#radius1").msDropDown();
+												$("#radius1").hide();
+											})
+										</script>-->
+                                    <a href="javascript:void(0);" class="help"><img src="images/fe/help.png" alt="" /><span><?php echo t('Help text')?></span></a> </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"><?php echo t('Security Code')?> <span class="red_text"> * </span></div>
+                              <div class="fld01" style="width:380px;">
+                                    <!--<p><a href="javascript:Recaptcha.reload()" title="Regenerate Image"><img src="images/fe/captcha.png" alt="" /></a></p>
+                                    <input type="text"  name="s_captcha" id="s_captcha" style="width:115px;"  />-->
+									<div id="recaptcha_container">
+										<label for="recaptcha_response_field"><?php echo t('Enter the two words below:')?></label>
+										<input type="text" id="recaptcha_response_field" name="recaptcha_response_field" class="text" />
+										<div id="recaptcha_image" style="margin-top:5px; margin-bottom:5px;border:1px solid #D1D1D1;"></div>
+										<!--<p>Choose captcha format: <a href="javascript:Recaptcha.switch_type('image');">Image</a> or <a href="javascript:Recaptcha.switch_type('audio');">Audio</a> </p>-->
+										<input type="button" id="recaptcha_reload_btn" value="<?php echo t('Get new words')?>" onclick="Recaptcha.reload();" />
+									</div>
+									<script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6LfC88gSAAAAAO2J7lo91pEgVje83SWy29brEsml">
+									</script>
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"> </div>
+                              <div class="fld01" style="width:380px; line-height:25px;">
+                                    <input name="i_inform_news" type="checkbox" value="1" <?php echo (!empty($posted["i_inform_news"]) && $posted["i_inform_news"]==1) ?'checked="checked"' : '';?> />
+                                    <?php echo t('Please inform me about latest saving tips and important news.')?><br />
+                                    <input name="i_accept_terms" id="i_accept_terms" type="checkbox" value="1" <?php echo (!empty($posted["i_accept_terms"]) && $posted["i_accept_terms"]==1) ?'checked="checked"' : '';?>/>
+                                    <?php echo t('I accept the')?> <a href="#terms_condition_div" class="lightbox_main red_link"><?php echo t('Terms &amp; Conditions')?></a> <?php echo t('and the')?> <a href="#privacy_policy_div" class="red_link lightbox_main"><?php echo t('Privacy Policy')?> </a>. <span class="red_text">* </span> </div>
+                              <div class="spacer"></div>
+                              <div class="lable01"></div>
+                              <div class="fld01" style="padding-top:10px;width:300px;">
+                                    <input name="submit" type="submit" value="<?php echo t('Register')?>"  class="button"/>
+                              </div>
+                              <div class="spacer"></div>
+                              <div style="display: none;">
+                                    <div id="terms_condition_div" class="lightbox" style=" width:600px; ">
+                                          <h1><?php echo $pre ?> <span style="color:#000000;"><?php echo $next ?> </span></h1>
+                                          <div style="height:300px; overflow:auto;">
+											<?php foreach($terms_condition as $val) { ?>
+													<p><?php echo $val['s_full_description'] ?></p>
+											<?php } ?>
+                                 		</div>
+                                    </div>
+                              </div>
+                              <div style="display: none;">
+                                    <div id="privacy_policy_div" class="lightbox" style=" width:600px; ">
+                                          <h1><?php echo $pre1 ?> <span style="color:#000000;"><?php echo $next1 ?> </span></h1>
+                                          <div style="height:300px; overflow:auto;">										  
+										  	<?php foreach($policy as $val) { ?>
+												<p><?php echo $val['s_full_description'] ?></p>
+											<?php } ?>
+                                          </div>
+                                    </div>
+                              </div>
+							  </form>
+                        </div>
+                  </div>
+                  <div class="spacer"></div>
+            </div>
+      </div>
+      <div class="spacer"></div>
+</div>
+

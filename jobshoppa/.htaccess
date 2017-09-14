@@ -1,0 +1,23 @@
+Options +FollowSymLinks
+
+RewriteBase /jobshoppa/
+
+
+RewriteEngine on
+
+RewriteCond $1 !(^index\.php|gif$|GIF$|jpg$|JPG$|jpeg$|JPEG$|png$|PNG$|bmp$|BMP$|js$|php$|htm$|html$|css$|ttf$|txt$|pdf$|swf$|flv$|mp3$|robots\.txt$|video_chat$)
+
+RewriteRule ^(?!js\/tinymce)(?!html)(?!fonts)(?!paypal)(.*?)(\.html|\.php|\/)?$ index.php/$1 [NC,L]
+
+#RewriteRule ^(.*?)(\.html|\.php|\/)?$ index.php/$1 [NC,L]
+
+RewriteRule ^(.*)$ - [NC,L]
+
+
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+
+
+
+#php_value session.gc_maxlifetime 86400
