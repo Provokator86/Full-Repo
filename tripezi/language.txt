@@ -1,0 +1,26 @@
+To add more language...
+
+ in /application/config/config.php change 1 line
+        
+      $config['default_language'] = 'ge';    /* site default languge */
+      $config['languages'] = array('en', 'fr','ge' );   
+$config['master_language'] = 'en';
+	/* xml that contains translations */
+$config['multilanguage_xml'] = 'multilanguage/tmx.xml';
+
+	/* cache of serialized TranslationContainer object that contains translations */
+$config['multilanguage_object'] = 'multilanguage/translations.tc';
+
+      
+
+
+  in /application/controller/language/language_home.php change 1 line
+      
+      private $_master_language = 'fr';
+
+      private $_languages = array('fr'=>'French', 'en'=>'English', 'ge'=>'German');
+
+
+\system\application\libraries\multilanguage\MultilingualTMX.php  && TranslationContainer.php && TMXParser.php
+ 
+private $_masterLanguage = 'en';

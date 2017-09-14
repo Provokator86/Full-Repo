@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+	<news>
+		<title>News Title 1</title>
+		<description>Description 1 asd sdfs fsdfs sdf sdf sdfsdf </description>
+	</news>
+	<news>
+		<title>News Title 2</title>
+		<description>Description 2 ghffdgdgdbgd asd sdfs fsdfs sdf sdf sdfsdf </description>
+	</news>
+	<news>
+		<title>News Title 3</title>
+		<description>Description 3 hthfhfgh asd sdfs fsdfs sdf sdf sdfsdf </description>
+	</news>
+	<news>
+		<title>News Title 4</title>
+		<description>Description 4 opoohghgbf  gf asd sdfs fsdfs sdf sdf sdfsdf </description>
+	</news>	
+	<news>
+		<title>News Title 5</title>
+		<description>Description 5 opoohghgbf  gf asd sdfs fsdfs sdf sdf sdfsdf </description>
+	</news>	
+	<news>
+		<title>News Title 6</title>
+		<description>Description 6 opoohghgbf  gf asd sdfs fsdfs sdf sdf sdfsdf </description>
+	</news>	
+</library>

@@ -1,0 +1,20 @@
+p {color: #999999;font-family: Arial,Helvetica,sans-serif;font-size: 12px; margin-bottom: 17px; margin-top: 10px;}
+h2{color: #333333; font-family: 'OpenSans-CondensedLight'; font-size: 28px;font-weight: normal;}	
+ul li {background: url("../../images/fe/arrow.png") no-repeat scroll left 11px transparent;color: #666666; font-family: Arial,Helvetica,sans-serif; font-size: 12px;line-height: 30px; padding-left: 21px;list-style:none;}	
+
+.box01 h4 {color: #0099CC; font-size: 18px; font-weight: normal;font-family: 'OpenSans-CondensedLight';}
+.why-to-book ul li { background: url("../../images/fe/arrow02.png") no-repeat scroll left 5px transparent; color: #666666;   font-family: Arial,Helvetica,sans-serif; font-size: 12px;  padding-left: 30px;
+}
+
+.press-right-box .press-contact { border-bottom: 1px dashed #C5C8C9; margin-bottom: 20px; padding-bottom: 20px;
+}
+h5 { color: #0099CC;  font-size: 16px; text-transform: uppercase; }
+.press-right-box .press-contact h5 { color: #0099CC; font-size: 16px; text-transform: uppercase; }
+.press-right-box .press-contact h5 a {color: #0099CC;}
+.press-right-box .listing-facts { margin-top: 30px; }
+.press-right-box .listing-facts tr td {color: #999999;font-family: Arial,Helvetica,sans-serif;font-size: 12px; height: 32px;    line-height: 18px; }
+.press-right-box .listing-facts tr td span {color: #333333; width: 144px;}
+
+.callbox { background: url("../../images/fe/call-box.png") no-repeat scroll left center transparent; margin-top: 16px; min-height: 120px; padding-left: 150px; font-weight:normal; font-family:'OpenSans-CondensedLight';}
+.callbox h5 { color: #333333; font-size: 18px;}
+.callbox h5 strong { font-size: 20px;}
