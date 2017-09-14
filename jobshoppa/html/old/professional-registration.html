@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::: JobShoppa.com :::</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="js/ModalDialog.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+</head>
+<body>
+<!-- HEADER SECTION -->
+<div id="header_section">
+    <div id="header">
+        <!-- logo -->
+        <div id="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+        <!-- /logo -->
+        <!-- facebook like -->
+        <div id="facebook_like"><img src="images/f-like.png" alt="" width="70" height="24" /> 25 people like this</div>
+        <!-- /facebook like -->
+        <!-- navigation -->
+        <div id="navigation">
+            <ul>
+                <li><a href="index.html"><span><img src="images/icon-01.png" alt="" />Home</span></a></li>
+                <li><a href="post-a-job.html"><span><img src="images/icon-02.png" alt="" />Post a job</span></a></li>
+                <li><a href="find-a-job.html"><span><img src="images/icon-03.png" alt="" />Find a Job</span></a></li>
+                <li><a href="find-a-professional.html"><span><img src="images/icon-54.png" alt="" />Find a Professional</span></a></li>
+                <li><a href="help.html"><span><img src="images/icon-04.png" alt="" />Help</span></a></li>
+            </ul>
+        </div>
+        <!-- /navigation -->
+        <div class="clr"></div>
+    </div>
+</div>
+<!-- /HEADER SECTION -->
+<!-- BANNER SECTION -->
+<div id="banner_section">
+    <div id="banner">
+    	<ul class="top_bar">
+              <li><a href="index.html"><img src="images/home1.png" alt="" /> Home</a></li>
+              <li>»</li>
+              <li>Professional Registration</li>
+        </ul>
+        <!-- log box -->
+        <div id="log_box">
+            <ul>
+                <li><a href="login.html"><img src="images/icon-05.png" alt="" />Login</a></li>
+                <li>|</li>
+                <li><a href="#" onclick="return show_dialog('lightbox')"><img src="images/icon-06.png" alt="" />Signup</a></li>
+            </ul>
+        </div>
+        <!-- /log box -->
+        <div class="clr"></div>
+    </div>
+</div>
+<!-- /BANNER SECTION -->
+<!-- SERVICES SECTION -->
+<div id="service_section">
+    <div id="service">
+        <div class="field01">
+            <input type="text" value="What Job Do You need?" onfocus="if(this.value=='What Job Do You need?')this.value='';" onblur="if(this.value=='')this.value='What Job Do You need?';" />
+        </div>
+        <div class="field01">
+            <input type="text" value="Category" onfocus="if(this.value=='Category')this.value='';" onblur="if(this.value=='')this.value='Category';" />
+        </div>
+        <div class="field01">
+            <input type="submit" value="Search"  onclick="window.location.href='find-a-job.html'" />
+        </div>
+    </div>
+</div>
+<!-- /SERVICES SECTION -->
+<!-- CONTENT SECTION -->
+<div id="content_section">
+    <div id="content">
+        <div id="inner_container02">
+            <div class="title">
+                <h3><span>Professional</span> Registration</h3>
+            </div>
+            <div class="clr"></div>
+            <div id="registration_box">
+                <h4>Registration takes less than a minute</h4>
+                <p style="text-align:right;"><span class="red_txt">*</span> Required field</p>
+                <p class="big_txt15">Registration is <span style="color:#f68e29;">FREE</span></p>
+                <p>&nbsp;</p>
+                <div class="label01">Name <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Email Address <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Confirm Email Address <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="title04" style="margin:20px 0;">
+                    <h5><span>Login </span> Details</h5>
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Public Username <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Password <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="password" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Confirm Password <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="password" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="title04" style="margin:20px 0;">
+                    <h5><span>Contact </span> Details</h5>
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Contact Number <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Fax Number <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Landline <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Mobile <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Skype IM <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">MSN IM<span class="red_txt"> *</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">YAHOO IM <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="title04" style="margin:20px 0;">
+                    <h5><span>Address</span></h5>
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Address <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">County <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <select name="">
+                        <option>Please Select</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+                <div class="label01">City <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <select name="">
+                        <option>Please Select</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Postal Code <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="title04" style="margin:20px 0;">
+                    <h5><span>Professional</span> Profile</h5>
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Date of Birth <span class="red_txt">*</span> :</div>
+                <div class="field02">
+                    <select name="">
+                        <option>Select</option>
+                    </select>
+                    <select name="">
+                        <option>Select</option>
+                    </select>
+                    <select name="">
+                        <option>Select</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Profile Photo <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="textfield" type="file" id="textfield" size="40" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Website  :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">About me <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <textarea cols="" rows="4"></textarea>
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Skills <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <input name="" type="text" size="48" />
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Qualification <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                    <textarea cols="" rows="4"></textarea>
+                </div>
+                <div class="clr"></div>
+                <div class="title04" style="margin:20px 0;">
+                    <h5><span>Job </span> Details</h5>
+                </div>
+                <div class="clr"></div>
+                <div class="label01">Business Name<span class="red_txt"> *</span> :</div>
+                <div class="field01"><input name="" type="text" size="48" /></div>
+                <div class="clr"></div>
+                <div class="label01">Category <span class="red_txt">*</span> :</div>
+                <div class="field01">
+                	<select name="">
+                        <option>Please Select</option>
+                    </select> 
+               	    <a href="#"><img src="images/close2.png" alt="" width="28" height="28" /></a> 
+                </div>
+                <div class="clr"></div>
+                <div class="label01">&nbsp;</div>
+                <div class="field01">
+                	<select name="">
+                        <option>Please Select</option>
+                    </select>
+                    <a href="#"><img src="images/close2.png" alt="" width="28" height="28" /></a> 
+                </div>
+                <div class="clr"></div>
+                <div class="label01">&nbsp;</div>
+                <div class="field01"><a href="#">Add another Category </a></div>
+                <div class="clr"></div>
+                <div class="label01">What payment types do you accept? <span class="red_txt">*</span> :</div>
+                <div class="field03"><input name="" type="radio" value="" />Credit card    <input name="" type="radio" value="" />Cheque    <input name="" type="radio" value="" />Cash</div>
+                <div class="clr"></div>
+                <div class="label01">Would you like to Travel?<span class="red_txt"> *</span> :</div>
+                <div class="field03"><input name="" type="radio" value="" />
+                Yes    
+                    <input name="" type="radio" value="" />
+                    No    
+                    </div>
+                <div class="clr"></div>
+                <div class="label01">Radius <span class="red_txt">*</span> :</div>
+                <div class="field01"><select name="">
+                        <option>Please Select</option>
+                    </select></div>
+                <div class="clr"></div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="label01">Word Verification <span class="red_txt">*</span> :</div>
+                <div class="field01">Type the characters you see in the picture below.</div>
+                <div class="clr"></div>
+                <div class="label01">&nbsp;</div>
+                <div class="field01"> <img src="images/captcha.gif" alt="" /> </div>
+                <div class="clr"></div>
+                <div class="label01">&nbsp;</div>
+                <div class="field01">
+                    <input name="" type="text" size="50" />
+                    <img src="images/icon-41.gif" alt="" width="28" height="28" /> <br />
+                    Letters are not case-sensitive </div>
+                <div class="clr"></div>
+                <div class="field03">
+                    <input name="" type="checkbox" value="" />
+                    I would like to receive Newsletter </div>
+                <div class="clr"></div>
+                <div class="field03">
+                    <input name="" type="checkbox" value="" />
+                     Accept <a href="#"  onclick="return show_dialog('terms_condition')">Terms & Conditions</a> and <a href="#" onclick="return show_dialog('privacy_policy')">Privacy Policy</a></div>
+                <div class="clr"></div>
+                <div class="label01">&nbsp;</div>
+                <div class="field01">
+                    <input type="submit" value="Submit" />
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+</div>
+<!-- /CONTENT SECTION -->
+<!-- FOOTER SECTION -->
+<div id="footer_section">
+    <div id="footer">
+        <div class="section01">
+            <div class="box01">
+                <h6>Clients »</h6>
+                <ul>
+                    <li><a href="post-a-job.html">Post a Job free</a></li>
+                    <li><a href="how-it-works-client.html">How it Works</a></li>
+                    <li><a href="job-poster-question.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="line01"></div>
+            <div class="box01">
+                <h6>Service Professional » </h6>
+                <ul>
+                    <li><a href="find-a-job.html">Find a Job</a></li>
+                    <li><a href="how-it-works-professional.html">How it Works</a></li>
+                    <li><a href="service-provider-question.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="line01"></div>
+            <div class="box01">
+                <h6>About Us » </h6>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="career.html">Career</a></li>
+                </ul>
+            </div>
+            <div class="line01"></div>
+            <div class="box01">
+                <h6>Legal » </h6>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="abuse-report.html">Abuse Report</a></li>
+                </ul>
+            </div>
+            <div class="line01"></div>
+            <div class="box01">
+                <h6>Support » </h6>
+                <ul>
+                    <li><a href="customer-support.html">Customer Support</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section02">
+            <div class="left">&copy; Copyright 2011 by <span>JobShoppa.com</span>. All Rights Reserved.</div>
+            <div class="right">Follow us: <a href="#"><img src="images/icon-facebook.png" alt="" /></a> <a href="#"><img src="images/icon-twitter.png" alt="" /></a></div>
+        </div>
+    </div>
+</div>
+<!-- /FOOTER SECTION -->
+<div class="lightbox">
+    <div class="close"><a href="javascript:void(0)" onclick="hide_dialog()"><img src="images/close.png" alt="" /></a></div>
+    <div class="top">&nbsp;</div>
+    <div class="mid">
+        <div class="box01">How do you like to choose to use Jobshoppa</div>
+        <div class="box02">
+            <div class="link_box05"><a href="professional-registration.html">Professional Registration</a></div>
+            <div class="link_box06"><a href="client-registration.html">Client Registration</a></div>
+        </div>
+    </div>
+    <div class="bot">&nbsp;</div>
+</div>
+<div class="terms_condition lightbox_main">
+    <div class="close"><a href="javascript:void(0)" onclick="hide_dialog()"><img src="images/close.png" alt="" /></a></div>
+    <div class="top">&nbsp;</div>
+    <div class="mid">
+         <div class="title">
+                <h3><span>Terms</span> &amp; Conditions</h3>
+            </div>
+            <div class="content_box">
+                <p>Founded in 2010, Jobshoppa is a unique online marketplace for the residents of the UK. Homeowners and consumers can find the right professional and contractor here. Professional can secure contracts easily and regularly at Jobshoppa as well.</p>
+                <p>&nbsp;</p>
+                <p>Homeowners and consumers can post requirements for professional or handymen for free. Professional and handymen can register with the site for free, and quote for jobs posted on the site.</p>
+                <p>&nbsp;</p>
+                <p>For instance, if someone needs to hire a cleaning service or a builder or a gardener, he simply has to post that as a job and describe the same clearly and in detail. Professional registered with the site will view the job, and those among them who feel that they are capable of doing the job will quote or bid for it. After availing of the services of the chosen workman, the user leaves review on his services. Homeowners and professional alike benefit from reviews.</p>
+                <p>&nbsp;</p>
+                <p>Jobshoppa is a broad-spectrum marketplace where all sorts of professional and contractors are registered: from builders, roofers.</p>
+            </div>
+    </div>
+    <div class="bot">&nbsp;</div>
+</div>
+<div class="privacy_policy lightbox_main">
+    <div class="close"><a href="javascript:void(0)" onclick="hide_dialog()"><img src="images/close.png" alt="" /></a></div>
+    <div class="top">&nbsp;</div>
+    <div class="mid">
+         <div class="title">
+                <h3><span>Privacy</span> Policy</h3>
+            </div>
+            <div class="content_box">
+                <p>Founded in 2010, Jobshoppa is a unique online marketplace for the residents of the UK. Homeowners and consumers can find the right professional and contractor here. Professional can secure contracts easily and regularly at Jobshoppa as well.</p>
+                <p>&nbsp;</p>
+                <p>Homeowners and consumers can post requirements for professional or handymen for free. Professional and handymen can register with the site for free, and quote for jobs posted on the site.</p>
+                <p>&nbsp;</p>
+                <p>For instance, if someone needs to hire a cleaning service or a builder or a gardener, he simply has to post that as a job and describe the same clearly and in detail. Professional registered with the site will view the job, and those among them who feel that they are capable of doing the job will quote or bid for it. After availing of the services of the chosen workman, the user leaves review on his services. Homeowners and professional alike benefit from reviews.</p>
+                <p>&nbsp;</p>
+                <p>Jobshoppa is a broad-spectrum marketplace where all sorts of professional and contractors are registered: from builders, roofers.</p>
+            </div>
+    </div>
+    <div class="bot">&nbsp;</div>
+</div>
+</body>
+</html>
+

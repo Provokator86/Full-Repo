@@ -1,0 +1,9 @@
+1) Emails
+2) History
+3) Tradesman Radar Setting
+4) Tradesman Radar Job
+5) Referrals for both Buyer and Tradesman
+6) Full Admin
+7) Lost Jobs list in Tradesman Section
+8) Revise Quote in Tradesman Section
+9) Last Login Date Time in Dashboard

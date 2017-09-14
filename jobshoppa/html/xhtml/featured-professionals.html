@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::: JobShoppa.com :::</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/ModalDialog.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+</head>
+<body>
+<!-- HEADER SECTION -->
+<div id="header_section">
+    <div id="header">
+        <!-- logo -->
+        <div id="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+        <!-- /logo -->
+        <!-- facebook like -->
+        <div id="facebook_like"><img src="images/f-like.png" alt="" width="70" height="24" /> 25 people like this</div>
+        <!-- /facebook like -->
+        <!-- navigation -->
+        <div id="navigation">
+            <ul>
+                <li><a href="index.html"><span><img src="images/icon-01.png" alt="" />Home</span></a></li>
+                <li><a href="post-a-job.html"><span><img src="images/icon-02.png" alt="" />Post a job</span></a></li>
+                <li><a href="find-a-job.html"><span><img src="images/icon-03.png" alt="" />Find a Job</span></a></li>
+                <li><a href="find-a-professional.html"><span><img src="images/icon-54.png" alt="" />Find a Professional</span></a></li>
+                <li><a href="help.html"><span><img src="images/icon-04.png" alt="" />Help</span></a></li>
+            </ul>
+        </div>
+        <!-- /navigation -->
+        <div class="clr"></div>
+    </div>
+</div>
+<!-- /HEADER SECTION -->
+<!-- BANNER SECTION -->
+<div id="banner_section">
+    <div id="banner">
+    	<ul class="top_bar">
+              <li><a href="index.html"><img src="images/home1.png" alt="" /> Home</a></li>
+              <li>»</li>
+              <li>Featured Professionals</li>
+        </ul>
+        <!-- log box -->
+        <div id="log_box">
+            <ul>
+                <li><a href="login.html"><img src="images/icon-05.png" alt="" />Login</a></li>
+                <li>|</li>
+                <li><a href="#" onclick="return show_dialog('lightbox')"><img src="images/icon-06.png" alt="" />Signup</a></li>
+            </ul>
+        </div>
+        <!-- /log box -->
+        <div class="clr"></div>
+    </div>
+</div>
+<!-- /BANNER SECTION -->
+<!-- SERVICES SECTION -->
+<div id="service_section">
+    <div id="service">
+        <div class="field01">
+            <input type="text" value="What Job Do You need?" onfocus="if(this.value=='What Job Do You need?')this.value='';" onblur="if(this.value=='')this.value='What Job Do You need?';" />
+        </div>
+        <div class="field01">
+            <input type="text" value="Category" onfocus="if(this.value=='Category')this.value='';" onblur="if(this.value=='')this.value='Category';" />
+        </div>
+        <div class="field01">
+            <input type="submit" value="Search"  onclick="window.location.href='find-a-job.html'" />
+        </div>
+    </div>
+</div>
+<!-- /SERVICES SECTION -->
+<!-- CONTENT SECTION -->
+<div id="content_section">
+    <div id="content">
+        <div id="inner_container">
+            <div id="left_section">
+                <div id="category">
+                              <div class="title">
+                                    <h3><span>Job by</span> Category</h3>
+                              </div>
+                              <div class="content_box">
+                                    <div class="top">
+                                          <ul>
+                                                <li><a href="javascript:void(0)" id="1" class="select">Top Categories</a></li>
+                                                <li><a href="javascript:void(0)" id="2">All Categories A-Z</a></li>
+                                          </ul>
+                                    </div>
+                                    <div class="mid">
+                                          <div class="list_box" id="div1">
+                                                <ul class="list">
+                                                      <li><a href="find-a-job.html">Carpenters, Joiners, Handyman</a></li>
+                                                      <li><a href="find-a-job.html">Gardeners, Landscapers</a></li>
+                                                      <li><a href="find-a-job.html">Plumbers, Heating</a></li>
+                                                      <li><a href="find-a-job.html">Electricians</a></li>
+                                                      <li><a href="find-a-job.html">Painter, Decorator</a></li>
+                                                      <li><a href="find-a-job.html">Windows, Door Fitting</a></li>
+                                                      <li><a href="find-a-job.html">Removals, Transport, Delivery</a></li>
+                                                </ul>
+                                          </div>
+                                          <div class="list_box" id="div2" style="display:none;">
+                                                <ul class="list">
+                                                      <li><a href="find-a-job.html">Furniture hire</a></li>
+                                                      <li><a href="find-a-job.html">Linen hire</a></li>
+                                                      <li><a href="find-a-job.html">Chair covers</a></li>
+                                                      <li><a href="find-a-job.html">Catering</a></li>
+                                                      <li><a href="find-a-job.html">Cakes</a></li>
+                                                      <li><a href="find-a-job.html">Chocolate fountains</a></li>
+                                                      <li><a href="find-a-job.html">Venue hire</a></li>
+                                                </ul>
+                                          </div>
+                                          <div class="all_box">
+                                                <div class="view_all"><a href="find-a-job.html">All Categories</a></div>
+                                          </div>
+                                    </div>
+                                    <div class="bot">&nbsp;</div>
+                              </div>
+                        </div>
+            </div>
+            <div id="right_section">
+                <div class="title">
+                    <h3><span>Featured </span> Professionals</h3>
+                </div>
+                <div id="featured_professionals">
+                    <div class="grey_box01">
+                        <div class="img_box"><a href="professional-public-profile.html"><img src="images/img-01.jpg" alt="" width="80" height="60" /></a></div>
+                        <div class="txt_box">
+                        <p class="orng_txt16 left"><a href="professional-public-profile.html">Mark Robinson</a> <span>- Member since 16 Sep 2010</span></p>
+                        <a href="professional-public-profile.html" class="blk_link right" style="font-size:11px;">View Profile </a>
+                         <div class="clr"></div>
+                            <div class="left_box">
+                                
+                                <p class="blue_txt">Main Skills &amp; Trades:</p>
+                                <p>Handyman, Carpenter &amp; Joiner, Painter &amp; Decorator</p>
+                                <p>89 Reviews,  <span class="orange_txt"> 100% positive</span></p>
+                            </div>
+                            <div class="right_box">
+                                <p><span class="blue_txt">38</span> jobs won</p>
+                                <p><span class="blue_txt">35</span> review comments</p>
+                                <p><img src="images/star-mark01.png" alt="" /></p>
+                            </div>
+                            <div class="clr"></div>
+                            <div class="feed_box">
+                                <div class="top">&nbsp;</div>
+                                <div class="mid">
+                                    <p>Donec justo turpis, laoreet sed scelerisque ut, vestibulum semper dolor. Vestibulum accumsan ornare dui at iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Vivamus malesuada turpis aliquet neque eleifend ut semper nisi euismod. iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent.</p>
+                                </div>
+                                <div class="bot">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white_box01">
+                          <div class="img_box"><a href="professional-public-profile.html"><img src="images/img-01.jpg" alt="" width="80" height="60" /></a></div>
+                         <div class="txt_box">
+                        <p class="orng_txt16 left"><a href="professional-public-profile.html">Mark Robinson</a> <span>- Member since 16 Sep 2010</span></p>
+                        <a href="professional-public-profile.html" class="blk_link right" style="font-size:11px;">View Profile </a>
+                         <div class="clr"></div>
+                            <div class="left_box">
+                                
+                                <p class="blue_txt">Main Skills &amp; Trades:</p>
+                                <p>Handyman, Carpenter &amp; Joiner, Painter &amp; Decorator</p>
+                                <p>89 Reviews, <span class="orange_txt"> 100% positive</span></p>
+                            </div>
+                            <div class="right_box">
+                                <p><span class="blue_txt">38</span> jobs won</p>
+                                <p><span class="blue_txt">35</span> review comments</p>
+                                <p><img src="images/star-mark01.png" alt="" /></p>
+                            </div>
+                            <div class="clr"></div>
+                            <div class="feed_box">
+                                <div class="top">&nbsp;</div>
+                                <div class="mid">
+                                    <p>Donec justo turpis, laoreet sed scelerisque ut, vestibulum semper dolor. Vestibulum accumsan ornare dui at iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Vivamus malesuada turpis aliquet neque eleifend ut semper nisi euismod. iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent.</p>
+                                </div>
+                                <div class="bot">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grey_box01">
+                          <div class="img_box"><a href="professional-public-profile.html"><img src="images/img-01.jpg" alt="" width="80" height="60" /></a></div>
+                      <div class="txt_box">
+                        <p class="orng_txt16 left"><a href="professional-public-profile.html">Mark Robinson</a> <span>- Member since 16 Sep 2010</span></p>
+                        <a href="professional-public-profile.html" class="blk_link right" style="font-size:11px;">View Profile </a>
+                         <div class="clr"></div>
+                            <div class="left_box">
+                              
+                                <p class="blue_txt">Main Skills &amp; Trades:</p>
+                                <p>Handyman, Carpenter &amp; Joiner, Painter &amp; Decorator</p>
+                                <p>&nbsp;</p>
+                            </div>
+                            <div class="clr"></div>
+                            
+                        </div>
+                    </div>
+                    <div class="white_box01">
+                          <div class="img_box"><a href="professional-public-profile.html"><img src="images/img-01.jpg" alt="" width="80" height="60" /></a></div>
+                         <div class="txt_box">
+                        <p class="orng_txt16 left"><a href="professional-public-profile.html">Mark Robinson</a> <span>- Member since 16 Sep 2010</span></p>
+                        <a href="professional-public-profile.html" class="blk_link right" style="font-size:11px;">View Profile </a>
+                         <div class="clr"></div>
+                            <div class="left_box">
+                                <p class="blue_txt">Main Skills &amp; Trades:</p>
+                                <p>Handyman, Carpenter &amp; Joiner, Painter &amp; Decorator</p>
+                                <p>89 Reviews,  <span class="orange_txt"> 100% positive</span></p>
+                            </div>
+                            <div class="right_box">
+                                <p><span class="blue_txt">38</span> jobs won</p>
+                                <p><span class="blue_txt">35</span> review comments</p>
+                                <p><img src="images/star-mark01.png" alt="" /></p>
+                            </div>
+                            <div class="clr"></div>
+                            <div class="feed_box">
+                                <div class="top">&nbsp;</div>
+                                <div class="mid">
+                                    <p>Donec justo turpis, laoreet sed scelerisque ut, vestibulum semper dolor. Vestibulum accumsan ornare dui at iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Vivamus malesuada turpis aliquet neque eleifend ut semper nisi euismod. iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent.</p>
+                                </div>
+                                <div class="bot">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grey_box01">
+                          <div class="img_box"><a href="professional-public-profile.html"><img src="images/img-01.jpg" alt="" width="80" height="60" /></a></div>
+                          <div class="txt_box">
+                        <p class="orng_txt16 left"><a href="professional-public-profile.html">Mark Robinson</a> <span>- Member since 16 Sep 2010</span></p>
+                        <a href="professional-public-profile.html" class="blk_link right" style="font-size:11px;">View Profile </a>
+                         <div class="clr"></div>
+                            <div class="left_box">
+                               
+                                <p class="blue_txt">Main Skills &amp; Trades:</p>
+                                <p>Handyman, Carpenter &amp; Joiner, Painter &amp; Decorator</p>
+                                <p>89 Reviews,  <span class="orange_txt"> 100% positive</span></p>
+                            </div>
+                            <div class="right_box">
+                                <p><span class="blue_txt">38</span> jobs won</p>
+                                <p><span class="blue_txt">35</span> review comments</p>
+                                <p><img src="images/star-mark01.png" alt="" /></p>
+                            </div>
+                            <div class="clr"></div>
+                            <div class="feed_box">
+                                <div class="top">&nbsp;</div>
+                                <div class="mid">
+                                    <p>Donec justo turpis, laoreet sed scelerisque ut, vestibulum semper dolor. Vestibulum accumsan ornare dui at iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Vivamus malesuada turpis aliquet neque eleifend ut semper nisi euismod. iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent.</p>
+                                </div>
+                                <div class="bot">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white_box01">
+                          <div class="img_box"><a href="professional-public-profile.html"><img src="images/img-01.jpg" alt="" width="80" height="60" /></a></div>
+                         <div class="txt_box">
+                        <p class="orng_txt16 left"><a href="professional-public-profile.html">Mark Robinson</a> <span>- Member since 16 Sep 2010</span></p>
+                        <a href="professional-public-profile.html" class="blk_link right" style="font-size:11px;">View Profile </a>
+                         <div class="clr"></div>
+                            <div class="left_box">
+                            
+                                <p class="blue_txt">Main Skills &amp; Trades:</p>
+                                <p>Handyman, Carpenter &amp; Joiner, Painter &amp; Decorator</p>
+                                <p>89 Reviews,  <span class="orange_txt"> 100% positive</span></p>
+                            </div>
+                            <div class="right_box">
+                                <p><span class="blue_txt">38</span> jobs won</p>
+                                <p><span class="blue_txt">35</span> review comments</p>
+                                <p><img src="images/star-mark01.png" alt="" /></p>
+                            </div>
+                            <div class="clr"></div>
+                            <div class="feed_box">
+                                <div class="top">&nbsp;</div>
+                                <div class="mid">
+                                    <p>Donec justo turpis, laoreet sed scelerisque ut, vestibulum semper dolor. Vestibulum accumsan ornare dui at iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Vivamus malesuada turpis aliquet neque eleifend ut semper nisi euismod. iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent.</p>
+                                </div>
+                                <div class="bot">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div class="paging_box">
+                    <ul>
+                        <!--<li><span><a href="#"><img src="images/prev.png" alt="" /></a></span></li> -->
+                        <li><a href="#" class="select">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><span><a href="#"><img src="images/next.png" alt="" /></a></span></li>
+                    </ul>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+</div>
+<!-- /CONTENT SECTION -->
+<!-- FOOTER SECTION -->
+<div id="footer_section">
+    <div id="footer">
+        <div class="section01">
+            <div class="box01">
+                <h6>Clients »</h6>
+                <ul>
+                    <li><a href="post-a-job.html">Post a Job free</a></li>
+                    <li><a href="how-it-works-client.html">How it Works</a></li>
+                    <li><a href="job-poster-question.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="line01"></div>
+            <div class="box01">
+                <h6>Service Professional » </h6>
+                <ul>
+                    <li><a href="find-a-job.html">Find a Job</a></li>
+                    <li><a href="how-it-works-professional.html">How it Works</a></li>
+                    <li><a href="service-provider-question.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="line01"></div>
+            <div class="box01">
+                <h6>About Us » </h6>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="career.html">Career</a></li>
+                </ul>
+            </div>
+            <div class="line01"></div>
+            <div class="box01">
+                <h6>Legal » </h6>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="abuse-report.html">Abuse Report</a></li>
+                </ul>
+            </div>
+            <div class="line01"></div>
+            <div class="box01">
+                <h6>Support » </h6>
+                <ul>
+                    <li><a href="customer-support.html">Customer Support</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section02">
+            <div class="left">&copy; Copyright 2011 by <span>JobShoppa.com</span>. All Rights Reserved.</div>
+            <div class="right">Follow us: <a href="#"><img src="images/icon-facebook.png" alt="" /></a> <a href="#"><img src="images/icon-twitter.png" alt="" /></a></div>
+        </div>
+    </div>
+</div>
+<!-- /FOOTER SECTION -->
+<div class="lightbox">
+    <div class="close"><a href="javascript:void(0)" onclick="hide_dialog()"><img src="images/close.png" alt="" /></a></div>
+    <div class="top">&nbsp;</div>
+    <div class="mid">
+        <div class="box01">How do you like to choose to use Jobshoppa</div>
+        <div class="box02">
+            <div class="link_box05"><a href="professional-registration.html">Professional Registration</a></div>
+            <div class="link_box06"><a href="client-registration.html">Client Registration</a></div>
+        </div>
+    </div>
+    <div class="bot">&nbsp;</div>
+</div>
+</body>
+</html>

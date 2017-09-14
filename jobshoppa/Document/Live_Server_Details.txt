@@ -1,0 +1,26 @@
+Coming Soon Section:
+
+
+Castlegem Server:
+Main IP Address 66.160.179.239
+R..t Password Cyp63qdA87
+
+Cpanel Details:
+https://66.160.179.239:2083
+user: sandbox
+p: EKE&qiheHxMT
+
+
+FTP:
+Host:sandbox.jobshoppa.com
+User: acsjsp@sandbox.jobshoppa.com
+Pass: acs45@cs
+
+Database:
+Coming Soon Database Info:
+Database Name:
+User: sandbox_jscsacs
+Password: acs45@cs
+
+
+--------------------------------------------------------

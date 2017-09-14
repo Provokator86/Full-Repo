@@ -1,0 +1,68 @@
+
+#dhtmlgoodies_slideshow {
+	width:560px;
+	height:300px;
+	position:relative;
+}
+#previewPane {
+	margin:0;
+	text-align:center;
+	vertical-align:middle;
+	padding:0;
+	height:248px !important;
+	width:460px;
+	float:left;
+}
+#waitMessage {
+	display:none;
+	position:absolute;
+	left:200px;
+	top:150px;
+	background-color:#FFF;
+	border:3px double #000;
+	padding:4px;
+	color:#555;
+	font-size:0.9em;
+	font-family:arial;
+}
+#galleryContainer {
+	float:left;
+	height:248px;
+	width:100px;
+	padding:0;
+}
+#galleryContainer #arrow_down {	/* Arrow down image */
+	height:26px;
+}
+#galleryContainer #arrow_up {
+	height:26px;	/* Arrow up image */
+}
+#theImages {	/* DIV where the images are located */
+	position:relative;
+	overflow:hidden;
+	height:248px;	/* Height of boxes for the images */
+}
+#theImages div {
+	position:relative;	/* Don't change this */
+	height:1500px;	/* Higher than total height of thumbnails */
+}
+#theImages img {
+	margin:0; padding:0; border:none;
+}
+#previewPane #largeImageCaption {	/* CSS styling of image caption below large image */
+	background:url(../images/tp-bg.png) repeat top;
+	z-index:100 !important;
+	position:absolute; bottom:0; left:0;
+	width:440px;
+	padding:10px;
+	color:#FFFFFF;
+	text-align:left;
+}
+#previewPane #largeImageCaption .orng_txt16 {font:normal 16px/18px 'Philosopher'; color:#f58726; padding-bottom:5px;}
+#previewPane #largeImageCaption p {font:normal 13px/18px Arial, Helvetica, sans-serif; color:#FFFFFF;}
+#previewPane #largeImageCaption .grey_txt12 {font:normal 12px/18px Arial, Helvetica, sans-serif; color:#bbbbbb;}
+
+#theImages .imageCaption {
+	display:none;
+	
+}
