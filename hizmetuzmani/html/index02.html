@@ -1,0 +1,649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::Hizmetuzani::</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/dd.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+<script type="text/javascript" src="js/jquery.dd.js"></script>
+<!--nav-->
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<!--nav-->
+<!--login-->
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<script src="js/login.js" type="text/javascript"></script>
+<!--login-->
+<!--light box-->
+<script type="text/javascript" src="js/ModalDialog.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<!--light box-->
+<!--banner-->
+<script src="js/tabs.js" type="text/javascript"></script>
+<!--banner-->
+<!--Testimonials and news-->
+<script src="js/jcarousellite_1.0.1c4.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+
+	
+	$(".testimonial").jCarouselLite({
+		vertical: true,
+		hoverPause:true,
+		visible: 2,
+		auto:500,
+		speed:3000
+	});
+	
+		$(".newsticker").jCarouselLite({
+		vertical: true,
+		hoverPause:true,
+		visible: 6,
+		auto:500,
+		speed:3000
+	});
+});
+</script>
+<!--Testimonials and news-->
+</head>
+<body>
+<div class="wrapper">
+  <!--top_part-->
+  <div class="top_part">
+          
+      
+            <div id="logo"><a href="index.html"><img src="images/logo2.png" alt="" style="margin-top:40px;" /></a></div>
+    <div class="right_part">
+    <div class="flag">
+      <a href="javascript:void(0);"><img src="images/english.png" alt="" onmouseover="this.src='images/english-hover.png'" onmouseout="this.src='images/english.png'" /></a>
+      <a href="javascript:void(0);"><img src="images/turkey.png" alt="" onmouseover="this.src='images/turkey-hover.png'" onmouseout="this.src='images/turkey.png'" /></a>
+      
+      </div>
+      <div class="spacer"></div>
+                  <div class="signin">
+                        <ul>
+                              <li><a href="javascript:void(0);" id="signin">Login</a></li>
+                              <li>|</li>
+                              <li><a href="javascript:void(0);" onclick="show_dialog('photo_zoom')">Sign Up</a></li>
+                        </ul>
+                        <div id="signin_menu">
+            <div class="signin_menu_content">
+                  <input id="usrname" name="textfield" type="text"  value="Username" size="35" onclick="if(this.value=='Username') document.getElementById('usrname').value ='';" onblur="if(this.value=='') document.getElementById('usrname').value ='Username';"/>
+                  <input id="pswrd" name="textfield" type="password"  value="Password" size="35" onclick="if(this.value=='Password') document.getElementById('pswrd').value ='';" onblur="if(this.value=='') document.getElementById('pswrd').value ='Password';"/>
+                    <a href="forget_password.html">Forgot your password?</a>
+                  <div class="login_btn">
+                        <div class="left">
+                              <input name="" type="checkbox" value="" />
+                              Keep me logged in  <input name="" type="button" value="Login"  class="login_button" onclick="window.location.href='javascript:void(0);'"/></div>
+                        
+                        <div class=" spacer"></div>
+                  </div>
+            </div>
+      </div>
+                  </div>
+                  <div class="spacer"></div>
+          
+                  <div class="search_bg">
+                        <input type="button" class="search_button" value="" />
+                        <div class="job">
+                              <select name="job_select" id="job_select" style="width:90px;" class="job">
+                                    <option>Job</option>
+                                    <option>Service</option>
+                              </select>
+                              <script type="text/javascript">
+						$(document).ready(function() {
+						  $("#job_select").msDropDown();
+						   $("#job_select").hide();
+						   $('#job_select_msdd').css("background-image", "url(images/select-bg.png)");
+						   $('#job_select_msdd').css("background-repeat", "no-repeat");
+						   $('#job_select_msdd').css("width", "90px");
+						   $('#job_select_msdd').css("margin-top", "0px");
+						   $('#job_select_msdd').css("padding", "0px");
+						   $('#job_select_msdd').css("padding-left", "10px");
+						});
+					
+					</script>
+                        </div>
+                        <div class="search_box">
+                              <input type="text" onblur="if(this.value=='') document.getElementById('fgh')
+.value ='Ex.plumber , parpenter , painter ....';" onclick="if(this.value=='Ex.plumber , parpenter , painter ....')
+ document.getElementById('fgh').value ='';" size="35" value="Ex.plumber , parpenter , painter ...." name="textfield" id="fgh" />
+                        </div>
+                  </div>
+                  <div class="spacer"></div>
+                  <!--nav-->
+                  <div class="nav">
+                        <div class="nav_left"></div>
+                        <div class="nav_midd">
+                              <div id="myjquerymenu" class="jquerycssmenu">
+                                    <ul>
+                                          <li class="#"><a href="#">I have a job to be done<img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="post-a-job-free.html" >Post your job! </a> </li>
+                                                        <li><a href="find_tradesman.html">Tradesmen by category</a></li>
+                                                      <li><a href="how-find-tradesmen.html">How to find the best tradesmen</a></li>
+                                                </ul>
+                                          </li>
+                                          <li class="dvi"></li>
+                                          <li><a href="foto_gallery.html" >I'm a tradesmen <img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="find-jobs.html" >New added jobs </a> </li>
+                                                      <li><a href="find-jobs.html">Jobs by category </a></li>  <li><a href="how-gonna-find-customer.html">How am i gonna find customer ?</a></li>
+                                                      <li><a href="read-articles.html">Read Articles</a></li>
+                                                </ul>
+                                          </li>
+                                          <li class="dvi"></li>
+                                          <li><a href="news.html" >Support <img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="contact-us.html" class="last" >Ask Us</a> </li>
+                                                      <li><a href="terms-conditions.html" class="last">Terms &amp; Conditions</a></li>
+                                                      <li><a href="help.html" class="last">Help</a></li>
+                                                      <li><a href="legal-agreement.html" class="last">Legal Agreement</a></li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div class="nav_right"></div>
+                  </div>
+                  <!--nav-->
+            </div>
+  </div>
+  <!--top_part-->
+  <div class="spacer"></div>
+  <!--banner-->
+  <div class="banner_sh">
+  <div id="banner">
+    <ul class="tab6">
+      <li><a href="JavaScript:void(0);" title="reviews" class="tab1 active1">I Need That.. </a></li>
+      <li><a href="JavaScript:void(0);" title="certificatess" class="tab1 ">I Am Tradesman</a></li>
+      <li><a href="JavaScript:void(0);" title="pictures" class="tab1 ">How It  Works</a></li>
+    </ul>
+    <div class="body_right_03_inner">
+      <!--1st tab-->
+      <div class="tsb_text" id="reviews" style="display:block;">
+        <div class="tab01">
+          <h2>The Better Way to Find Builders</h2>
+          <p>Every day, thousands of people depend on MyBuilder's trusted review system to take the worry out of finding professional local builders &amp; tradesmen.</p>
+          <div class="textfell">
+            <input type="text" id="service" name="textfield" value="What service do you need ?" size="35" onclick="if(this.value=='What service do you need ?')
+ document.getElementById('service').value ='';" onblur="if(this.value=='') document.getElementById('service')
+.value ='What service do you need ?';" />
+          </div>
+          <div class="spacer"></div>
+          <div class="textfell02">
+            <input type="text" id="where" name="textfield" value="Where ?" size="35" onclick="if(this.value=='Where ?')
+ document.getElementById('where').value ='';" onblur="if(this.value=='') document.getElementById('where')
+.value ='Where ?';" />
+          </div>
+          <input class="button" type="button" value="Post Your Job for free" />
+        </div>
+      </div>
+      <!--1st tab-->
+      <!--2nd tab-->
+      <div class="tsb_text" id="certificatess" style="display:none;">
+     <div class="tab01 tab02">
+     <h6>What job are you looking for</h6>
+     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+ </p>
+     <div class="textfell02">
+            <input type="text" id="dgr" name="textfield" value="What are you looking for" size="35" onclick="if(this.value=='What are you looking for')
+ document.getElementById('dgr').value ='';" onblur="if(this.value=='') document.getElementById('dgr')
+.value ='What are you looking for';" />
+          </div>
+          <input class="button" type="button" value="Search" />
+     </div>
+       
+      </div>
+      <!--2nd tab-->
+      <!--3rd tab-->
+      <div class="tsb_text" id="pictures" style="display:none;">
+        <div class="tab01 tab03">
+        <h2>Benefits for users</h2>
+        <div class="left_part"><h3>Benefits for tradesman</h3>
+        <div class=" spacer"></div>
+        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>
+         <div class="left_part"><h4>Reating profile is for free </h4>
+
+ <ul>
+ <li>No listing fees</li>
+ <li>No membership fees for users</li>
+ <li>Low comissions for tradesmen</li>
+ <li>Membership not a "<strong>must</strong>"  </li>
+ <li>Open quotes to see actual bids </li>
+ </ul></div>
+        
+ 
+  <input class="button" type="button" value="Join us " onclick="show_dialog('photo_zoom')" />
+ 
+        </div>
+      </div>
+      <!--3rd tab-->
+    </div>
+    <div class="join_us">
+      <input class="join_us_button" type="button" value=""   onclick="show_dialog('photo_zoom')"/>
+      <div class="spacer"></div>
+      <div class="icon"> <a href="javascript:void(0);"><img src="images/tw.png" alt="" onmouseover="this.src='images/tw-hover.png'" onmouseout="this.src='images/tw.png'" /></a> <a href="javascript:void(0);"><img src="images/facebook.png" alt="" onmouseover="this.src='images/facebook-hover.png'" onmouseout="this.src='images/facebook.png'" /></a> <a href="javascript:void(0);"><img src="images/rss.png" alt="" onmouseover="this.src='images/rss-hover.png'" onmouseout="this.src='images/rss.png'" /></a> </div>
+    </div>
+  </div>
+  </div>
+  <!--banner-->
+  <!--bar-->
+  <div class="bar">
+    <ul>
+      <li>Post a Job</li>
+      <li>Get Quotes</li>
+      <li>Hire a Tradesman</li>
+      <li class="marginright">Leave FeedBack</li>
+    </ul>
+  </div>
+  <!--bar-->
+  <!--body-->
+  <div class="body_part02">
+    <div class="box01">
+      <h2>Have a job to be done?</h2>
+      <ul>
+        <li>Leave the hard work to us</li>
+        <li>Receive multiple quotes into your inbox.</li>
+        <li>Its Completely free</li>
+        <li>Review Feedback and Ratings</li>
+        <li>Choose the Pro that suits you</li>
+      </ul>
+      <input class="button02 marginleft"  type="button" value="Post your job for FREE" onclick="window.location.href='post-a-job-free.html'" />
+    </div>
+    <div class="box01">
+      <h2 class="org_text">Are you a Tradesman?</h2>
+      <ul>
+        <li>Create your profile</li>
+        <li>Receive job offers from clients</li>
+        <li>Grow your business</li>
+        <li>Make more money!!</li>
+      </ul>
+      <input class="button marginleft"  type="button" value="Create your profile NOW"  onclick="window.location.href='tradesman-registration.html'" />
+    </div>
+    <div class="box03"><img src="images/add.png" alt="" /></div>
+    <div class="spacer"></div>
+  </div>
+  <!--body-->
+  <!--job_categories-->
+  <div class="job_categories">
+    <div class="top_part"></div>
+    <div class="midd_part">
+      <h2>Job Categories </h2>
+      <ul>
+        <li><img src="images/icon.png" alt="" /><a href="find-jobs.html">Advertising, Print, Signs</a></li>
+        <li><img src="images/icon02.png" alt="" /><a href="find-jobs.html">Architectural Services</a></li>
+        <li><img src="images/icon.png" alt="" /><a href="find-jobs.html">Bathroom Fitting</a></li>
+        <li><img src="images/icon02.png" alt="" /><a href="find-jobs.html">Car, Motorbike, Boat</a></li>
+        <li><img src="images/icon.png" alt="" /><a href="find-jobs.html">Carpenters, Joiners, Handymen</a></li>
+        <li><img src="images/icon02.png" alt="" /><a href="find-jobs.html">Central Heating and Refrigeration</a></li>
+      </ul>
+      <ul>
+        <li><img src="images/icon.png" alt="" /><a href="find-jobs.html">Cleaning Services</a></li>
+        <li><img src="images/icon02.png" alt="" /><a href="find-jobs.html">Disposal and Clearing</a></li>
+        <li><img src="images/icon.png" alt="" /><a href="find-jobs.html">Driveways</a></li>
+        <li><img src="images/icon02.png" alt="" /><a href="find-jobs.html">Electrical</a></li>
+        <li><img src="images/icon.png" alt="" /><a href="find-jobs.html">Extensions</a></li>
+        <li><img src="images/icon02.png" alt="" /><a href="find-jobs.html">Fencing</a></li>
+      </ul>
+      <ul>
+        <li><img src="images/icon.png" alt="" /><a href="find-jobs.html">Cleaning Services</a></li>
+        <li><img src="images/icon02.png" alt="" /><a href="find-jobs.html">Disposal and Clearing</a></li>
+        <li><img src="images/icon.png" alt="" /><a href="find-jobs.html">Driveways</a></li>
+        <li><img src="images/icon02.png" alt="" /><a href="find-jobs.html">Electrical</a></li>
+        <li><img src="images/icon.png" alt="" /><a href="find-jobs.html">Extensions</a></li>
+        <li><img src="images/icon02.png" alt="" /><a href="find-jobs.html">Fencing</a></li>
+      </ul>
+      <div class="spacer"></div>
+      <div class="more"><a href="find-jobs.html">All Category Jobs</a></div>
+       <div class="spacer"></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="bottom_part"></div>
+  </div>
+  <!--job_categories-->
+  <!--body 02-->
+  <div class="body_part03">
+    <div class="left_part">
+      <!--featured_tradesmen-->
+      <div class="featured_tradesmen">
+        <h3>Featured Tradesmen</h3>
+        <div class="small_box_top"></div>
+        <div class="small_box_midd">
+          <ul>
+            <li class="tradesmen">
+              <div class="left_box"><a href="#"><img src="images/img01.png" alt="" /></a></div>
+              <div class="right_box">
+                <h5><a href="tradesman_profile.html">Steav Williams </a>-</h5>
+                <div class="star"><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/gry-star.png" alt="" /><img src="images/gry-star.png" alt="" /></div>
+                <h6>Main Skills &amp; Trades: </h6>
+                <p>Bathroom Fitter, Plumber, Restoration &amp; Refurb Specialist </p>
+              </div>
+            </li>
+            <li class="tradesmen">
+              <div class="left_box"><a href="#"><img src="images/img02.png" alt="" /></a></div>
+              <div class="right_box">
+                 <h5><a href="tradesman_profile.html">Steav Williams </a>-</h5>
+                <div class="star"><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/gry-star.png" alt="" /><img src="images/gry-star.png" alt="" /></div>
+                <h6>Main Skills &amp; Trades: </h6>
+                <p>Bathroom Fitter, Plumber, Restoration &amp; Refurb Specialist </p>
+              </div>
+            </li>
+            <li class="tradesmen">
+              <div class="left_box"><a href="#"><img src="images/img01.png" alt="" /></a></div>
+              <div class="right_box">
+                <h5><a href="tradesman_profile.html">Steav Williams </a>-</h5>
+                                <div class="star"><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/gry-star.png" alt="" /><img src="images/gry-star.png" alt="" /></div>
+                <h6>Main Skills &amp; Trades: </h6>
+                <p>Bathroom Fitter, Plumber, Restoration &amp; Refurb Specialist </p>
+              </div>
+            </li>
+            <li class="tradesmen">
+              <div class="left_box"><a href="#"><img src="images/img02.png" alt="" /></a></div>
+              <div class="right_box">
+                <h5><a href="tradesman_profile.html">Steav Williams </a>-</h5>
+                <div class="star"><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/gry-star.png" alt="" /><img src="images/gry-star.png" alt="" /></div>
+                <h6>Main Skills &amp; Trades: </h6>
+                <p>Bathroom Fitter, Plumber, Restoration &amp; Refurb Specialist </p>
+              </div>
+            </li>
+            <li class="tradesmen">
+              <div class="left_box"><a href="#"><img src="images/img01.png" alt="" /></a></div>
+              <div class="right_box">
+               <h5><a href="tradesman_profile.html">Steav Williams </a>-</h5>
+                <div class="star"><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/gry-star.png" alt="" /><img src="images/gry-star.png" alt="" /></div>
+                <h6>Main Skills &amp; Trades: </h6>
+                <p>Bathroom Fitter, Plumber, Restoration &amp; Refurb Specialist </p>
+              </div>
+            </li>
+            <li class="tradesmen">
+               <div class="left_box"><a href="#"><img src="images/img02.png" alt="" /></a></div>
+              <div class="right_box">
+               <h5><a href="tradesman_profile.html">Steav Williams </a>-</h5>
+                <div class="star"><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/gry-star.png" alt="" /><img src="images/gry-star.png" alt="" /></div>
+                <h6>Main Skills &amp; Trades: </h6>
+                <p>Bathroom Fitter, Plumber, Restoration &amp; Refurb Specialist </p>
+              </div>
+            </li>
+            <li class="tradesmen">
+              <div class="left_box"><a href="#"><img src="images/img01.png" alt="" /></a></div>
+              <div class="right_box">
+                <h5><a href="tradesman_profile.html">Steav Williams </a>-</h5>
+                <div class="star"><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/gry-star.png" alt="" /><img src="images/gry-star.png" alt="" /></div>
+                <h6>Main Skills &amp; Trades: </h6>
+                <p>Bathroom Fitter, Plumber, Restoration &amp; Refurb Specialist </p>
+              </div>
+            </li>
+          </ul>
+          <div class="spacer"></div>
+        </div>
+        <div class="small_box_bottom"></div>
+        
+      </div>
+      <!--featured_tradesmen-->
+      <!--Jobs New Added-->
+      <div class="featured_tradesmen marginleft">
+        <h3 class="blue_text">Jobs New Added</h3>
+        <div class="small_box_top"></div>
+        <div class="small_box_midd">
+          <ul>
+            <li class="job_add">
+              <h4><a href="job-details.html">Alarm guy to remove 2 pir and move some wire</a></h4>
+              <p><img src="images/icon03.png" alt="" />It is a long established fact that a reader will be distracted by the readable.</p>
+              <div class="spacer"></div>
+              <h5><a href="find-jobs.html">Security Systems</a> </h5>
+              <h6> Posted on:<span> 2 hours ago</span></h6>
+            </li>
+            <li class="job_add">
+             <h4><a href="job-details.html">Alarm guy to remove 2 pir and move some wire</a></h4> 
+              <p><img src="images/icon03.png" alt="" />It is a long established fact that a reader will be distracted by the readable.</p>
+              <div class="spacer"></div>
+              <h5><a href="find-jobs.html">Security Systems</a> </h5>
+              <h6> Posted on:<span> Today</span></h6>
+            </li>
+            <li class="job_add">
+              <h4><a href="job-details.html">Alarm guy to remove 2 pir and move some wire</a></h4> 
+              <p><img src="images/icon03.png" alt="" />It is a long established fact that a reader will be distracted by the readable.</p>
+              <div class="spacer"></div>
+              <h5><a href="find-jobs.html">Security Systems</a> </h5>
+              <h6> Posted on:<span> Today</span></h6>
+            </li>
+            <li class="job_add">
+              <h4><a href="job-details.html">Alarm guy to remove 2 pir and move some wire</a></h4> 
+              <p><img src="images/icon03.png" alt="" />It is a long established fact that a reader will be distracted by the readable.</p>
+              <div class="spacer"></div>
+              <h5><a href="find-jobs.html">Security Systems</a> </h5>
+              <h6> Posted on:<span> Yesterday</span></h6>
+            </li>
+            <li class="job_add">
+               <h4><a href="job-details.html">Alarm guy to remove 2 pir and move some wire</a></h4> 
+              <p><img src="images/icon03.png" alt="" />It is a long established fact that a reader will be distracted by the readable.</p>
+              <div class="spacer"></div>
+              <h5><a href="find-jobs.html">Security Systems</a> </h5>
+              <h6> Posted on:<span> Yesterday</span></h6>
+            </li>
+            <li class="job_add">
+               <h4><a href="job-details.html">Alarm guy to remove 2 pir and move some wire</a></h4> 
+              <p><img src="images/icon03.png" alt="" />It is a long established fact that a reader will be distracted by the readable.</p>
+              <div class="spacer"></div>
+              <h5><a href="find-jobs.html">Security Systems</a> </h5>
+              <h6> Posted on:<span> Last Week</span></h6>
+            </li>
+            <li class="job_add">
+               <h4><a href="job-details.html">Alarm guy to remove 2 pir and move some wire</a></h4> 
+              <p><img src="images/icon03.png" alt="" />It is a long established fact that a reader will be distracted by the readable.</p>
+              <div class="spacer"></div>
+              <h5><a href="find-jobs.html">Security Systems</a> </h5>
+              <h6> Posted on:<span> Last Week</span></h6>
+            </li>
+          </ul>
+        </div>
+        <div class="small_box_bottom"></div>
+        <div class="more"><a href="find-jobs.html">More &gt;&gt;</a></div>
+      </div>
+      <!--Jobs New Added-->
+      <div class="spacer"></div>
+      <div class="midd_box">
+        <div class="midd_top"></div>
+        <div class="midd_bg">
+          <h2>Just searched on hizmetuzmani</h2>
+          <ul>
+            <li><a href="find-jobs.html">Advertising</a></li>
+            <li><a href="find-jobs.html">Advertising</a> </li>
+            <li><a href="find-jobs.html">Print </a></li>
+            <li><a href="find-jobs.html">Signs</a> </li>
+            <li><a href="find-jobs.html">Architectural Services</a> </li>
+            <li> <a href="find-jobs.html"  class="font03">Bathroom Fitting Car</a> </li>
+            <li><a href="find-jobs.html" class="font04">Motorbike </a></li>
+            <li><a href="find-jobs.html">Boat</a> </li>
+            <li><a href="find-jobs.html">Carpenters </a></li>
+            <li><a href="find-jobs.html">Joiners </a></li>
+            <li><a href="find-jobs.html" class="font04">Handymen Central Heating and Refrigeration</a> </li>
+            <li><a href="find-jobs.html">Chimneys &amp; FireplacesAdvertising</a> </li>
+            <li><a href="find-jobs.html">Print </a></li>
+            <li><a href="find-jobs.html">Signs </a> </li>
+            <li><a href="find-jobs.html">Architectural Services </a></li>
+            <li><a href="find-jobs.html">Bathroom Fitting Car</a> </li>
+            <li> <a href="find-jobs.html" class="font04">Boat  Carpenters</a></li>
+            <li><a href="find-jobs.html"> Joiners</a> </li>
+            <li><a href="find-jobs.html" class="font04">Handymen Central Heating and Refrigeration</a> </li>
+            <li><a href="find-jobs.html" class="font01">Chimneys &amp; Fireplaces</a></li>
+          </ul>
+          <div class="spacer"></div>
+        </div>
+        <div class="midd_bottom"></div>
+      </div>
+      <div class="midd_box">
+        <div class="midd_top"></div>
+        <div class="midd_bg">
+          <h2>What we do is...</h2>
+          <p>Morbi urna mi, dapibus id fringilla et, ultrices eu sapien. Nulla pulvinar viverra rhoncus. Proin arcu massa, tempor et dapibus eu, gravida vitae ante. Proin felis tellus, ullamcorper a interdum ut, sollicitudin eu ipsum. Vestibulum ac turpis nibh. Integer ultricies lobortis neque, at feugiat magna sollicitudin ac. Donec a orci sit amet enim placerat ullamcorper. </p>
+          <p>Praesent eu nisi tellus, eu luctus purus. Etiam vitae sem eros, sit amet congue mauris. Proin nec ligula justo, in fermentum nulla. Fusce neque libero.</p>
+          <div class="spacer"></div>
+        </div>
+        <div class="midd_bottom"></div>
+      </div>
+    </div>
+    <div class="right_part">
+          <div class="featured_tradesmen">
+        <h3 class="gry_text">News</h3>
+        
+        <div class="spacer"></div>
+        <div class="small_box_top margintop"></div>
+        <div class="small_box_midd">
+          <div class="newsticker">
+            <ul>
+              <li class="body_left_03_inner">
+                <h2><a href="news.html">News Heading</a> <span>- <em>06/02/2011</em></span></h2>
+                <p>The Health and Safety Laborato</p>
+              </li>
+              <li class="body_left_03_inner">
+                <h2><a href="news.html">News Heading</a> <span>- <em>06/02/2011</em></span></h2>
+                <p>The Health and Safety Laborato</p>
+              </li>
+              <li class="body_left_03_inner">
+                <h2><a href="news.html">News Heading</a> <span>- <em>06/02/2011</em></span></h2>
+                <p>The Health and Safety Laborato</p>
+              </li>
+              <li class="body_left_03_inner">
+                <h2><a href="news.html">News Heading</a> <span>- <em>06/02/2011</em></span></h2>
+                <p>The Health and Safety Laborato</p>
+              </li>
+              <li class="body_left_03_inner">
+                <h2><a href="news.html">News Heading</a> <span>- <em>06/02/2011</em></span></h2>
+                <p>The Health and Safety Laborato</p>
+              </li>
+              <li class="body_left_03_inner">
+                <h2><a href="news.html">News Heading</a> <span>- <em>06/02/2011</em></span></h2>
+                <p>The Health and Safety Laborato</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="small_box_bottom"></div>
+      </div>
+      <div class="spacer"></div>
+      <div class="featured_tradesmen">
+        <h3 class="blue_text">Client Testimonials</h3>
+        <div class="small_box_top"></div>
+        <div class="small_box_midd">
+          <div class="testimonial">
+            <ul>
+              <li class="body_left_03_inner02"> <img src="images/dot1.png" alt="" class="left" />
+                <p> <a href="testimonial_detail.html" class="grey_link">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</a></p>
+                <h2>- Rebecca<br />
+                  <span>17-11-2011</span></h2>
+              </li>
+              <li class="body_left_03_inner02"> <img src="images/dot1.png" alt="" class="left" />
+                <p> <a href="testimonial_detail.html" class="grey_link">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</a></p>
+                <h2>- Rebecca<br />
+                  <span>17-11-2011</span></h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="small_box_bottom"></div>
+      </div>
+      <div class="spacer"></div>
+      <div class="facebook"><img src="images/facebook-link.png" alt="" /> </div>
+    </div>
+    <div class="spacer"></div>
+  </div>
+  <!--body 02-->
+</div>
+<!--footer-->
+<div class="footer">
+  <div class="wrapper">
+    <div class="box01">
+      <h3>Buyer </h3>
+      <ul>
+        <li><a href="post-a-job-free.html"><img src="images/arrow03.png" alt="" />Post a Job for free</a></li>
+        <li><a href="how-it-works.html"><img src="images/arrow03.png" alt="" />How it works</a></li>
+        <li class="lastlink"><a href="faq.html"><img src="images/arrow03.png" alt="" />FAQ</a></li>
+      </ul>
+    </div>
+    <div class="box01">
+      <h3>Tradesman</h3>
+      <ul>
+        <li><a href="search-job.html"><img src="images/arrow03.png" alt="" />Search Job</a></li>
+        <li><a href="how-it-works.html"><img src="images/arrow03.png" alt="" />How it works</a></li>
+        <li class="lastlink"><a href="faq.html"><img src="images/arrow03.png" alt="" />FAQ</a></li>
+      </ul>
+    </div>
+    
+    <div class="box01">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="about-us.html"><img src="images/arrow03.png" alt="" />About us</a></li>
+        <li><a href="mission-visions.html"><img src="images/arrow03.png" alt="" />Mission visions</a></li>
+        <li class="lastlink"><a href="careers.html"><img src="images/arrow03.png" alt="" />Careers</a></li>
+      </ul>
+    </div>
+    <div class="box01">
+      <h3>Legal Section</h3>
+      <ul>
+        <li><a href="privacy-policy.html"><img src="images/arrow03.png" alt="" />Privacy Policy</a></li>
+        <li class="lastlink"><a href="terms-conditions.html"><img src="images/arrow03.png" alt="" />Terms &amp; conditions</a></li>
+      </ul>
+    </div>
+    <div class="box01">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="help.html"><img src="images/arrow03.png" alt="" />Help</a></li>
+        <li><a href="contact-us.html"><img src="images/arrow03.png" alt="" />Contact us</a></li>
+        <li class="lastlink"><a href="abuse-report.html"><img src="images/arrow03.png" alt="" />Abuse Report</a></li>
+      </ul>
+    </div>
+    <div class="copyright">&copy; Copyright 2012 All Rights Reserved .</div>
+  </div>
+</div>
+<!--footer-->
+<script type="text/javascript">
+$(document).ready(function() {
+$("#btn_submit").click(function(){
+
+var user_type = $("input[name=btn_radio]:checked").val();
+if(user_type==1)
+{
+window.location.href = "buyer_registration.html";
+}
+else
+{
+window.location.href = "tradesman-registration.html";
+}
+});
+});
+</script>
+
+<!--lightbox-->
+<div class="lightbox02 photo_zoom"> 
+<div class="close"><a href="javascript:void(0);" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+    <h3>Register </h3>
+    <p>How do you like to choose to use hizmetuzmani</p>
+    
+    <div class="inner_box">
+    <div class="box01"><input name="btn_radio" type="radio" value="1" />Buyer Registration</div>
+    <div class="box01 marginright"><input name="btn_radio" type="radio" value="2" />Tradesman Registration</div>
+    <div class="spacer"></div>
+    </div>
+    <input  class="small_button marginleft" value="Submit" type="button" id="btn_submit"/>
+</div>
+<!--lightbox-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

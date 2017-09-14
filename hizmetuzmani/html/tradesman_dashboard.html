@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::Hizmetuzani::</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/dd.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+<script type="text/javascript" src="js/jquery.dd.js"></script>
+<!--nav-->
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<!--nav-->
+<!--login-->
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<script src="js/login.js" type="text/javascript"></script>
+<!--login-->
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/jquery.autofill.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="wrapper">
+      <!--top_part-->
+      <div class="top_part">
+                  <div class="flag">
+      <a href="javascript:void(0);"><img src="images/english.png" alt="" onmouseover="this.src='images/english-hover.png'" onmouseout="this.src='images/english.png'" /></a>
+      <a href="javascript:void(0);"><img src="images/turkey.png" alt="" onmouseover="this.src='images/turkey-hover.png'" onmouseout="this.src='images/turkey.png'" /></a>
+      
+      </div>
+      <div class=" spacer"></div>
+            <div id="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a> </div>
+            <div class="right_part">
+                  <div class="signin">
+                        <ul>
+                              <li>Welcome User</li>
+                              <li>|</li>
+                              <li><a href="tradesman_dashboard">Dashboard</a></li>
+                              <li>|</li>
+                              <li><a href="index.html">Signout</a></li>
+                        </ul>
+                        <div id="signin_menu">
+            <div class="signin_menu_content">
+                  <input id="usrname" name="textfield" type="text"  value="Username" size="35" onclick="if(this.value=='Username') document.getElementById('usrname').value ='';" onblur="if(this.value=='') document.getElementById('usrname').value ='Username';"/>
+                  <input id="pswrd" name="textfield" type="password"  value="Password" size="35" onclick="if(this.value=='Password') document.getElementById('pswrd').value ='';" onblur="if(this.value=='') document.getElementById('pswrd').value ='Password';"/>
+                    <a href="forget_password.html">Forgot your password?</a>
+                  <div class="login_btn">
+                        <div class="left">
+                              <input name="" type="checkbox" value="" />
+                              Keep me logged in  <input name="" type="button" value="Login"  class="login_button" onclick="window.location.href='javascript:void(0);'"/></div>
+                        
+                        <div class=" spacer"></div>
+                  </div>
+            </div>
+      </div>
+                  </div>
+                  <div class="spacer"></div>
+                  <div class="spacer"></div>
+                  <div class="search_bg">
+                        <input type="button" class="search_button" value="" />
+                        <div class="job">
+                              <select name="job_select" id="job_select" style="width:90px;" class="job">
+                                    <option>Job</option>
+                                    <option>Service</option>
+                              </select>
+                              <script type="text/javascript">
+						$(document).ready(function() {
+						  $("#job_select").msDropDown();
+						   $("#job_select").hide();
+						   $('#job_select_msdd').css("background-image", "url(images/select-bg.png)");
+						   $('#job_select_msdd').css("background-repeat", "no-repeat");
+						   $('#job_select_msdd').css("width", "90px");
+						   $('#job_select_msdd').css("margin-top", "0px");
+						   $('#job_select_msdd').css("padding", "0px");
+						   $('#job_select_msdd').css("padding-left", "10px");
+						});
+					
+					</script>
+                        </div>
+                        <div class="search_box">
+                              <input type="text" onblur="if(this.value=='') document.getElementById('fgh')
+.value ='Ex.plumber , parpenter , painter ....';" onclick="if(this.value=='Ex.plumber , parpenter , painter ....')
+ document.getElementById('fgh').value ='';" size="35" value="Ex.plumber , parpenter , painter ...." name="textfield" id="fgh" />
+                        </div>
+                  </div>
+                  <div class="spacer"></div>
+                  <!--nav-->
+                  <div class="nav">
+                        <div class="nav_left"></div>
+                        <div class="nav_midd">
+                              <div id="myjquerymenu" class="jquerycssmenu">
+                                    <ul>
+                                          <li class="#"><a href="#">I have a job to be done<img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="post-a-job-free.html" >Post your job! </a> </li>
+                                                      <li><a href="find_tradesman.html">Tradesmen by category</a></li>
+                                                      <li><a href="how-find-tradesmen.html">How to find the best tradesmen</a></li>
+                                                </ul>
+                                          </li>
+                                          <li class="dvi"></li>
+                                          <li class="#"><a href="foto_gallery.html" >I'm a tradesmen <img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="find-jobs.html" >New added jobs </a> </li>
+                                                      <li><a href="find-jobs.html">Jobs by category </a></li>
+                                                      <li><a href="how-gonna-find-customer.html">How am i gonna find customer ?</a></li>
+                                                      <li><a href="read-articles.html">Read Articles</a></li>
+                                                </ul>
+                                          </li>
+                                          <li class="dvi"></li>
+                                          <li><a href="news.html" >Support <img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="contact-us.html" class="last" >Ask Us</a> </li>
+                                                      <li><a href="terms-conditions.html" class="last">Terms &amp; Conditions</a></li>
+                                                      <li><a href="help.html" class="last">Help</a></li>
+                                                      <li><a href="legal-agreement.html" class="last">Legal Agreement</a></li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div class="nav_right"></div>
+                  </div>
+                  <!--nav-->
+            </div>
+      </div>
+      <!--top_part-->
+      <div class="spacer"></div>
+      <!--breadcrumb-->
+      <div class="breadcrumb">
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li>|</li>
+                  <li>Dashboard</li>
+            </ul>
+            <div class="icon02"> <a href="javascript:void(0);"><img src="images/tw.png" alt="" onmouseover="this.src='images/tw-hover.png'" onmouseout="this.src='images/tw.png'" /></a> <a href="javascript:void(0);"><img src="images/facebook.png" alt="" onmouseover="this.src='images/facebook-hover.png'" onmouseout="this.src='images/facebook.png'" /></a> <a href="javascript:void(0);"><img src="images/rss.png" alt="" onmouseover="this.src='images/rss-hover.png'" onmouseout="this.src='images/rss.png'"  class="lastimg"/></a> </div>
+      </div>
+      <!--breadcrumb-->
+      <div class="job_categories">
+            <div class="top_part"></div>
+            <div class="midd_part height02">
+                  <div class="username_box">
+                        <div class="right_box03">
+                              <h4>Dashboard </h4>
+                              <div class="div01">
+                                    <p>Welcome <span>Sumanc</span></p>
+                                    <p>You have <span>2 </span>new messages</p>
+                                    <p class="float06">Local time is<span> Tuesday, 23-Aug-2011 4:37 EST</span></p>    <p class="float06">Current Plane <span>Trial</span></p><p class="float06">Expiry date <span>12.03.12</span></p> <p class="float06">Your membership has expired <span><a href="#">Please Click</a></span> here to renew</p>
+                                    <div class="spacer"></div>
+                              </div>
+                              <div class="div02">
+                                    <h5>My Quotes</h5>
+                                    <div class="find_box02">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                <tbody>
+                                                      <tr>
+                                                            <th valign="middle" align="left">Job Details</th>
+                                                            <th valign="middle" align="center" class="margin00">Quotes</th>
+                                                            <th valign="middle" align="center"  class="margin00">Option(s)</th>
+                                                            <th valign="middle" align="center" class="margin00">My Price</th>
+                                                      </tr>
+                                                      <tr>
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="job-details.html">Babysitting</a></h5>
+                                                                  lorem ispum 
+                                                                  <div class="spacer"></div>
+                                                                  <ul><li>Date : <span>12.05.2011</span></li></ul></td>
+                                                            <td valign="middle" align="center">2</td>
+                                                            <td valign="middle" align="center">
+                                                           
+                                                           <a href="job-details.html"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'" onclick="this.src='images/view.png'"  title="view" /></a>                                                            </td>
+                                                            <td valign="middle" align="center">75 TL</td>
+                                                      </tr>
+                                                      <tr class="bgcolor">
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="job-details.html">Babysitting</a></h5>
+                                                                  lorem ispum   <div class="spacer"></div><ul><li>Date : <span>12.05.2011</span></li></ul></td>
+                                                            <td valign="middle" align="center">2</td>
+                                                            <td valign="middle" align="center">
+                                                             <a href="job-details.html"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'" onclick="this.src='images/view.png'"  title="view" /></a></td>
+                                                            <td valign="middle" align="center">75 TL</td>
+                                                      </tr>
+                                                        <tr>
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="job-details.html">Babysitting</a></h5>
+                                                                  lorem ispum 
+                                                                  <div class="spacer"></div>
+                                                                  <ul><li>Date : <span>12.05.2011</span></li></ul></td>
+                                                            <td valign="middle" align="center">2</td>
+                                                            <td valign="middle" align="center">
+                                                             <a href="job-details.html"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'" onclick="this.src='images/view.png'"  title="view" /></a></td>
+                                                            <td valign="middle" align="center">75 TL</td>
+                                                      </tr>
+                                                      <tr class="bgcolor">
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="job-details.html">Babysitting</a></h5>
+                                                                  lorem ispum   <div class="spacer"></div><ul><li>Date : <span>12.05.2011</span></li></ul></td>
+                                                            <td valign="middle" align="center">2</td>
+                                                            <td valign="middle" align="center"> <a href="job-details.html"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'" onclick="this.src='images/view.png'"  title="view" /></a></td>
+                                                            <td valign="middle" align="center">75 TL</td>
+                                                      </tr>
+                                                </tbody>
+                                          </table>
+                                    </div>
+                                    <div class="margin10"></div>
+                                    <input class="small_button" type="button" value="My Won Jobs" onclick="window.location.href='tradesman_won_jobs.html'" />
+                                    <input class="small_button" type="button" value="My Lost Jobs" onclick="window.location.href='tradesman_lost_jobs.html'" />
+                              </div>
+                              <div class="div02">
+                                    <h5>Pending Buyer Reviews</h5>
+                                    <div class="find_box02">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                <tbody>
+                                                      <tr>
+                                                            <th valign="middle" align="left">Job Details </th>
+                                                            <!--<th valign="middle" align="center" class="margin00">Feedback</th>-->
+                                                            <th valign="middle" align="center"  class=" margin00">Buyer Details </th>
+                                                            
+                                                      </tr>
+                                                      <tr>
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="tradesman_job_details.html">Babysitting</a></h5>
+                                                                  lorem ispum <div class="spacer"></div><ul>
+                                                                        <li>Completion Date <span>12.05.2011</span></li>
+                                                                  </ul></td>
+                                                          <!--  <td valign="middle" align="center"><h6><a href="tradesman_profile.html">Post</a></h6></td>-->
+                                                            <td valign="middle" align="center">
+                                                          <a href="#"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'" onclick="this.src='images/view.png'"  title="view" /></a></td>
+                                                            
+                                                      </tr>
+                                                      <tr class="bgcolor">
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="tradesman_job_details.html">Babysitting</a></h5>
+                                                                  lorem ispum <div class="spacer"></div><ul>
+                                                                        <li>Completion Date <span>12.05.2011</span></li>
+                                                                  </ul></td>
+                                                            <!--  <td valign="middle" align="center"><h6><a href="tradesman_profile.html">Post</a></h6></td>-->
+                                                            <td valign="middle" align="center">
+                                                          <a href="#"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'" onclick="this.src='images/view.png'"  title="view" /></a></td>
+                                                            
+                                                      </tr>
+                                                         <tr>
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="tradesman_job_details.html">Babysitting</a></h5>
+                                                                  lorem ispum <div class="spacer"></div><ul>
+                                                                        <li>Completion Date <span>12.05.2011</span></li>
+                                                                  </ul></td>
+                                                              <!--  <td valign="middle" align="center"><h6><a href="tradesman_profile.html">Post</a></h6></td>-->
+                                                            <td valign="middle" align="center">
+                                                          <a href="#"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'" onclick="this.src='images/view.png'"  title="view" /></a></td>
+                                                            
+                                                      </tr>
+                                                      <tr class="bgcolor">
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="tradesman_job_details.html">Babysitting</a></h5>
+                                                                  lorem ispum <div class="spacer"></div><ul>
+                                                                        <li>Completion Date <span>12.05.2011</span></li>
+                                                                  </ul></td>
+                                                              <!--  <td valign="middle" align="center"><h6><a href="tradesman_profile.html">Post</a></h6></td>-->
+                                                            <td valign="middle" align="center">
+                                                          <a href="#"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'" onclick="this.src='images/view.png'"  title="view" /></a></td>
+                                                            
+                                                      </tr>
+                                                      
+                                                      
+                                                      
+                                                </tbody>
+                                          </table>
+                                    </div>
+                              </div>
+                              
+                              <div class="spacer"></div>
+                              
+                              <div class="icon_bar">
+                              <ul>
+                              <li><img src="images/edit.png" alt="" /> Edit</li>
+                              <li>|</li>
+                              <li><img src="images/view.png" alt="" /> View</li>
+                               <li>|</li>
+                              <li><img src="images/history.png" alt="" />History</li>
+                               <li>|</li>
+                              <li><img src="images/delete.png" alt="" />Delete</li>
+                              <li>|</li>
+                              <li><img src="images/feedback.png" alt="" />Feedback</li>
+                              <li>|</li>
+                              <li><img src="images/mass.png" alt="" />Messages</li>
+                              <li>|</li>
+                              <li class="last"><img src="images/new.png" alt="" />New</li>
+                              </ul>
+                               <div class="spacer"></div>
+                              </div>
+                               <div class="spacer"></div>
+                        </div>
+                        <div class="body_left">
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">My Account</h3>
+                                          <ul class="next_box03">
+                                                <li><a href="tradesman_edit_profile.html">Edit My Profile</a></li>
+                                                <li><a href="tradesman_profile.html">View Trade Profile</a></li>
+                                                <li><a href="tradesman_album.html">My Album</a></li>
+                                                <li><a href="tradesman_change_password.html">Change Password</a> </li>
+                                                <li><a href="tradesman_contact_details.html">Contact Details</a></li>
+                                                 <li><a href="tradesman_membership_history.html" >Membership History</a></li>
+                                                 <li><a href="tradesman_contact_list.html" >Contact List</a></li>
+                                                   <li><a href="professional_infomission.html">Professional Information</a></li>
+                                                   
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">Job Prospects </h3>
+                                          <ul class="next_box03">
+                                                <li><a href="tradesman_quotes.html">Quotes (7)</a></li>
+                                                <li><a href="tradesman_job_invitation.html">Job invitations (2)</a></li>
+                                                <li><a href="tradesman_radar_job.html">Radar Jobs (2)</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">Job Secured</h3>
+                                          <ul class="next_box03"><li><a href="tradesman_job_you_got.html">Jobs You Got</a></li>
+                                                <li><a href="tradesman_in_progress.html">In Progress (3)</a></li>
+                                                <li><a href="tradesman_pending_job.html">Pending Jobs</a></li>
+                                                <li><a href="tradesman_completed_jobs.html">Completed Jobs (2)</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">Feedbacks </h3>
+                                          <ul class="next_box03">
+                                                <li><a href="tradesman_feedback_recieved.html">Feedback Received (5)</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">Message Board</h3>
+                                          <ul class="next_box03">
+                                                <li><a href="tradesman_pmb.html">My Private Message Board</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">My Settings</h3>
+                                          <ul class="next_box03">
+                                                <li><a href="tradesman_email_settings.html">Email Settings</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">General</h3>
+                                          <ul class="next_box03">
+                                                <li><a href="tradesman_job_radar.html">Radar Settings</a></li>
+                                                <!-- <li><a href="tradesman_alert.html">My Alerts</a></li>-->
+                                                <li><a href="tradesman_recommend_us.html">Recommend Us</a></li>
+                                                <li><a href="tradesman_testimonial.html">My Testimonial</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="spacer"></div>
+                  </div>
+                  <div class="spacer"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="bottom_part"></div>
+      </div>
+</div>
+<!--footer-->
+<div class="footer">
+      <div class="wrapper">
+            <div class="box01">
+                  <h3>Buyer </h3>
+                  <ul>
+                        <li><a href="post-a-job-free.html"><img src="images/arrow03.png" alt="" />Post a Job for free</a></li>
+                        <li><a href="how-it-works.html"><img src="images/arrow03.png" alt="" />How it works</a></li>
+                        <li class="lastlink"><a href="faq.html"><img src="images/arrow03.png" alt="" />FAQ</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>Tradesman</h3>
+                  <ul>
+                        <li><a href="search-job.html"><img src="images/arrow03.png" alt="" />Search Job</a></li>
+                        <li><a href="how-it-works.html"><img src="images/arrow03.png" alt="" />How it works</a></li>
+                        <li class="lastlink"><a href="faq.html"><img src="images/arrow03.png" alt="" />FAQ</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>About Us</h3>
+                  <ul>
+                        <li><a href="about-us.html"><img src="images/arrow03.png" alt="" />About us</a></li>
+                        <li><a href="mission-visions.html"><img src="images/arrow03.png" alt="" />Mission visions</a></li>
+                        <li class="lastlink"><a href="careers.html" ><img src="images/arrow03.png" alt="" />Careers</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>Legal Section</h3>
+                  <ul>
+                        <li><a href="privacy-policy.html"><img src="images/arrow03.png" alt="" />Privacy Policy</a></li>
+                        <li class="lastlink"><a href="terms-conditions.html"><img src="images/arrow03.png" alt="" />Terms &amp; conditions</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>Support</h3>
+                  <ul>
+                        <li><a href="help.html"><img src="images/arrow03.png" alt="" />Help</a></li>
+                        <li><a href="contact-us.html"><img src="images/arrow03.png" alt="" />Contact us</a></li>
+                        <li class="lastlink"><a href="abuse-report.html"><img src="images/arrow03.png" alt="" />Abuse Report</a></li>
+                  </ul>
+            </div>
+            <div class="copyright">&copy; Copyright 2012 All Rights Reserved .</div>
+      </div>
+</div>
+<!--footer-->
+<script type="text/javascript">
+$(document).ready(function() {
+$("#btn_submit").click(function(){
+
+var user_type = $("input[name=btn_radio]:checked").val();
+if(user_type==1)
+{
+window.location.href = "buyer_registration.html";
+}
+else
+{
+window.location.href = "tradesman-registration.html";
+}
+});
+});
+</script>
+<!--lightbox-->
+<div class="lightbox02 photo_zoom">
+      <div class="close"><a href="javascript:void(0);" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+      <h3>Register </h3>
+      <p>How do you like to choose to use hizmetuzmani</p>
+      <div class="inner_box">
+            <div class="box01">
+                  <input name="btn_radio" type="radio" value="1" />
+                  Buyer Registration</div>
+            <div class="box01 marginright">
+                  <input name="btn_radio" type="radio" value="2" />
+                  Tradesman Registration</div>
+            <div class="spacer"></div>
+      </div>
+      <input  class="small_button marginleft" value="Submit" type="button" id="btn_submit"/>
+</div>
+<!--lightbox-->
+<!--lightbox photo-->
+<div class="lightbox02 photo_zoom02">
+      <div class="close"><a href="javascript:void()" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+      <div class="spacer"></div>
+      <div class="photo_big"><img src="images/tradesmen01.png" alt="" /></div>
+</div>
+<div class="lightbox02 photo_zoom03">
+      <div class="close"><a href="javascript:void()" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+      <div class="photo_big"><img src="images/tradesmen02.png" alt="" /></div>
+</div>
+<div class="lightbox02 photo_zoom04">
+      <div class="close"><a href="javascript:void()" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+      <div class="photo_big"><img src="images/tradesmen03.png" alt="" /></div>
+</div>
+<div class="lightbox02 photo_zoom05">
+      <div class="close"><a href="javascript:void()" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+      <div class="photo_big"><img src="images/tradesmen04.png" alt="" /></div>
+</div>
+<!--lightbox photo-->
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::Hizmetuzani::</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/dd.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+<script type="text/javascript" src="js/jquery.dd.js"></script>
+<!--nav-->
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<!--nav-->
+<!--login-->
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<script src="js/login.js" type="text/javascript"></script>
+<!--login-->
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/jquery.autofill.js" type="text/javascript"></script>
+<!--light box-->
+<script type="text/javascript" src="js/ModalDialog.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<!--light box-->
+</head>
+<body>
+<div class="wrapper">
+      <!--top_part-->
+      <div class="top_part">
+                  <div class="flag">
+      <a href="javascript:void(0);"><img src="images/english.png" alt="" onmouseover="this.src='images/english-hover.png'" onmouseout="this.src='images/english.png'" /></a>
+      <a href="javascript:void(0);"><img src="images/turkey.png" alt="" onmouseover="this.src='images/turkey-hover.png'" onmouseout="this.src='images/turkey.png'" /></a>
+      
+      </div>
+      <div class=" spacer"></div>
+            <div id="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a> </div>
+            <div class="right_part">
+                  <div class="signin">
+                        <ul>
+                              <li>Welcome User</li>
+                              <li>|</li>
+                              <li><a href="buyer_dashboard.html">Dashboard</a></li>
+                              <li>|</li>
+                              <li><a href="index.html">Signout</a></li>
+                        </ul>
+                        <div id="signin_menu">
+            <div class="signin_menu_content">
+                  <input id="usrname" name="textfield" type="text"  value="Username" size="35" onclick="if(this.value=='Username') document.getElementById('usrname').value ='';" onblur="if(this.value=='') document.getElementById('usrname').value ='Username';"/>
+                  <input id="pswrd" name="textfield" type="password"  value="Password" size="35" onclick="if(this.value=='Password') document.getElementById('pswrd').value ='';" onblur="if(this.value=='') document.getElementById('pswrd').value ='Password';"/>
+                    <a href="forget_password.html">Forgot your password?</a>
+                  <div class="login_btn">
+                        <div class="left">
+                              <input name="" type="checkbox" value="" />
+                              Keep me logged in  <input name="" type="button" value="Login"  class="login_button" onclick="window.location.href='javascript:void(0);'"/></div>
+                        
+                        <div class=" spacer"></div>
+                  </div>
+            </div>
+      </div>
+                  </div>
+                  <div class="spacer"></div>
+                  <div class="spacer"></div>
+                  <div class="search_bg">
+                        <input type="button" class="search_button" value="" />
+                        <div class="job">
+                              <select name="job_select" id="job_select" style="width:90px;" class="job">
+                                    <option>Job</option>
+                                    <option>Service</option>
+                              </select>
+                              <script type="text/javascript">
+						$(document).ready(function() {
+						  $("#job_select").msDropDown();
+						   $("#job_select").hide();
+						   $('#job_select_msdd').css("background-image", "url(images/select-bg.png)");
+						   $('#job_select_msdd').css("background-repeat", "no-repeat");
+						   $('#job_select_msdd').css("width", "90px");
+						   $('#job_select_msdd').css("margin-top", "0px");
+						   $('#job_select_msdd').css("padding", "0px");
+						   $('#job_select_msdd').css("padding-left", "10px");
+						});
+					
+					</script>
+                        </div>
+                        <div class="search_box">
+                              <input type="text" onblur="if(this.value=='') document.getElementById('fgh')
+.value ='Ex.plumber , parpenter , painter ....';" onclick="if(this.value=='Ex.plumber , parpenter , painter ....')
+ document.getElementById('fgh').value ='';" size="35" value="Ex.plumber , parpenter , painter ...." name="textfield" id="fgh" />
+                        </div>
+                  </div>
+                  <div class="spacer"></div>
+                  <!--nav-->
+                  <div class="nav">
+                        <div class="nav_left"></div>
+                        <div class="nav_midd">
+                              <div id="myjquerymenu" class="jquerycssmenu">
+                                    <ul>
+                                          <li class="#"><a href="#">I have a job to be done<img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="post-a-job-free.html" >Post your job! </a> </li>
+                                                      <li><a href="find_tradesman.html">Tradesmen by category</a></li>
+                                                      <li><a href="how-find-tradesmen.html">How to find the best tradesmen</a></li>
+                                                </ul>
+                                          </li>
+                                          <li class="dvi"></li>
+                                          <li class="#"><a href="foto_gallery.html" >I'm a tradesmen <img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="find-jobs.html" >New added jobs </a> </li>
+                                                      <li><a href="find-jobs.html">Jobs by category </a></li>
+                                                      <li><a href="how-gonna-find-customer.html">How am i gonna find customer ?</a></li>
+                                                      <li><a href="read-articles.html">Read Articles</a></li>
+                                                </ul>
+                                          </li>
+                                          <li class="dvi"></li>
+                                          <li><a href="news.html" >Support <img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="contact-us.html" class="last" >Ask Us</a> </li>
+                                                      <li><a href="terms-conditions.html" class="last">Terms &amp; Conditions</a></li>
+                                                      <li><a href="help.html" class="last">Help</a></li>
+                                                      <li><a href="legal-agreement.html" class="last">Legal Agreement</a></li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div class="nav_right"></div>
+                  </div>
+                  <!--nav-->
+            </div>
+      </div>
+      <!--top_part-->
+      <div class="spacer"></div>
+      <!--breadcrumb-->
+      <div class="breadcrumb">
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li>|</li>
+                  <li>Completed Jobs</li>
+            </ul>
+            <div class="icon02"> <a href="javascript:void(0);"><img src="images/tw.png" alt="" onmouseover="this.src='images/tw-hover.png'" onmouseout="this.src='images/tw.png'" /></a> <a href="javascript:void(0);"><img src="images/facebook.png" alt="" onmouseover="this.src='images/facebook-hover.png'" onmouseout="this.src='images/facebook.png'" /></a> <a href="javascript:void(0);"><img src="images/rss.png" alt="" onmouseover="this.src='images/rss-hover.png'" onmouseout="this.src='images/rss.png'"  class="lastimg"/></a> </div>
+      </div>
+      <!--breadcrumb-->
+      <div class="job_categories">
+            <div class="top_part"></div>
+            <div class="midd_part height02">
+                  <div class="username_box">
+                        <div class="right_box03">
+                              <h4>Completed Jobs</h4>
+                              <div class="div01">
+                                    <p>This section consists of jobs completed by your chosen Tradesman</p>
+                                    <div class="spacer"></div>
+                              </div>
+                              <div class="div01 noboder">
+                                    <div class="find_box02">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                <tbody>
+                                                      <tr>
+                                                            <th  align="left" valign="middle">Job Details</th>
+                                                            <th align="left" valign="middle">Tradesman Details</th>
+                                                            <th  align="center" valign="middle"  class="margin00">Option</th>
+                                                      </tr>
+                                                      <tr>
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="buyer_job_details.html">Babysitting</a></h5>
+                                                                  <ul class="details">
+                                                                        <li>Category: <span>Child Care</span> </li>
+                                                                        </ul>
+                                                                        <ul>
+                                                                        
+                                                                
+                                                                        <li>Assigned on  <span>12.05.2011</span></li>
+                                                                  </ul></td>
+                                                            <td align="left" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="mail_box">
+                                                                        <tr>
+                                                                              <td align="left" valign="top"><img src="images/mail.png" alt="" /></td>
+                                                                              <td align="left" valign="top"><a href="mailto:Lorem@Ipsum.com">Lorem@Ipsum.com</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                              <td align="left" valign="top"><img src="images/phone.png" alt="" width="20" height="20" /></td>
+                                                                              <td align="left" valign="top">589-656-2369</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                              <td align="left" valign="top"><img src="images/address.png" alt="" /></td>
+                                                                              <td align="left" valign="top">256 A/5 Lorem Ipsum                                                                             printing and typesetting</td>
+                                                                        </tr>
+                                                                  </table></td>
+                                                            <td valign="middle" align="center" class="width17"><a href="job-details.html"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'"  onclick="this.src='images/view.png'" title="view"/></a> <a href="javascript:void(0);" onclick="show_dialog('photo_zoom08')"><img src="images/history.png" alt="" onmouseover="this.src='images/history-hover.png'" onmouseout="this.src='images/history.png'"  onclick="this.src='images/history.png'" title="history"/></a> 
+                                                            <a href="buyer_pmb.html"><img src="images/mass.png" alt="" onmouseover="this.src='images/mass-hover.png'" onmouseout="this.src='images/mass.png'" onclick="this.src='images/mass.png'"  title="Message "/></a> <a href="javascript:void(0);"  onclick="show_dialog('photo_zoom02')"><img src="images/feedback.png" alt="" onmouseover="this.src='images/feedback-hover.png'" onmouseout="this.src='images/feedback.png'"  onclick="this.src='images/feedback.png'" title="feedback "/></a> </td>
+                                                      </tr>
+                                                      <tr class="bgcolor">
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="buyer_job_details.html">Babysitting</a></h5>
+                                                                  <ul class="details">
+                                                                        <li>Category: <span>Child Care</span> </li>
+                                                                        
+                                                                        </ul>
+                                                                       <ul class="details">
+                                                                        <li>Assigned on  <span>12.05.2011</span></li>
+                                                                  </ul></td>
+                                                            <td align="left" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="mail_box">
+                                                                        <tr>
+                                                                              <td align="left" valign="top"><img src="images/mail.png" alt="" /></td>
+                                                                              <td align="left" valign="top"><a href="mailto:Lorem@Ipsum.com">Lorem@Ipsum.com</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                              <td align="left" valign="top"><img src="images/phone.png" alt="" width="20" height="20" /></td>
+                                                                              <td align="left" valign="top">589-656-2369</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                              <td align="left" valign="top"><img src="images/address.png" alt="" /></td>
+                                                                              <td align="left" valign="top">256 A/5 Lorem Ipsum                                                                             printing and typesetting</td>
+                                                                        </tr>
+                                                                  </table></td>
+                                                            <td valign="middle" align="center" class="width17"><a href="job-details.html"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'"  onclick="this.src='images/view.png'" title="view"/></a> <a href="javascript:void(0);" onclick="show_dialog('photo_zoom08')"><img src="images/history.png" alt="" onmouseover="this.src='images/history-hover.png'" onmouseout="this.src='images/history.png'"  onclick="this.src='images/history.png'" title="history"/></a> 
+                                                            
+                                                            <a href="buyer_pmb.html"><img src="images/mass.png" alt="" onmouseover="this.src='images/mass-hover.png'" onmouseout="this.src='images/mass.png'" onclick="this.src='images/mass.png'"  title="Message "/></a> <a href="javascript:void(0);"  onclick="show_dialog('photo_zoom02')"><img src="images/feedback.png" alt="" onmouseover="this.src='images/feedback-hover.png'" onmouseout="this.src='images/feedback.png'"  onclick="this.src='images/feedback.png'" title="feedback "/></a> </td>
+                                                      </tr>
+                                                      <tr>
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="buyer_job_details.html">Babysitting</a></h5>
+                                                                  <ul class="details">
+                                                                        <li>Category: <span>Child Care</span> </li>
+                                                                        
+                                                                        </ul>
+                                                                        <ul>
+                                                                        <li>Assigned on  <span>12.05.2011</span></li>
+                                                                  </ul></td>
+                                                            <td align="left" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="mail_box">
+                                                                        <tr>
+                                                                              <td align="left" valign="top"><img src="images/mail.png" alt="" /></td>
+                                                                              <td align="left" valign="top"><a href="mailto:Lorem@Ipsum.com">Lorem@Ipsum.com</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                              <td align="left" valign="top"><img src="images/phone.png" alt="" width="20" height="20" /></td>
+                                                                              <td align="left" valign="top">589-656-2369</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                              <td align="left" valign="top"><img src="images/address.png" alt="" /></td>
+                                                                              <td align="left" valign="top">256 A/5 Lorem Ipsum                                                                             printing and typesetting</td>
+                                                                        </tr>
+                                                                  </table></td>
+                                                            <td valign="middle" align="center" class="width17"><a href="job-details.html"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'"  onclick="this.src='images/view.png'" title="view"/></a> <a href="javascript:void(0);" onclick="show_dialog('photo_zoom08')"><img src="images/history.png" alt="" onmouseover="this.src='images/history-hover.png'" onmouseout="this.src='images/history.png'"  onclick="this.src='images/history.png'" title="history"/></a> 
+                                                            
+                                                             <a href="buyer_pmb.html"><img src="images/mass.png" alt="" onmouseover="this.src='images/mass-hover.png'" onmouseout="this.src='images/mass.png'" onclick="this.src='images/mass.png'"  title="Message "/></a> <a href="javascript:void(0);"  onclick="show_dialog('photo_zoom02')"><img src="images/feedback.png" alt="" onmouseover="this.src='images/feedback-hover.png'" onmouseout="this.src='images/feedback.png'"  onclick="this.src='images/feedback.png'" title="feedback "/></a> </td>
+                                                      </tr>
+                                                      <tr class="bgcolor">
+                                                            <td valign="middle" align="left" class="leftboder"><h5><a href="buyer_job_details.html">Babysitting</a></h5>
+                                                                  <ul class="details">
+                                                                        <li>Category: <span>Child Care</span> </li>
+                                                                       
+                                                                        </ul>
+                                                                        <ul>
+                                                                        <li>Assigned on  <span>12.05.2011</span></li>
+                                                                  </ul></td>
+                                                            <td align="left" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="mail_box">
+                                                                        <tr>
+                                                                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="mail_box">
+                                                                                          <tr>
+                                                                                                <td align="left" valign="top"><img src="images/mail.png" alt="" /></td>
+                                                                                                <td align="left" valign="top"><a href="mailto:Lorem@Ipsum.com">Lorem@Ipsum.com</a></td>
+                                                                                          </tr>
+                                                                                          <tr>
+                                                                                                <td align="left" valign="top"><img src="images/phone.png" alt="" width="20" height="20" /></td>
+                                                                                                <td align="left" valign="top">589-656-2369</td>
+                                                                                          </tr>
+                                                                                          <tr>
+                                                                                                <td align="left" valign="top"><img src="images/address.png" alt="" /></td>
+                                                                                                <td align="left" valign="top">256 A/5 Lorem Ipsum                                                                             printing and typesetting</td>
+                                                                                          </tr>
+                                                                                    </table>
+                                                                                    <a href="mailto:Lorem@Ipsum.com"></a></td>
+                                                                        </tr>
+                                                                  </table></td>
+                                                            <td valign="middle" align="center" class="width17"><a href="job-details.html"><img src="images/view.png" alt="" onmouseover="this.src='images/view-hover.png'" onmouseout="this.src='images/view.png'"  onclick="this.src='images/view.png'" title="view"/></a> <a href="javascript:void(0);" onclick="show_dialog('photo_zoom08')"><img src="images/history.png" alt="" onmouseover="this.src='images/history-hover.png'" onmouseout="this.src='images/history.png'"  onclick="this.src='images/history.png'" title="history"/></a> 
+                                                            
+                                                             <a href="buyer_pmb.html"><img src="images/mass.png" alt="" onmouseover="this.src='images/mass-hover.png'" onmouseout="this.src='images/mass.png'" onclick="this.src='images/mass.png'"  title="Message "/></a> <a href="javascript:void(0);"  onclick="show_dialog('photo_zoom02')"><img src="images/feedback.png" alt="" onmouseover="this.src='images/feedback-hover.png'" onmouseout="this.src='images/feedback.png'"  onclick="this.src='images/feedback.png'" title="feedback "/></a> </td>
+                                                      </tr>
+                                                </tbody>
+                                          </table>
+                                    </div>
+                              </div>
+                              <div class="spacer"></div>
+                              <div class="page">
+                                    <ul>
+                                          <li><a class="select" href="javascript:void(0);">1</a></li>
+                                          <li><a href="javascript:void(0);">2</a></li>
+                                          <li><a href="javascript:void(0);">3</a></li>
+                                          <li><a href="javascript:void(0);">4</a></li>
+                                          <li><a href="javascript:void(0);">5</a></li>
+                                          <li><a href="javascript:void(0);">6</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div class="body_left">
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">My Account</h3>
+                                          <ul class="next_box03">
+                                                <li><a href="buyer_edit_profile.html">Edit Profile</a></li>
+                                                <li><a href="buyer_change_password.html" >Change Password</a> </li>
+                                                <li><a href="buyer_contact_details.html" >Contact Details</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">My Jobs</h3>
+                                          <ul class="next_box03">
+                                                <li><a href="buyer_post_job.html">Post a Job</a></li>
+                                                <li><a href="buyer_all_jobs.html">All Jobs (16)</a></li>
+                                                <li><a href="buyer_active_jobs.html" >Active Jobs (3)</a></li>
+                                                <li><a href="buyer_assigned_jobs.html">Assigned Jobs (3)</a></li>
+                                                <li><a href="buyer_completed_jobs.html" class="select">Completed Jobs (5)</a></li>
+                                                <li><a href="buyer_expired_jobs.html"  >Expired Jobs (5)</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">Message Board</h3>
+                                          <ul class="next_box03">
+                                                <li><a href="buyer_pmb.html">My Private Message Board</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">Tradesman </h3>
+                                          <ul class="next_box03">
+                                                <li><a href="buyer_invite_a_tradesman.html">Search / InviteTradesman</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">My Settings</h3>
+                                          <ul class="next_box03">
+                                                <li><a href="buyer_email_settings.html">Email Settings</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                              <div class="box03_out">
+                                    <div class="box03">
+                                          <h3 class="align">General</h3>
+                                          <ul class="next_box03">
+                                                <!--<li><a href="buyer_alert.html">My Alerts</a></li>-->
+                                                <li><a href="buyer_recommended_us.html">Recommend Us</a></li>
+                                                <li><a class="" href="buyer_testimonial.html">My Testimonial</a></li>
+                                          </ul>
+                                          <div class="spacer"></div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="spacer"></div>
+                  </div>
+                  <div class="spacer"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="bottom_part"></div>
+      </div>
+</div>
+<!--footer-->
+<div class="footer">
+      <div class="wrapper">
+            <div class="box01">
+                  <h3>Buyer </h3>
+                  <ul>
+                        <li><a href="post-a-job-free.html"><img src="images/arrow03.png" alt="" />Post a Job for free</a></li>
+                        <li><a href="how-it-works.html"><img src="images/arrow03.png" alt="" />How it works</a></li>
+                        <li class="lastlink"><a href="faq.html"><img src="images/arrow03.png" alt="" />FAQ</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>Tradesman</h3>
+                  <ul>
+                        <li><a href="search-job.html"><img src="images/arrow03.png" alt="" />Search Job</a></li>
+                        <li><a href="how-it-works.html"><img src="images/arrow03.png" alt="" />How it works</a></li>
+                        <li class="lastlink"><a href="faq.html"><img src="images/arrow03.png" alt="" />FAQ</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>About Us</h3>
+                  <ul>
+                        <li><a href="about-us.html"><img src="images/arrow03.png" alt="" />About us</a></li>
+                        <li><a href="mission-visions.html"><img src="images/arrow03.png" alt="" />Mission visions</a></li>
+                        <li class="lastlink"><a href="careers.html" ><img src="images/arrow03.png" alt="" />Careers</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>Legal Section</h3>
+                  <ul>
+                        <li><a href="privacy-policy.html"><img src="images/arrow03.png" alt="" />Privacy Policy</a></li>
+                        <li class="lastlink"><a href="terms-conditions.html"><img src="images/arrow03.png" alt="" />Terms &amp; conditions</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>Support</h3>
+                  <ul>
+                        <li><a href="help.html"><img src="images/arrow03.png" alt="" />Help</a></li>
+                        <li><a href="contact-us.html"><img src="images/arrow03.png" alt="" />Contact us</a></li>
+                        <li class="lastlink"><a href="abuse-report.html"><img src="images/arrow03.png" alt="" />Abuse Report</a></li>
+                  </ul>
+            </div>
+            <div class="copyright">&copy; Copyright 2012 All Rights Reserved .</div>
+      </div>
+</div>
+<!--footer-->
+<script type="text/javascript">
+$(document).ready(function() {
+$("#btn_submit").click(function(){
+
+var user_type = $("input[name=btn_radio]:checked").val();
+if(user_type==1)
+{
+window.location.href = "buyer_registration.html";
+}
+else
+{
+window.location.href = "tradesman-registration.html";
+}
+});
+});
+</script>
+<!--lightbox-->
+<div class="lightbox04 photo_zoom">
+      <div class="close"><a href="javascript:void(0);" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+      <h3>Why do you want to terminate this Job?</h3>
+      <div class="lable">Reason :</div>
+      <div class="textfell">
+            <textarea name="" cols="" rows=""></textarea>
+      </div>
+      <div class="spacer"></div>
+      <div class="lable">Feedback :</div>
+      <div class="textfell">
+            <textarea name="" cols="" rows=""></textarea>
+      </div>
+      <div class=" spacer"></div>
+      <div class="lable">Feedback Ratings:</div>
+      <div class="textfell">
+            <select id="feedback" name="feedback " style="width:269px;">
+                  <option>1</option>
+            </select>
+            <script type="text/javascript">
+	$(document).ready(function() {
+	  $("#feedback").msDropDown();
+	  $("#feedback").hide();
+        $('#feedback_msdd').css("background-image", "url(images/select.png)");
+	  $('#feedback_msdd').css("background-repeat", "no-repeat");
+	  $('#feedback_msdd').css("width", "269px");
+	  $('#feedback_msdd').css("margin-top", "0px");
+	  $('#feedback_msdd').css("padding", "0px");
+	  $('#feedback_msdd').css("height", "38px");
+						});
+</script>
+      </div>
+      <div class="spacer"></div>
+      <div class="lable"></div>
+      <div class="textfell">
+            <input class="small_button margintop" value="Submit" type="button" />
+      </div>
+</div>
+<!--lightbox-->
+<!--lightbox-->
+<div class="lightbox05 photo_zoom08">
+      <div class="close"><a href="javascript:void(0);" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+      <h3>History</h3>
+      <div class="htstory_box">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box bg05">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box bg05">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box bg05">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box bg05">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box bg05">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box bg05">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+      <div class="htstory_box bg05">
+            <p>Rahul has posted the Job: Painter on 08/09/2011 </p>
+            <p>Admin has approved the Job: Painter.</p>
+      </div>
+</div>
+<!--lightbox-->
+<!--lightbox-->
+<div class="lightbox05 photo_zoom02 box02">
+      <div class="close"><a href="javascript:void(0);" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+      <h2>Feedback</h2>
+      <h4>Change water tank and tidy old pipe work</h4>
+      <div class="rating"><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/blue-star.png" alt="" /><img src="images/gry-star.png" alt="" /> Bricklaying</div>
+      <div class="spacer"></div>
+      <div class="feedback_box">
+            <p>Donec justo turpis, laoreet sed scelerisque ut, vestibulum semper dolor. Vestibulum accumsan ornare dui at iaculis. Quisque id sollicitudin orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos imenaeos. Vivamus malesuada turpis aliquet neque eleifend ut semper nisi euismod. <span>- Newton<br/>
+                  06/02/2011</span></p>
+            <div class="spacer"></div>
+            <div class="positive"><img src="images/Positive.png" alt="" />Positive feedback</div>
+            <div class="spacer"></div>
+      </div>
+</div>
+<!--lightbox-->
+</body>
+</html>

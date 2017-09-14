@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::Hizmetuzani::</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/dd.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+<script type="text/javascript" src="js/jquery.dd.js"></script>
+<!--nav-->
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<!--nav-->
+<!--login-->
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<script src="js/login.js" type="text/javascript"></script>
+<!--login-->
+<!--light box-->
+<script type="text/javascript" src="js/ModalDialog.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<!--light box-->
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/jquery.autofill.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="wrapper">
+      <!--top_part-->
+      <div class="top_part">
+                  <div class="flag">
+      <a href="javascript:void(0);"><img src="images/english.png" alt="" onmouseover="this.src='images/english-hover.png'" onmouseout="this.src='images/english.png'" /></a>
+      <a href="javascript:void(0);"><img src="images/turkey.png" alt="" onmouseover="this.src='images/turkey-hover.png'" onmouseout="this.src='images/turkey.png'" /></a>
+      
+      </div>
+      <div class=" spacer"></div>
+            <div id="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a> </div>
+            <div class="right_part">
+                  <div class="signin">
+                        <ul>
+                              <li><a href="javascript:void(0);" id="signin">Login</a></li>
+                              <li>|</li>
+                              <li><a href="javascript:void(0);" onclick="show_dialog('photo_zoom')">Sign Up</a></li>
+                        </ul>
+                        <div id="signin_menu">
+            <div class="signin_menu_content">
+                  <input id="usrname" name="textfield" type="text"  value="Username" size="35" onclick="if(this.value=='Username') document.getElementById('usrname').value ='';" onblur="if(this.value=='') document.getElementById('usrname').value ='Username';"/>
+                  <input id="pswrd" name="textfield" type="password"  value="Password" size="35" onclick="if(this.value=='Password') document.getElementById('pswrd').value ='';" onblur="if(this.value=='') document.getElementById('pswrd').value ='Password';"/>
+                    <a href="forget_password.html">Forgot your password?</a>
+                  <div class="login_btn">
+                        <div class="left">
+                              <input name="" type="checkbox" value="" />
+                              Keep me logged in  <input name="" type="button" value="Login"  class="login_button" onclick="window.location.href='javascript:void(0);'"/></div>
+                        
+                        <div class=" spacer"></div>
+                  </div>
+            </div>
+      </div>
+                  </div>
+                  <div class="spacer"></div>
+                  <div class="search_bg">
+                        <input type="button" class="search_button" value="" />
+                        <div class="job">
+                              <select name="job_select" id="job_select" style="width:90px;" class="job">
+                                    <option>Job</option>
+                                    <option>Service</option>
+                              </select>
+                              <script type="text/javascript">
+						$(document).ready(function() {
+						  $("#job_select").msDropDown();
+						   $("#job_select").hide();
+						   $('#job_select_msdd').css("background-image", "url(images/select-bg.png)");
+						   $('#job_select_msdd').css("background-repeat", "no-repeat");
+						   $('#job_select_msdd').css("width", "90px");
+						   $('#job_select_msdd').css("margin-top", "0px");
+						   $('#job_select_msdd').css("padding", "0px");
+						   $('#job_select_msdd').css("padding-left", "10px");
+						});
+					
+					</script>
+                        </div>
+                        <div class="search_box">
+                              <input type="text" onblur="if(this.value=='') document.getElementById('fgh')
+.value ='Ex.plumber , parpenter , painter ....';" onclick="if(this.value=='Ex.plumber , parpenter , painter ....')
+ document.getElementById('fgh').value ='';" size="35" value="Ex.plumber , parpenter , painter ...." name="textfield" id="fgh" />
+                        </div>
+                  </div>
+                  <div class="spacer"></div>
+                  <!--nav-->
+                  <div class="nav">
+                        <div class="nav_left"></div>
+                        <div class="nav_midd">
+                              <div id="myjquerymenu" class="jquerycssmenu">
+                                    <ul>
+                                          <li class="#"><a href="#">I have a job to be done<img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="post-a-job-free.html" >Post your job! </a> </li>
+                                                        <li><a href="find_tradesman.html">Tradesmen by category</a></li>
+                                                      <li><a href="how-find-tradesmen.html">How to find the best tradesmen</a></li>
+                                                </ul>
+                                          </li>
+                                          <li class="dvi"></li>
+                                          <li class="#"><a href="foto_gallery.html" >I'm a tradesmen <img src="images/arrow.png" alt="" /></a>
+                                                <ul> <li><a href="find-jobs.html" >New added jobs </a> </li>
+                                                      <li><a href="find-jobs.html">Jobs by category </a></li>  <li><a href="how-gonna-find-customer.html">How am i gonna find customer ?</a></li>
+                                                      <li><a href="read-articles.html">Read Articles</a></li>
+                                                </ul>
+                                          </li>
+                                          <li class="dvi"></li>
+                                          <li><a href="news.html" >Support <img src="images/arrow.png" alt="" /></a>
+                                                <ul>
+                                                      <li><a href="contact-us.html" class="last" >Ask Us</a> </li>
+                                                      <li><a href="terms-conditions.html" class="last">Terms &amp; Conditions</a></li>
+                                                      <li><a href="help.html" class="last">Help</a></li>
+                                                      <li><a href="legal-agreement.html" class="last">Legal Agreement</a></li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div class="nav_right"></div>
+                  </div>
+                  <!--nav-->
+            </div>
+      </div>
+      <!--top_part-->
+      <div class="spacer"></div>
+      <!--breadcrumb-->
+      <div class="breadcrumb">
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li>|</li>
+                  <li><a href="search-job.html">Category Name </a></li>
+                  <li>|</li>
+                  <li>Job no: 0254</li>
+            </ul>
+                  <div class="icon02"> <a href="javascript:void(0);"><img src="images/tw.png" alt="" onmouseover="this.src='images/tw-hover.png'" onmouseout="this.src='images/tw.png'" /></a> <a href="javascript:void(0);"><img src="images/facebook.png" alt="" onmouseover="this.src='images/facebook-hover.png'" onmouseout="this.src='images/facebook.png'" /></a> <a href="javascript:void(0);"><img src="images/rss.png" alt="" onmouseover="this.src='images/rss-hover.png'" onmouseout="this.src='images/rss.png'"  class="lastimg"/></a> </div>
+                  
+      </div>
+      <!--breadcrumb-->
+      <!--Post a Job for free-->
+      <div class="job_categories">
+            <div class="top_part"></div>
+            <div class="midd_part height02">
+                  <div class="spacer"></div>
+                  
+                  
+                  <div class="spacer"></div>
+                  
+                  <div class="hedline">3 + 1 evde saten boya badana yapılacak. this is job title lorem ipsum dot sit am                        							      <span>District - City </span> </div>
+                  <div class="week">2 week left</div>
+                  <div class="left_part02"><div class="details_about_job">
+                  <h3>Details about job</h3>
+                  <ul>
+                  <li><em>Location </em><span>Aladag(Karsanti)</span></li>
+                  <li><em>Job create date</em> <span>25 Jan 2011</span>	</li>
+                  <li><em>Job listing duration</em><span>2 weeks</span></li>
+                  <li><em>Current status of job</em><span><strong>open for quote</strong></span></li>
+                  </ul>
+                  
+                  
+                  <ul>
+                  <li><em>Expected budget </em><span>850 TL </span></li>
+                  <li><em>Expected complete time</em> <span>3 days</span>	</li>
+                  <li><em>Payment</em><span>End of work </span></li>
+                  <li><em>Payment method</em><span>cash</span></li>
+                  </ul>
+                  <input class="button flote05" type="button" value="Get contact info" />
+                  <input class="small_button02" type="button" value="Ask question" />
+                  <div class="spacer"></div>
+
+                  <div class="margin10"></div>
+                  <div class="verified"><img src="images/Verified.png" alt="" /></div>
+                  <ul>
+                  <li><em>Job poster </em><span><strong><a href="#">Solaress (8)</a></strong></span></li>
+                  <li><em>Member status</em> <span>Verified   </span>	</li>
+                  <li><em>Raiting</em><span>%99,4  </span></li>
+                  <li><em>Last access</em><span>Today</span></li>
+                  </ul>
+                  <div class="spacer"></div>
+                  <div class="map"><iframe width="338" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?hl=en&amp;ie=UTF8&amp;ll=21.125498,81.914063&amp;spn=61.389284,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe><br /></div>
+                  </div><div class="details_about_job">
+                  <h3>Similar jobs</h3>
+                  <ul>
+                  <li><img src="images/arrow04.png" alt="" /><a href="javascript:void(0);">Window fitter</a> </li>
+                  <li><img src="images/arrow04.png" alt="" /><a href="javascript:void(0);">Lawn mowing and window cleaning</a></li>
+                  <li><img src="images/arrow04.png" alt="" /><a href="javascript:void(0);">Con lights</a></li>
+                  <li><img src="images/arrow04.png" alt="" /><a href="javascript:void(0);">Build Construction</a></li>
+                  </ul>
+                  </div></div>
+                  <div class="right_part02">
+                  <div class="job_description05">
+                  <div class="job_description">
+                    <h3>Job description</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <div class="addthis"><a href="#"><img src="images/addthis.png" alt="" /></a></div>
+                    <h3>Keywords </h3>
+
+                    <ul class="keyword">
+                              <li> <a href="find-jobs.html">carpenter</a></li>
+                              <li>,</li>
+                              <li><a href="find-jobs.html">furniture</a></li>
+                              <li>,</li>
+                              <li><a href="find-jobs.html">design</a></li>
+                              <li>,</li>
+                              <li><a href="find-jobs.html">furniture fixer</a>...</li>
+                              </ul>
+                    </div>
+                   </div>
+                    <input class="big_button" value="Quote on this job" type="button" onclick="show_dialog('photo_zoom02')" />
+                    <div class="spacer"></div>
+                    <div class="job_description">
+                    <div class="box01">
+                    <p class="nexttext"><strong><a href="tradesman_profile.html">Tradesman1 ( 0 )</a></strong> -  i will do this job in 5 days, you will supply painting - <em>350 TL</em></p>
+                    </div>
+                    <div class="box01">
+                    <p class="nexttext"><strong ><a href="tradesman_profile.html" class="blue_text">Tradesman1 ( 3 )</a></strong> <em>350 TL</em></p>
+                    </div>
+                    <div class="box01">
+                    <p class="nexttext"><strong><a href="tradesman_profile.html">solaress ( 8 ) </a> </strong> -  i have done a lot of jobs  like that, if you want to give me your jobs its up to you if you dont want to give me the jobs i will not be sorry. i am telling you a story here but quoting test must be limited  - <em>350 TL</em></p>
+                    </div>
+                    <div class="box01">
+                    <p class="nexttext"><strong><a href="tradesman_profile.html" class="blue_text">Tradesman1 ( 0 )</a>  </strong> - what if verified member usernames shown  in different color ?  - <em>350 TL</em></p>
+                    </div>
+                    <div class="box01 last_box">
+                    <p class="nexttext"><strong><a href="tradesman_profile.html">Myspecialist ( 23 ) </a></strong> - i will do this job in 5 days, you will supply painting  - <em>350 TL</em></p>
+                    </div>
+                    </div>
+                    
+                    </div>
+                    
+                    
+                    
+                  
+                  <div class="spacer"></div>
+                  
+                  
+                  
+                  
+                
+                  <div class="spacer"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="bottom_part"></div>
+      </div>
+      <!--Post a Job for free-->
+</div>
+<!--footer-->
+<div class="footer">
+      <div class="wrapper">
+            <div class="box01">
+                  <h3>Buyer </h3>
+                  <ul>
+                        <li><a href="post-a-job-free.html"><img src="images/arrow03.png" alt="" />Post a Job for free</a></li>
+                        <li><a href="how-it-works.html"><img src="images/arrow03.png" alt="" />How it works</a></li>
+                        <li class="lastlink"><a href="faq.html"><img src="images/arrow03.png" alt="" />FAQ</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>Tradesman</h3>
+                  <ul>
+                        <li><a href="search-job.html"><img src="images/arrow03.png" alt="" />Search Job</a></li>
+                        <li><a href="how-it-works.html"><img src="images/arrow03.png" alt="" />How it works</a></li>
+                        <li class="lastlink"><a href="faq.html"><img src="images/arrow03.png" alt="" />FAQ</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>About Us</h3>
+                  <ul>
+                        <li><a href="about-us.html"><img src="images/arrow03.png" alt="" />About us</a></li>
+                        <li><a href="mission-visions.html"><img src="images/arrow03.png" alt="" />Mission visions</a></li>
+                        <li class="lastlink"><a href="careers.html"><img src="images/arrow03.png" alt="" />Careers</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>Legal Section</h3>
+                  <ul>
+                        <li><a href="privacy-policy.html"><img src="images/arrow03.png" alt="" />Privacy Policy</a></li>
+                        <li class="lastlink"><a href="terms-conditions.html"><img src="images/arrow03.png" alt="" />Terms &amp; conditions</a></li>
+                  </ul>
+            </div>
+            <div class="box01">
+                  <h3>Support</h3>
+                  <ul>
+                        <li><a href="help.html"><img src="images/arrow03.png" alt="" />Help</a></li>
+                        <li><a href="contact-us.html"><img src="images/arrow03.png" alt="" />Contact us</a></li>
+                        <li class="lastlink"><a href="abuse-report.html"><img src="images/arrow03.png" alt="" />Abuse Report</a></li>
+                  </ul>
+            </div>
+            <div class="copyright">&copy; Copyright 2012 All Rights Reserved .</div>
+      </div>
+</div>
+<!--footer-->
+<script type="text/javascript">
+$(document).ready(function() {
+$("#btn_submit").click(function(){
+
+var user_type = $("input[name=btn_radio]:checked").val();
+if(user_type==1)
+{
+window.location.href = "buyer_registration.html";
+}
+else
+{
+window.location.href = "tradesman-registration.html";
+}
+});
+});
+</script>
+
+<!--lightbox-->
+<div class="lightbox02 photo_zoom02 width04">
+      <div class="close"><a href="javascript:void(0);" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+      <h3>Place Quote</h3>
+      <div class=" lable04">Your bid :</div>
+      <div class="textfell">
+            <input name="" type="text" />
+      </div>  <div class="lable03">TL</div>
+      <div class="spacer"></div>
+       <div class=" lable04"></div>
+      <div class="textfell06">
+          <textarea name="" cols="" rows=""></textarea>
+      </div>
+      <div class="spacer"></div>
+      <div class=" lable04"></div>
+      <input class="small_button" type="button" value="Submit" />
+</div>
+<!--lightbox-->
+
+
+<!--lightbox-->
+<div class="lightbox02 photo_zoom"> 
+<div class="close"><a href="javascript:void(0);" onclick="hide_dialog()"><img src="images/Close.png" alt="" /></a></div>
+    <h3>Register </h3>
+    <p>How do you like to choose to use hizmetuzmani</p>
+    
+    <div class="inner_box">
+    <div class="box01"><input name="btn_radio" type="radio" value="1" />Buyer Registration</div>
+    <div class="box01 marginright"><input name="btn_radio" type="radio" value="2" />Tradesman Registration</div>
+    <div class="spacer"></div>
+    </div>
+    <input  class="small_button marginleft" value="Submit" type="button" id="btn_submit"/>
+</div>
+<!--lightbox-->
+</body>
+
+</html>
