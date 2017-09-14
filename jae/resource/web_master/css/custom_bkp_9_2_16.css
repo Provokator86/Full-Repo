@@ -1,0 +1,146 @@
+/* Custome css for Project*/
+body{font-size: 12px !important; line-height: 1.72857;}
+.underline{text-decoration: underline;}
+.fa{font-size: 14px;}
+.logo > img{max-height: 49px;}
+.modal-header{padding: 1px 10px;}
+.modal-body {padding: 10px;}
+.center{text-align:center !important;}
+.left{text-align:left !important;}
+.right{text-align:right !important;}
+.bold{font-weight: bold;}
+.no-padding{padding: 0 !important;}
+.middle{vertical-align: middle !important;}
+.text-danger {color: #dd4b39;}
+.tagedit-list { background-color: rgba(239, 237, 237, 0.39);}
+.chosen-container-single .chosen-single div b {background: rgba(0, 0, 0, 0) url("../js/plugins/chosen/chosen-sprite.png") no-repeat scroll 0 8px;}
+a.chosen-single, .chosen-container-active .chosen-single {height: 34px !important; line-height: 33px !important;}
+.container-fluid{padding: 0;}
+.btn, .btn-mini{padding: 3px 10px; font-size:12px;}
+.btn_c{padding: 3px 8px;}
+.input-group .input-group-addon{background: #f4f4f4;}
+.no-padding-left{padding-left: 0;}
+.no-padding-right{padding-right: 0;}
+.form-info{font-size: 11px; font-style: italic; color: #808080;}
+.alert{padding: 8px 10px;}
+.col-md-3.col-md-3_1{width: 30%;}
+.navbar-nav > .user-menu > .dropdown-menu{width:310px;}
+.fixed-width-scroll{max-width: 960px; overflow-x:auto;}
+.width_900{min-width: 1200px;}
+.label-custom {display: inline-block; margin-bottom: 2px;}
+.help-text{font-style: italic; color: #999;}
+.noty_text{font-size: 12px !important;}
+.hidden{display: none;}
+.form-add-new-county{min-width: 350px}
+.tag-editor{padding: 3px 0 !important; border: 1px solid #d2d6de !important;}
+.tag-editor:focus{border-color: #3c8dbc !important;}
+.text-danger {
+    color: #ff0000;
+    font-size: 12px;
+}
+/*.ui-state-hover, .ui-state-focus,  .ui-autocomplete li:hover, .ui-autocomplete li:focus{font-weight:normal !important; border-color: #168FE9; background-color: #88C7F4; color:#168FE9;}*/
+.ui-widget-content {border: 1px solid #ddd; background: #eee; color: #333;}
+#business-listing-table{min-width: 910px; clear: both;}
+.business-listing-row > td {vertical-align: middle !important;}
+.business-listing-row  span, .theme_color{color: #9F1C35; font-weight: bold;}
+label.theme_color {margin-top: 5px;}
+#business-listing-inner-table.table > tbody > tr > td, #business-listing-inner-table.table > tbody > tr > th, #business-listing-inner-table.table > tfoot > tr > td, #business-listing-inner-table.table > tfoot > tr > th, #business-listing-inner-table.table > thead > tr > td, #business-listing-inner-table.table > thead > tr > th {padding: 4px !important;}
+.table.no-bg {background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;}
+/*ul.ul-alphabate-pagination{display: inline; float: left; list-style: outside none none; width: 100%;padding-left: 0;}
+.ul-alphabate-pagination > li {float: left; padding: 6px 1px 1px 1px;}
+.ul-alphabate-pagination li a:hover{ text-decoration:underline;}
+.ul-alphabate-pagination li a.selected{color: #B30C2C !important;}*/
+a.alphabate-pagination {font-size: 11px; margin-right: 5px; font-weight: bold;}
+.alphabate-pagination-wrapper > li > a{padding: 1px 7px !important; border-radius: 4px !important;}
+a.alphabate-pagination.selected {background-color: #00C0EF; color: #fff; border: 1px solid #00C0EF;}
+.pagination>li>a, .pagination>li>span{padding: 3px 10px;}
+.pagination{margin: 0;}
+
+.income-table > tbody > tr > td, .income-table > thead > tr > th, .income-table > tfoot > tr > td{padding: 1px 5px !important;}
+.input-group{width: 100%;}
+.input-group.thin-input-group {width: 99%;}
+.thin-input-group .input-group-addon{padding: 4px 12px !important;}
+.thin{height: 25px !important; padding: 4px 10px !important; width: 95% !important;}
+select.form-control.thin {margin-top: 0; padding-top: 2px !important;}
+.add-more-link{display: inline-block; margin: 3px 0 0 3px;}
+.width_15{width: 14%; float: left;}
+.width_25{width: 30%; float: left;}
+.width_80{width: 80%; float: left;}
+.width_20{width: 20%; float: left;}
+.fixed-width-700{min-width: 700px;}
+.inner-row, .header{min-width: 800px;   min-height: 27px; margin: 4px 0;}
+.input-group-addon .fa-dollar {font-size: 11px !important;}
+.bg-color{background: #ededed;}
+.col-md-12-1{float: none !important; width: 99%; margin: 0 auto;}
+.header-info{padding: 10px; color: #8F1B32; font-weight: bold;}
+ul.menu > li a > span.text {font-style: italic; font-size: 13px; font-weight: bold;}
+.navbar-nav > li > a{line-height: 21px;}
+
+/* Date Range Picker */
+/*.daterangepicker.opensright:before, .daterangepicker.opensright:after{left:53% !important;}*/
+/*.ui-datepicker .ui-datepicker-title select{color:#000;}*/
+/* End */
+/* Menu */
+.treeview-menu > li {line-height: 5px;}
+.sidebar-menu .treeview-menu > li > a{padding: 4px;}
+/* End */
+
+/* Back to top */
+.scrollToTop{width:40px; height:40px; text-align:center; background: linear-gradient(to bottom, #03ace9 0%, #22a0bd 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); font-size: 20px; font-weight: bold; color: #fff; text-decoration: none; position:fixed; bottom:50px; right:40px; display:none;  border-radius:4px; opacity:0.50; z-index: 9; }
+.scrollToTop:hover{text-decoration:none; opacity:0.99; color: #fff;}
+/* End */
+
+.small-box .icon{font-size: 70px;}
+.small-box:hover .icon {font-size: 80px;}
+.sidebar-menu .treeview-menu > li > a {font-size: 12px;}
+.custom-font{font-size: 16px;}
+.label{font-size: 90%;}
+/* Radio Box */
+/*.icheckbox_flat-blue.disabled {background-position: -186px 0; cursor: default;} */
+/* End */
+
+#Business_Information li{ list-style: none;}
+#Seller_Information li{ list-style: none;}
+#Income_Statement li{ list-style: none;}
+#Financial_Information li{ list-style: none;}
+
+
+#Income_Statement .total_row{ border-bottom: 1px solid #999; border-top: 1px dotted #999;}
+#Income_Statement .total_bottom{ border-bottom: 1px solid #999;}
+
+#Balance_Sheet .total_row{ border-bottom: 1px solid #999; border-top: 1px dotted #999;}
+#Balance_Sheet .total_bottom{ border-bottom: 1px solid #999;}
+#balance_sheet_add_back .width_15 {width:17%;}
+.right-wrapper .width_15, .right-wrapper .width_20{text-align: right;}
+#Financial_Information .width_15 select {height:25px; padding: 0px;}
+/*#business-listing-table{ min-height: 130px !important;}*/
+#business_table_list .table-responsive{ min-height: 230px !important;}
+.num_val{text-align: right;}
+/*#Income_Statement .width_15{ width:12%; margin-left: 10px; border-bottom: 1px solid #d5d5d5;}
+#Balance_Sheet .width_15{ width:12%; margin-left: 10px; border-bottom: 1px solid #d5d5d5;}
+#Balance_Sheet #balance_sheet_add_back .width_15{ width:14%; margin-left: 10px; border-bottom: 1px solid #d5d5d5;}*/
+.box-buttons{ margin: 0 0 20px 0; text-align: center;}
+.box-buttons button{ margin: 0 10px;}
+.nav > li > a{padding: 10px 15px;}
+/* Sidebar nav change setting */
+.main-header > .navbar{min-height: 51px;}
+.skin-blue .main-header .logo{background-color:#367fa9;}
+@media (min-width: 768px){
+    .main-header{background:#3c8dbc;}
+    .skin-blue .main-header .logo{background-color:#3c8dbc;}
+    .sidebar-mini.sidebar-collapse .main-header .navbar{margin-left: 230px;}
+    .main-header .logo{min-width: 230px;}
+    .navbar .navbar-static-top{position: relative;}
+    .sidebar-toggle{left: -228px; position: absolute; background-color: #367fa9 !important;}
+    .main-header .sidebar-toggle{padding: 11px 17px}
+    .wider-sidebar-toggle{background: #3c8dbc none repeat scroll 0 0 !important; width:230px; text-align:center;}
+    .logo-toggle{position:relative; z-index:9999; margin-left: 230px !important; transition: margin-left 0.3s ease-in-out 0s !important;}
+    .margin_top_pc{margin-top:30px; display: inline-block;}
+}
+/* End */
+.ui-tooltip{    
+  font-size:12pt !important;
+}
+abbr[title]:hover:after {
+  font-size:20px !important;
+}
