@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteBase /wsdl-generator/help/
+
+RewriteRule ^([^/]+)-([^/]+)-([^/]+)$ $1_$2_$3.php [L]
+RewriteRule ^([^/]+)-([^/]+)$ $1_$2.php [L]

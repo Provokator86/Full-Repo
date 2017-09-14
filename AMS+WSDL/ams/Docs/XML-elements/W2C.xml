@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<userName>shieldwatch</userName>
+<passWord>test123</passWord>
+<dataProcessFor>1</dataProcessFor>
+<Company FormType='W2C'>
+<PayerInfo>
+<TIN>56679988</TIN>
+<Year>2015</Year>	
+<TypeOfTIN>4</TypeOfTIN>
+<TransferAgentIndicator>0</TransferAgentIndicator>
+<CompanyName>ABC Company</CompanyName>
+<CompanyNameLine2>ABC Company</CompanyNameLine2>
+<CompanyAddress>123 Some Street</CompanyAddress>
+<City>Some City</City>
+<State>ST</State>
+<Zipcode>123445</Zipcode>
+<Phone>8152264352</Phone>
+</PayerInfo>
+<Recipient id="11">
+<PayeeTIN>374476543</PayeeTIN>
+<PayeeTypeOfTIN>1</PayeeTypeOfTIN>
+<PayeeName>RONALDO TRUEDOE</PayeeName>
+<PayeeName2>RE</PayeeName2>
+<PayeeAddr>111 S PALMTREE CT</PayeeAddr>
+<PayeeCity>SOMECITY</PayeeCity>
+<PayeeState>OK</PayeeState>
+<PayeeZipcode>743451111</PayeeZipcode>
+<Box1>452.67</Box1>
+<Box2>125.51</Box2>
+<AcctNumber>0245896005</AcctNumber>
+<YearFormCorrected>2014</YearFormCorrected>
+<CorrectedNameInd>true</CorrectedNameInd>
+<EmployeesIncorrectSSN>391880755</EmployeesIncorrectSSN>
+<EmployeesFirstNamePreviouslyReported>MARIA</EmployeesFirstNamePreviouslyReported>
+<EmployeesMiddleInitialPreviouslyReported>J</EmployeesMiddleInitialPreviouslyReported>
+<EmployeesLastNamePreviouslyReported>AGOSTO-CASAS</EmployeesLastNamePreviouslyReported>
+<EmploymentTypePreviouslyReported>R</EmploymentTypePreviouslyReported>
+<WagesTipsPreviouslyReported>72500.00</WagesTipsPreviouslyReported>
+<WagesTipsCorrected>75200.00</WagesTipsCorrected>
+<FITWithhPreviouslyReported>20300.00</FITWithhPreviouslyReported>
+<FITWithhCorrected>21056.00</FITWithhCorrected>
+<SocialSecurityWagesPreviouslyReported>72500.00</SocialSecurityWagesPreviouslyReported>
+<SocialSecurityWagesCorrected>75200.00</SocialSecurityWagesCorrected>
+<SocialSecurityTaxWithhPreviouslyReported>4495.00</SocialSecurityTaxWithhPreviouslyReported>
+<SocialSecurityTaxWithhCorrected>4624.20</SocialSecurityTaxWithhCorrected>
+<MedicareWagesAndTipsPreviouslyReported>72500.00</MedicareWagesAndTipsPreviouslyReported>
+<MedicareWagesAndTipsCorrected>75200.00</MedicareWagesAndTipsCorrected>
+<MedicareTaxWithhPreviouslyReported>1051.25</MedicareTaxWithhPreviouslyReported>
+<MedicareTaxWithhCorrected>1090.40</MedicareTaxWithhCorrected>
+<AllocatedTipsPreviouslyReported>254.00</AllocatedTipsPreviouslyReported>
+<AllocatedTipsCorrected>204.00</AllocatedTipsCorrected>
+<DependentCarePreviouslyReported>625.00</DependentCarePreviouslyReported>
+<DependentCareCorrected>705.00</DependentCareCorrected>
+<Code_aPreviouslyReported>S</Code_aPreviouslyReported>
+<Code_aCorrected>S</Code_aCorrected>
+<Amt_aPreviouslyReported>0.00</Amt_aPreviouslyReported>
+<Amt_aCorrected>4800.00</Amt_aCorrected>
+<RetirementPlanCorrectedInd>true</RetirementPlanCorrectedInd>
+</Recipient>
+</Company>
+</item>
+</gwx:DataPacket>

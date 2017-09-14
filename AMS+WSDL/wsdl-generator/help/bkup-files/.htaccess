@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteBase /wsdl-generator/help/
+
+#Redirect 301 help/server-req help/server_req.php
+
+#RewriteRule ^(help)/(/?.*/[^/]*?)-([^/_]*)?$ help/$1_$2.php [L,QSA,NC]
+#RewriteRule ^(help)/([^_]*)\-([^_]*_.*) help/$1_$2.php [N]
+#RewriteRule ^(help)/([^_]*)\-([^_]*)$ help/$1_$2.php [L,R=301]
+RewriteRule ^([^/]+)-([^/]+)$ $1_$2.php [L]

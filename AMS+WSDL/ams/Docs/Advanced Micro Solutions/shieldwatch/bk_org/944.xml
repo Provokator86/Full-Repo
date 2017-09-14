@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>121234567</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerNameControl>SOME</PayerNameControl>
+<PayerCompany>
+<Name1>SOME COMPANY NAME</Name1>
+<Addr1>1111 SOME ADDRESS DRIVE</Addr1>
+<City>SOMECITY</City>
+<USState>OK</USState>
+<USZipCode>00000</USZipCode>
+<Phone>4055991234</Phone>
+</PayerCompany>
+<PayerFederalForms>
+<SumForm944>
+<TotalWages>0.00</TotalWages>
+<TotalIncomeTaxWithh>0.00</TotalIncomeTaxWithh>
+<TotalTaxesBeforeAdjustmentsAmt>0.00</TotalTaxesBeforeAdjustmentsAmt>
+<TotalTax>0.00</TotalTax>
+<TotalDepositsOverpaymentForYr>0.00</TotalDepositsOverpaymentForYr>
+<MonthlyDepositor>
+<MonthlyDepositorCheckbox>true</MonthlyDepositorCheckbox>
+<Month1Liability>0.00</Month1Liability>
+<Month2Liability>0.00</Month2Liability>
+<Month3Liability>0.00</Month3Liability>
+<Month4Liability>0.00</Month4Liability>
+<Month5Liability>0.00</Month5Liability>
+<Month6Liability>0.00</Month6Liability>
+<Month7Liability>0.00</Month7Liability>
+<Month8Liability>0.00</Month8Liability>
+<Month9Liability>0.00</Month9Liability>
+<Month10Liability>0.00</Month10Liability>
+<Month11Liability>0.00</Month11Liability>
+<Month12Liability>0.00</Month12Liability>
+<TotalYearLiability>0.00</TotalYearLiability>
+</MonthlyDepositor>
+<EfileDataSumForm944>
+<TaxPeriodEndDate>2014-12-31</TaxPeriodEndDate>
+<ReturnSigner>
+<Name>SIGNER NAME</Name>
+<Phone>1234569874</Phone>
+<EmailAddress>SIGNER@EMAIL.COM</EmailAddress>
+<Signature>1234567890</Signature>
+<DateSigned>2013-04-01</DateSigned>
+</ReturnSigner>
+</EfileDataSumForm944>
+</SumForm944>
+</PayerFederalForms>
+</Payer>
+</gwx:DataPacket>

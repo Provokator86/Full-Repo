@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>554866755</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>J &amp; J PHARMACEUTICALS INC</Name1>
+<Name2>QUALITY ASSURANCE</Name2>
+<Addr1>119 TUNNEL ROAD SUITE E</Addr1>
+<City>SAN FRANCISCO</City>
+<USState>CA</USState>
+<USZipCode>94102</USZipCode>
+<Phone>4153914010</Phone>
+</PayerCompany>
+<CT_Payer>
+<CT_Payer_Reconciliation_CT1096>
+<CT1096_CTWithhAcctNum>3212766-110</CT1096_CTWithhAcctNum>
+<TotalStateWithh>287</TotalStateWithh>
+<TotalStateWages>534050</TotalStateWages>
+<NumOfReturns>1</NumOfReturns>
+<TaxWithhQtr1>72</TaxWithhQtr1>
+<TaxWithhQtr2>71</TaxWithhQtr2>
+<TaxWithhQtr3>73</TaxWithhQtr3>
+<TaxWithhQtr4>71</TaxWithhQtr4>
+<TotalTaxWithhQtr>287</TotalTaxWithhQtr>
+</CT_Payer_Reconciliation_CT1096>
+</CT_Payer>
+<Payee PayeeId="1">
+<TIN>266456789</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<AssociationName>PADGET R BREWMATRICK</AssociationName>
+<Addr1>967 VENDALAY WAY</Addr1>
+<City>NORWALK</City>
+<USState>CT</USState>
+<USZipCode>06851</USZipCode>
+<PayeeForms>
+<Form1099MISC Occurrence="1">
+<AcctNumber>998563-2</AcctNumber>
+<StateNameOne>CT</StateNameOne>
+<StateIdOne>3212766-110</StateIdOne>
+<ReturnAmountsForm1099MISC>
+<OtherIncome>255000.00</OtherIncome>
+<NonEmpComp>34050.00</NonEmpComp>
+<GrossAttorneyProc>245000.00</GrossAttorneyProc>
+<StateTaxWithhOne>287.00</StateTaxWithhOne>
+<StateIncomeOne>534050.00</StateIncomeOne>
+</ReturnAmountsForm1099MISC>
+<Form1099MISCAgencies>CT</Form1099MISCAgencies>
+</Form1099MISC>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

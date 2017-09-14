@@ -1,0 +1,100 @@
+<?php 
+/***
+File Name: amount_codes show_list.tpl.php 
+Created By: SWI Dev 
+Created On: June 6, 2016 
+Purpose: CURD for amount_codes 
+*/
+?>
+<!-- Noti -->
+<!--
+<link href="<?php echo r_path('js/plugins/noty/noty_theme_default.css')?>" rel="stylesheet" type="text/css">
+<link href="<?php echo r_path('js/plugins/noty/jquery.noty.css')?>" rel="stylesheet" type="text/css">
+<script src="<?php echo base_url()?>resource/web_master/js/plugins/noty/jquery.noty.js" type="text/javascript"></script>
+-->
+<!-- End -->
+<script>var g_controller="<?php echo $pathtoclass;?>", search_action = '<?php echo $search_action;?>';// Controller Path </script>
+<script src="<?php echo base_url()?>resource/web_master/js/custom_js/add_edit_view.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    
+	/*$('.datepicker').datepicker({
+	format: 'mm/dd/yyyy',
+	maxDate:0
+	})
+	$('.datepicker_mask').mask('99/99/9999');
+
+
+	$('.box table').attr('id','tableSort');
+
+	$("#tableSort").tableDnD({
+		onDrop: function(table, row) {            
+			//var sortIdArr = $.tableDnD.serialize();
+			var sortIdArr    =    $('#tableSort').tableDnDSerialize();
+			//console.log(sortIdArr);
+			$.ajax({
+			   type: "POST",
+			   url: g_controller + 'ajax_change_order/',
+			   data:  sortIdArr,
+			   success: function(msg)    
+			   {
+					$.noty.closeAll()
+					noty({"text":'<?php echo get_message('save_success')?>', "layout":"bottomRight","type":'success'});
+			   }
+			});
+		}
+	});*/
+      
+});
+</script>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-info collapsed-box">
+            <div class="box-header">
+                <i class="fa fa-search"></i>
+                <h2 class="box-title"><?php echo addslashes(t("Search"))?></h2>
+                <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                </div>                                 
+            </div>
+
+            <div class="box-body">
+                <?php show_all_messages(); ?>
+                <form class="form-horizontal" id="frm_search_3" name="frm_search_3" method="get" action="<?php echo $search_action?>" >
+                    <input type="hidden" id="h_search" name="h_search" value="" />    
+                </form>
+        
+                <form class="" id="frm_search_2" name="frm_search_2" method="get" action="" >
+                    <input type="hidden" id="h_search" name="h_search" value="advanced" />        
+                    <div id="div_err_2"></div>        
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class=""><?php echo addslashes(t("Form ID"))?></label>
+								<select name="s_form_id" id="s_form_id" class="form-control" data-rel="chosen">
+									<option value="">Select</option>
+									<?php echo makeOptionFormsMasterWtTitle($s_form_id);   ?>
+								</select>
+                            </div>
+                        </div>   
+                                   
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class=""><?php echo addslashes(t("Code"))?></label>
+                                <input type="text" name="s_amount_codes" id="s_amount_codes" value="<?php echo $s_amount_codes?>" class="form-control" />
+                            </div>
+                        </div>   
+                                                
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="button" search="2" id="btn_submit" name="btn_submit" class="btn btn-primary"><?php echo addslashes(t("Search"))?></button>                 
+                        <button type="button" id="btn_srchall" name="btn_srchall" class="btn btn-warning"><?php echo addslashes(t("Show All"))?></button>
+                    </div>
+                </form>
+            </div>   
+        </div>
+        <?php echo $table_view;?><!-- content ends -->
+    </div>
+</div>

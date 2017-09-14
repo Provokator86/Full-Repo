@@ -1,0 +1,28 @@
+{
+	"description": "The CodeIgniter framework",
+	"name": "codeigniter/framework",
+	"type": "project",
+	"homepage": "https://codeigniter.com",
+	"license": "MIT",
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"irc": "irc://irc.freenode.net/codeigniter",
+		"source": "https://github.com/bcit-ci/CodeIgniter"
+	},
+	"require": {
+		"php": ">=5.2.4",
+		"ext-curl": "*",
+  		"authorizenet/authorizenet": "1.8.8",
+  		"jms/serializer": "xsd2php-dev as 0.18.0",
+  		"google/apiclient": "1.0.*@beta"
+    },
+	"require-dev": {
+  		"goetas/xsd2php": "dev-master#fdc2ab0bb3f2b3ab796ca567cf8c0f3446a7ea3a",
+  		"goetas/xsd-reader": "2.*@dev"
+	},
+	"repositories": [{
+	    "type": "vcs",
+	    "url": "https://github.com/goetas/serializer.git"
+	}]
+}

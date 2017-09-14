@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-us"
+      xml:lang="en-us"
+      xmlns="http://www.w3.org/1999/xhtml"
+      ng-controller="AngieApplicationController"
+      ng-class="{
+        unauthorized  : wireframe.initialized && wireframe.authorized === false,
+        initialized   : wireframe.initialized
+      }">
+  <head>
+    <base href="https://app.activecollab.com/117695/" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1" />
+    <meta name="apple-itunes-app" content="app-id=1048990283">
+    <title>Active Collab</title>
+    <link rel="shortcut icon" href="//cdn.activecollab.com/feather/5.7.42/assets/system/images/layout/favicon.png" type="image/x-icon" />
+    <link rel="mask-icon" href="//cdn.activecollab.com/feather/5.7.42/assets/system/images/layout/favicon.svg" color="#449DF5">
+
+    <style type="text/css">
+      #main_page_preloader {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        font-family: Verdana;
+        font-size: 12px;
+        color: #666;
+      }
+
+      #main_page_preloader.unauthorized {
+        background-color: #DCE1E6;
+      }
+
+      #main_page_preloader .preload_error {
+        display: none;
+        animation: none !important;
+        opacity: 1;
+        transform: none !important;
+      }
+
+      #main_page_preloader {
+        background-color: #F1F1F1;
+        overflow-x: hidden;
+      }
+
+      #main_page_preloader .start_aside {
+        width: 200px;
+        height: 100%;
+        position: absolute;
+        background-color: #EEEEEE;
+      }
+
+      #main_page_preloader .start_content {
+        width: calc(100% - 200px);
+        height: 100%;
+        padding-left: 200px;
+      }
+
+      #main_page_preloader .start_tx {
+        background-color: #EEEEEE;
+        width: 89px;
+        height: 26px;
+        margin: 20px 0 0 40px;
+        float: left;
+        clear: both;
+      }
+
+      #main_page_preloader .start_tx_b2 {
+        width: 340px;
+        margin: 6px 0 0 40px;
+      }
+
+      #main_page_preloader .start_tx_b3 {
+        width: 115px;
+        margin: 33px 0 0 40px;
+      }
+
+      #main_page_preloader .start_tx_b4 {
+        width: 115px;
+        margin: -33px 40px 0 40px;
+        float: right;
+      }
+
+      #main_page_preloader .start_tx_b5 {
+        width: 115px;
+        margin: -33px 180px 0 40px;
+        float: right;
+      }
+
+      #main_page_preloader .start_pr {
+        width: 230px;
+        height: 276px;
+        background-color: #EEEEEE;
+        float: left;
+        margin: 40px 0 0 40px;
+      }
+
+      #main_page_preloader .start_an {
+        position: absolute;
+        width: 200px;
+        height: 160px;
+        left: 50%;
+        top: 50%;
+        margin-left: -100px;
+        margin-top: -80px;
+        text-align: center;
+        transform: scale(0);
+        animation: appear 500ms ease-out forwards;
+        /*animation-delay: 1s;*/
+        padding-top: 90px;
+      }
+
+      #main_page_preloader .start_an::after {
+        content: "";
+        position: absolute;
+        width: 74px;
+        height: 74px;
+        border-radius: 200px;
+        background-color: #fff;
+        top: 0px;
+        left: 50%;
+        margin-left: -37px;
+        /*margin: -85px 0 0 -37px;*/
+        display: block;
+        z-index: 3;
+      }
+
+      #main_page_preloader .start_svg {
+        position: absolute;
+        z-index: 4;
+        top: 16px;
+        left: 50%;
+        margin-left: -21px;
+        /*top: -3px;*/
+      }
+
+      #main_page_preloader .start_svg_animate {
+        animation:spin 4s linear infinite;
+      }
+
+      #main_page_preloader .start_loading {
+        /*margin: 20px 0 0 -50px;*/
+        line-height: 20px;
+      }
+
+      @keyframes appear {
+        0% {
+          transform:scale(0);
+        }
+        50% {
+          transform:scale(1.05)
+        }
+        75% {
+          transform:scale(0.95)
+        }
+        100% {
+         transform:scale(1)
+        }
+      }
+
+      @keyframes spin {
+        100% {
+         transform:rotate(360deg);
+        }
+      }
+
+      #main_page_preloader .start_loading_words-1 span{
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        overflow: hidden;
+        margin-top: 5px;
+        z-index: 1;
+        animation: rotateWord 18s linear 1 0s;
+        animation-delay: 2s;
+      }
+      #main_page_preloader .start_loading_words-1 span:nth-child(2) {
+        animation-delay: 6s;
+      }
+      #main_page_preloader .start_loading_words-1 span:nth-child(3) {
+        animation-delay: 10s;
+      }
+      #main_page_preloader .start_loading_words-1 span:nth-child(4) {
+        animation-delay: 14s;
+      }
+      #main_page_preloader .start_loading_words-1 span:nth-child(5) {
+        animation: rotateLastWord 18s linear 1 0s;
+        animation-delay: 18s;
+      }
+
+      @keyframes rotateWord {
+        0% { opacity: 0; }
+        2% { opacity: 0; transform: translateY(-20px); }
+        5% { opacity: 1; transform: translateY(0px);}
+        17% { opacity: 1; transform: translateY(0px); }
+        20% { opacity: 0; transform: translateY(20px); }
+        80% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+
+      @keyframes rotateLastWord {
+        0% { opacity: 0; }
+        2% { opacity: 0; transform: translateY(-20px); }
+        5% { opacity: 1; transform: translateY(0px);}
+        17% { opacity: 1; transform: translateY(0px); }
+        100% { opacity: 1; }
+      }
+
+      /*@media only screen and (max-device-width : 480px) {*/
+        .start_aside,
+        .start_tx,
+        .start_pr {
+          display: none;
+        }
+      /*}*/
+
+      div#main_page_preloader.hidden,
+      #main_page,
+      #main_sidebar,
+      #main_message,
+      #compact_menu {
+        display: none;
+      }
+    </style>
+
+    <script type="text/javascript">
+      if (!window.angie) angie = {};
+
+      // URLS
+      angie.api_url = 'https://app.activecollab.com/117695/api/v1';
+      angie.root_url = 'https://app.activecollab.com/117695';
+      angie.assets_url = '//cdn.activecollab.com/feather/5.7.42/assets';
+      angie.base_url = 'https://app.activecollab.com/117695/index.php';
+      angie.cdn_url = '//cdn.activecollab.com/feather/5.7.42';
+
+      // CONSTANTS
+      angie.loaded_language = 'en_US.UTF-8';
+      angie.csrf_validator_name = 'ac_ActiveCollab_csrf_validator_for_41578a58622a667be1aae2d104aa3a743a8febc5';
+      angie.page_reload_needed = false;
+
+      // INITIAL DATA
+      angie.all_loaded = false;
+      angie.user_session_data = false;
+      angie.user_session_data_loaded = false;
+      angie.initial_data = false;
+      angie.initial_data_loaded = false;
+
+      /**
+       * Get csrf cookie
+       *
+       * @return {String}
+       */
+      function getCsrfCookie() {
+          var name = angie.csrf_validator_name + "=";
+          var ca = document.cookie.split(';');
+          for (var i=0; i<ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0)==' ') c = c.substring(1);
+              if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+          };
+          return "";
+      };
+
+      // failure to load
+      angie.failureToLoad = failureToLoad;
+
+      /**
+       * Peform basic ajax request
+       *
+       * @param  {Object} options
+       * @return {XMLHttpRequest}
+       */
+      angie.performAjaxRequest = function (options) {
+        options.method = options.method ? options.method : 'GET';
+
+        var ajax_request = new XMLHttpRequest();
+        ajax_request.open(options.method, options.url, true);
+
+        // send csrf validator
+        ajax_request.setRequestHeader('X-Angie-CsrfValidator', getCsrfCookie());
+
+        // we need to send json
+        if (options.method != 'GET' && options.method != 'DELETE' && options.data) {
+          ajax_request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        }
+
+        ajax_request.onreadystatechange = options.callback;
+        ajax_request.send(JSON.stringify(options.data ? options.data : null));
+        return ajax_request;
+      }
+
+      /**
+       * Load XMLHttp request
+       */
+      var load_request = function (url, success, error, unauthorized) {
+        var request = angie.performAjaxRequest({
+          'url'       : url,
+          'callback'  : function () {
+            if (!request || request.readyState != 4) return;
+
+            var response;
+            eval('response = ' + request.response);
+
+            // response ok
+            if (request.status == 200 || request.status == 304) {
+              angie.application_version = request.getResponseHeader('X-Angie-ApplicationVersion');
+              if (success) success(response);
+              return true;
+            };
+
+            // not authorized
+            if (request.status == 403 || request.status == 401) {
+              angie.application_version = request.getResponseHeader('X-Angie-ApplicationVersion');
+              if (unauthorized) unauthorized(response);
+              return true;
+            };
+
+            if (error.status != 200 && error.status != 304) {
+              angie.application_version = request.getResponseHeader('X-Angie-ApplicationVersion');
+              if (unauthorized) unauthorized(response);
+              return true;
+            };
+          }
+        });
+      };
+
+      /**
+       * All loaded callback
+       */
+      var all_loaded = function () {
+        angie.all_loaded = true
+        angie.authorized = !!angie.user_session_data && !!angie.initial_data;
+        angie.remove_body_back_image = false;
+      };
+
+      /**
+       * Load user session data
+       *
+       * @param Function success
+       * @param Function error
+       */
+      angie.load_user_session_data = function (success, error) {
+        load_request(angie.api_url + '/user-session', function (response) {
+          angie.user_session_data = response;
+          if (success) success(response);
+        }, function (response) {
+          angie.user_session_data = false;
+          if (error) error(response);
+        }, function (response) {
+          angie.user_session_data = response;
+          if (success) success(response);
+        });
+      };
+
+      /**
+       * Load initial data
+       *
+       * @param Function success
+       * @param Function error
+       */
+      angie.load_initial_data = function (success, error) {
+        load_request(angie.api_url + '/initial', function (response) {
+          angie.initial_data = response;
+          if (success) success(response);
+        }, function (response) {
+          angie.initial_data = false;
+          if (error) error(response);
+        }, function (response) {
+          angie.initial_data = false;
+          if (success) success(response);
+        });
+      };
+
+      // do load the initial data
+      angie.load_initial_data(function () {
+        angie.initial_data_loaded = true;
+        if (angie.user_session_data_loaded) all_loaded();
+      }, function () {
+        failureToLoad('Failed to retrieve initial data');
+      });
+
+      // do load the user session data
+      angie.load_user_session_data(function () {
+        angie.user_session_data_loaded = true;
+        if (angie.initial_data_loaded) all_loaded();
+      }, function () {
+        failureToLoad('Failed to retrieve user session data');
+      });
+
+      /**
+       * Asset loaded handler
+       *
+       * @param  {String} asset
+       */
+      function assetLoaded(asset) {
+        if (asset == 'application' && !window.angie.templates) {
+          failureToLoad('Could not load application javascript');
+        } else if (asset == 'library' && !window.angular) {
+          failureToLoad('Could not load library javascript');
+        }
+      }
+
+      /**
+       * Failure to load handler
+       *
+       * @param  {String} reason
+       */
+      function failureToLoad(reason) {
+        document.getElementById('main_page_preloader_preload_error').setAttribute('style', 'display: block');
+        document.getElementById('main_page_preloader_preload_active').setAttribute('style', 'display: none');
+        console.error('Failed to initialize application. Reason: ' + reason);
+      }
+    </script>
+  </head>
+
+  <body class="break_long_lines" init-modal-dialogs touch-friendly ng-class="{ no_background_image : wireframe.remove_body_back_image === true }">
+    <div id="main_page_loader" ang-content-loader></div>
+
+    <div id="main_page_preloader" ng-if="!wireframe.initialized" class="state-body authorized">
+      <div class="start_aside"></div>
+      <div class="start_content">
+        <p class="start_tx start_tx_b1"></p>
+        <p class="start_tx start_tx_b2"></p>
+        <p class="start_tx start_tx_b3"></p>
+        <p class="start_tx start_tx_b4"></p>
+        <p class="start_tx start_tx_b5"></p>
+        <div class="start_pr"></div>
+        <div class="start_pr"></div>
+        <div class="start_pr"></div>
+        <div class="start_pr"></div>
+      </div>
+
+      <div class="start_an" id="main_page_preloader_preload_active">
+        <div class="start_gear">
+          <svg class="start_svg start_svg_animate" width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g sketch:type="MSLayerGroup" transform="translate(-16.000000, -16.000000)" fill="#449DF5">
+                <path d="M39.2681431,58 L34.9143101,58 C34.0843271,58 33.8446337,58 31.5836457,52.2917228 L30.075724,51.6657832 C25.4285349,53.8173365 24.8704429,53.8173365 24.6307496,53.8173365 C24.3230835,53.8173365 23.9778535,53.6804693 23.761414,53.4596567 L20.6829642,50.3847056 C20.0694208,49.7678905 19.9120102,49.6091245 22.3536627,43.959244 L21.7454855,42.4938518 C16,40.3970454 16,40.1433847 16,39.2656094 L16,34.9132305 C16,34.0427547 16,33.8201173 21.7258092,31.5590702 L22.3339864,30.0900282 C19.7563884,24.5478166 19.9334753,24.3689768 20.552385,23.7466869 L23.636201,20.6717358 C23.8526405,20.456398 24.1978705,20.3195307 24.5019591,20.3195307 C24.7255537,20.3195307 25.3068995,20.3195307 30.0327939,22.3542907 L31.5317717,21.7320009 C33.6335605,16 33.9000852,16 34.7318569,16 L39.0856899,16 C39.9138842,16 40.1553663,16 42.4145656,21.711927 L43.9206985,22.3323919 C48.5643101,20.1863133 49.122402,20.1863133 49.3656729,20.1863133 C49.6715503,20.1863133 50.0149915,20.3213556 50.231431,20.5366935 L53.3170358,23.6079948 C53.9180579,24.2120356 54.0879898,24.3835759 51.6463373,30.0371062 L52.2527257,31.5116229 C58,33.6047795 58,33.8566153 58,34.7307408 L58,39.0812948 C58,39.9535955 57.9982112,40.1780578 52.2706133,42.4409298 L51.6660136,43.9099718 C54.2454003,49.4485336 54.0665247,49.6291983 53.4529813,50.2514882 L50.3620102,53.331914 C50.1437819,53.5490767 49.8003407,53.6841191 49.4962521,53.6841191 L49.4962521,53.6841191 C49.2762351,53.6841191 48.6984668,53.6841191 43.9725724,51.6457093 L42.4664395,52.2679991 C40.3646508,58 40.1195911,58 39.2681431,58 L39.2681431,58 Z M35.5403748,55.6239844 L38.6259796,55.6239844 C39.0373935,54.7261351 39.8298126,52.6968499 40.4666099,50.9485987 C40.5793015,50.6365414 40.8172061,50.3865305 41.119506,50.2624375 L43.5468484,49.2587443 C43.8312606,49.1419509 44.1550256,49.1437758 44.4394378,49.2678688 C46.1852641,50.025201 48.2477002,50.8719531 49.181431,51.1931349 L51.3422487,49.0324571 C50.99523,48.0981099 50.1187394,46.1199218 49.3406303,44.453791 C49.1993186,44.1490332 49.1903748,43.7950033 49.3173765,43.481121 L50.3172913,41.057658 C50.4407155,40.7601999 50.6768313,40.5247882 50.9719761,40.4116446 C52.7303237,39.7181838 54.776661,38.8623072 55.6728279,38.4279818 L55.6728279,35.4059526 C54.7659284,34.993526 52.7356899,34.2088203 50.9898637,33.5755811 C50.6804089,33.4642624 50.4317717,33.2270259 50.30477,32.9167934 L49.3048552,30.4896806 C49.181431,30.1867478 49.1832198,29.8454921 49.313799,29.546209 C50.0614991,27.8253313 50.8950596,25.7905714 51.222402,24.8434499 L49.0597956,22.6882468 C48.1332198,23.0295025 46.1244463,23.9127526 44.4287053,24.7029329 C44.1407155,24.8379752 43.8044293,24.8470997 43.5092845,24.7230067 L41.0819421,23.7229633 C40.7903748,23.6025201 40.5542589,23.3634586 40.4379898,23.0641755 C39.7457411,21.3067999 38.8925043,19.2629155 38.4560477,18.3723658 L35.3722317,18.3723658 C34.959029,19.27204 34.1683986,21.3013252 33.5333901,23.0477515 C33.4224872,23.3616337 33.1827939,23.6134695 32.880494,23.7357376 L30.4603066,24.7394308 C30.1723169,24.8580491 29.8521295,24.8562242 29.5659284,24.7321312 C27.8201022,23.974799 25.7505111,23.1280469 24.818569,22.8123398 L22.6577513,24.9693678 C23.0065588,25.9055399 23.8776831,27.883728 24.6575809,29.5535086 C24.8006814,29.8582663 24.8060477,30.2122963 24.679046,30.5261786 L23.6737649,32.9478166 C23.5503407,33.2452748 23.3160136,33.4788616 23.0208688,33.5938301 C21.2625213,34.285466 19.2197615,35.1376928 18.3253833,35.5720182 L18.3253833,38.5958723 C19.2287053,39.0119487 21.2607325,39.7984793 23.0083475,40.4335433 C23.3160136,40.5466869 23.5646508,40.7857484 23.6898637,41.0905062 L24.6879898,43.5121443 C24.8132027,43.8132522 24.8078365,44.152683 24.6808348,44.4519661 C23.9331346,46.1746687 23.0995741,48.2094286 22.7722317,49.1547252 L24.9330494,51.3117532 C25.8578365,50.9686726 27.8666099,50.0854226 29.5641397,49.2970671 C29.8539182,49.1620248 30.1866269,49.1547252 30.4835605,49.2751684 L32.9109029,50.2806865 C33.2060477,50.4011297 33.4367973,50.6383663 33.5530664,50.9376494 C34.2488927,52.695025 35.1039182,54.7370845 35.5403748,55.6239844 L35.5403748,55.6239844 Z M37,44.5377363 C32.8518739,44.5377363 29.4747019,41.1543776 29.4747019,37.0009124 C29.4747019,32.8492722 32.8518739,29.4695633 37,29.4695633 C41.1463373,29.4695633 44.5217206,32.8492722 44.5217206,37.0009124 C44.5217206,41.1543776 41.1463373,44.5377363 37,44.5377363 L37,44.5377363 Z M37,31.8437541 C34.1344123,31.8437541 31.8036627,34.1577232 31.8036627,37.0009124 C31.8036627,39.8495764 34.1344123,42.1635455 37,42.1635455 C39.8655877,42.1635455 42.1945486,39.8477515 42.1945486,37.0009124 C42.1945486,34.1558983 39.8655877,31.8437541 37,31.8437541 L37,31.8437541 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="start_loading">
+          <div class="start_loading_words-1">
+            <span>Loading Components</span>
+            <span>Loading Application</span>
+            <span>Loading Initial Data</span>
+            <span>Logging-in User</span>
+            <span>Initializing</span>
+          </div>
+        </div>
+      </div>
+
+    <!-- On error state -->
+      <div class="start_an preload_error" id="main_page_preloader_preload_error">
+        <div class="start_gear">
+          <svg class="start_svg" width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path d="M23.2681431,42 L18.9143101,42 C18.0843271,42 17.8446337,42 15.5836457,36.2917228 L14.075724,35.6657832 C9.42853492,37.8173365 8.87044293,37.8173365 8.63074957,37.8173365 C8.32308348,37.8173365 7.97785349,37.6804693 7.76141397,37.4596567 L4.68296422,34.3847056 C4.06942078,33.7678905 3.91201022,33.6091245 6.35366269,27.959244 L5.74548552,26.4938518 C0,24.3970454 0,24.1433847 0,23.2656094 L0,18.9132305 C0,18.0427547 0,17.8201173 5.7258092,15.5590702 L6.33398637,14.0900282 C3.75638842,8.54781664 3.9334753,8.36897675 4.55238501,7.74668694 L7.63620102,4.67173582 C7.85264055,4.456398 8.19787053,4.31953074 8.50195911,4.31953074 C8.72555366,4.31953074 9.30689949,4.31953074 14.0327939,6.35429068 L15.5317717,5.73200087 C17.6335605,0 17.9000852,0 18.7318569,0 L23.0856899,0 C23.9138842,0 24.1553663,0 26.4145656,5.711927 L27.9206985,6.33239192 C32.5643101,4.18631327 33.122402,4.18631327 33.3656729,4.18631327 C33.6715503,4.18631327 34.0149915,4.32135564 34.231431,4.53669346 L37.3170358,7.60799479 C37.9180579,8.21203563 38.0879898,8.38357593 35.6463373,14.0371062 L36.2527257,15.5116229 C42,17.6047795 42,17.8566153 42,18.7307408 L42,23.0812948 C42,23.9535955 41.9982112,24.1780578 36.2706133,26.4409298 L35.6660136,27.9099718 C38.2454003,33.4485336 38.0665247,33.6291983 37.4529813,34.2514882 L34.3620102,37.331914 C34.1437819,37.5490767 33.8003407,37.6841191 33.4962521,37.6841191 L33.4962521,37.6841191 C33.2762351,37.6841191 32.6984668,37.6841191 27.9725724,35.6457093 L26.4664395,36.2679991 C24.3646508,42 24.1195911,42 23.2681431,42 L23.2681431,42 Z M19.5403748,39.6239844 L22.6259796,39.6239844 C23.0373935,38.7261351 23.8298126,36.6968499 24.4666099,34.9485987 C24.5793015,34.6365414 24.8172061,34.3865305 25.119506,34.2624375 L27.5468484,33.2587443 C27.8312606,33.1419509 28.1550256,33.1437758 28.4394378,33.2678688 C30.1852641,34.025201 32.2477002,34.8719531 33.181431,35.1931349 L35.3422487,33.0324571 C34.99523,32.0981099 34.1187394,30.1199218 33.3406303,28.453791 C33.1993186,28.1490332 33.1903748,27.7950033 33.3173765,27.481121 L34.3172913,25.057658 C34.4407155,24.7601999 34.6768313,24.5247882 34.9719761,24.4116446 C36.7303237,23.7181838 38.776661,22.8623072 39.6728279,22.4279818 L39.6728279,19.4059526 C38.7659284,18.993526 36.7356899,18.2088203 34.9898637,17.5755811 C34.6804089,17.4642624 34.4317717,17.2270259 34.30477,16.9167934 L33.3048552,14.4896806 C33.181431,14.1867478 33.1832198,13.8454921 33.313799,13.546209 C34.0614991,11.8253313 34.8950596,9.79057137 35.222402,8.84344992 L33.0597956,6.6882468 C32.1332198,7.0295025 30.1244463,7.91275255 28.4287053,8.70293287 C28.1407155,8.83797523 27.8044293,8.84709972 27.5092845,8.72300673 L25.0819421,7.72296328 C24.7903748,7.6025201 24.5542589,7.36345861 24.4379898,7.06417554 C23.7457411,5.30679991 22.8925043,3.26291549 22.4560477,2.37236585 L19.3722317,2.37236585 C18.959029,3.27203997 18.1683986,5.30132522 17.5333901,7.04775147 C17.4224872,7.36163372 17.1827939,7.61346948 16.880494,7.73573756 L14.4603066,8.73943081 C14.1723169,8.8580491 13.8521295,8.8562242 13.5659284,8.73213122 C11.8201022,7.97479904 9.75051107,7.12804693 8.81856899,6.81233978 L6.65775128,8.9693678 C7.00655877,9.90553987 7.87768313,11.883728 8.65758092,13.5535086 C8.80068143,13.8582663 8.8060477,14.2122963 8.679046,14.5261786 L7.67376491,16.9478166 C7.55034072,17.2452748 7.31601363,17.4788616 7.02086882,17.5938301 C5.26252129,18.285466 3.2197615,19.1376928 2.3253833,19.5720182 L2.3253833,22.5958723 C3.22870528,23.0119487 5.26073254,23.7984793 7.00834753,24.4335433 C7.31601363,24.5466869 7.56465077,24.7857484 7.68986371,25.0905062 L8.68798978,27.5121443 C8.81320273,27.8132522 8.80783646,28.152683 8.68083475,28.4519661 C7.93313458,30.1746687 7.09957411,32.2094286 6.77223169,33.1547252 L8.9330494,35.3117532 C9.85783646,34.9686726 11.8666099,34.0854226 13.5641397,33.2970671 C13.8539182,33.1620248 14.1866269,33.1547252 14.4835605,33.2751684 L16.9109029,34.2806865 C17.2060477,34.4011297 17.4367973,34.6383663 17.5530664,34.9376494 C18.2488927,36.695025 19.1039182,38.7370845 19.5403748,39.6239844 L19.5403748,39.6239844 Z M21,28.5377363 C16.8518739,28.5377363 13.4747019,25.1543776 13.4747019,21.0009124 C13.4747019,16.8492722 16.8518739,13.4695633 21,13.4695633 C25.1463373,13.4695633 28.5217206,16.8492722 28.5217206,21.0009124 C28.5217206,25.1543776 25.1463373,28.5377363 21,28.5377363 L21,28.5377363 Z M21,15.8437541 C18.1344123,15.8437541 15.8036627,18.1577232 15.8036627,21.0009124 C15.8036627,23.8495764 18.1344123,26.1635455 21,26.1635455 C23.8655877,26.1635455 26.1945486,23.8477515 26.1945486,21.0009124 C26.1945486,18.1558983 23.8655877,15.8437541 21,15.8437541 L21,15.8437541 Z" id="Shape" fill="#46546C"></path>
+              <path d="M18.8320611,27 L14,30.3226744 L19,32.2151163 L17.3931298,36" id="Path-5" stroke="#46546C" stroke-width="2"></path>
+              <path d="M23.8320611,5 L19,8.32267442 L24,10.2151163 L22.3931298,14" id="Path-5" stroke="#46546C" stroke-width="2"></path>
+            </g>
+          </svg>
+          <div class="start_loading">
+            <div class="start_loading_error">
+              Something went wrong. Please contact the technical support.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside id="main_sidebar" ng-class="{ visible : wireframe.initialized && wireframe.authorized }">
+      <!-- wallpaper -->
+      <img id="main_sidebar_background" />
+
+      <!-- quick search -->
+      <section id="quick_add_search">
+        <a href="home" class="icon icon_application_logo_white_full" id="application_logo"></a>
+        <button type="button" id="search_button" class="icon_only" ng-click="application_model.search_open = true"><span class="icon icon_search_white"></span></button>
+      </section>
+
+      <!-- main menu -->
+      <section id="main_menu" data-qa-id="main-menu-wrapper"><nav id="menu_items"></nav></section>
+      <!-- sidebar notifications -->
+      <sidebar-notifications></sidebar-notifications>
+      <!-- feedback button -->
+      <div id="feedback_button_holder">
+        <a href="#" id="feedback_button"></a>
+      </div>
+      <!-- user profile button -->
+      <section id="user_profile"></section>
+    </aside>
+
+    <!-- quick search -->
+    <quick-search open="application_model.search_open"></quick-search>
+    <!-- main menu for mobile items -->
+    <aside id="compact_menu"></aside>
+
+    <main-view visible="wireframe.initialized">
+      <div id="main_page_wrapper" class="ng-view" ng-class="{ 'without_page_controls' : !wireframe.back_button }"></div>
+    </main-view>
+
+    <div id="main_message" class="{{ wireframe.message_type }}" ng-class="{ initialized : wireframe.initialized }" ng-if="wireframe.initialized && wireframe.message_visible">
+      <div id="main_message_inner" ng-click="hideMessage()">
+        <span ng-bind-html="wireframe.message"></span>
+        <ul ng-if="wireframe.message_additional">
+          <li ng-repeat="additional in wireframe.message_additional">{{ additional }}</li>
+        </ul>
+        <a href="" class="icon size_14 icon_delete_black"></a>
+      </div>
+    </div>
+
+    <!-- LIBRARIES FILES -->
+    <link type="text/css" rel="stylesheet" href="//cdn.activecollab.com/feather/5.7.42/css/libraries.css" />
+    <script type="text/javascript" src="//cdn.activecollab.com/feather/5.7.42/javascript/libraries.js" onload="assetLoaded('library')"></script>
+
+    <!-- APPLICATION FILES -->
+    <link type="text/css" rel="stylesheet" href="//cdn.activecollab.com/feather/5.7.42/css/application.css" />
+    <script type="text/javascript" src="//cdn.activecollab.com/feather/5.7.42/javascript/application.en_US.UTF-8.js" onload="assetLoaded('application')"></script>
+
+    <style type="text/css" media="screen">
+      @font-face {
+        font-family: 'Clear Sans';
+        font-weight: bold;
+
+        src: url('//cdn.activecollab.com/fonts/clear-sans/ClearSans-Bold.eot');
+        src: url('//cdn.activecollab.com/fonts/clear-sans/ClearSans-Bold.ttf') format('truetype'),
+             url('//cdn.activecollab.com/fonts/clear-sans/ClearSans-Bold.woff') format('svg');
+      }
+
+      @font-face {
+        font-family: 'Clear Sans';
+        font-weight: normal;
+
+        src: url('//cdn.activecollab.com/fonts/clear-sans/ClearSans-Regular.eot');
+        src: url('//cdn.activecollab.com/fonts/clear-sans/ClearSans-Regular.ttf') format('truetype'),
+        url('//cdn.activecollab.com/fonts/clear-sans/ClearSans-Regular.woff') format('svg');
+      }
+
+      @font-face {
+        font-family: 'Clear Sans';
+        font-weight: 500;
+
+        src: url('//cdn.activecollab.com/fonts/clear-sans/ClearSans-Medium.eot');
+        src: url('//cdn.activecollab.com/fonts/clear-sans/ClearSans-Medium.ttf') format('truetype'),
+        url('//cdn.activecollab.com/fonts/clear-sans/ClearSans-Medium.woff') format('svg');
+      }
+    </style>
+  </body>
+</html>

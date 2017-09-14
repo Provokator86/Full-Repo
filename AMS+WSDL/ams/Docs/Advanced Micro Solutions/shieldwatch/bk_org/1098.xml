@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>396464646</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>FIRST NATIONAL BANK</Name1>
+<Name2>NORTHERN MILWAUKEE BRANCH</Name2>
+<Addr1>1225 CENTER STREET</Addr1>
+<City>MILWAUKEE</City>
+<USState>WI</USState>
+<USZipCode>54515</USZipCode>
+<Phone>4142731919</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>391840758</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<NameLine2>NORMA JEAN K ALBERTS</NameLine2>
+<AssociationName>CALVIN A ALBERTS</AssociationName>
+<Addr1>698 WEST 59TH STREET</Addr1>
+<City>WAUKESHA</City>
+<USState>WI</USState>
+<USZipCode>54636</USZipCode>
+<PayeeForms>
+<Form1098 Occurrence="1">
+<AcctNumber>2130522-18</AcctNumber>
+<TextBoxOne>MIP 123.45</TextBoxOne>
+<TextBoxTwo>OVERPAYMENT FOR 2014</TextBoxTwo>
+<MortgageInt>10890.00</MortgageInt>
+<PointsInDollarsAmt>250.00</PointsInDollarsAmt>
+<RefundOfOverpaidInt>250.00</RefundOfOverpaidInt>
+</Form1098>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

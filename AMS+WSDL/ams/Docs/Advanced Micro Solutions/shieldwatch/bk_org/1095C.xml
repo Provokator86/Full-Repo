@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>582214593</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>QUANTUM LEAP CORPORATION</Name1>
+<Addr1>1220 SW MITCHELL STREET</Addr1>
+<City>ATLANTA</City>
+<USState>GA</USState>
+<USZipCode>30030</USZipCode>
+<Phone>4043306225</Phone>
+</PayerCompany>
+<ACAContact>
+<ContactFirstName>GRETTA</ContactFirstName>
+<ContactLastName>NELSON</ContactLastName>
+</ACAContact>
+<PayerFederalForms>
+<Form1094C Occurrence="1">
+<AuthoritativeTransmittalInd>true</AuthoritativeTransmittalInd>
+<TotalForm1095C>5</TotalForm1095C>
+<AggregatedGroupMemberInd>false</AggregatedGroupMemberInd>
+<ALEMemberInformationGrp>
+<MinEssentialCvrOffrGrp>
+<YearlyMinEssentialCvrOffrInd>true</YearlyMinEssentialCvrOffrInd>
+</MinEssentialCvrOffrGrp>
+<NumberOfFTEGrp>
+<JanNumberOfFTE>0</JanNumberOfFTE>
+<FebNumberOfFTE>0</FebNumberOfFTE>
+<MarNumberOfFTE>0</MarNumberOfFTE>
+<AprNumberOfFTE>0</AprNumberOfFTE>
+<MayNumberOfFTE>0</MayNumberOfFTE>
+<JunNumberOfFTE>0</JunNumberOfFTE>
+<JulNumberOfFTE>0</JulNumberOfFTE>
+<AugNumberOfFTE>0</AugNumberOfFTE>
+<SepNumberOfFTE>0</SepNumberOfFTE>
+<OctNumberOfFTE>0</OctNumberOfFTE>
+<NovNumberOfFTE>0</NovNumberOfFTE>
+<DecNumberOfFTE>0</DecNumberOfFTE>
+</NumberOfFTEGrp>
+<NumberOfEmployeesGrp>
+<JanNumberOfEmployees>0</JanNumberOfEmployees>
+<FebNumberOfEmployees>0</FebNumberOfEmployees>
+<MarNumberOfEmployees>0</MarNumberOfEmployees>
+<AprNumberOfEmployees>0</AprNumberOfEmployees>
+<MayNumberOfEmployees>0</MayNumberOfEmployees>
+<JunNumberOfEmployees>0</JunNumberOfEmployees>
+<JulNumberOfEmployees>0</JulNumberOfEmployees>
+<AugNumberOfEmployees>0</AugNumberOfEmployees>
+<SepNumberOfEmployees>0</SepNumberOfEmployees>
+<OctNumberOfEmployees>0</OctNumberOfEmployees>
+<NovNumberOfEmployees>0</NovNumberOfEmployees>
+<DecNumberOfEmployees>0</DecNumberOfEmployees>
+</NumberOfEmployeesGrp>
+<AggregatedGroupIndGrp>
+<YearlyAggregatedGroupInd>false</YearlyAggregatedGroupInd>
+</AggregatedGroupIndGrp>
+</ALEMemberInformationGrp>
+<OtherALEMembers>
+</OtherALEMembers>
+</Form1094C>
+</PayerFederalForms>
+<Payee PayeeId="1">
+<TIN>268449170</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<FirstName>THOMAS</FirstName>
+<LastName>BATTERHAHM</LastName>
+<Addr1>823 2ND STREET</Addr1>
+<City>DECATUR</City>
+<USState>GA</USState>
+<USZipCode>30031</USZipCode>
+<PayeeForms>
+<Form1095C Occurrence="1">
+<PlanStartMonth>01</PlanStartMonth>
+<AnnualOfferOfCoverageCode>1A</AnnualOfferOfCoverageCode>
+<MonthlyShareOfLowestCostPremGrp>
+<JanAmt>0.00</JanAmt>
+<FebAmt>0.00</FebAmt>
+<MarAmt>0.00</MarAmt>
+<AprAmt>0.00</AprAmt>
+<MayAmt>0.00</MayAmt>
+<JunAmt>0.00</JunAmt>
+<JulAmt>0.00</JulAmt>
+<AugAmt>0.00</AugAmt>
+<SepAmt>0.00</SepAmt>
+<OctAmt>0.00</OctAmt>
+<NovAmt>0.00</NovAmt>
+<DecAmt>0.00</DecAmt>
+</MonthlyShareOfLowestCostPremGrp>
+<MonthlySafeHarborGrp>
+</MonthlySafeHarborGrp>
+</Form1095C>
+</PayeeForms>
+</Payee>
+<Payee PayeeId="2">
+<TIN>466102355</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<FirstName>COREY</FirstName>
+<LastName>GRESHAM</LastName>
+<Addr1>213 HARVEY AVE</Addr1>
+<City>ATLANTA</City>
+<USState>GA</USState>
+<USZipCode>30331</USZipCode>
+<PayeeForms>
+<Form1095C Occurrence="1">
+<PlanStartMonth>01</PlanStartMonth>
+<AnnualOfferOfCoverageCode>1E</AnnualOfferOfCoverageCode>
+<AnnlShrLowestCostMthlyPremAmt>215.86</AnnlShrLowestCostMthlyPremAmt>
+<AnnualSafeHarborCode>2E</AnnualSafeHarborCode>
+</Form1095C>
+</PayeeForms>
+</Payee>
+<Payee PayeeId="3">
+<TIN>590681722</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<FirstName>JULIA</FirstName>
+<LastName>MUSGRAVE</LastName>
+<Addr1>8190 BENNETT LANE</Addr1>
+<City>ATLANTA</City>
+<USState>GA</USState>
+<USZipCode>30030</USZipCode>
+<PayeeForms>
+<Form1095C Occurrence="1">
+<PlanStartMonth>01</PlanStartMonth>
+<AnnualOfferOfCoverageCode>1A</AnnualOfferOfCoverageCode>
+<MonthlyShareOfLowestCostPremGrp>
+<JanAmt>0.00</JanAmt>
+<FebAmt>0.00</FebAmt>
+<MarAmt>0.00</MarAmt>
+<AprAmt>0.00</AprAmt>
+<MayAmt>0.00</MayAmt>
+<JunAmt>0.00</JunAmt>
+<JulAmt>0.00</JulAmt>
+<AugAmt>0.00</AugAmt>
+<SepAmt>0.00</SepAmt>
+<OctAmt>0.00</OctAmt>
+<NovAmt>0.00</NovAmt>
+<DecAmt>0.00</DecAmt>
+</MonthlyShareOfLowestCostPremGrp>
+<MonthlySafeHarborGrp>
+</MonthlySafeHarborGrp>
+</Form1095C>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

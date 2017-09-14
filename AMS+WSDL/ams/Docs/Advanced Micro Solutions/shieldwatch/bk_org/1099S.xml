@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>396464646</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>FIRST NATIONAL BANK</Name1>
+<Name2>NORTHERN MILWAUKEE BRANCH</Name2>
+<Addr1>1225 CENTER STREET</Addr1>
+<City>MILWAUKEE</City>
+<USState>WI</USState>
+<USZipCode>54515</USZipCode>
+<Phone>4142731919</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>566987548</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<NameLine2>FRANCIS F ACKERMAN</NameLine2>
+<AssociationName>NATALIE K ACKERMAN</AssociationName>
+<Addr1>1258 SUNSET BEACH ROAD</Addr1>
+<City>LITTLE SUAMICO</City>
+<USState>WI</USState>
+<USZipCode>54141</USZipCode>
+<PayeeForms>
+<Form1099S Occurrence="1">
+<AcctNumber>4478-965-02</AcctNumber>
+<DateOfClosing>2014-09-09</DateOfClosing>
+<GrossProceeds>295000.00</GrossProceeds>
+<DescrOne>2150 COUNTY RD G</DescrOne>
+<DescrTwo>SURING WI 54174</DescrTwo>
+<DescrThree>UNDEVELOPED COMRCL PROP</DescrThree>
+</Form1099S>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Company>
+<PayerInfo>
+<CompanyName>ABC Company</CompanyName>
+<CompanyAddress>123 Some Street</CompanyAddress>
+<City>Some City</City>
+<State>ST</State>
+<Zipcode>123445</Zipcode>
+</PayerInfo>
+<Recipient id='1'>
+<Rname>My Name</Rname>
+<Raddr>My Address</Raddr>
+<Box1>452.67</Box1>
+<Box2>125.00</Box2>
+</Recipient>
+<Recipient id='2'>
+<Rname>Recipient 2</Rname>
+<Raddr>My Address</Raddr>
+<Box1>452.67</Box1>
+<Box2>125.00</Box2>
+</Recipient>
+</Company>

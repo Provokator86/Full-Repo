@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Originator>
+<EFIN>593381</EFIN>
+<Type>ReportingAgent</Type>
+<ReportingAgentSignature>
+<PIN>20603</PIN>
+</ReportingAgentSignature>
+</Originator>
+<Payer PayerId="1">
+<TIN>398684170</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerNameControl>QUAL</PayerNameControl>
+<PayerCompany>
+<Name1>QUALITY LUMBER SYSTEMS</Name1>
+<Addr1>311 FORT HILL AVENUE</Addr1>
+<City>DENVER</City>
+<USState>CO</USState>
+<USZipCode>80219</USZipCode>
+<Phone>8605367213</Phone>
+</PayerCompany>
+<PayerFederalForms>
+<Form940>
+<TaxPeriodEndDate>2014-12-31</TaxPeriodEndDate>
+<DepositStateCode>CO</DepositStateCode>
+<TotalFUTAWages>92380.00</TotalFUTAWages>
+<TotalExemptFUTAWages>8400.00</TotalExemptFUTAWages>
+<FringeBenefitsInd>true</FringeBenefitsInd>
+<DependentCareInd>true</DependentCareInd>
+<TotalExcessFUTAWages>54180.00</TotalExcessFUTAWages>
+<TotalExemptAndExcessFUTAWages>62580.00</TotalExemptAndExcessFUTAWages>
+<TotalTxblFUTAWages>29800.00</TotalTxblFUTAWages>
+<TotalFUTATaxBeforeAdj>178.80</TotalFUTATaxBeforeAdj>
+<AdjToTax>1609.20</AdjToTax>
+<CreditAmt>0.00</CreditAmt>
+<TotalFUTATaxAfterAdj>1788.00</TotalFUTATaxAfterAdj>
+<TotalFUTATaxDeposited>2300.00</TotalFUTATaxDeposited>
+<Overpayment>
+<OverpaymentAmt>512.00</OverpaymentAmt>
+<RefundOrCredit>Refund</RefundOrCredit>
+</Overpayment>
+<TaxWithhQtr1>350.00</TaxWithhQtr1>
+<TaxWithhQtr2>625.00</TaxWithhQtr2>
+<TaxWithhQtr3>406.00</TaxWithhQtr3>
+<TaxWithhQtr4>407.00</TaxWithhQtr4>
+<TotalTaxWithh>1788.00</TotalTaxWithh>
+</Form940>
+</PayerFederalForms>
+</Payer>
+</gwx:DataPacket>

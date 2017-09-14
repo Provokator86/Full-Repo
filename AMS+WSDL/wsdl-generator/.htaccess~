@@ -1,0 +1,25 @@
+Options +FollowSymLinks
+
+RewriteBase /wsdl-generator/
+
+RewriteEngine on
+#RewriteRule ^(.+)\.aspx$ http://192.168.1.38/murphy/$1/ [QSA, NC, R=301,L]
+#RewriteRule ^(.*)\.aspx$ /$1 [R=301,QSA]
+#Redirect 301 /fl/find-a-local-office http:///murphyword.com/fl/find-a-local-office
+#RewriteCond %{HTTP_HOST} ^codeuridea\.net [NC]
+#RewriteRule (.*) http://www.codeuridea.net/murphy/$1 [L,R=301]
+
+#RewriteCond $1 !(^index\.php|xml$|XML$|gif$|GIF$|jpg$|JPG$|jpeg$|JPEG$|png$|PNG$|dbf$|bmp$|zip$|videos$|avi$|BMP$|ico$|js$|php$|htm$|html$|css$|ttf$|txt$|pdf$|swf$|flv$|mp3$|doc$|docx$|xls$|robots\.txt$|video_chat$)
+RewriteCond $1 !(^index\.php|\.xml$|\.XML$|\.gif$|\.GIF$|\.jpg$|\.JPG$|\.jpeg$|\.JPEG$|\.png$|\.PNG$|\.dbf$|\.bmp$|\.zip$|\.videos$|\.avi$|\.BMP$|\.ico$|\.js$|\.php$|\.htm$|\.html$|\.css$|\.ttf$|\.txt$|\.pdf$|\.swf$|\.flv$|\.mp3$|\.doc$|\.docx$|\.xls$|robots\.txt$|video_chat$)
+
+RewriteRule ^(?!resource\/js\/tinymce)(?!html)(?!font)(?!resource)(?!blog)(?!news)(?!uploaded)(?!oauth_rs_php)(.*?)(\.html|\.php|\/)?$ index.php/$1 [NC,L]
+
+#RewriteRule ^(.*?)(\.html|\.php|\/)?$ index.php/$1 [NC,L]
+
+RewriteRule ^(.*)$ - [NC,L]
+#php_value session.gc_maxlifetime 86400
+<IfModule mod_php5.c>
+    #Session timeout
+    php_value session.cookie_lifetime 86400
+    php_value session.gc_maxlifetime 86400
+</IfModule>

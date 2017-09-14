@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>582214593</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<KindOfEmployer>N</KindOfEmployer>
+<PayerCompany>
+<Name1>QUANTUM LEAP CORPORATION</Name1>
+<Addr1>1220 SW MITCHELL STREET</Addr1>
+<City>ATLANTA</City>
+<USState>GA</USState>
+<USZipCode>30030</USZipCode>
+<EmailAddress>Accounting@QuantumLeap.com</EmailAddress>
+<Phone>4043306225</Phone>
+</PayerCompany>
+<LastYearToFileInd>false</LastYearToFileInd>
+<W2Agencies>KY</W2Agencies>
+<Payee PayeeId="1">
+<TIN>260123456</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<FirstName>DANTE</FirstName>
+<MiddleInitial>S</MiddleInitial>
+<LastName>WATKINS</LastName>
+<Addr1>967 TRINITY AVENUE</Addr1>
+<City>SASSAFRAS</City>
+<USState>KY</USState>
+<USZipCode>41759</USZipCode>
+<PayeeForms>
+<FormW2 Occurrence="1">
+<EmploymentType>R</EmploymentType>
+<StateNameOne>KY</StateNameOne>
+<StateIdOne>822963</StateIdOne>
+<Box14TextOne>KJDA 289.23</Box14TextOne>
+<Code_a>S</Code_a>
+<Amt_a>1825.00</Amt_a>
+<StatutoryInd>false</StatutoryInd>
+<RetirementPlanInd>true</RetirementPlanInd>
+<ThirdPartySickPayInd>false</ThirdPartySickPayInd>
+<W2ControlNumber>255-8B</W2ControlNumber>
+<ReturnAmountsFormW2>
+<FITWithh>3459.00</FITWithh>
+<MedicareWithh>623.16</MedicareWithh>
+<MedWagesAndTips>42976.25</MedWagesAndTips>
+<SocSecWages>42976.25</SocSecWages>
+<SocSecWithh>2664.53</SocSecWithh>
+<StateTaxWithhOne>1663.00</StateTaxWithhOne>
+<StateWagesTipsEtcOne>41151.25</StateWagesTipsEtcOne>
+<WagesTipsOtherComp>41151.25</WagesTipsOtherComp>
+</ReturnAmountsFormW2>
+</FormW2>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

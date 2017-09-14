@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>554464444</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<KindOfEmployer>N</KindOfEmployer>
+<PayerCompany>
+<Name1>J &amp; J PHARMACEUTICALS INC</Name1>
+<Name2>EARLY STAGES DIVISION</Name2>
+<ForeignAddress>true</ForeignAddress>
+<Addr1>119 TUNNEL ROAD SUITE E</Addr1>
+<City>ETOBICOKE</City>
+<ForeignStateOrProvince>ONTARIO</ForeignStateOrProvince>
+<ForeignPostalCode>M9W5R1</ForeignPostalCode>
+<CountryCode>CA</CountryCode>
+<Phone>4167414010</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>391840755</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<FirstName>MARIA</FirstName>
+<MiddleInitial>M</MiddleInitial>
+<LastName>AGOSTO-CASAS</LastName>
+<ForeignAddress>true</ForeignAddress>
+<Addr1>225 PLAZA DRIVE</Addr1>
+<City>ETOBICOKE</City>
+<ForeignStateOrProvince>ONTARIO</ForeignStateOrProvince>
+<ForeignPostalCode>M9W5R1</ForeignPostalCode>
+<CountryCode>CA</CountryCode>
+<PayeeForms>
+<FormW2C Occurrence="1">
+<YearFormCorrected>2014</YearFormCorrected>
+<CorrectedNameInd>true</CorrectedNameInd>
+<EmployeesIncorrectSSN>391880755</EmployeesIncorrectSSN>
+<EmployeesFirstNamePreviouslyReported>MARIA</EmployeesFirstNamePreviouslyReported>
+<EmployeesMiddleInitialPreviouslyReported>J</EmployeesMiddleInitialPreviouslyReported>
+<EmployeesLastNamePreviouslyReported>AGOSTO-CASAS</EmployeesLastNamePreviouslyReported>
+<EmploymentTypePreviouslyReported>R</EmploymentTypePreviouslyReported>
+<WagesTipsPreviouslyReported>72500.00</WagesTipsPreviouslyReported>
+<WagesTipsCorrected>75200.00</WagesTipsCorrected>
+<FITWithhPreviouslyReported>20300.00</FITWithhPreviouslyReported>
+<FITWithhCorrected>21056.00</FITWithhCorrected>
+<SocialSecurityWagesPreviouslyReported>72500.00</SocialSecurityWagesPreviouslyReported>
+<SocialSecurityWagesCorrected>75200.00</SocialSecurityWagesCorrected>
+<SocialSecurityTaxWithhPreviouslyReported>4495.00</SocialSecurityTaxWithhPreviouslyReported>
+<SocialSecurityTaxWithhCorrected>4624.20</SocialSecurityTaxWithhCorrected>
+<MedicareWagesAndTipsPreviouslyReported>72500.00</MedicareWagesAndTipsPreviouslyReported>
+<MedicareWagesAndTipsCorrected>75200.00</MedicareWagesAndTipsCorrected>
+<MedicareTaxWithhPreviouslyReported>1051.25</MedicareTaxWithhPreviouslyReported>
+<MedicareTaxWithhCorrected>1090.40</MedicareTaxWithhCorrected>
+<AllocatedTipsPreviouslyReported>254.00</AllocatedTipsPreviouslyReported>
+<AllocatedTipsCorrected>204.00</AllocatedTipsCorrected>
+<DependentCarePreviouslyReported>625.00</DependentCarePreviouslyReported>
+<DependentCareCorrected>705.00</DependentCareCorrected>
+<Code_aPreviouslyReported>S</Code_aPreviouslyReported>
+<Code_aCorrected>S</Code_aCorrected>
+<Amt_aPreviouslyReported>0.00</Amt_aPreviouslyReported>
+<Amt_aCorrected>4800.00</Amt_aCorrected>
+<RetirementPlanCorrectedInd>true</RetirementPlanCorrectedInd>
+</FormW2C>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

@@ -1,0 +1,17 @@
+<div class="Node-content-field Node-apiDocsParams">
+	<div class=" Field FieldName-fieldDocParams FieldType-textLong FieldLabel-above ">
+		<h3 class="Field-label"> Error Codes & Explanation(s)</h3>
+		<div class="Field-items">
+			<div class="Field-items-item even ">
+				<div class="parameter">
+					<span class="param">001 </span>
+					<p>Please provide batch id.</p>
+				</div>
+				<div class="parameter">
+					<span class="param">009 </span>
+					<p>This batch id does not exist.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

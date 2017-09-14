@@ -1,0 +1,104 @@
+Advanced Micro System:
+
+https://www.1099-etc.com/software/w2-and-1099-forms-filer/
+https://www.1099-etc.com/customer-support/included-forms/
+https://www.1099-etc.com/software/payroll/
+http://www.greatland.com/home.do
+
+API Help Links:
+1) http://code.tutsplus.com/tutorials/working-with-restful-services-in-codeigniter--net-8814
+2) https://github.com/chriskacerguis/codeigniter-restserver
+https://github.com/philsturgeon/codeigniter-oauth2
+
+http://192.168.1.38/ams_oauth/api-calls/hit-batch-records/950f03aeee9e26d5ef09e7044e37cc1c05785f759/f24d93848aed0950d49d89af81b7834c/http://192.168.1.38/ams/uploaded/dummy.xml
+
+http://192.168.1.38/ams_oauth/api-calls/hit-batch-records/950f03aeee9e26d5ef09e7044e37cc1c05785f759/f24d93848aed0950d49d89af81b7834c/dummy.xml
+
+http://192.168.1.38/ams_oauth/api-calls/prep-batch-records/950f03aeee9e26d5ef09e7044e37cc1c05785f759/f24d93848aed0950d49d89af81b7834c/dummy.xml
+
+
+http://codeuridea.net/ams_oauth/api-calls/prep-batch-records/950f03aeee9e26d5ef09e7044e37cc1c05785f759/f24d93848aed0950d49d89af81b7834c/dummy.xml
+
+http://stagingapi.spiceandtea.com/ams_oauth/api-calls/prep-batch-records/950f03aeee9e26d5ef09e7044e37cc1c05785f759/f24d93848aed0950d49d89af81b7834c/batch.xml
+
+http://192.168.1.38/ams_oauth/api-calls/dataprocessing/nap_sendRQ
+
+
+http://stagingapi.spiceandtea.com/wsdl-generator/ams-test-2.wsdl
+
+http://stagingapi.spiceandtea.com/ams_oauth/db-file/dummy.xml
+<Host>stagingapi.spiceandtea.com</Host>
+<User>stagingapispicea</User>
+<Password>@Dm1n!tste$</Password>
+
+staginga_ams_oauth
+staginga_ams
+ams123
+
+****** Below are the steps to connect to the database through Navicat ****
+General Tab:
+Connection Name: any name(i.e. ams)
+Host Name/IP Address: localhost
+Port: 3306
+User Name : staginga_ams
+Password: ams123
+check the save password checkbox
+
+HTTP tab:
+Go to HTTP tab and check the Use HTTP Tunnel checkbox and also put the Tunnel URL as http://stagingapi.spiceandtea.com/ams_api/ntunnel_mysql.php
+and then click on test connection then click ok. 
+********** End *****************************************************************
+
+
+
+SOAP links:
+1. https://www.sitepoint.com/web-services-with-php-and-soap-2/
+2. http://osarogabriel.blogspot.in/2014/03/how-to-generate-wsdl-for-php-soap-server.html 
+3. https://citycontrolpanel.com/api/example_scripts?l=PHP&fi=0 
+4. http://www.php-guru.in/2015/soap-client-in-codeigniter-using-nusoap-php-toolkit/
+5. https://github.com/rusagar/soapserver_codeigniter/tree/master/application
+6. https://www.sitepoint.com/web-services-with-php-and-soap-1/
+
+7. http://stackoverflow.com/questions/14541066/difference-between-a-soap-message-and-a-wsdl
+8. http://www.xml.com/pub/a/ws/2004/03/24/phpws.html?page=2
+9. https://code.google.com/archive/p/php-wsdl-creator/downloads
+
+https://sourceforge.net/projects/soapserverwsdlgenerator/?source=typ_redirect (DOWNLOAD LINK)
+http://wiki.servicenow.com/index.php?title=Web_Service_Import_Set_WSDL_Examples#gsc.tab=0
+
+By WES TEBO: 
+http://www.onlinedelphitraining.com/newsletters/webservices.htm
+http://www.webservicex.net/WeatherForecast.asmx?WSDL
+
+9aug:
+1. http://stackoverflow.com/questions/37901960/how-to-create-php-soap-server-functions-using-wsdl
+1. http://www.onlamp.com/pub/a/php/2007/07/26/php-web-services.html
+
+soap server response: http://stackoverflow.com/questions/12736697/how-return-custom-xml-response-in-soapserver-response
+
+http://www.vankouteren.eu/blog/2009/03/simple-php-soap-example/
+
+return types:
+http://icephoenix.us/php/setting-up-complex-data-types-in-wsdl/
+
+http://stackoverflow.com/questions/3229941/wsdl-list-of-complextype-howto-define-return-from-a-service
+
+Date 15th Sept:
+http://stackoverflow.com/questions/11964038/complex-type-not-mapping-in-wsdl-php
+https://www.experts-exchange.com/questions/27720420/SOAP-ERROR-parsing-schema-unexpected-element-in-restriction.html
+http://wiki.servicenow.com/index.php?title=Web_Service_Import_Set_WSDL_Examples#SOAP_Response
+
+// 16th September, 2016
+http://www.ibm.com/support/knowledgecenter/SSTLXK_8.0.0/com.ibm.wbpm.imuc.doc/topics/tarray.html
+
+https://leifmadsen.wordpress.com/2009/08/04/consuming-soap-complextype-webservice-with-php/
+
+http://stackoverflow.com/questions/19456126/how-to-define-wsdl-complex-type-for-soap-response-with-list-of-items
+
+
+****** testing now: Nice produced wsdl ******
+http://www.ahowto.net/php/creating-webservice-server-and-client-using-nusoap/
+
+more complex type nusoap:
+http://stackoverflow.com/questions/22443172/php-nusoap-server-return-array-of-complex-types
+

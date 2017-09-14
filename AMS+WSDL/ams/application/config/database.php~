@@ -1,0 +1,271 @@
+<?php if(!defined('BASEPATH')) exit('No direct script access allowed');
+/*
+| -------------------------------------------------------------------
+| DATABASE CONNECTIVITY SETTINGS
+| -------------------------------------------------------------------
+| This file will contain the settings needed to access your database.
+|
+| For complete instructions please consult the 'Database Connection'
+| page of the User Guide.
+|
+| -------------------------------------------------------------------
+| EXPLANATION OF VARIABLES
+| -------------------------------------------------------------------
+|
+|	['hostname'] The hostname of your database server.
+|	['username'] The username used to connect to the database
+|	['password'] The password used to connect to the database
+|	['database'] The name of the database you want to connect to
+|	['dbdriver'] The database type. ie: mysql.  Currently supported:
+				 mysql, mysqli, postgre, odbc, mssql, sqlite, oci8
+|	['dbprefix'] You can add an optional prefix, which will be added
+|				 to the table name when using the  Active Record class
+|	['pconnect'] TRUE/FALSE - Whether to use a persistent connection
+|	['db_debug'] TRUE/FALSE - Whether database errors should be displayed.
+|	['cache_on'] TRUE/FALSE - Enables/disables query caching
+|	['cachedir'] The path to the folder where cache files should be stored
+|	['char_set'] The character set used in communicating with the database
+|	['dbcollat'] The character collation used in communicating with the database
+|				 NOTE: For MySQL and MySQLi databases, this setting is only used
+| 				 as a backup if your server is running PHP < 5.2.3 or MySQL < 5.0.7
+|				 (and in table creation queries made with DB Forge).
+| 				 There is an incompatibility in PHP with mysql_real_escape_string() which
+| 				 can make your site vulnerable to SQL injection if you are using a
+| 				 multi-byte character set and are running versions lower than these.
+| 				 Sites using Latin-1 or UTF-8 database character set and collation are unaffected.
+|	['swap_pre'] A default table prefix that should be swapped with the dbprefix
+|	['autoinit'] Whether or not to automatically initialize the database.
+|	['stricton'] TRUE/FALSE - forces 'Strict Mode' connections
+|							- good for ensuring strict SQL while developing
+|
+| The $active_group variable lets you choose which connection group to
+| make active.  By default there is only one group (the 'default' group).
+|
+| The $active_record variables lets you determine whether or not to load
+| the active record class
+*/
+
+$active_group = 'default';
+$active_record = TRUE;
+
+if(ENVIRONMENT == 'testing')//For codeuridea site (ENVIRONMENT defined at index.php)
+{
+    $db['default']['hostname'] = "localhost";
+	$db['default']['username'] = "cuiuser_ci";
+	$db['default']['password'] = "y.6H2sl+OakJ";
+	$db['default']['database'] = "cuiuser_murphy"; 
+}
+else if(ENVIRONMENT == 'production')//For live site (ENVIRONMENT defined at index.php)
+{
+    $db['default']['hostname'] = "localhost";
+    $db['default']['username'] = "murphywo_moms";
+    $db['default']['password'] = "ol%BUERyJ!Il";
+    $db['default']['database'] = "murphywo_murphy";
+      
+    /*$db['default']['hostname'] = "localhost";
+    $db['default']['username'] = "franchis_moms";
+    $db['default']['password'] = "KZ!do%XT(Tfd";
+    $db['default']['database'] = "franchis_moms";*/
+}
+else
+{
+    $db['default']['hostname'] = "localhost";
+    $db['default']['username'] = "root";
+    $db['default']['password'] = "";
+    $db['default']['database'] = "murphy";    
+}
+   
+$db['default']['dbdriver'] = 'mysqli';
+$db['default']['dbprefix'] = '';
+$db['default']['pconnect'] = TRUE;
+$db['default']['db_debug'] = TRUE;
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
+$db['default']['swap_pre'] = '';
+$db['default']['autoinit'] = TRUE;
+$db['default']['stricton'] = FALSE;
+
+
+$db['default']['tableprefix'] = "mp_";
+
+/*************DB TABLE NAMES********************/
+$tableprefix	=	$db['default']['tableprefix'];
+
+// Table for general tab
+//$db['default']["ADMIN"]				    = $tableprefix."admin";
+$db['default']["SITESETTING"]		        = $tableprefix."admin_site_settings";
+$db['default']["USER_TYPE"]                 = $tableprefix."admin_user_type";
+$db['default']["USER"]                      = $tableprefix."user";
+$db['default']["USERROLE"]                  = $tableprefix."user_role";
+$db['default']["MENU"]				        = $tableprefix."menu";
+$db['default']["MENUPERMIT"]                = $tableprefix."menu_permit";
+$db['default']["USERMENU"]		            = $tableprefix."user_menu";
+$db['default']["EMAIL_TEMPLATE"]            = $tableprefix."email_template";
+$db['default']["ACTION_HISTORY"]            = $tableprefix."action_history";
+
+$db['default']["CMS_MASTER"]                = $tableprefix."cms_master";
+$db['default']["CMS"]                       = $tableprefix."cms";
+$db['default']["MENU_LIST"]                 = $tableprefix."menu_list";    
+$db['default']["MENU_PAGE"]                 = $tableprefix."menu_page";  
+$db['default']["CMS_CALLTOACTION"]          = $tableprefix."cms_advertisement";  
+$db['default']["CMS_RESOURCES"]             = $tableprefix."cms_resources";  
+$db['default']["CMS_VIDEO"]                 = $tableprefix."cms_video";  
+
+$db['default']["FAQ"]                       = $tableprefix."faq";
+$db['default']["NEWS"]			            = $tableprefix."news";
+
+$db['default']["COUNTRY"]                   = $tableprefix."country";
+$db['default']["STATE"]                     = $tableprefix."state";
+$db['default']["CITY"]			            = $tableprefix."city";
+$db['default']["CATEGORY"]                  = $tableprefix."category";
+$db['default']["ZIPCODE"]                   = $tableprefix."zipcode";
+
+
+$db['default']["LISTING_STATUS"]            = $tableprefix."listing_status";
+$db['default']["LISTING_BUSINESS_TYPE"]     = $tableprefix."listing_business_type";
+$db['default']["LISTING_LOCATION"]          = $tableprefix."listing_location";
+$db['default']["LISTING_OFFICE"]            = $tableprefix."listing_office";
+$db['default']["LISTING_ORGANIZATION_TYPE"] = $tableprefix."listing_organization_type";
+$db['default']["LISTING_TYPE"]              = $tableprefix."listing_type";
+$db['default']["LISTING_YEAR_SOURCE"]       = $tableprefix."listing_year_source";
+$db['default']["LISTING_COMM_CODE"]         = $tableprefix."listing_commission_code";
+
+$db['default']["SIC"]                       = $tableprefix."sic";
+$db['default']["NAICS"]                     = $tableprefix."naics";
+$db['default']["FRANCHISE"]                 = $tableprefix."franchise";
+$db['default']["FRANCHISE_PAGES"]           = $tableprefix."franchise_pages";
+$db['default']["REGION"]                    = $tableprefix."region";
+$db['default']["REGION_PAGES"]              = $tableprefix."region_pages";
+$db['default']["REGIONDOC"]                 = $tableprefix."region_documents";
+$db['default']["REGION_MAP"]                = $tableprefix."region_map";
+$db['default']["REGION_MAP_STATES"]         = $tableprefix."region_map_states";
+
+// doucment management master tbl
+$db['default']["MST_DOCUMENTS"]             = $tableprefix."documents_master";
+$db['default']["REGION_FRANCHISE_TEAM"]     = $tableprefix."region_franchise_team_members";
+$db['default']["KEYWORD"]                   = $tableprefix."keyword";
+$db['default']["LEAD_SOURCE"]               = $tableprefix."lead_sources";
+$db['default']["PROPERTY_USED"]             = $tableprefix."property_used";
+$db['default']["DATA_SOURCE_LIST"]          = $tableprefix."data_sources_list"; // used in income statement
+
+// doucment management master tbl
+$db['default']["OWNER_FRI_BNFT"]            = $tableprefix."owners_fringe_benefits";
+$db['default']["EXPENSE_ACCOUNTS"]          = $tableprefix."expense_accounts";
+$db['default']["MANAGE_VALUATION"]          = $tableprefix."manage_valuation";
+$db['default']["BUSINESS_LISTING"]          = $tableprefix."business";
+$db['default']["BUSINESS_ACTIVITY"]         = $tableprefix."business_activity_history";
+$db['default']["BUSINESS_PICTURE"]          = $tableprefix."business_picture";
+$db['default']["BUSINESS_DOCUMENTS"]        = $tableprefix."business_documents";
+$db['default']["BUSINESS_INC_YEAR"]         = $tableprefix."business_income_year";
+$db['default']["BUSINESS_ADD_BACK"]         = $tableprefix."business_income_year_add_back";
+$db['default']["BUSINESS_BAL_ADD_BACK"]     = $tableprefix."business_balance_year_add_back";
+$db['default']["BUSINESS_MCIN_EQUIP"]       = $tableprefix."business_mechinery_equipment";
+$db['default']["BUSINESS_REAL_ESTATE"]      = $tableprefix."business_commercial_real_estate";
+$db['default']["BUSINESS_FRANCHISE"]        = $tableprefix."business_franchise_sale";
+$db['default']["BUSINESS_CLOSING_DATA"]     = $tableprefix."business_closing_data";
+$db['default']["BUSINESS_CATEGORIES"]       = $tableprefix."business_categories"; // NEW ON 7DEC
+
+$db['default']["BUSINESS_FINANCIAL_INFO"]   = $tableprefix."business_brokerage_financial_info";
+$db['default']["DOC_HISTORY"]               = $tableprefix."document_history";
+
+$db['default']["BUYER"]                     = $tableprefix."buyer";
+$db['default']["BYR_BIZ_HIS"]               = $tableprefix."buyer_business_history";
+$db['default']["BYR_AGNT_HIS"]              = $tableprefix."buyer_agent_history";
+$db['default']["BYR_SAVED_BIZ"]             = $tableprefix."buyer_saved_business";
+$db['default']["SAVED_SEARCH"]              = $tableprefix."buyer_saved_search";
+
+$db['default']["BOV"]                       = $tableprefix."bov";
+$db['default']["BOV_CLIENT_MST"]            = $tableprefix."bov_client_master";
+$db['default']["BOV_LGL_STRUC_MST"]         = $tableprefix."bov_legal_structure_master";
+$db['default']["BOV_VALUATION"]             = $tableprefix."bov_valuation_info";
+$db['default']["BOV_CLIENT_LIST"]           = $tableprefix."bov_client_list";
+$db['default']["BOV_INC_YEAR"]              = $tableprefix."bov_income_year";
+$db['default']["BOV_BAL_SHT"]               = $tableprefix."bov_balance_sheet";
+$db['default']["BOV_ADD_BACK"]              = $tableprefix."bov_income_year_add_back";
+$db['default']["BOV_INC_SUM"]               = $tableprefix."bov_income_statement_summery";
+$db['default']["BOV_DATA_SRC_MST"]          = $tableprefix."bov_income_statement_data_sources_master";
+$db['default']["BOV_DATA_SRC"]              = $tableprefix."bov_data_sources";
+$db['default']["BOV_BAL_DATA_SRC"]          = $tableprefix."bov_balance_sheet_data_sources";
+$db['default']["BOV_MKT_DATA_SRC"]          = $tableprefix."bov_market_method_data_sources_list";
+$db['default']["BOV_MKT_METHOD"]            = $tableprefix."bov_market_method";
+$db['default']["BOV_SDE_METHOD"]            = $tableprefix."bov_multiple_sde_method";
+$db['default']["BOV_BUYER_METHOD"]          = $tableprefix."bov_buyer_method";
+
+
+
+$db['default']["BANNER"]                    = $tableprefix."banner";
+$db['default']["CLIENT_STORY"]              = $tableprefix."client_stories";
+$db['default']["SUBSCRIPTION_EMAIL"]        = $tableprefix."subscription_email";
+
+$db['default']["EMAIL_PREFERENCE"]        = $tableprefix."email_preferences";
+
+/*$db['default']["CURRENCY"]		= $tableprefix."currency";
+$db['default']["COUNTRY_CURRENCY"]	= $tableprefix."country_currency";
+$db['default']["LANGUAGE"]			= $tableprefix."language";*/
+
+// Used will be in future
+$db['default']["BUSINESS_ACTIONS"]= array(
+    'add_business' => 'Add business',
+    'edit_business' => 'Edit business'
+); 
+
+// Data Source
+$db['default']['DATA_SOURCE'] = array(
+    'accountant_financials' => 'Accountant Financials',
+    'cpa_financials' => 'CPA Financials',
+    'internal_financials' => 'Internal Financials',
+    'owner_estimate' => 'Owner Estimate',
+    'tax_return' => 'Tax Return',
+    'other' => 'Other',
+);
+
+// Price Range
+$db['default']['PRICE_RANGE'] = array(
+    '1' => 'Min',
+    '25000' => '$25,000',
+    '50000' => '$50,000',
+    '75000' => '$75,000',
+    '100000' => '$100,000',
+    '125000' => '$125,000',
+    '150000' => '$150,000',
+    '175000' => '$175,000',
+    '200000' => '$200,000',
+    '225000' => '$225,000',
+    '250000' => '$250,000',
+    '275000' => '$275,000',
+    '300000' => '$300,000',
+    '400000' => '$400,000',
+    '500000' => '$500,000',
+    '750000' => '$750,000',
+    '1000000' => '$1,000,000',
+    '5000000' => '$5,000,000',
+    '10000000' => '$10,000,000',
+    '25000000' => '$25,000,000',
+    '50000000' => '$50,000000',
+    '75000000' => '$75,000,000',
+    '100000000' => '$100,000,000',
+    '1000000000' => 'Max'
+);
+
+
+// Used will be in future
+$db['default']["MAIN_LISTING_STATUS"]= array(
+    0 => 'Prospect', 
+    21=> 'Active', // live
+    31 => 'Under Contract', 
+    33 => 'Withdrawn', 
+    35 =>'Sold', 
+    37 => 'Expired', 
+    40 => 'Closed'
+); 
+
+// These tables are used in the page reference
+$db['default']["CUSTOMERS"]         = "jn_customers";
+$db['default']["CONTACTS"]          = "jn_contacts";
+$db['default']["POSITION"]          = "jn_position";
+
+/* End of file database.php */
+/* Location: ./application/config/database.php */
+/**********************************************************/

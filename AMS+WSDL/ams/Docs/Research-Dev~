@@ -1,0 +1,50 @@
+Advanced Micro System:
+
+https://www.1099-etc.com/software/w2-and-1099-forms-filer/
+https://www.1099-etc.com/customer-support/included-forms/
+https://www.1099-etc.com/software/payroll/
+http://www.greatland.com/home.do
+
+API Help Links:
+1) http://code.tutsplus.com/tutorials/working-with-restful-services-in-codeigniter--net-8814
+2) https://github.com/chriskacerguis/codeigniter-restserver
+https://github.com/philsturgeon/codeigniter-oauth2
+
+http://192.168.1.38/ams_oauth/api-calls/hit-batch-records/950f03aeee9e26d5ef09e7044e37cc1c05785f759/f24d93848aed0950d49d89af81b7834c/http://192.168.1.38/ams/uploaded/dummy.xml
+
+http://192.168.1.38/ams_oauth/api-calls/hit-batch-records/950f03aeee9e26d5ef09e7044e37cc1c05785f759/f24d93848aed0950d49d89af81b7834c/dummy.xml
+
+http://192.168.1.38/ams_oauth/api-calls/prep-batch-records/950f03aeee9e26d5ef09e7044e37cc1c05785f759/f24d93848aed0950d49d89af81b7834c/dummy.xml
+
+
+http://codeuridea.net/ams_oauth/api-calls/prep-batch-records/950f03aeee9e26d5ef09e7044e37cc1c05785f759/f24d93848aed0950d49d89af81b7834c/dummy.xml
+
+http://stagingapi.spiceandtea.com/ams_oauth/api-calls/prep-batch-records/950f03aeee9e26d5ef09e7044e37cc1c05785f759/f24d93848aed0950d49d89af81b7834c/batch.xml
+
+http://192.168.1.38/ams_oauth/api-calls/dataprocessing/nap_sendRQ
+
+
+http://stagingapi.spiceandtea.com/wsdl-generator/ams-test-2.wsdl
+
+http://stagingapi.spiceandtea.com/ams_oauth/db-file/dummy.xml
+<Host>stagingapi.spiceandtea.com</Host>
+<User>stagingapispicea</User>
+<Password>@Dm1n!tste$</Password>
+
+staginga_ams_oauth
+staginga_ams
+ams123
+
+****** Below are the steps to connect to the database through Navicat ****
+General Tab:
+Connection Name: any name(i.e. ams)
+Host Name/IP Address: localhost
+Port: 3306
+User Name : staginga_ams
+Password: ams123
+check the save password checkbox
+
+HTTP tab:
+Go to HTTP tab and check the Use HTTP Tunnel checkbox and also put the Tunnel URL as http://stagingapi.spiceandtea.com/ams_api/ntunnel_mysql.php
+and then click on test connection then click ok. 
+********** End *****************************************************************

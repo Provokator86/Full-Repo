@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>398456980</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>UNITED BANKING OF TEXAS</Name1>
+<Name2>CORPUS CHRISTI BRANCHES</Name2>
+<Addr1>2536 BEACHVIEW BOULEVARD</Addr1>
+<City>CORPUS CHRISTI</City>
+<USState>TX</USState>
+<USZipCode>78401</USZipCode>
+<Phone>3618262569</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>394523698</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<AssociationName>JOSE S SANTIAGO</AssociationName>
+<ForeignAddress>true</ForeignAddress>
+<Addr1>FRANCISCO LEYVA #208</Addr1>
+<City>CUERNAVACA MORELOS</City>
+<ForeignStateOrProvince>MEXICO</ForeignStateOrProvince>
+<ForeignPostalCode>62040</ForeignPostalCode>
+<CountryCode>MX</CountryCode>
+<PayeeForms>
+<Form1099DIV Occurrence="1">
+<AcctNumber>256998-1</AcctNumber>
+<ForeignCountryOrUSPoss>MEXICO</ForeignCountryOrUSPoss>
+<ReturnAmountsForm1099DIV>
+<OrdinaryDiv>13560.00</OrdinaryDiv>
+<QualifiedDiv>5400.00</QualifiedDiv>
+<NonTaxDist>3200.00</NonTaxDist>
+<InvestmentExp>250.00</InvestmentExp>
+<ForeignTaxPaid>2034.00</ForeignTaxPaid>
+<CashLiquidDistr>250.00</CashLiquidDistr>
+<SpecPrivateActivityBondInterestDiv>595.00</SpecPrivateActivityBondInterestDiv>
+</ReturnAmountsForm1099DIV>
+</Form1099DIV>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

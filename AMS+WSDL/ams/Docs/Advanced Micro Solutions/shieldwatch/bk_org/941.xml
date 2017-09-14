@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>534423467</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerNameControl>PERF</PayerNameControl>
+<PayerCompany>
+<Name1>PERFORMANCE PRODUCTION</Name1>
+<Addr1>426 HOBART WAY</Addr1>
+<City>WENTWORTH</City>
+<USState>CA</USState>
+<USZipCode>94542</USZipCode>
+<USZipExt>0426</USZipExt>
+<Phone>9205554577</Phone>
+</PayerCompany>
+<PayerFederalForms>
+<SumForm941>
+<FinalReturnInd>true</FinalReturnInd>
+<DateFinalWagesPaid>2014-03-21</DateFinalWagesPaid>
+<NumberOfEmployees>7</NumberOfEmployees>
+<TotalWages>108045.84</TotalWages>
+<TotalIncomeTaxWithh>15834.00</TotalIncomeTaxWithh>
+<TaxableSocialSecurityWages>108045.84</TaxableSocialSecurityWages>
+<TaxOnSocialSecurityWages>13397.68</TaxOnSocialSecurityWages>
+<TaxableMedicareWagesTips>108045.84</TaxableMedicareWagesTips>
+<TaxOnMedicareTips>3133.33</TaxOnMedicareTips>
+<AddedMedicareWagesTips>0.00</AddedMedicareWagesTips>
+<TaxOnAddedMedicareWagesTips>0.00</TaxOnAddedMedicareWagesTips>
+<TotalSocialSecurityMedTaxes>16531.01</TotalSocialSecurityMedTaxes>
+<SickPayAdjustment>-147.75</SickPayAdjustment>
+<FractionsOfCentsAdjustment>0.42</FractionsOfCentsAdjustment>
+<TotalDepositsOverpaymentForQtr>34270.00</TotalDepositsOverpaymentForQtr>
+<TaxOnUnreportedTips>0.00</TaxOnUnreportedTips>
+<TotalTax>32217.68</TotalTax>
+<Overpayment>
+<Amount>2052.32</Amount>
+<Refund>true</Refund>
+</Overpayment>
+<SemiWeeklyScheduleDepositor>true</SemiWeeklyScheduleDepositor>
+<TotalTaxesBeforeAdjustmentsAmt>32365.01</TotalTaxesBeforeAdjustmentsAmt>
+<EfileDataSumForm941>
+<DateQuarterEnding>2014-03-31</DateQuarterEnding>
+<ReturnSigner>
+<Name>SAMANTHA WALKER</Name>
+<Title>CPA/OWNER</Title>
+<Phone>5105835747</Phone>
+<Signature>1154477825</Signature>
+<DateSigned>2014-04-08</DateSigned>
+</ReturnSigner>
+</EfileDataSumForm941>
+<SubFormsSumForm941>
+<SumForm941_ScheduleB>
+<DailyTaxLiabsSumForm941_ScheduleB>
+<Month1Day3>1566.88</Month1Day3>
+<Month1Day10>1844.62</Month1Day10>
+<Month1Day17>2090.35</Month1Day17>
+<Month1Day24>2903.87</Month1Day24>
+<Month1Day31>2000.00</Month1Day31>
+<Month2Day7>2491.82</Month2Day7>
+<Month2Day14>2743.84</Month2Day14>
+<Month2Day21>2575.74</Month2Day21>
+<Month2Day28>2901.15</Month2Day28>
+<Month3Day7>2929.59</Month3Day7>
+<Month3Day14>2768.60</Month3Day14>
+<Month3Day21>2551.05</Month3Day21>
+<Month3Day28>2850.17</Month3Day28>
+</DailyTaxLiabsSumForm941_ScheduleB>
+<TotalMonth1Liab>10405.72</TotalMonth1Liab>
+<TotalMonth2Liab>10712.55</TotalMonth2Liab>
+<TotalMonth3Liab>11099.41</TotalMonth3Liab>
+<TotalQuarterLiab>32217.68</TotalQuarterLiab>
+</SumForm941_ScheduleB>
+</SubFormsSumForm941>
+</SumForm941>
+</PayerFederalForms>
+</Payer>
+</gwx:DataPacket>

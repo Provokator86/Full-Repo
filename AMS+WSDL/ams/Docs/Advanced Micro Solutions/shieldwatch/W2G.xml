@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>582214559</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>WIN A BUNDLE INDUSTRIES</Name1>
+<Addr1>12 EAST THIRD STREET</Addr1>
+<City>RENO</City>
+<USState>NV</USState>
+<USZipCode>89505</USZipCode>
+<Phone>7753342315</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>461635534</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<AssociationName>JUDY M HOOKS</AssociationName>
+<Addr1>250 SOUTH CAMERON STREET</Addr1>
+<City>HARRISBURG</City>
+<USState>PA</USState>
+<USZipCode>17104</USZipCode>
+<PayeeForms>
+<FormW2G Occurrence="1">
+<AcctNumber>4536987-2C</AcctNumber>
+<GrossWinnings>150000.00</GrossWinnings>
+<FITWithh>37500.00</FITWithh>
+<TypeOfWagerCode>4</TypeOfWagerCode>
+<TypeOfWagerCategory>POWERBALL</TypeOfWagerCategory>
+<DateWon>2014-04-01</DateWon>
+<FirstID>461-63-5534</FirstID>
+<StateNameOne>PA</StateNameOne>
+<StateIdOne>1589 6858</StateIdOne>
+<StateTaxWithhOne>13500.00</StateTaxWithhOne>
+<StateWinningsOne>150000.00</StateWinningsOne>
+</FormW2G>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

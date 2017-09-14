@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>391809471</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>CITY AND COUNTY OF DENVER</Name1>
+<Name2>TREASURY DIVISION</Name2>
+<Addr1>MCNICHOLS CIVIC CENTER BLDG</Addr1>
+<City>DENVER</City>
+<USState>CO</USState>
+<USZipCode>80202</USZipCode>
+<Phone>7028652022</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>391520759</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<AssociationName>MARTIN K WATSON</AssociationName>
+<Addr1>7356 LITTLE BEAVER LAKE ROAD</Addr1>
+<City>BOULDER</City>
+<USState>CO</USState>
+<USZipCode>80302</USZipCode>
+<USZipExt>9665</USZipExt>
+<PayeeForms>
+<Form1099G Occurrence="1">
+<AcctNumber>432779-1</AcctNumber>
+<StateLocalRefund>1548.00</StateLocalRefund>
+<RefundTaxYr>2013</RefundTaxYr>
+<TaxableGrants>625.00</TaxableGrants>
+<MarketGain>190.00</MarketGain>
+</Form1099G>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

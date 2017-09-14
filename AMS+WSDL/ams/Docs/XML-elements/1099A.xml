@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<userName>shieldwatch</userName>
+<passWord>test123</passWord>
+<dataProcessFor>1</dataProcessFor>
+<Company FormType='1099A'>
+<PayerInfo>
+<TIN>56679988</TIN>
+<Year>2015</Year>	
+<TypeOfTIN>4</TypeOfTIN>
+<TransferAgentIndicator>0</TransferAgentIndicator>
+<CompanyName>ABC Company</CompanyName>
+<CompanyNameLine2>ABC Company</CompanyNameLine2>
+<CompanyAddress>123 Some Street</CompanyAddress>
+<City>Some City</City>
+<State>ST</State>
+<Zipcode>123445</Zipcode>
+<Phone>8152264352</Phone>
+</PayerInfo>
+<Recipient id="11">
+<PayeeTIN>374476543</PayeeTIN>
+<PayeeTypeOfTIN>1</PayeeTypeOfTIN>
+<PayeeName>RONALDO TRUEDOE</PayeeName>
+<PayeeName2>RE</PayeeName2>
+<PayeeAddr>111 S PALMTREE CT</PayeeAddr>
+<PayeeCity>SOMECITY</PayeeCity>
+<PayeeState>OK</PayeeState>
+<PayeeZipcode>743451111</PayeeZipcode>
+<Box1>452.67</Box1>
+<Box2>125.51</Box2>
+<AcctNumber>0245896005</AcctNumber>
+<DateofAcquisition>2014-04-18</DateofAcquisition>
+<BalOfPrincipal>12598.00</BalOfPrincipal>
+<BorrowerLiabInd>false</BorrowerLiabInd>
+<DescrOne>2009 TOYOTA HIGHLANDER</DescrOne>
+</Recipient>
+<Recipient id="22">
+<PayeeTIN>387576982</PayeeTIN>
+<PayeeTypeOfTIN>1</PayeeTypeOfTIN>
+<PayeeName>ALLENO CAPSTONE</PayeeName>
+<PayeeName2>AC</PayeeName2>
+<PayeeAddr>222 W STONEWAY PL</PayeeAddr>
+<PayeeCity>RIGHTHERE</PayeeCity>
+<PayeeState>OK</PayeeState>
+<PayeeZipcode>733452222</PayeeZipcode>
+<Box1>4520.67</Box1>
+<Box2>1250.51</Box2>
+<AcctNumber>0245865998</AcctNumber>
+<DateofAcquisition>2014-04-18</DateofAcquisition>
+<BalOfPrincipal>12598.00</BalOfPrincipal>
+<BorrowerLiabInd>false</BorrowerLiabInd>
+<DescrOne>2009 TOYOTA HIGHLANDER</DescrOne>
+</Recipient>
+</Company>
+</item>
+</gwx:DataPacket>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>352599198</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>BRICKHOUSE INSURANCE</Name1>
+<Addr1>14 FIFTH AVE</Addr1>
+<City>DOVER</City>
+<USState>NJ</USState>
+<USZipCode>07801</USZipCode>
+<USZipExt>9665</USZipExt>
+<Phone>9733669908</Phone>
+</PayerCompany>
+<ACAContact>
+<ContactFirstName>CHERYL</ContactFirstName>
+<ContactLastName>GARBER</ContactLastName>
+</ACAContact>
+<Payee PayeeId="1">
+<BirthDate>1979-09-23</BirthDate>
+<FirstName>KATRINA</FirstName>
+<LastName>TILLMAN</LastName>
+<Addr1>2651 GRAINERY RD</Addr1>
+<City>LINN</City>
+<USState>MO</USState>
+<USZipCode>65051</USZipCode>
+<PayeeForms>
+<Form1095B Occurrence="1">
+<PolicyOriginCode>B</PolicyOriginCode>
+<SponsoringEmployerInfo>
+<TIN>381992589</TIN>
+<Name1>GOLDEN ACRES VEGETABLE GARDENS</Name1>
+<Addr1>N8755 COUNTY HWY FF</Addr1>
+<City>LINN</City>
+<USState>MO</USState>
+<USZipCode>65051</USZipCode>
+</SponsoringEmployerInfo>
+<CoveredIndividuals>
+<Form1095B_CoveredIndividual CoveredIndividualId="1">
+<BirthDate>1979-09-23</BirthDate>
+<FirstName>KATRINA</FirstName>
+<LastName>TILLMAN</LastName>
+<CoveredIndividualMonthlyIndGrp>
+<JanInd>false</JanInd>
+<FebInd>false</FebInd>
+<MarInd>true</MarInd>
+<AprInd>true</AprInd>
+<MayInd>true</MayInd>
+<JunInd>true</JunInd>
+<JulInd>true</JulInd>
+<AugInd>true</AugInd>
+<SepInd>true</SepInd>
+<OctInd>true</OctInd>
+<NovInd>false</NovInd>
+<DecInd>false</DecInd>
+</CoveredIndividualMonthlyIndGrp>
+</Form1095B_CoveredIndividual>
+<Form1095B_CoveredIndividual CoveredIndividualId="2">
+<IndividualSSN>405996150</IndividualSSN>
+<FirstName>HAILY</FirstName>
+<LastName>TILLMAN</LastName>
+<CoveredIndividualMonthlyIndGrp>
+<JanInd>false</JanInd>
+<FebInd>false</FebInd>
+<MarInd>false</MarInd>
+<AprInd>false</AprInd>
+<MayInd>true</MayInd>
+<JunInd>true</JunInd>
+<JulInd>true</JulInd>
+<AugInd>true</AugInd>
+<SepInd>false</SepInd>
+<OctInd>false</OctInd>
+<NovInd>false</NovInd>
+<DecInd>false</DecInd>
+</CoveredIndividualMonthlyIndGrp>
+</Form1095B_CoveredIndividual>
+</CoveredIndividuals>
+</Form1095B>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

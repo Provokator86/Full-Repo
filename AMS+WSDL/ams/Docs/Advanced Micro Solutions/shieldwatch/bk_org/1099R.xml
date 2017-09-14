@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>363212766</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>CBC PROCESSORS INC</Name1>
+<Name2>PROFIT SHARE AND TRUST</Name2>
+<Addr1>1925 WOODNETTLE ROAD SUITE 253</Addr1>
+<City>SCHAUMBURG</City>
+<USState>IL</USState>
+<USZipCode>60193</USZipCode>
+<Phone>8478957801</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>559160443</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<AssociationName>ROBERT J SINKERTON</AssociationName>
+<Addr1>5-B NEIGHBORHOOD LANE</Addr1>
+<City>SALINAS</City>
+<USState>CA</USState>
+<USZipCode>93905</USZipCode>
+<PayeeForms>
+<Form1099R Occurrence="1">
+<WrongAmountOrFiling>true</WrongAmountOrFiling>
+<AcctNumber>99852-1</AcctNumber>
+<DistributionCode>7</DistributionCode>
+<OtherPercent>10</OtherPercent>
+<StateNameOne>CA</StateNameOne>
+<ReturnAmountsForm1099R>
+<GrossDistribution>462.70</GrossDistribution>
+<TaxableAmt>124.00</TaxableAmt>
+<Other>45.00</Other>
+<StateTaxWithhOne>3.25</StateTaxWithhOne>
+<StateDistribOne>46.27</StateDistribOne>
+</ReturnAmountsForm1099R>
+</Form1099R>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

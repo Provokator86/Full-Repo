@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>457897897</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>FIDELITY INVESTMENT SERVICES</Name1>
+<Addr1>3030 SOUTH MAIN STREET</Addr1>
+<City>JEFFERSON CITY</City>
+<USState>MO</USState>
+<USZipCode>65101</USZipCode>
+<Phone>5736345410</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>398115798</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<NameLine2>DOREEN ROSE GRENIER</NameLine2>
+<AssociationName>CHRISTA R GRENIER</AssociationName>
+<Addr1>2361 SOUTH WINGATE</Addr1>
+<City>BRANSON</City>
+<USState>MO</USState>
+<USZipCode>65616</USZipCode>
+<PayeeForms>
+<Form1099B Occurrence="1">
+<AcctNumber>415-8756-2020</AcctNumber>
+<Form8949Checkbox>X</Form8949Checkbox>
+<DateofAcquisition>2014-08-15</DateofAcquisition>
+<LongTermLossInd>true</LongTermLossInd>
+<CusipNumber>064150 31 9</CusipNumber>
+<StocksBonds>125925.00</StocksBonds>
+<NetProceedsInd>true</NetProceedsInd>
+<CostOrOtherBasis>3682.00</CostOrOtherBasis>
+<WCDCode>W</WCDCode>
+<FITWithh>35260.00</FITWithh>
+<BarteringAmt>25000.00</BarteringAmt>
+</Form1099B>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

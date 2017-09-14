@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>456236236</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>INDEPENDENT STUDIES UNIVERSITY</Name1>
+<Name2>SOUTH INDEPENDENCE CAMPUS</Name2>
+<Addr1>15893 WASHINGTON COMMONS</Addr1>
+<City>INDEPENDENCE</City>
+<USState>IA</USState>
+<USZipCode>50644</USZipCode>
+<Phone>3193342430</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>899454545</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<AssociationName>JESSICA L MEADOWS</AssociationName>
+<Addr1>145 TALCOTT DRIVE</Addr1>
+<City>INDEPENDENCE</City>
+<USState>IA</USState>
+<USZipCode>50644</USZipCode>
+<PayeeForms>
+<Form1099Q Occurrence="1">
+<AcctNumber>99587423-1205-1</AcctNumber>
+<GrossDistrib>9850.00</GrossDistrib>
+<Earnings>1852.00</Earnings>
+<Basis>7998.00</Basis>
+<TrustToTrustRolloverInd>true</TrustToTrustRolloverInd>
+<PrivateInd>true</PrivateInd>
+</Form1099Q>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

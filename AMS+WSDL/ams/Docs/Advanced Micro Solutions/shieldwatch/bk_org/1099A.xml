@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>526464659</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>LENDING TREE MORTGAGE COMPANY</Name1>
+<Name2>LENDING TREE OF ILLINOIS</Name2>
+<Addr1>14562 VOYAGER PLAZA</Addr1>
+<City>ROCKFORD</City>
+<USState>IL</USState>
+<USZipCode>61104</USZipCode>
+<Phone>8152264352</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>374476543</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<NameLine2>SAMANTHA CHRISTIENSEN</NameLine2>
+<AssociationName>COREY J REIDINGER JR</AssociationName>
+<Addr1>7415 BEAUMONT STREET</Addr1>
+<City>ROCKFORD</City>
+<USState>IL</USState>
+<USZipCode>61106</USZipCode>
+<USZipExt>2220</USZipExt>
+<PayeeForms>
+<Form1099A Occurrence="1">
+<AcctNumber>0245896005</AcctNumber>
+<DateofAcquisition>2014-04-18</DateofAcquisition>
+<BalOfPrincipal>12598.00</BalOfPrincipal>
+<BorrowerLiabInd>false</BorrowerLiabInd>
+<DescrOne>2009 TOYOTA HIGHLANDER</DescrOne>
+</Form1099A>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

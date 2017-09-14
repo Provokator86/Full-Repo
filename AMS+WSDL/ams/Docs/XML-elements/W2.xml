@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<userName>shieldwatch</userName>
+<passWord>test123</passWord>
+<dataProcessFor>1</dataProcessFor>
+<Company FormType='W2'>
+<PayerInfo>
+<TIN>56679988</TIN>
+<Year>2015</Year>	
+<TypeOfTIN>4</TypeOfTIN>
+<TransferAgentIndicator>0</TransferAgentIndicator>
+<CompanyName>ABC Company</CompanyName>
+<CompanyNameLine2>ABC Company</CompanyNameLine2>
+<CompanyAddress>123 Some Street</CompanyAddress>
+<City>Some City</City>
+<State>ST</State>
+<Zipcode>123445</Zipcode>
+<Phone>8152264352</Phone>
+</PayerInfo>
+<Recipient id="11">
+<PayeeTIN>374476543</PayeeTIN>
+<PayeeTypeOfTIN>1</PayeeTypeOfTIN>
+<PayeeName>RONALDO TRUEDOE</PayeeName>
+<PayeeName2>RE</PayeeName2>
+<PayeeAddr>111 S PALMTREE CT</PayeeAddr>
+<PayeeCity>SOMECITY</PayeeCity>
+<PayeeState>OK</PayeeState>
+<PayeeZipcode>743451111</PayeeZipcode>
+<Box1>452.67</Box1>
+<Box2>125.51</Box2>
+<AcctNumber>0245896005</AcctNumber>
+<EmploymentType>R</EmploymentType>
+<StateNameOne>KY</StateNameOne>
+<StateIdOne>822963</StateIdOne>
+<Box14TextOne>KJDA 289.23</Box14TextOne>
+<Code_a>S</Code_a>
+<Amt_a>1825.00</Amt_a>
+<StatutoryInd>false</StatutoryInd>
+<RetirementPlanInd>true</RetirementPlanInd>
+<ThirdPartySickPayInd>false</ThirdPartySickPayInd>
+<W2ControlNumber>255-8B</W2ControlNumber>
+<FITWithh>3459.00</FITWithh>
+<MedicareWithh>623.16</MedicareWithh>
+<MedWagesAndTips>42976.25</MedWagesAndTips>
+<SocSecWages>42976.25</SocSecWages>
+<SocSecWithh>2664.53</SocSecWithh>
+<StateTaxWithhOne>1663.00</StateTaxWithhOne>
+<StateWagesTipsEtcOne>41151.25</StateWagesTipsEtcOne>
+<WagesTipsOtherComp>41151.25</WagesTipsOtherComp>
+</Recipient>
+</Company>
+</item>
+</gwx:DataPacket>

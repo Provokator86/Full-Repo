@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>569878410</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>AMERICAN FARMERS COOPERATIVE</Name1>
+<Name2>NEIGHBORHOOD INSURANCE</Name2>
+<Addr1>2130 EAST HIGHWAY 20</Addr1>
+<City>AINSWORTH</City>
+<USState>NE</USState>
+<USZipCode>69210</USZipCode>
+<Phone>4023870500</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>656123233</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<AssociationName>MADELINE J HOGSWORTH</AssociationName>
+<Addr1>4589 DOGWOOD LANE</Addr1>
+<City>HERMAN</City>
+<USState>NE</USState>
+<USZipCode>68029</USZipCode>
+<PayeeForms>
+<Form1099LTC Occurrence="1">
+<AcctNumber>904778-3</AcctNumber>
+<GrossLTBenefitsPd>18950.00</GrossLTBenefitsPd>
+<AccelDeathBenPd>15235.00</AccelDeathBenPd>
+<ReimbursedAmtInd>true</ReimbursedAmtInd>
+<InsuredsSSN>388882176</InsuredsSSN>
+<InsuredsNameOne>ELMER T HOGSWORTH</InsuredsNameOne>
+<InsuredsStreetAddr>4589 DOGWOOD LANE</InsuredsStreetAddr>
+<InsuredsCity>HERMAN</InsuredsCity>
+<InsuredsState>NE</InsuredsState>
+<InsuredsZip>68029</InsuredsZip>
+<ChronicallyillInd>true</ChronicallyillInd>
+<DateCertified>2008-04-15</DateCertified>
+</Form1099LTC>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

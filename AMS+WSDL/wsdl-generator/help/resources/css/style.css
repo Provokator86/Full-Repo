@@ -1,0 +1,232 @@
+/*dark background to support form theme*/
+body{
+  background-color: #fff;
+}
+
+@mixin disable{
+  outline:none;
+  border:none;
+}
+
+@mixin easeme{
+  -webkit-transition:1s ease;
+  -moz-transition:1s ease;
+  -o-transition:1s ease;
+  -ms-transition:1s ease;
+  transition:1s ease;
+}
+
+/*site container*/
+.wrapper{
+  width:420px;
+  margin:0 auto;
+}
+
+h1{
+  text-align:center;
+  padding:30px 0px 0px 0px;
+  font:25px Oswald;
+  color:#000;
+  text-transform:uppercase;
+  /*text-shadow:#000 0px 1px 5px;*/
+  margin:0px;
+}
+p{
+  font:13px Open Sans;
+  color:#6E6E6E;
+  /*text-shadow:#000 0px 1px 5px;*/
+  margin-bottom:30px;
+}
+.form{
+  width:100%;
+}
+
+input[type="text"],input[type="email"],input[type="password"], input[type="date"]{
+  width:98%;
+  padding:15px 0px 15px 8px;
+  border-radius:5px;
+  @include disable;
+  border:1px solid rgba(0,0,0,1);
+  margin-bottom:10px;
+  color:#000;
+}
+
+.select-dropdown{
+  width:100%;
+  padding:15px 0px 15px 8px;
+  border-radius:5px;
+  box-shadow:inset 4px 6px 10px -4px rgba(0,0,0,0.3), 0 1px 1px -1px rgba(255,255,255,0.3);
+	background:rgba(0,0,0,0.2);
+  @include disable;
+  border:1px solid rgba(0,0,0,1);
+  margin-bottom:10px;
+  color:#6E6E6E;
+}
+
+
+input[type="submit"]{
+  width:100%;
+  padding:15px;
+  border-radius:5px;
+  @include disable;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#28D2DE), to(#1A878F));
+  background-image: -webkit-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: -moz-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: -o-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: linear-gradient(#28D2DE 0%, #1A878F 100%);
+  font:14px Oswald;
+  color:#FFF;
+  text-transform:uppercase;
+  text-shadow:#000 0px 1px 5px;
+  border:1px solid #000;
+  opacity:0.7;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+  box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+  /*border-top:1px solid rgba(255,255,255,0.8)!important;*/
+  border-top:1px solid #000;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255,255,255,0.2)));
+}
+
+input:focus{
+  border:1px solid #24bcc7;
+}
+
+input:focus, textarea:focus, select:focus {outline:0 none;}
+
+input[type="submit"]:hover{
+  opacity:1;
+  cursor:pointer;
+}
+
+.name-help,.email-help,.password-help,.conf-password-help,.date-help,.select-dropdown-help {
+  display:none;
+  padding:0px;
+  margin:0px 0px 15px 0px;
+}
+
+.optimize{
+  position:fixed;
+  right:3%;
+  top:0px;
+}
+
+/* ==========================================================================
+			NEW CSS DEFINITIONS [BEGIN]
+============================================================================= */
+
+/* For Modal Dialog CSS [Begin] */
+div.modal_dialog {
+	width: 600px;
+	display: inline-block;
+	background:#FFFFFF;
+	display:none;
+	position:absolute;
+	border: 1px solid #333333;
+}
+
+div.modal_dialog div.close {
+	background-color: #ef9b04;
+	text-align: right;
+	padding: 5px 20px;
+}
+
+div.modal_dialog div.close a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+div.modal_dialog div.title {
+	background-color: #ef9b04;
+	text-align: left;
+	padding: 10px 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+div.modal_dialog div.content {
+	padding: 20px 20px 20px 20px;
+	min-height: 100px;
+	max-height: 600px;
+	overflow: auto;
+}
+/* For Modal Dialog CSS [End] */
+
+
+.error_msg {
+	font-size:10px;
+	color:#FF0000;
+	display:none;
+	margin-top:12px;
+	float:left;
+}
+
+/* ==========================================================================
+			NEW CSS DEFINITIONS [END]
+============================================================================= */
+
+.wrapper .success-msg span.success-msg-prt{
+	color:#26C5D0;
+	display:block;
+}
+.wrapper .success-msg{
+	margin:0px 0px 12px;
+}
+
+.no-show {
+	display:none;
+}
+
+.wrapper .success-msg span.success-msg-prt a {
+	color:#26C5D0;
+	display:block;
+	text-decoration:none;
+}
+
+.wrapper .success-msg span.success-msg-prt a:hover {
+	color:#26C5D0;
+	display:block;
+	text-decoration:underline;
+}
+
+.day {
+	background:url("../images/calender-icon.png") 98% 50% no-repeat !important;
+}
+
+/*==== 10-7-2015 ==== */
+
+.optimize a.back_link{
+	float:right;
+	color:#26C5D0;
+	padding:0 4px;
+}
+.optimize a.back_link:hover{
+	text-decoration:none;
+}
+.optimize a.logout_link{
+	float:right;
+	color:#26C5D0;
+	padding:0 4px;
+}
+.optimize a.logout_link:hover{
+	text-decoration:none;
+}
+#frmDaySales .text{
+	font:13px Open Sans;
+	margin:-45px -110px 0 0;
+	float:right;
+}
+#frmStore .text{
+	font:13px Open Sans;
+	margin:-45px -110px 0 0;
+	float:right;
+}
+#frmSalesByDay .text{
+	font:13px Open Sans;
+	margin:-45px -110px 0 0;
+	float:right;
+}

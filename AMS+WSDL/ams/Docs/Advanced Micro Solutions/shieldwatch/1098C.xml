@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gwx:DataPacket Version="48" xmlns:gwx="http://www.greatland.com/Schemas/GWX/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.greatland.com/Schemas/GWX/1.0/ C:\GWXXML\Wagefiler\WageFilerGWX.sxd">
+<Payer PayerId="1">
+<TIN>563965822</TIN>
+<TypeOfTIN>E</TypeOfTIN>
+<PayerCompany>
+<Name1>RAWHIDE BOYS RANCH</Name1>
+<Addr1>W2589 RAWHIDE DRIVE</Addr1>
+<City>NEW LONDON</City>
+<USState>WI</USState>
+<USZipCode>54961</USZipCode>
+<Phone>9209826525</Phone>
+</PayerCompany>
+<Payee PayeeId="1">
+<TIN>374476543</TIN>
+<TypeOfTIN>S</TypeOfTIN>
+<AssociationName>COREY J REIDINGER JR</AssociationName>
+<Addr1>7415 BEAUMONT STREET</Addr1>
+<City>ROCKFORD</City>
+<USState>IL</USState>
+<USZipCode>61104</USZipCode>
+<USZipExt>2220</USZipExt>
+<PayeeForms>
+<Form1098C Occurrence="1">
+<AcctNumber>98753-1F</AcctNumber>
+<DateOfContribution>2014-07-21</DateOfContribution>
+<Year>1975</Year>
+<Make>PIPER</Make>
+<Model>CLUB</Model>
+<IDNumber>ABC123 C3 75</IDNumber>
+<LessFMVInd>true</LessFMVInd>
+<ProvideGoodsSvcsInExchInd>true</ProvideGoodsSvcsInExchInd>
+<ValueOfGoodsAndSvcsProvided>985.00</ValueOfGoodsAndSvcsProvided>
+<DescrGoodsSvcsOne>SERMONIZING, BIBLICAL TEACHING AND DISCUSSION</DescrGoodsSvcsOne>
+<IntangibleReligiousBenefitsCk>true</IntangibleReligiousBenefitsCk>
+</Form1098C>
+</PayeeForms>
+</Payee>
+</Payer>
+</gwx:DataPacket>

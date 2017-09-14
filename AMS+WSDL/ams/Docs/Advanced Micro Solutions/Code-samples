@@ -1,0 +1,296 @@
+
+    public function nap_sendRQ() {
+		
+		$VAR = "<?xml version='1.0' encoding='UTF-8'?>
+				<item>
+				<Company>
+				<userName>shieldwatch</userName>
+				<passWord>test123</passWord>
+				<PayerInfo>
+				<TIN>526464659</TIN>
+				<Year>2015</Year>	
+				<TypeOfTIN>4</TypeOfTIN>	
+				<AmountCode>2</AmountCode>	
+				<TransferAgentIndicator>0</TransferAgentIndicator>
+				<CompanyName>ABC Company</CompanyName>
+				<CompanyNameLine2>ABC Company</CompanyNameLine2>
+				<CompanyAddress>123 Some Street</CompanyAddress>
+				<City>Some City</City>
+				<State>ST</State>
+				<Zipcode>123445</Zipcode>
+				<Phone>8152264352</Phone>
+				</PayerInfo>
+				<Recipient id='1'>
+				<PayeeTIN>374476543</PayeeTIN>
+				<PayeeTypeOfTIN>1</PayeeTypeOfTIN>
+				<PayeeName>RONALD TRUEDOE</PayeeName>
+				<PayeeName2>RE</PayeeName2>
+				<PayeeAddr>5278 S PALMTREE CT</PayeeAddr>
+				<PayeeCity>SOMECITY</PayeeCity>
+				<PayeeState>OK</PayeeState>
+				<PayeeZipcode>743451111</PayeeZipcode>
+				<Box1>452.67</Box1>
+				<Box2>125.00</Box2>
+				</Recipient>
+				<Recipient id='2'>
+					<PayeeTIN>387576982</PayeeTIN>
+					<PayeeTypeOfTIN>1</PayeeTypeOfTIN>
+					<PayeeName>ALLEN CAPSTONE</PayeeName>
+					<PayeeName2>AC</PayeeName2>
+					<PayeeAddr>7412 W STONEWAY PL</PayeeAddr>
+					<PayeeCity>RIGHTHERE</PayeeCity>
+					<PayeeState>OK</PayeeState>
+					<PayeeZipcode>733454444</PayeeZipcode>
+					<Box1>4520.67</Box1>
+					<Box2>1250.00</Box2>
+				</Recipient>
+				</Company>
+				</item>";
+							/*$VAR = <<<XML
+				<?xml version='1.0'?> 
+				<document>
+				 <title>Forty What?</title>
+				 <from>Joe</from>
+				 <to>Jane</to>
+				 <body>
+				  I know that's the answer -- but what's the question?
+				 </body>
+				</document>
+				XML;*/
+			//phpinfo(); exit;
+			$this->nap_sendRequest($VAR);
+		
+	}
+	
+--------------------------------------------------------------------------------------------------------------------	
+    
+    public function nap_sendRequest($requestXML)
+	{
+		//$server = 'http://www.something.com/myapp';
+		if(SITE_FOR_LIVE)
+			$url = 'http://stagingapi.spiceandtea.com/ams_oauth/api-calls/dataprocessing/nap_perform';
+		else
+			$url = 'http://192.168.1.38/ams_oauth/api-calls/dataprocessing/nap_perform';
+			
+		//setting the curl parameters.
+        $ch = curl_init();
+		curl_setopt( $ch, CURLOPT_URL, $url );
+		curl_setopt( $ch, CURLOPT_POST, true );
+		curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type: text/xml'));
+		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+		curl_setopt( $ch, CURLOPT_POSTFIELDS, $requestXML );
+		$result = curl_exec($ch);
+		curl_close($ch);
+
+		echo $result;
+		#return $data;
+
+	}
+
+---------------------------------------------------------------------------------------------------------------------------	
+	public function nap_perform() {
+		
+		$dataPOST = trim(file_get_contents('php://input'));
+		$xmlData = simplexml_load_string((string)$dataPOST);
+		//print_r($xmlData);	exit;
+		$format = 'xml';
+		$comPany = $xmlData->Company;	
+		#print_r($comPany);			
+				
+		if(!empty($comPany))
+		{			
+			$userName = (string)$comPany->userName;
+			$passWord = (string)$comPany->passWord;				
+			$user_data = $this->users_model->fetch_info_by_userName_N_passWord($userName, $passWord);
+			//print_r($user_data);	exit;
+				
+			if( empty( $user_data ) ) {    // no valid userName & PassWord...                            
+				//$RESPONSE_ERR_ARR = form_key_N_secret_error_response();
+				$RESPONSE_ERR_ARR = form_name_N_pwd_error_response();
+				$ARR = _fetch_error_content($RESPONSE_ERR_ARR, $format);
+				
+				$ERR_CONTENT = $ARR['content'];
+				$format = $ARR['format'];
+			
+				echo header("Content-type:application/{$format}");
+				echo $ERR_CONTENT;
+				exit;
+				
+			}
+			else
+			{				
+				$batchId = $this->genBatchNumber(); // unique
+				//echo 'batchId='.$batchId; exit;
+				if($batchId)
+				{
+					$bArr = array();
+					$bArr['s_batch_id'] = $batchId;
+					$this->db->set_dbprefix('');
+					$b_qry = $this->db->insert_string('ams_batch_master', $bArr);
+					$i_batch_id = ($this->db->simple_query($b_qry))? $this->db->insert_id() : 0; 
+				}
+				
+				$total_payer = 0;
+				$total_payee = 0;
+				//payer records start
+				if(is_array($comPany))
+				{
+					//echo '111';
+				}
+				else
+				{			
+					//echo '222';	exit;
+					$payerInfo = $comPany->PayerInfo; // object
+					$payeeInfo = $comPany->Recipient; // array of object
+					/*echo count($comPany->Recipient);
+					echo '<pre>'; 
+					print_r($payeeInfo); 
+					echo '</pre>'; 
+					#exit;*/
+										
+					if(!empty($payerInfo))
+					{
+						$total_payer = $total_payer + 1;
+						$year = (string)$payerInfo->Year;
+						#$formId = $this->getFormId($payerInfo->TypeOfTIN); // get from formmaster tbl
+						$payerArr = array();
+						$payerArr['e_record_type'] 								= 'A'; // payer records
+						$payerArr['s_payer_tin'] 								= (string)$payerInfo->TIN;
+						$payerArr['s_batch_code'] 								= $batchId;
+						$payerArr['i_payment_year'] 							= (string)$payerInfo->Year;
+						$payerArr['s_type_of_return'] 							= (string)$payerInfo->TypeOfTIN;
+						$payerArr['s_amount_codes'] 							= (string)$payerInfo->AmountCode;
+						$payerArr['s_first_payer_name_line'] 					= (string)$payerInfo->CompanyName;
+						$payerArr['s_second_payer_name_line'] 					= (string)$payerInfo->CompanyNameLine2;
+						$payerArr['s_payer_shipping_address'] 					= (string)$payerInfo->CompanyAddress;
+						$payerArr['s_payer_city'] 								= (string)$payerInfo->City;
+						$payerArr['s_payer_state'] 								= (string)$payerInfo->State;
+						$payerArr['s_payer_zip_code'] 							= (string)$payerInfo->Zipcode;
+						$payerArr['s_payers_telephone_number_and_extension']	= (string)$payerInfo->Phone;
+						
+						$this->db->set_dbprefix('');
+						$s_qry = $this->db->insert_string('ams_payer_info', $payerArr);
+						$i_ins = ($this->db->simple_query($s_qry))? $this->db->insert_id() : 0; 	
+												
+						
+						if($i_ins>0) // payer saved in db
+						{
+							if(!empty($payeeInfo))
+							{			
+								//echo count($payeeInfo);				
+								for($i =0; $i < count($payeeInfo); $i++)
+								{
+									
+									$total_payee = $total_payee+1;
+									$name = trim((string)($payeeInfo[$i]->PayeeName));
+									$last_name = (strpos($name, ' ') === false) ? '' : preg_replace('#.*\s([\w-]*)$#', '$1', $name);
+									$first_name = trim( preg_replace('#'.$last_name.'#', '', $name ) );
+		
+									$payee_tin = $val->PayeeTIN;
+									$payeeArr = array();
+									$payeeArr['i_payer_id'] 				= $i_ins;
+									$payeeArr['e_record_type'] 				= 'B'; // payee records
+									$payeeArr['s_batch_code'] 				= $batchId;
+									$payeeArr['i_payment_year'] 			= $year;
+									$payeeArr['s_payee_tin'] 				= (string)$payeeInfo[$i]->PayeeTIN;
+									$payeeArr['s_type_of_tin'] 				= (string)$payeeInfo[$i]->PayeeTypeOfTIN;
+									$payeeArr['s_first_payee_name_line'] 	= $first_name;
+									$payeeArr['s_last_payee_name_line'] 	= $last_name;
+									$payeeArr['s_second_payee_name_line'] 	= (string)$payeeInfo[$i]->PayeeName2;
+									$payeeArr['s_payee_shipping_address'] 	= (string)$payeeInfo[$i]->PayeeAddr;
+									$payeeArr['s_payee_city'] 				= (string)$payeeInfo[$i]->PayeeCity;
+									$payeeArr['s_payee_state'] 				= (string)$payeeInfo[$i]->PayeeState;
+									$payeeArr['s_payee_zip_code'] 			= (string)$payeeInfo[$i]->PayeeZipcode;
+									$payeeArr['s_payment_amount1'] 			= (string)$payeeInfo[$i]->Box1;
+									$payeeArr['s_payment_amount2'] 			= (string)$payeeInfo[$i]->Box2;
+									$payeeArr['s_payment_amount3'] 			= (string)$payeeInfo[$i]->Box3;
+									$payeeArr['s_payment_amount4'] 			= (string)$payeeInfo[$i]->Box4;
+									$payeeArr['s_payment_amount5'] 			= (string)$payeeInfo[$i]->Box5;
+									$payeeArr['s_payment_amount6'] 			= (string)$payeeInfo[$i]->Box6;
+									$payeeArr['s_payment_amount7'] 			= (string)$payeeInfo[$i]->Box7;
+									$payeeArr['s_payment_amount8'] 			= (string)$payeeInfo[$i]->Box8;
+									$payeeArr['s_payment_amount9'] 			= (string)$payeeInfo[$i]->Box9;
+									$payeeArr['s_payment_amount10'] 		= (string)$payeeInfo[$i]->Box10;
+									$payeeArr['s_payment_amount11'] 		= (string)$payeeInfo[$i]->Box11;
+									$payeeArr['s_payment_amount12'] 		= (string)$payeeInfo[$i]->Box12;
+									$payeeArr['s_payment_amount13'] 		= (string)$payeeInfo[$i]->Box13;
+									$payeeArr['s_payment_amount14'] 		= (string)$payeeInfo[$i]->Box14;
+									$payeeArr['s_payment_amount15'] 		= (string)$payeeInfo[$i]->Box15;
+									$payeeArr['s_payment_amount16'] 		= (string)$payeeInfo[$i]->Box16;
+									
+									//print_r($payeeArr);
+									$this->db->set_dbprefix('');
+									$payee_qry = $this->db->insert_string('ams_payee_info', $payeeArr);
+									$i_pk = ($this->db->simple_query($payee_qry))? $this->db->insert_id() : 0;
+									if($i_pk>0)
+									{
+										$frmArr = array();
+										$frmArr['s_batch_code'] = $batchId;
+										$frmArr['s_form_id'] 	= $formId;
+										$frmArr['i_payer_id'] 	= $i_ins;
+										$frmArr['i_payee_id'] 	= $i_pk;
+										$this->db->set_dbprefix('');
+										$f_qry = $this->db->insert_string('ams_forms_payer_payee_history', $frmArr);
+										$i_fk = ($this->db->simple_query($f_qry))? $this->db->insert_id() : 0;
+									}
+									
+									
+								}	
+								
+								header ("Content-Type:application/{$format}");  
+								$output = '<?xml version="1.0" encoding="UTF-8"?>';
+								$output .='<xml>';
+								$output .='<item>';
+								$output .='<message>';
+								$output .='Information saved successfully';
+								$output .='</message>';
+								$output .='<date>';
+								$output .=date('Y-m-d H:i:s');
+								$output .='</date>';
+								$output .='<batch>';
+								$output .=$batchId;
+								$output .='</batch>';
+								$output .='<totalPayer>';
+								$output .=$total_payer;
+								$output .='</totalPayer>';
+								$output .='<totalPayee>';
+								$output .=$total_payee;
+								$output .='</totalPayee>';
+								$output .='<totalCost>';
+								$output .=200;
+								$output .='</totalCost>';
+								$output .='</item>';
+								$output .='</xml>';
+								echo $output;
+								exit;
+								
+													
+							}						
+						}
+						
+						
+					}
+					else
+					{				
+						$ERR_CONTENT = 'Please provide atleast one payer information';
+						header("Content-type:application/{$format}");
+						echo $this->error_xml_output($ERR_CONTENT);
+						exit;
+					}
+				
+				}
+				
+			}
+		}
+		else
+		{
+			$ERR_CONTENT = 'No data send';
+			header("Content-type:application/{$format}");
+			echo $this->error_xml_output($ERR_CONTENT);
+			exit;
+		}
+		//exit;
+		
+	}	
+	
+-------------------------------------------------------------------------------------------------------------------------------------
