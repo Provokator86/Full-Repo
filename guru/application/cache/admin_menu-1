@@ -1,0 +1,229 @@
+a:3:{s:4:"time";i:1423492009;s:3:"ttl";i:3600;s:4:"data";s:8741:"<ul class="nav" id="admin_menu"><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/home/dashboard" 
+                    class="exp" >
+                    <img src="http://dev.gurusourcing.com/theme/aquincum/images/icons/mainnav/dashboard.png" alt="" /><span>General</span>
+                    </a>
+                    <ul><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/my_profile" 
+                     >
+                    My Profile
+                    </a>
+                    
+                </li><li>
+                    <a href="javascript:void(0);" 
+                    class="exp" >
+                    Clear Cache
+                    </a>
+                    <ul><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/home/clear_cache" 
+                     >
+                    Clear Theme Cache
+                    </a>
+                    
+                </li></ul>
+                </li><li>
+                    <a href="javascript:void(0);" 
+                    class="exp" >
+                    Admins
+                    </a>
+                    <ul><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/admin_user" 
+                     >
+                    Manage Admins
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/user_role" 
+                     >
+                    User Role
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/user_permission" 
+                     >
+                    User Permission
+                    </a>
+                    
+                </li></ul>
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/theme" 
+                     >
+                    Themes
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/advertisements" 
+                     >
+                    Advertisements
+                    </a>
+                    
+                </li></ul>
+                </li><li>
+                    <a href="javascript:void(0);" 
+                    class="exp" >
+                    <img src="http://dev.gurusourcing.com/theme/aquincum/images/icons/mainnav/forms.png" alt="" /><span>Configuration</span>
+                    </a>
+                    <ul><li>
+                    <a href="javascript:void(0);" 
+                    class="exp" >
+                    Location
+                    </a>
+                    <ul><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/country" 
+                     >
+                    Country
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/state" 
+                     >
+                    State
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/city" 
+                     >
+                    City
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/zip" 
+                     >
+                    Zip
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/popular_location" 
+                     >
+                    Popular Location
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/zip_location_mapping" 
+                     >
+                    Zip Location Mapping
+                    </a>
+                    
+                </li></ul>
+                </li><li>
+                    <a href="javascript:void(0);" 
+                    class="exp" >
+                    Option
+                    </a>
+                    <ul><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/option" 
+                     >
+                    Manage Option
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/user_suggestion" 
+                     >
+                    Manage User Suggestion
+                    </a>
+                    
+                </li></ul>
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/document" 
+                     >
+                    Document
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/reserved_keyword" 
+                     >
+                    Reserved Keyword
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/cms" 
+                     >
+                    CMS
+                    </a>
+                    
+                </li></ul>
+                </li><li>
+                    <a href="javascript:void(0);" 
+                    class="exp" >
+                    <img src="http://dev.gurusourcing.com/theme/aquincum/images/icons/mainnav/tables.png" alt="" /><span>Service</span>
+                    </a>
+                    <ul><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/category" 
+                     >
+                    Category
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/category_service_extended_definition" 
+                     >
+                    Extended Service
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/featured_packages" 
+                     >
+                    Featured Packages
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/featured_services" 
+                     >
+                    Featured Services
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/user_services" 
+                     >
+                    User Services
+                    </a>
+                    
+                </li></ul>
+                </li><li>
+                    <a href="javascript:void(0);" 
+                    class="exp" >
+                    <img src="http://dev.gurusourcing.com/theme/aquincum/images/icons/mainnav/ui.png" alt="" /><span>User</span>
+                    </a>
+                    <ul><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/manage_user" 
+                     >
+                    Manage User
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/user_doc_verification" 
+                     >
+                    User Document Verification
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/user_save_search" 
+                     >
+                    User Save Search
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/user_company" 
+                     >
+                    List of Company
+                    </a>
+                    
+                </li><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/user_report_abuse" 
+                     >
+                    Report Abuse
+                    </a>
+                    
+                </li></ul>
+                </li><li>
+                    <a href="javascript:void(0);" 
+                    class="exp" >
+                    <img src="http://dev.gurusourcing.com/theme/aquincum/images/icons/mainnav/statistics.png" alt="" /><span>Reports</span>
+                    </a>
+                    <ul><li>
+                    <a href="http://dev.gurusourcing.com/backoffice/payment_history" 
+                     >
+                    Payments
+                    </a>
+                    
+                </li></ul>
+                </li></ul>";}

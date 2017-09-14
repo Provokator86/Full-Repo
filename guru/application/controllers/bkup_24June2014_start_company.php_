@@ -1,0 +1,70 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/**
+* Start company
+*/
+
+class Start_company extends MY_Controller {
+    
+    
+    public function __construct()
+    {   
+        parent::__construct();
+        
+    }
+    
+    public function index()
+    {
+        is_userLoggedIn(TRUE);
+        
+        $this->data['page_title'] = 'Start Company';
+        
+        $this->data['not_company']=get_cms(7); // cms  content for "not a company" section
+        $this->data['company']=get_cms(8); // cms content for "already a company" section
+        //pr(get_cms(8));
+        $this->render();    
+        
+        
+    }
+    
+    /**
+    * add company name, 
+    * And loggedin user session is updated
+    */
+    public function ajaxSaveCompany()
+    {
+      $s_company=trim($this->input->post('s_company'));
+      if($s_company!='')
+      {
+          $uid=get_userLoggedIn('id');
+          
+          // adding user id, company name into user_company tbl
+          $this->load->model('user_company_model');
+          $newId=$this->user_company_model->add_user_company(array('uid'=>$uid,'s_company'=>$s_company, 'i_active'=>1));
+          if($newId)
+          {
+            $s_short_url=generate_unique_shortUrl(); ///generating "short_url"///
+            $this->user_company_model->update_user_company(array("s_short_url"=>$s_short_url),array('id'=>$newId));
+          }
+            /**
+            * To reflect the new changes we need to reinit the 
+            * session values of the user
+            */
+            $this->load->model("user_model");
+            $user=$this->user_model->user_load(intval($uid));
+            $this->set_userLoginInfo($user);
+            //////end reinit the user session/////       
+            
+               
+          
+      }
+      if($newId)
+        echo 'success';
+      else 
+        echo 'Sorry, fail to create your company. Try again.';
+    }
+
+}
+
+
+/* End of file Endorsement.php */
+/* Location: ./application/controllers/endorsement.php */
