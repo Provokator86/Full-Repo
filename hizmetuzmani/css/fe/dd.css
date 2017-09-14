@@ -1,0 +1,99 @@
+.dd {
+	/*display:inline-block !important;*/
+
+/*	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	float:left;
+	color:#0042a2;
+	line-height:21px;
+	font-size:15px;
+	font-family:Calibri;
+	padding:6px;
+	background:url(../images/select_bg.png) no-repeat;
+	background-position:right; loat:left; height:32px; width:269px;margin-top:5px;*/
+	float:left;
+	height:34px;
+	width:359px;
+	color:#4c4c4c;
+	line-height:34px;
+	font-size:12px;
+	font-family:Calibri;
+	font-style:normal;
+	padding:8px; 
+	margin-bottom:10px;
+	font-weight:normal; font-size:14px; font-family:Arial, Helvetica, sans-serif;
+}
+.dd .ddTitle {
+	background:none;
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	text-align:left;
+	height:24px;
+	line-height:21px;
+	cursor:pointer;
+	padding:4px 5px;
+	font-weight:normal;
+
+}
+.dd .ddChild img {
+	vertical-align:middle;
+	margin:0px 5px;
+}
+.dd .ddTitle img {
+	vertical-align:middle;
+	margin-top:6px;
+	margin-right:5px;
+}
+.dd .ddTitle span.textTitle {
+	overflow:hidden;
+	line-height:30px;font-weight:normal;
+	font-size:12px;
+}
+.dd .ddChild {
+	position:absolute;
+	text-align:left;
+	display:none;
+	margin:0;
+	width:auto;
+	overflow:auto;
+	font-size:12px;
+	color:#fff;
+	overflow-x:hidden !important;
+	background-color:#339bee;
+	border:none;
+	margin-top:8px;font-weight:normal;
+}
+.dd .ddChild a {
+	display:block;
+	padding:0 10px 0 4px;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#fff;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+	line-height:24px;font-weight:normal;
+}
+.dd .ddChild a:hover {
+	background:#f3f3f3;
+	color:#000;font-weight:normal;
+}
+.dd .ddChild a.selected {
+	background:#339bee;
+	color:#fff;font-weight:normal;
+	font-size:12px;
+}
+.hidden {
+	display:none;font-weight:normal;
+}
+.spldd .dd {
+	margin:0px 5px;
+}
+.spldd .dd, .spldd .dd .ddChild {
+	background-color: #f3f3f3;
+	color:#929090;
+	font-size:12px;font-weight:normal;
+
+}
