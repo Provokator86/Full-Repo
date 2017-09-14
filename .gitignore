@@ -7,6 +7,21 @@ bin-release/
 
 # Other files and folders
 .settings/
+/All-SQL-8FEB-2016
+/AMS+WSDL
+/client.entrustgroup.com
+/cnp
+/eshoppinx
+/guru
+/hizmetuzmani
+/jae
+/jobshoppa
+/mydealfound
+/mydirection
+/quoteurjob
+/tripezi
+/urbanzing
+/zeevant.zip
 
 # Executables
 *.swf
