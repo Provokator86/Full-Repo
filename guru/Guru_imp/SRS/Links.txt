@@ -1,0 +1,76 @@
+http://91.biz/o/guru/wireframe/
+
+ Final wireframe:
+http://91.biz/o2/guru/wireframe/fnl2/main.php
+
+http://91.biz/o2/guru/design/15-01-2013/main.html
+
+http://91.biz/o2/guru/html/main.html
+
+user: guru
+password: dex123
+
+#######################################
+http://gurusourcing.com
+http://dev.gurusourcing.com
+u: guru
+p: guru@
+
+ftp: http://gurusourcing.com
+user: root
+password: Jira202!
+Folder Path : /guru_beta/
+
+
+phpmyadmin:  phpmyadmin.gurusourcing.com
+user: root
+password: Jira202!
+
+
+http://dev.gurusourcing.com/admin
+u: super_admin
+p: 123456
+
+kalyan.das@in.pwc.com
+
+
+#######Github######
+user: gurusourcing
+password: gurudex20
+
+
+#####Live FB acc for dv.gurusourcing.com#######
+apps: Guru Listing
+App ID: 729557787061612
+App Secret: ad9e0306e1e385c837a118ffb83633b7
+#####Live FB acc for dv.gurusourcing.com#######
+
+##############LIVE SMTP###############################
+        $mailconfig['protocol'] = 'smtp';
+        $mailconfig['smtp_host'] = 'smtp.sendgrid.net';
+        $mailconfig['smtp_user'] = 'rajat.todi@gmail.com';
+        $mailconfig['smtp_pass'] = 'gurudex20';
+#############################################
+
+
+
+#####Testing FB acc Acumen#######
+u : eve.aldiniz
+p: 123testing
+
+apps: Guru
+App ID: 446638222085338
+App Secret: cfd1d50bb96383d8da14eb7b884191bc
+ 
+
+--------by chanda-----
+apps: Guru
+App ID: 597340323642438
+App Secret: f9dfc2951f77cd7ad9ed6eaa5e2ac97c
+
+Test Acc FB:-
+testmail.acumen@gmail.com | 123testing
+
+#####end Testing FB acc Acumen#######
+
+

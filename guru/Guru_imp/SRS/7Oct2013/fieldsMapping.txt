@@ -1,0 +1,13 @@
+d_tution_fee		@service profile page 
+d_rate			@service profile page 
+s_qualification_ids		@service profile page 
+s_specialization_ids 	@service profile page 
+s_classes_ids		@service profile page 
+s_other_subject_ids	@service profile page 
+s_medium_ids		@service profile page 
+s_tution_mode_ids		@service profile page 
+s_availability_ids		@service profile page 
+s_employment_type_id	@NA
+d_experience		@NA
+s_tools_ids		@service profile page 
+s_designation_ids		@service profile page 
