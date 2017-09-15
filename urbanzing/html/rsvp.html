@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>You Peel</title>
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/ModalDialog.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	//hide message_body after the first one
+	$(".message_list .message_body:gt(0)").hide();
+	
+	//hide message li after the 5th
+	$(".message_list div:gt(4)").hide();
+
+	
+	//toggle message_body
+	$(".message_head").click(function(){
+		$(this).next(".message_body").slideToggle(500)
+		return false;
+	});
+
+	//collapse all messages
+	$(".collpase_all_message").click(function(){
+		$(".message_body").slideUp(500)
+		return false;
+	});
+
+	//show all messages
+	$(".show_all_message").click(function(){
+		$(this).hide()
+		$(".show_recent_only").show()
+		$(".message_list div:gt(4)").slideDown()
+		return false;
+	});
+
+	//show recent messages only
+	$(".show_recent_only").click(function(){
+		$(this).hide()
+		$(".show_all_message").show()
+		$(".message_list div:gt(4)").slideUp()
+		return false;
+	});
+
+});
+</script>
+<script type="text/javascript">
+<!--
+var dialog = null;
+
+function show_dialog (id)
+{
+	if(!dialog) dialog = null;
+	dialog = new ModalDialog ("#"+id);
+	dialog.show();
+}
+
+function hide_dialog ()
+{
+	dialog.hide();
+	if(!dialog) dialog = null;
+}
+//-->
+</script>
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+</head>
+
+<body>
+	<div id="global">
+     	<!--Header Section Start-->
+     	<div id="header">
+          	<div class="header_top"></div>
+               <div class="header_mid">
+               	<div class="header_left">
+                    	<a href="index.html"><img src="images/logo.png" alt="" /></a>
+                    </div>
+                    <div class="header_right">
+                    	<div class="login">
+                         	<a href="login.html">login</a>&nbsp;&nbsp;  |   &nbsp;&nbsp;<a href="signup.html">Signup</a>&nbsp;&nbsp;&nbsp; <a href="#"><img align="absmiddle" src="images/face_book.png" /></a>                         
+                          </div>
+                         <div class="search_box">
+                         <form action="search_result_general.html" method="post">
+                         	<div class="cell_01">
+                              	<h1>Search for <span>(e.g. taco, cheap dinner, Max's)</span></h1>
+                                   <input type="text" />
+                              </div>
+                         	<div class="cell_02">
+                              	<h1>In <span>(Address, Neighborhood, City, State or Zip)</span></h1>
+                                   <input type="text" />
+                              </div>
+                              <div class="cell_03">
+                              	<input class="button_01" type="submit" value="GO >>" />
+                              </div>
+                              <div class="clear"></div>
+                              </form>
+                         </div>
+                         <div class="margin10"></div>
+                    </div>
+                    <div class="clear"></div>
+               </div>
+               <div class="header_botm">
+               	<div class="botm_left">
+                    	<div class="drop_down">
+                         	<ul id="sddm">
+                              	<li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">Kolkata</a>
+                                   <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                        <a href="#">Delhi</a>
+                                        <a href="#">Chenni</a>
+                                        <a href="#">Mumbai </a>
+                                        <a href="#">London</a>
+                                        <a href="#">Washington, D.C.</a>
+                              	</div>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="botm_right">
+                    <form name=form1 method=post >
+                    	<div class="cell_04">Invite friends</div>
+                         <div class="cell_05"><input id="abc" type=text name=type value='Friend’s Email Address' onclick="if(this.value=='Friend’s Email Address') document.getElementById('abc').value ='';" onblur="if(this.value=='') document.getElementById('abc').value ='Friend’s Email Address';"></div>
+                         <div class="cell_06"><input id="xyz" type="text" name="type" value="Your Name" onclick="if(this.value=='Your Name') document.getElementById('xyz').value ='';" onblur="if(this.value=='') document.getElementById('xyz').value ='Your Name';" /></div>
+                         <div class="cell_07"><input class="button_01" type="submit" value="GO >>" /></div>
+                      </form>
+                    </div>
+                    <div class="clear"></div>
+               </div>
+          </div>
+          <!--Header Section End-->
+          	
+               <!--Body Section Start-->
+          	<div id="body_part">
+               	<div class="top_sction">
+                    	<div class="menu">
+                         	<ul>
+                                <li><a href="index.html"><span>Home</span></a></li>
+                                <li><a href="restaurants.html"><span>Restaurants</span></a></li>
+                                <li><a href="club_pub.html"><span> Clubs &amp; Bars</span></a></li>
+                                <li><a href="parks_recreation.html"><span>Fun &amp; Entertainment</span></a></li>
+                                <li><a href="salon_spa.html"><span>Health &amp; Beauty</span></a></li>
+                                <li><a href="add_edit_party.html"><span>Plan a party</span></a></li>
+                                <li><a href="deals.html"><span>View deals</span></a></li>
+                                <li><a href="get-listed.html"><span>Promote your business</span></a></li>
+                           </ul>
+                              <div class="clear"></div>
+                         </div>
+                    </div>
+                    <!--Menu Section End-->
+                     <div class="cont_sction">
+                    	<div class="rsvp">
+                         	<div class="rsvp_left">
+                              	<h1>My Birthday <div class="print_box"><img align="absmiddle" src="images/icon_12.png" alt="" /> <a href="#">Print Invitation</a></div></h1>
+                                   <br />
+                                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                       <td align="right" width="10%"><strong>Host :</strong></td>
+                                       <td width="50%">Lorem ipsum</td>
+                                       <td valign="top" rowspan="5" align="right" width="40%">
+                                      	<div class="image_box"><img src="images/birth_day.jpg" alt="" /></div>                                       </td>
+                                     </tr>
+                                     <tr>
+                                     	<td valign="top" align="right"><strong>Location :</strong></td>
+                                        <td>Cool Restaurant<br />
+                                            123 street<br />
+                                            Chicago, IL 60606 US <a href="javascript:void(0)"  onclick="show_dialog('view-map')">View Map</a>							    </td>
+                                     </tr>
+                                     <tr>
+                                     	<td  align="right"><strong>When :</strong></td>
+                                        <td>Saturday, July 17, 7:00PM</td>
+                                     </tr>
+                                     <tr>
+                                     	<td  align="right"><strong>Phone :</strong></td>
+                                        <td>+91123456789</td>
+                                     </tr>
+                                     <tr>
+                                     	<td  align="right">&nbsp;</td>
+                                        <td>
+                                        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                                             <div class="margin15"></div>
+                                             <a href="#">Remove me from Guest List</a>  
+                                             <div class="margin15"></div>   
+                                             <a href="#"><img align="absmiddle" src="images/face_book02.png" /></a> 
+                                              <div class="margin10"></div>                              
+                                        </td>
+                                     </tr>
+                                     
+                                   </table>
+					  <!--Reply Here-->
+                              	<div class="reply">
+                                   	<h5>REPLY HERE</h5>
+                                        <div class="reply_cont">
+                                        	<p>Will you attend, (email id) ? </p>
+                                            <!-- <p><a href="#">not (email id)?</a></p>-->
+                                             <p><input type="radio" /> Yes &nbsp;&nbsp;<input type="radio" /> No &nbsp;&nbsp;<input type="radio" /> Maybe</p>
+                                             <p>Total Guest &nbsp;&nbsp;
+                                               <input type="text" />&nbsp;&nbsp; (including)</p>
+                                             <p>Add a comment (optional)</p>
+                                             <textarea></textarea>&nbsp;&nbsp; <!--<input type="checkbox" /> <span>Notify me when guests reply</span>-->
+                                        </div>
+                                        <div class="reply_btn"><input class="button_05" type="submit" value="Reply Now >>" /></div>
+                                   </div>
+                               <!--Guest List-->
+                               <br />
+                               	<div class="guest_list">
+                                   	<div class="list_header">
+                                        	<div class="left_part"><h5>Guest List</h5></div>
+                                             <div class="right_part">
+                                              <img align="absmiddle" src="images/icon_13.png" alt="" /> <span>Maybe (1)</span>
+                                              <img align="absmiddle" src="images/icon_15.png" alt="" /> <span>No (1)</span>
+                                              <img align="absmiddle" src="images/icon_13.png" alt="" /> <span>Yes (1)</span>
+                                              <img align="absmiddle" src="images/icon_14.png" alt="" /> <span>Undecided (1)</span>
+                                              <img align="absmiddle" src="images/icon_16.png" alt="" /> <span>No Reply (0)</span>
+                                              </div>
+                                             <br />
+                                        </div>
+                                        <div class="list_cont">
+                                        	<p>Who's Coming? As of July 17, 2010, 6:30 pm.</p>
+                                             <div class="reply_yes">
+                                             	<img align="absmiddle" src="images/icon_13.png" alt="" /> <span>Yes (1)</span>
+                                             </div>
+                                             <div class="margin10"></div>
+                                             <p><a href="#">Lorem Ipsum</a> (The Organizer)</p>
+                                             <div class="margin10"></div>
+                                             <div class="reply_undeside">
+                                             	<img align="absmiddle" src="images/icon_14.png" alt="" /> <span>Undecided (1)</span>
+                                             </div>
+                                             <div class="reply_not">
+                                             	<img align="absmiddle" src="images/icon_15.png" alt="" /> <span>No (1)</span>
+                                             </div>
+                                             <div class="not_reply message_head">
+                                             	<img align="absmiddle" src="images/icon_16.png" alt="" /> <span>Not Yet Replied(1)</span>
+                                             </div>
+                                             <div class="message_body" style="display:none;">
+                                               <div class="margin10"></div>
+                                               <p><img align="absmiddle" src="images/img_13.jpg" alt="" />  Alex</p>
+                                             </div>
+                                        </div>
+                                        <div class="margin15"></div>
+                                        <!--<div class="button_box">
+                                        	<div class="left_sction"> <input class="button_06" type="button" value="View by Reply Date >>" />  <input class="button_06" type="button" value="View Alphabetically >>" /></div>
+                                             <div class="right_sction"> <input class="button_05" type="button" value="View all >>" /></div>
+                                             <br />
+                                        </div>-->
+                                   
+                                   </div>
+                                   
+                                   
+                                   
+                              </div>
+                         	<div class="rsvp_right">
+                              	<div class="margin15"></div>
+                              	<img src="images/img_01.jpg" alt="" />
+                                   <div class="margin15"></div>
+                                   <img src="images/img_02.jpg" alt="" />
+                                   <div class="margin15"></div>
+                              </div>
+                              <br />
+                         </div>
+                    </div>
+                    <div class="botm_section"></div>
+                   
+               </div>
+               <!--Body Section End-->
+          <!--Footer Start-->
+          <div id="footer">
+          	<p>© Copyright 2010 All Rights Reserved You Peel</p>
+               <p>Designed & Developed by: Acumen Consultancy Services</p>
+          </div>
+          
+          
+     </div>
+     <div id="view-map" class="view_map_box">
+     	 <a href="#" onclick="hide_dialog()" style="color:#0000FF">x</a>
+           <img src="images/map_img.jpg" />
+     </div>
+</body>
+</html>

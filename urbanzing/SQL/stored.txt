@@ -1,0 +1,168 @@
+set global event_scheduler = ON;
+==========================================================================================
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `sup_clone`.`logout_user` $$
+CREATE PROCEDURE `sup_clone`.`logout_user` ()
+BEGIN
+UPDATE sup_users SET online_status=0 WHERE FROM_UNIXTIME(lastlogin) <DATE_ADD(NOW(), INTERVAL -30 MINUTE);
+
+END $$
+
+DELIMITER ;
+=========================================================================================
+CREATE EVENT event_logout
+    ON SCHEDULE EVERY 10 MINUTE DO call logout_user();
+=========================================================================================
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `text_search` $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `text_search`(s_any TEXT, s_all TEXT, s_none TEXT,s_limit TEXT)
+BEGIN
+DECLARE  l_any  varchar(255)  DEFAULT '';
+DECLARE  l_all   varchar(255)  DEFAULT '';
+DECLARE  l_none  varchar(255)  DEFAULT '';
+
+DECLARE  h_l_search varchar(1000)  DEFAULT '';
+DECLARE  l_l_search varchar(1000)  DEFAULT '';
+DECLARE  n_l_search varchar(1000)  DEFAULT '';
+
+DECLARE  search_str TEXT   DEFAULT '';
+DECLARE  l_values  varchar(255);
+DECLARE  not_found_flag int;
+
+DECLARE c1 CURSOR FOR SELECT vals FROM tmpValues;
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET not_found_flag=1;
+
+IF LTRIM(s_any)<>'' THEN
+ call split(s_any, ' ' );
+
+ OPEN c1;
+ SET not_found_flag=0;
+ SET l_any  = '' ;
+
+ WHILE (not_found_flag=0) DO
+  FETCH c1 INTO l_values;
+  IF not_found_flag=0 THEN
+   IF l_any  <> '' THEN
+    SET l_any = CONCAT(l_any, '  ' );
+   END IF;
+   SET l_any = CONCAT(l_any, l_values);
+  END IF;
+ END WHILE;
+ CLOSE c1;
+END IF;
+
+IF LTRIM(s_all )<>'' THEN
+ call split(s_all, ' ' );
+
+ OPEN c1;
+ SET not_found_flag=0;
+ SET l_all  = '' ;
+
+ WHILE (not_found_flag=0) DO
+  FETCH c1 INTO l_values;
+  IF not_found_flag=0 THEN
+   IF l_all  <> '' THEN
+    SET l_all  = CONCAT(l_all, ' ' );
+   END IF;
+   SET l_all  = CONCAT(l_all, '+', l_values);
+  END IF;
+ END WHILE;
+ CLOSE c1;
+END IF;
+
+IF LTRIM(s_none )<>'' THEN
+ call split(s_none, ' ' );
+
+ OPEN c1;
+ SET not_found_flag=0;
+ SET l_none  = '' ;
+
+ WHILE (not_found_flag=0) DO
+  FETCH c1 INTO l_values;
+  IF not_found_flag=0 THEN
+   IF l_none <> '' THEN
+    SET l_none = CONCAT(l_none, ' ' );
+   END IF;
+   SET l_none  = CONCAT(l_none, '-', l_values);
+  END IF;
+ END WHILE;
+ CLOSE c1;
+END IF;
+
+IF (search_str='') THEN
+ SET search_str = l_any;
+END IF;
+
+IF (search_str='') THEN
+ SET search_str = l_all;
+ELSE
+ SET search_str = CONCAT(search_str,' ', l_all);
+END IF;
+
+IF (search_str='') THEN
+ SET search_str = l_none;
+ELSE
+ SET search_str = CONCAT(search_str,' ', l_none);
+END IF;
+
+SET h_l_search = CONCAT(" ('>(",search_str, ")' IN BOOLEAN MODE)" );
+SET l_l_search  = CONCAT(" ('<(",search_str, ")' IN BOOLEAN MODE)" );
+SET n_l_search = CONCAT(" ('(",search_str, ")' IN BOOLEAN MODE)" );
+
+
+SET @sql=CONCAT('(SELECT category_id item,title title,description as description, "art" tag,MATCH(keyword) AGAINST ',h_l_search,' As ScoreHigh, MATCH(title) AGAINST ',h_l_search,' As ScoreMiddel,MATCH(description) AGAINST ',l_l_search,'  As ScoreLow FROM sup_article WHERE (MATCH(keyword,title, description) AGAINST ',n_l_search,'))
+              UNION
+              (SELECT item_type item,faq_question title,faq_answer description,"faq" tag,MATCH(faq_question) AGAINST ',h_l_search,' As ScoreHigh,0 As ScoreMiddel,MATCH(faq_answer) AGAINST ',l_l_search,' As ScoreLow FROM sup_faq where (MATCH(faq_question, faq_answer) AGAINST ',n_l_search,'))
+              ORDER BY (ScoreHigh+ScoreMiddel+ScoreLow) DESC ',s_limit);
+
+-- SELECT @sql;
+-- SET @sql=CONCAT('SELECT *, ', 'MATCH(title) AGAINST ',   h_l_search,' As ScoreHigh, ', 'MATCH(description) AGAINST ',   l_l_search,'  As ScoreLow FROM search_test WHERE (', 'MATCH(title, description) AGAINST ',   n_l_search, ') ORDER BY (ScoreHigh+ScoreLow) DESC' );
+-- SET @sql=CONCAT('SELECT *, ', 'MATCH(title, description) AGAINST ',   n_l_search,' As Score FROM search_test WHERE (', 'MATCH(title) AGAINST ',   n_l_search, ') ORDER BY (ScoreHigh+ScoreLow) DESC' );
+-- SELECT @sql;
+PREPARE s1 FROM @sql;
+EXECUTE s1;
+DEALLOCATE PREPARE s1;
+
+END $$
+
+DELIMITER ;
+======================================================================================
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `sup_clone`.`split` $$
+CREATE PROCEDURE `sup_clone`.`split` (input text, delim VARCHAR(10))
+BEGIN
+
+DECLARE   foundPos  tinyint unsigned;
+DECLARE  tmpTxt   TEXT;
+DECLARE  delimLen   tinyint unsigned;
+DECLARE  element   text;
+
+DROP TEMPORARY TABLE IF EXISTS tmpValues;
+CREATE TEMPORARY TABLE tmpValues
+(
+ vals VARCHAR(1000) not null default ''
+) engine = memory;
+
+SET delimLen = length(delim);
+SET tmpTxt = input;
+
+SET foundPos = instr(tmpTxt,delim);
+WHILE (foundPos <> 0) DO
+ SET element = substring(tmpTxt, 1, foundPos-1);
+ SET tmpTxt = replace(tmpTxt, concat(element,delim), '');
+
+ INSERT INTO tmpValues (`vals`) VALUES ( element);
+
+ SET foundPos = instr(tmpTxt,delim);
+END WHILE;
+
+IF tmpTxt <> '' THEN
+ INSERT INTO tmpValues (`vals`) VALUES (tmpTxt);
+END IF;
+
+END $$
+
+DELIMITER ;

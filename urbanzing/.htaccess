@@ -1,0 +1,17 @@
+Options +FollowSymLinks
+
+RewriteEngine on
+
+RewriteBase /urbanzing/
+
+#RewriteCond %{http_host} ^(?!www)(.*) [NC]
+#RewriteRule ^(.*)$ http://www\.%1/$1 [R=301,NC,L]
+
+RewriteCond $1 !(^index\.php|gif$|jpg$|jpeg$|JPG$|JPEG$|GIF$|PNG$|BMP$|png$|bmp$|js$|php$|htm$|html$|css$|ttf$|txt$|xml$|pdf$|swf$|flv$|robots\.txt$|video_chat)
+RewriteRule ^(?!js\/tinymce)(?!paypal_ivn)(?!images)(.*?)(\.html|\.php|\/)?$ index.php/$1 [NC,L]
+
+RewriteRule ^(.*)$ - [NC,L] 
+
+#php_value session.gc_maxlifetime 86400
+
+php_value short_open_tag 1

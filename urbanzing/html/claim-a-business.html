@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>You Peel</title>
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script type="text/javascript">
+function Open(id)
+{
+var style = document.getElementById(id).style;
+
+if(style.display == "none")
+{
+style.display = "block";
+}
+else
+{
+style.display = "none";
+}
+}
+</script> 
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+</head>
+
+<body>
+	<div id="global">
+     	<!--Header Section Start-->
+     	<div id="header">
+          	<div class="header_top"></div>
+               <div class="header_mid">
+               	<div class="header_left">
+                    	<a href="index.html"><img src="images/logo.png" alt="" /></a>
+                    </div>
+                    <div class="header_right">
+                    	<div class="login">
+                         	<a href="login.html">login</a>&nbsp;&nbsp;  |   &nbsp;&nbsp;<a href="signup.html">Signup</a>&nbsp;&nbsp;&nbsp; <a href="#"><img align="absmiddle" src="images/face_book.png" alt="" /></a>                         
+                          </div>
+                         <div class="search_box">
+                         <form action="search_result_general.html" method="post">
+                         	<div class="cell_01">
+                              	<h1>Search for <span>(e.g. taco, cheap dinner, Max's)</span></h1>
+                                   <input type="text" />
+                              </div>
+                         	<div class="cell_02">
+                              	<h1>In <span>(Address, Neighborhood, City, State or Zip)</span></h1>
+                                   <input type="text" />
+                              </div>
+                              <div class="cell_03">
+                              	<input class="button_01" type="submit" value="GO >>" />
+                              </div>
+                              <div class="clear"></div>
+                              </form>
+                         </div>
+                         <div class="margin10"></div>
+                    </div>
+                    <div class="clear"></div>
+               </div>
+               <div class="header_botm">
+               	<div class="botm_left">
+                    	<div class="drop_down">
+                         	<ul id="sddm">
+                              	<li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">Kolkata</a>
+                                   <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                        <a href="#">Delhi</a>
+                                        <a href="#">Chenni</a>
+                                        <a href="#">Mumbai </a>
+                                        <a href="#">London</a>
+                                        <a href="#">Washington, D.C.</a>
+                              	</div>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="botm_right">
+                    <form name=form1 method=post >
+                    	<div class="cell_04">Invite friends</div>
+                         <div class="cell_05"><input id="abc" type=text name=type value='Friend’s Email Address' onclick="if(this.value=='Friend’s Email Address') document.getElementById('abc').value ='';" onblur="if(this.value=='') document.getElementById('abc').value ='Friend’s Email Address';"></div>
+                         <div class="cell_06"><input id="xyz" type="text" name="type" value="Your Name" onclick="if(this.value=='Your Name') document.getElementById('xyz').value ='';" onblur="if(this.value=='') document.getElementById('xyz').value ='Your Name';" /></div>
+                         <div class="cell_07"><input class="button_01" type="submit" value="GO >>" /></div>
+                      </form>
+                    </div>
+                    <div class="clear"></div>
+               </div>
+          </div>
+          <!--Header Section End-->
+          	
+               <!--Body Section Start-->
+          	<div id="body_part">
+               	<div class="top_sction">
+                    	<div class="menu">
+                         	<ul>
+                                <li><a href="index.html"><span>Home</span></a></li>
+                                <li><a href="restaurants.html"><span>Restaurants</span></a></li>
+                                <li><a href="club_pub.html"><span> Clubs &amp; Bars</span></a></li>
+                                <li><a href="parks_recreation.html"><span>Fun &amp; Entertainment</span></a></li>
+                                <li><a href="salon_spa.html"><span>Health &amp; Beauty</span></a></li>
+                                <li><a href="#"><span>Plan a party</span></a></li>
+                                <li><a href="deals.html"><span>View deals</span></a></li>
+                                <li><a href="get-listed.html"><span>Promote your business</span></a></li>
+                           </ul>
+                              <div class="clear"></div>
+                         </div>
+                    </div>
+                    <!--Menu Section End-->
+                    <div class="cont_sction">
+                    	<div class="margin15"></div>
+                         <div class="main_content">
+                         	<div class="left_panel">
+                              	<div class="plan_party">
+                                   	<h1>Claim a business <div class="back_btn"><a href="merchant_logged_in.html">Back</a></div>
+                                  	  </h1> 
+                                        <div class="margin15"></div>
+                                        <h5>How it works</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce quam ligula, aliquam eget, porttitor sodales, congue sit amet, elit. Aenean gravida augue vitae dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc quam. Vivamus arcu ipsum, mollis at, tincidunt at, sodales non, ipsum. Aenean vel elit. Donec adipiscing magna egestas felis. Vestibulum auctor ipsum ut sapien.</p>
+                                        <div class="margin10"></div>
+                                        <div class="border"></div>
+                                        <div class="margin15"></div>
+                                        <span class="search_text">Search Business</span>&nbsp;&nbsp; <input style="width:252px; height:18px;" type="text" /> &nbsp;<input class="button_01" type="submit" value="GO >>" />
+                                        <div class="margin15"></div>
+                                        <div class="result_search">
+                                        	<div class="search_cell_01"><h5>2 result found</h5></div>
+                                             <br />
+                                        </div>
+                                        <!--Ressult Cont-->
+                                     <div class="ressult_cont">
+                                       	  <div class="cont_img"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                       <div class="cont_mid">
+                                             <h3><a href="restaurants_details.html">Opaque - Dining In The Dark</a></h3>
+                                             <div class="margin5"></div>
+                                             <p>Cuisine: American, Californian ...</p>
+                                             <div class="margin5"></div>
+                                             <p><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /> <em>( Based on 100 reviews)</em></p>
+                                       </div>
+                                             <div class="cont_right">
+                                             	<span> Your Name : <input style="width:150px; height:18px;" type="text" /></span> <br />
+                                                  <div class="margin10"></div>
+                                                  <input type="checkbox" /> I certify that I’m the Owner of this Business <br />
+                                                  <div class="margin10"></div>
+                                                  <input class="button_04" type="submit" value="Claim this business >>" />
+                                       </div>
+                                             <br />
+                                     </div>
+                                        
+                                        <div class="ressult_cont">
+                                       	  <div class="cont_img"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                       <div class="cont_mid">
+                                             <h3><a href="restaurants_details.html">Opaque - Dining In The Dark</a></h3>
+                                             <div class="margin5"></div>
+                                             <p>Cuisine: American, Californian ...</p>
+                                             <div class="margin5"></div>
+                                             <p><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /> <em>( Based on 100 reviews)</em></p>
+                                       </div>
+                                             <div class="cont_right">
+                                             	<span> Your Name : <input style="width:150px; height:18px;" type="text" /></span> <br />
+                                                  <div class="margin10"></div>
+                                                  <input type="checkbox" /> I certify that I’m the Owner of this Business <br />
+                                                  <div class="margin10"></div>
+                                                  <input class="button_04" type="submit" value="Claim this business >>" />
+                                       </div>
+                                             <br />
+                                     </div>
+                                        
+								<!--Ressult Cont End-->
+                                        <br />
+                                        <div class="clear"></div>
+                                   </div>
+                              
+                              </div>
+                              <!--Left Panel End-->
+                         	<div class="right_panel">
+                              	<div class="feature_add">
+                                        <img src="images/img_01.jpg" alt="" />
+                                        <div class="margin15"></div>
+                                        <img src="images/img_02.jpg" alt="" />
+                                   </div>
+                              </div>
+                              <div class="clear"></div>
+                         </div>
+                    </div>
+                    
+                    <div class="botm_section"></div>
+               </div>
+               <!--Body Section End-->
+          <!--Footer Start-->
+          <div id="footer">
+          	<p>© Copyright 2010 All Rights Reserved You Peel</p>
+               <p>Designed &amp; Developed by: Acumen Consultancy Services</p>
+          </div>
+          
+          
+     </div>
+</body>
+</html>

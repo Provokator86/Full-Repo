@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>You Peel</title>
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery3.js"></script>
+<script>
+function slideToggle(id,imgid) {	
+	$('#'+imgid).html('');
+	if($('#'+id).css('display') == "block") {		
+		$('#'+imgid).html('<img align="absmiddle" src="images/plus_sign.png" />');
+	} else {
+		$('#'+imgid).html('<img align="absmiddle" src="images/minus_sign.png" />');
+	}
+	$('#'+id).slideToggle();
+}
+</script>
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+</head>
+
+<body>
+	<div id="global">
+     	<!--Header Section Start-->
+     	<div id="header">
+          	<div class="header_top"></div>
+               <div class="header_mid">
+               	<div class="header_left">
+                    	<a href="index.html"><img src="images/logo.png" alt="" /></a>
+                    </div>
+                    <div class="header_right">
+                    	<div class="login">
+                         	<a href="login.html">login</a>&nbsp;&nbsp;  |   &nbsp;&nbsp;<a href="signup.html">Signup</a>&nbsp;&nbsp;&nbsp; <a href="#"><img align="absmiddle" src="images/face_book.png" /></a>                         
+                          </div>
+                         <div class="search_box">
+                         <form action="search_result_general.html" method="post">
+                         	<div class="cell_01">
+                              	<h1>Search for <span>(e.g. taco, cheap dinner, Max's)</span></h1>
+                                   <input type="text" />
+                              </div>
+                         	<div class="cell_02">
+                              	<h1>In <span>(Address, Neighborhood, City, State or Zip)</span></h1>
+                                   <input type="text" />
+                              </div>
+                              <div class="cell_03">
+                              	<input class="button_01" type="submit" value="GO >>" />
+                              </div>
+                              <div class="clear"></div>
+                              </form>
+                         </div>
+                         <div class="margin10"></div>
+                    </div>
+                    <div class="clear"></div>
+               </div>
+               <div class="header_botm">
+               	<div class="botm_left">
+                    	<div class="drop_down">
+                         	<ul id="sddm">
+                              	<li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">Kolkata</a>
+                                   <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                        <a href="#">Delhi</a>
+                                        <a href="#">Chenni</a>
+                                        <a href="#">Mumbai </a>
+                                        <a href="#">London</a>
+                                        <a href="#">Washington, D.C.</a>
+                              	</div>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="botm_right">
+                    <form name=form1 method=post >
+                    	<div class="cell_04">Invite friends</div>
+                         <div class="cell_05"><input id="abc" type=text name=type value='Friend’s Email Address' onclick="if(this.value=='Friend’s Email Address') document.getElementById('abc').value ='';" onblur="if(this.value=='') document.getElementById('abc').value ='Friend’s Email Address';"></div>
+                         <div class="cell_06"><input id="xyz" type="text" name="type" value="Your Name" onclick="if(this.value=='Your Name') document.getElementById('xyz').value ='';" onblur="if(this.value=='') document.getElementById('xyz').value ='Your Name';" /></div>
+                         <div class="cell_07"><input class="button_01" type="submit" value="GO >>" /></div>
+                      </form>
+                    </div>
+                    <div class="clear"></div>
+               </div>
+          </div>
+          <!--Header Section End-->
+          	
+               <!--Body Section Start-->
+          	<div id="body_part">
+               	<div class="top_sction">
+                    	<div class="menu">
+                         	<ul>
+                                <li><a href="index.html"><span>Home</span></a></li>
+                                <li><a href="restaurants.html"><span>Restaurants</span></a></li>
+                                <li><a href="club_pub.html"><span> Clubs &amp; Bars</span></a></li>
+                                <li><a href="parks_recreation.html" class="current"><span>Fun &amp; Entertainment</span></a></li>
+                                <li><a href="salon_spa.html"><span>Health &amp; Beauty</span></a></li>
+                                <li><a href="add_edit_party.html"><span>Plan a party</span></a></li>
+                                <li><a href="deals.html"><span>View deals</span></a></li>
+                                <li><a href="get-listed.html"><span>Promote your business</span></a></li>
+                           </ul>
+                              <div class="clear"></div>
+                         </div>
+                    </div>
+                    <!--Menu Section End-->
+                    <div class="cont_sction">
+                    	<div class="margin15"></div>
+                         <div class="main_content">
+                         	<div class="left_panel">
+                              	<div class="club_pub">
+                                   	<h1>parks & Recreation</h1>
+                                        <div class="margin10"></div> 
+                                        <div class="left_cell">
+                                        	<h2>BROWSE BY:</h2>
+                                             <h3>Lorem ipsum</h3>
+                                             <ul>
+                                             	<li>Lorem ipsum (5)</li>
+                                                  <li>Dolor sit (10)</li>
+                                                  <li>Amet nakuo (15)</li>
+                                                  <li>Edipising (25)</li>
+                                                  <li>Consectutr (50)</li>
+                                             </ul>
+                                              <h6><a href="#">+ View all</a></h6>
+                                             <!--End first part-->
+                                             <h3>Avg. Entrée Price</h3>
+                                             <ul>
+                                             	<li>Below $50 (5)</li>
+                                                  <li>$50 - $150 (10)</li>
+                                                  <li>$150- $300 (15)</li>
+                                                  <li>$300 - $400 (25)</li>
+                                                  <li>$400 - $600 (20)</li>
+                                                  <li>Above $600 (5)</li>
+                                             </ul>
+                                              <h6><a href="#">+ View all</a></h6>
+                                             <!--End Second part-->
+                                             <h3>user rating</h3>
+                                             <ul>
+                                             	<li>5 Stars <img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /></li>
+                                                  <li>4 Stars <img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /></li>
+                                                  <li>3 Stars <img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /></li>
+                                                  <li>2 Stars <img src="images/star.png" alt="" /><img src="images/star.png" alt="" /></li>
+                                                  <li>1 Stars <img src="images/star.png" alt="" /></li>
+                                             </ul>
+                                             <!-- End Ratiing-->
+                                             <h3>Area / locality</h3>
+                                             <ul>
+                                             	<li>South Calcutta (5)</li>
+                                                  <li>Park Street (10)</li>
+                                                  <li>North Calcutta (15)</li>
+                                                  <li>Salt Lake (25)</li>
+                                                  <li>Howrah (50)</li>
+                                             </ul>
+                                             <h6><a href="#">+ View all</a></h6>
+                                             <!--End Location-->
+                                              <h3>Lorem Ipsum</h3>
+                                             <ul>
+                                             	<li>South Calcutta (5)</li>
+                                                  <li>Park Street (10)</li>
+                                             </ul>
+                                             <h6><a href="#">+ View all</a></h6>
+                                        </div>
+                                        <!--End Left Cell-->
+                                        <div class="right_cell">
+                                        	<div class="club_header">
+                                             	<h3>12345 results found</h3>
+                                                  <div class="sorting_box">Sort Results By : <select></select></div>
+                                                  <div class="clear"></div>
+                                             </div>
+                                             <!--Club Result Start -->
+                                             <div class="club_result">
+                                             	<div class="cell_04"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                         <div class="cell_05">
+                                                  	<h3><a href="restaurants_details.html">Nalban Wetland Eco Park</a> </h3>
+                                           <p>Salt Lake, Sector IV. <br />Kolkata - 700 091</p>
+                                                       <h6><a href="#">Request Coupon</a></h6>
+                                                  </div>
+                                                  <div class="cell_06">
+                                                  	<img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /> <em>( Based on 100 reviews)</em>
+                                                       <div class="margin15"></div>
+                                                       <p>Avg. Entree Price : $50 - $ 150</p>
+                                                       <p>Locality: Choringhee</p>
+                                                       <p>Phone: 123456789</p>
+                                                  </div>
+                                                  <div class="clear"></div>
+                                             </div>
+                                        	<!--Club Result End -->
+                                             <div class="club_result" style="background:#f3f3f3">
+                                             	<div class="cell_04"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                         <div class="cell_05">
+                                                  	<h3><a href="restaurants_details.html">Nicco Parks & Resorts Ltd</a></h3>
+                                           <p>15, Jawaharlal Nehru Road <br />Kolkata - 700 013</p>
+                                                       <h6><a href="#">Request Coupon</a></h6>
+                                                  </div>
+                                                  <div class="cell_06">
+                                                  	<img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /> <em>( Based on 100 reviews)</em>
+                                                       <div class="margin15"></div>
+                                                       <p>Avg. Entree Price : $50 - $ 150</p>
+                                                       <p>Locality: Choringhee</p>
+                                                       <p>Phone: 123456789</p>
+                                                  </div>
+                                                  <div class="clear"></div>
+                                             </div>
+                                             <div class="club_result">
+                                             	<div class="cell_04"><a href="#"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                  <div class="cell_05">
+                                                  	<h3><a href="#">Choringhee Bar</a></h3>
+                                                       <p>15, Jawaharlal Nehru Road <br />Kolkata - 700 013</p>
+                                                       <h6><a href="#">Request Coupon</a></h6>
+                                                  </div>
+                                                  <div class="cell_06">
+                                                  	<img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /> <em>( Based on 100 reviews)</em>
+                                                       <div class="margin15"></div>
+                                                       <p>Avg. Entree Price : $50 - $ 150</p>
+                                                       <p>Locality: Choringhee</p>
+                                                       <p>Phone: 123456789</p>
+                                                  </div>
+                                                  <div class="clear"></div>
+                                             </div>
+                                             <div class="club_result" style="background:#f3f3f3">
+                                             	<div class="cell_04"><a href="#"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                  <div class="cell_05">
+                                                  	<h3><a href="#">Choringhee Bar</a></h3>
+                                                       <p>15, Jawaharlal Nehru Road <br />Kolkata - 700 013</p>
+                                                       <h6><a href="#">Request Coupon</a></h6>
+                                                  </div>
+                                                  <div class="cell_06">
+                                                  	<img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /> <em>( Based on 100 reviews)</em>
+                                                       <div class="margin15"></div>
+                                                       <p>Avg. Entree Price : $50 - $ 150</p>
+                                                       <p>Locality: Choringhee</p>
+                                                       <p>Phone: 123456789</p>
+                                                  </div>
+                                                  <div class="clear"></div>
+                                             </div>
+                                             <div class="club_result">
+                                             	<div class="cell_04"><a href="#"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                  <div class="cell_05">
+                                                  	<h3><a href="#">Choringhee Bar</a></h3>
+                                                       <p>15, Jawaharlal Nehru Road <br />Kolkata - 700 013</p>
+                                                       <h6><a href="#">Request Coupon</a></h6>
+                                                  </div>
+                                                  <div class="cell_06">
+                                                  	<img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /> <em>( Based on 100 reviews)</em>
+                                                       <div class="margin15"></div>
+                                                       <p>Avg. Entree Price : $50 - $ 150</p>
+                                                       <p>Locality: Choringhee</p>
+                                                       <p>Phone: 123456789</p>
+                                                  </div>
+                                                  <div class="clear"></div>
+                                             </div>
+                                             <div class="club_result" style="background:#f3f3f3">
+                                             	<div class="cell_04"><a href="#"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                  <div class="cell_05">
+                                                  	<h3><a href="#">Choringhee Bar</a></h3>
+                                                       <p>15, Jawaharlal Nehru Road <br />Kolkata - 700 013</p>
+                                                       <h6><a href="#">Request Coupon</a></h6>
+                                                  </div>
+                                                  <div class="cell_06">
+                                                  	<img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /> <em>( Based on 100 reviews)</em>
+                                                       <div class="margin15"></div>
+                                                       <p>Avg. Entree Price : $50 - $ 150</p>
+                                                       <p>Locality: Choringhee</p>
+                                                       <p>Phone: 123456789</p>
+                                                  </div>
+                                                  <div class="clear"></div>
+                                             </div>
+                                             <div class="club_result">
+                                             	<div class="cell_04"><a href="#"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                  <div class="cell_05">
+                                                  	<h3><a href="#">Choringhee Bar</a></h3>
+                                                       <p>15, Jawaharlal Nehru Road <br />Kolkata - 700 013</p>
+                                                       <h6><a href="#">Request Coupon</a></h6>
+                                                  </div>
+                                                  <div class="cell_06">
+                                                  	<img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /><img src="images/star.png" alt="" /> <em>( Based on 100 reviews)</em>
+                                                       <div class="margin15"></div>
+                                                       <p>Avg. Entree Price : $50 - $ 150</p>
+                                                       <p>Locality: Choringhee</p>
+                                                       <p>Phone: 123456789</p>
+                                                  </div>
+                                                  <div class="clear"></div>
+                                             </div>
+                                             <div class="paging">
+                                             	<a href="#"><img src="images/arrow_left.png" alt="" /></a>
+                                                  <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a>
+                                                  <a href="#"><img src="images/arrow_right.png" alt="" /></a>
+                                             </div>
+                                             
+                                        </div>
+                                        <div class="clear"></div>
+                                   </div>
+                              </div>
+                              <!--Left Panel End-->
+                         	<div class="right_panel">
+                              	<div class="feature_add">
+                                        <img src="images/img_01.jpg" alt="" />
+                                        <div class="margin15"></div>
+                                        <img src="images/img_02.jpg" alt="" />
+                                   </div>
+                              </div>
+                              <div class="clear"></div>
+                         </div>
+                    </div>
+                    
+                    <div class="botm_section"></div>
+               </div>
+               <!--Body Section End-->
+          <!--Footer Start-->
+          <div id="footer">
+          	<p>© Copyright 2010 All Rights Reserved You Peel</p>
+               <p>Designed & Developed by: Acumen Consultancy Services</p>
+          </div>
+          
+          
+     </div>
+</body>
+</html>

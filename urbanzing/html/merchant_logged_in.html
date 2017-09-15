@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>You Peel</title>
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<link href="css/jquery.tabs.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/tooltip.js"></script>
+<script src="js/jquery.tabs.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	//hide message_body after the first one
+	$(".message_list .message_body:gt(0)").hide();
+	
+	//hide message li after the 5th
+	$(".message_list div:gt(4)").hide();
+
+	
+	//toggle message_body
+	$(".message_head").click(function(){
+		$(this).next(".message_body").slideToggle(500)
+		return false;
+	});
+
+	//collapse all messages
+	$(".collpase_all_message").click(function(){
+		$(".message_body").slideUp(500)
+		return false;
+	});
+
+	//show all messages
+	$(".show_all_message").click(function(){
+		$(this).hide()
+		$(".show_recent_only").show()
+		$(".message_list div:gt(4)").slideDown()
+		return false;
+	});
+
+	//show recent messages only
+	$(".show_recent_only").click(function(){
+		$(this).hide()
+		$(".show_all_message").show()
+		$(".message_list div:gt(4)").slideUp()
+		return false;
+	});
+
+});
+</script>
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+<!--For Tab-->
+<script type="text/javascript">
+  $(function() {
+	 $('#container-4').tabs({ fxFade: true, fxSpeed: 'fast' });
+	 $('#container-5').tabs({ fxFade: true, fxSpeed: 'fast' });
+  });
+  
+ 
+</script>
+</head>
+
+<body>
+	<div id="global">
+     	<!--Header Section Start-->
+     	<div id="header">
+          	<div class="header_top"></div>
+               <div class="header_mid">
+               	<div class="header_left">
+                    	<a href="index.html"><img src="images/logo.png" alt="" /></a>
+                    </div>
+                    <div class="header_right">
+                    	<div class="login">
+                         	<a href="login.html"></a>Your Account&nbsp;&nbsp;  |   &nbsp;&nbsp;<a href="signup.html">Signout</a>&nbsp;&nbsp;&nbsp; <a href="#"><img align="absmiddle" src="images/face_book.png" /></a>                         
+                          </div>
+                         <div class="search_box">
+                         <form action="search_result_general.html" method="post">
+                         	<div class="cell_01">
+                              	<h1>Search for <span>(e.g. taco, cheap dinner, Max's)</span></h1>
+                                   <input type="text" />
+                              </div>
+                         	<div class="cell_02">
+                              	<h1>In <span>(Address, Neighborhood, City, State or Zip)</span></h1>
+                                   <input type="text" />
+                              </div>
+                              <div class="cell_03">
+                              	<input class="button_01" type="submit" value="GO >>" />
+                              </div>
+                              <div class="clear"></div>
+                              </form>
+                         </div>
+                         <div class="margin10"></div>
+                    </div>
+                    <div class="clear"></div>
+               </div>
+               <div class="header_botm">
+               	<div class="botm_left">
+                    	<div class="drop_down">
+                         	<ul id="sddm">
+                              	<li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">Kolkata</a>
+                                   <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                        <a href="#">Delhi</a>
+                                        <a href="#">Chenni</a>
+                                        <a href="#">Mumbai </a>
+                                        <a href="#">London</a>
+                                        <a href="#">Washington, D.C.</a>
+                              	</div>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="botm_right">
+                    <form name=form1 method=post >
+                    	<div class="cell_04">Invite friends</div>
+                         <div class="cell_05"><input id="abc" type=text name=type value='Friend’s Email Address' onclick="if(this.value=='Friend’s Email Address') document.getElementById('abc').value ='';" onblur="if(this.value=='') document.getElementById('abc').value ='Friend’s Email Address';"></div>
+                         <div class="cell_06"><input id="xyz" type="text" name="type" value="Your Name" onclick="if(this.value=='Your Name') document.getElementById('xyz').value ='';" onblur="if(this.value=='') document.getElementById('xyz').value ='Your Name';" /></div>
+                         <div class="cell_07"><input class="button_01" type="submit" value="GO >>" /></div>
+                      </form>
+                    </div>
+                    <div class="clear"></div>
+               </div>
+          </div>
+          <!--Header Section End-->
+          	
+               <!--Body Section Start-->
+          	<div id="body_part">
+               	<div class="top_sction">
+                    	<div class="menu">
+                         	<ul>
+                                <li><a href="index.html"><span>Home</span></a></li>
+                                <li><a href="restaurants.html"><span>Restaurants</span></a></li>
+                                <li><a href="club_pub.html"><span> Clubs &amp; Bars</span></a></li>
+                                <li><a href="parks_recreation.html"><span>Fun &amp; Entertainment</span></a></li>
+                                <li><a href="salon_spa.html"><span>Health &amp; Beauty</span></a></li>
+                                <li><a href="add_edit_party.html"><span>Plan a party</span></a></li>
+                                <li><a href="deals.html"><span>View deals</span></a></li>
+                                <li><a href="get-listed.html"><span>Promote your business</span></a></li>
+                           </ul>
+                              <div class="clear"></div>
+                         </div>
+                    </div>
+                    <!--Menu Section End-->
+                    <div class="cont_sction">
+                    	<div class="margin15"></div>
+                         <div class="main_content">
+                         	<div class="left_panel">
+                              	<div class="user_logded">
+                                   	<h1>Hello Alex, Welcome back</h1>
+                                   	<div class="margin10"></div>
+                                        <h5>What do you want to do today?</h5>
+                                        <ul>
+                                        	<li><a href="add_edit_details.html">add a business</a></li>
+                                          <li>|</li>
+                                             <li><a href="claim-a-business.html">claim a business</a></li>
+                                          <li>|</li>
+                                             <li><a href="admin_coupons_deals.html">Administer Coupons/Deals</a></li>
+                                          <li>|</li>
+                                             <li><a href="view-edit-profile.html">Edit/Update Profile</a></li>
+                                  </ul>
+                                        <br />
+                                        <div class="margin5"></div>
+                                        <div class="border"></div>
+                                        <div class="margin10"></div>
+                                        <h2>Manage your Business</h2>
+                                        <div class="margin15"></div>
+                                        <div class="border"></div>
+                                        <div class="margin15"></div>
+                                       <!--Cafe Details-->
+                               		<div class="cafe_details">
+                                         	<div class="cafe_left">
+                                             	<h2>Lou's Cafe</h2>
+                                                  <div class="margin5"></div>
+                                                  <p><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /> <em>( Based on 100 reviews)</em></p>
+                                             	<div class="margin5"></div>
+                                                  <p>5017 Geary Boulevard San Francisco, CA 94118 <br />
+                                                      Locality: Outer Richmond <br />
+                                                      (415) 379-4429
+                                                   </p>
+                                                   <div class="margin10"></div>
+                                                   <span><a href="#">www.louscafesf.com</a></span> &nbsp;<a class="link_text" href="#">Edit details</a>
+                                             </div>
+                                        	<div class="cafe_right">
+                                             	<h5>Status : <span>Approved</span></h5>
+                                                  <div class="margin10"></div>
+                                                  <h5><a rel="imgtip[2]" href="#"><img align="absmiddle" src="images/icon_06.png" alt="" /></a> customer interest in coupon : <span>100</span></h5>
+                                             </div>
+                                             <br />
+                                        </div>
+                                         <!--Cafe Details End-->
+                                        <div id="container-4">
+                                        	<ul >
+                                                  <li><a href="#fragment-10">all Deals</a></li>
+                                                  <li>|</li>
+                                                  <li><a href="#fragment-11">Past Deals</a></li>
+                                                  <li>|</li>
+                                                  <li><a href="#fragment-12">Active Deals</a></li>
+                                                  <li>|</li>
+                                                  <li><a href="#fragment-13">Pending Deals</a></li>
+                  						 </ul>
+                                              <br />
+                                            <div id="fragment-10">
+                                            		<div class="active_detail">
+                                                       <div class="left_cell"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                       <div class="mid_cell">
+                                                       	<h5>Jul 02, 2010</h5>
+                                                            <div class="margin5"></div>
+                                                            <h4><a href="#">$40 for Four Weeks of Fitness Boot Camp from Bulldog Bootcamp ($195 Value).</a></h4>
+                                                            <div class="margin10"></div>
+                                                            <h5>Already Purchased : <span>100</span> <label>(113 more needed to get the deal)</label></h5>
+                                                       </div>
+                                                       <div class="right_cell">
+                                                       	<label>Price:  <span>$35</span></label>
+                                                            <label>Value:  <span>$35</span></label>
+                                                            <label>Saving:  <span>$35</span></label>
+                                                       </div>
+                                                       <br />
+                                                  </div>
+                                                  <div class="active_detail" style="background:#f3f3f3">
+                                                       <div class="left_cell"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                       <div class="mid_cell">
+                                                       	<h5>Feb 02, 2010</h5>
+                                                            <div class="margin5"></div>
+                                                            <h4><a href="#">$40 for Four Weeks of Fitness Boot Camp from Bulldog Bootcamp ($195 Value).</a></h4>
+                                                            <div class="margin10"></div>
+                                                            <h5>Already Purchased : <span>100</span> <label>(113 more needed to get the deal)</label></h5>
+                                                       </div>
+                                                       <div class="right_cell">
+                                                       	<label>Price:  <span>$35</span></label>
+                                                            <label>Value:  <span>$35</span></label>
+                                                            <label>Saving:  <span>$35</span></label>
+                                                       </div>
+                                                       <br />
+                                                  </div>
+                                                  <br />
+                                                  <div class="margin10"></div>
+                                                  <div class="border"></div>
+                                            </div>
+                                            <!--End First Tab-->
+                                            <div id="fragment-11">
+                                            
+                                            		<div class="active_detail">
+                                                       <div class="left_cell"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                       <div class="mid_cell">
+                                                       	<h5>Feb 02, 2010</h5>
+                                                            <div class="margin5"></div>
+                                                            <h4><a href="#">$40 for Four Weeks of Fitness Boot Camp from Bulldog Bootcamp ($195 Value).</a></h4>
+                                                            <div class="margin10"></div>
+                                                            <h5>Already Purchased : <span>100</span> <label>(113 more needed to get the deal)</label></h5>
+                                                       </div>
+                                                       <div class="right_cell">
+                                                       	<label>Price:  <span>$35</span></label>
+                                                            <label>Value:  <span>$35</span></label>
+                                                            <label>Saving:  <span>$35</span></label>
+                                                       </div>
+                                                       <br />
+                                                  </div>
+                                                  <div class="active_detail" style="background:#f3f3f3">
+                                                       <div class="left_cell"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                       <div class="mid_cell">
+                                                       	<h5>Feb 02, 2010</h5>
+                                                            <div class="margin5"></div>
+                                                            <h4><a href="#">$40 for Four Weeks of Fitness Boot Camp from Bulldog Bootcamp ($195 Value).</a></h4>
+                                                            <div class="margin10"></div>
+                                                            <h5>Already Purchased : <span>100</span> <label>(113 more needed to get the deal)</label></h5>
+                                                       </div>
+                                                       <div class="right_cell">
+                                                       	<label>Price:  <span>$35</span></label>
+                                                            <label>Value:  <span>$35</span></label>
+                                                            <label>Saving:  <span>$35</span></label>
+                                                       </div>
+                                                       <br />
+                                                  </div>
+                                                  <br />
+                                                  <div class="margin10"></div>
+                                                  <div class="border"></div>
+                                            </div>
+                                             <!--End Second Tab-->
+                                            <div id="fragment-12">
+                                            
+                                            		<div class="active_detail">
+                                                       <div class="left_cell"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                       <div class="mid_cell">
+                                                       	<h5>Jul 02, 2010</h5>
+                                                            <div class="margin5"></div>
+                                                            <h4><a href="#">$40 for Four Weeks of Fitness Boot Camp from Bulldog Bootcamp ($195 Value).</a></h4>
+                                                            <div class="margin10"></div>
+                                                            <h5>Already Purchased : <span>100</span> <label>(113 more needed to get the deal)</label></h5>
+                                                       </div>
+                                                       <div class="right_cell">
+                                                       	<label>Price:  <span>$35</span></label>
+                                                            <label>Value:  <span>$35</span></label>
+                                                            <label>Saving:  <span>$35</span></label>
+                                                       </div>
+                                                       <br />
+                                                  </div>
+                                                  <div class="active_detail" style="background:#f3f3f3">
+                                                       <div class="left_cell"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                       <div class="mid_cell">
+                                                       	<h5>Jul 02, 2010</h5>
+                                                            <div class="margin5"></div>
+                                                            <h4><a href="#">$40 for Four Weeks of Fitness Boot Camp from Bulldog Bootcamp ($195 Value).</a></h4>
+                                                            <div class="margin10"></div>
+                                                            <h5>Already Purchased : <span>100</span> <label>(113 more needed to get the deal)</label></h5>
+                                                       </div>
+                                                       <div class="right_cell">
+                                                       	<label>Price:  <span>$35</span></label>
+                                                            <label>Value:  <span>$35</span></label>
+                                                            <label>Saving:  <span>$35</span></label>
+                                                       </div>
+                                                       <br />
+                                                  </div>
+                                                  <br />
+                                                  <div class="margin10"></div>
+                                                  <div class="border"></div>
+                                            </div>
+                                             <!--End Third Tab-->
+                                            <div id="fragment-13">
+                                            
+                                            		<div class="active_detail">
+                                                       <div class="left_cell"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                       <div class="mid_cell">
+                                                       	<h5>Nov. 02, 2010</h5>
+                                                            <div class="margin5"></div>
+                                                            <h4><a href="#">$40 for Four Weeks of Fitness Boot Camp from Bulldog Bootcamp ($195 Value).</a></h4>
+                                                            <div class="margin10"></div>
+                                                            <h5>Already Purchased : <span>100</span> <label>(113 more needed to get the deal)</label></h5>
+                                                       </div>
+                                                       <div class="right_cell">
+                                                       	<label>Price:  <span>$35</span></label>
+                                                            <label>Value:  <span>$35</span></label>
+                                                            <label>Saving:  <span>$35</span></label>
+                                                       </div>
+                                                       <br />
+                                                  </div>
+                                                  <div class="active_detail" style="background:#f3f3f3">
+                                                       <div class="left_cell"><a href="restaurants_details.html"><img src="images/img_03.jpg" alt="" /></a></div>
+                                                       <div class="mid_cell">
+                                                       	<h5>Nov. 02, 2010</h5>
+                                                            <div class="margin5"></div>
+                                                            <h4><a href="#">$40 for Four Weeks of Fitness Boot Camp from Bulldog Bootcamp ($195 Value).</a></h4>
+                                                            <div class="margin10"></div>
+                                                            <h5>Already Purchased : <span>100</span> <label>(113 more needed to get the deal)</label></h5>
+                                                       </div>
+                                                       <div class="right_cell">
+                                                       	<label>Price:  <span>$35</span></label>
+                                                            <label>Value:  <span>$35</span></label>
+                                                            <label>Saving:  <span>$35</span></label>
+                                                       </div>
+                                                       <br />
+                                                  </div>
+                                                  <br />
+                                                  <div class="margin10"></div>
+                                                  <div class="border"></div>
+                                            </div>
+                                             <!--End Last Tab-->
+                                        </div>
+                                         <!--Tab Sction End-->
+                                         <div class="margin10"></div>
+                                         <!--Cafe Details-->
+                                         <div class="cafe_details">
+                                         	<div class="cafe_left">
+                                             	<h2>Lou's Cafe</h2>
+                                                  <div class="margin5"></div>
+                                                  <p><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /><img src="../html/images/star.png" alt="" /> <em>( Based on 100 reviews)</em></p>
+                                             	<div class="margin5"></div>
+                                                  <p>5017 Geary Boulevard San Francisco, CA 94118 <br />
+                                                      Locality: Outer Richmond <br />
+                                                      (415) 379-4429
+                                                   </p>
+                                                   <div class="margin10"></div>
+                                                   <span><a href="#">www.louscafesf.com</a></span> &nbsp;<a class="link_text" href="#">Edit details</a>
+                                             </div>
+                                        	<div class="cafe_right">
+                                             	<h5>Status : <span>Pending</span></h5>
+                                                  <div class="margin10"></div>
+                                                  <p class="color_text">In order to make sure you are the true owner of this business we will send you a secret code in the mail in 4-5 business days.Enter the code here to unlock your business.</p>
+                                             	<div class="margin10"></div>
+                                                  <label>Enter Code Here :</label> <input type="text" /> <br />
+                                                  <div class="margin10"></div>
+                                                  <input class="button_06" type="submit" value="unlock your business >>" />
+                                             </div>
+                                             <br />
+                                        </div>
+                                        
+                                        <!--Tab Section Start--> 
+                                         <div id="container-5">
+                                        	<ul >
+                                                  <li><a href="#fragment-14">all Deals</a></li>
+                                                  <li>|</li>
+                                                  <li><a href="#fragment-15">Past Deals</a></li>
+                                                  <li>|</li>
+                                                  <li><a href="#fragment-16">Active Deals</a></li>
+                                                  <li>|</li>
+                                                  <li><a href="#fragment-17">Pending Deals</a></li>
+                  						 </ul>
+                                              <br />
+                                            <div id="fragment-14">
+                                            	
+                                            </div>
+                                            <!--End First Tab-->
+                                            <div id="fragment-15">
+                                            
+                                            </div>
+                                             <!--End Second Tab-->
+                                            <div id="fragment-16">
+                                            
+                                            </div>
+                                             <!--End Third Tab-->
+                                            <div id="fragment-17">
+                                            
+                                            </div>
+                                             <!--End Last Tab-->
+                                        </div>
+                                        
+                                         
+                                         
+
+                                   </div>
+                              </div>
+                              <!--Left Panel End-->
+                         	<div class="right_panel">
+                              	<div class="feature_add">
+                                        <img src="images/img_01.jpg" alt="" />
+                                        <div class="margin15"></div>
+                                        <img src="images/img_02.jpg" alt="" />
+                                   </div>
+                              </div>
+                              <div class="clear"></div>
+                         </div>
+                    </div>
+                    
+                    <div class="botm_section"></div>
+               </div>
+               <!--Body Section End-->
+          <!--Footer Start-->
+          <div id="footer">
+          	<p>© Copyright 2010 All Rights Reserved You Peel</p>
+               <p>Designed & Developed by: Acumen Consultancy Services</p>
+          </div>
+          
+          
+     </div>
+</body>
+</html>

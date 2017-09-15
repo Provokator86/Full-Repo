@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-latest.pack.js"></script>
+<script type="text/javascript" src="thickbox.js"></script>
+<link rel="stylesheet" href="thickbox.css" type="text/css" media="screen" />
+
+<script>
+
+$(document).ready(function(){
+     // tb_show('CD ROM Order','abc.txt?height=120&width=400','images/cart.jpg');
+});
+
+function test() {
+       tb_show('CD ROM Order','abc.txt?height=120&width=400','images/cart.jpg');
+}
+</script>
+</head>
+
+<body >
+    <a href="abc.txt?height=300&width=300&modal=true" title="add a caption to title attribute / or leave blank" class="thickbox">Scrolling content</a>  <br/>
+<a href="abc.txt?height=220&width=400" class="thickbox" title="add a caption to title attribute / or leave blank">No-scroll content</a>  <br/>
+<a href="abc.txt?height=85&width=250&modal=true" class="thickbox" title="Please Sign In">login (modal)</a>  <br/>
+<a href="abc.txt?height=200&width=300" class="thickbox" title="">Update ThickBox content</a>
+<br/>
+<input type="button" value="click" onclick="test()">
+</body>
+</html> 

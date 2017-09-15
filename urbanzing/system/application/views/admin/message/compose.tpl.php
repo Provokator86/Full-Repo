@@ -1,0 +1,74 @@
+<table id="tbl_content_area" width="100%" border="0" cellspacing="0" cellpadding="5">
+
+	<tr><td height="1px"></td></tr>
+	<tr>
+      <td align="left" valign="middle" bgcolor="#FFFFFF" style="border:1px dotted #999999;" height="100%">
+	  	 <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+		  <tr>
+		  	<td style="border-right:1px dotted #999999; width:25%; background:#F3F3F3;" valign="top" align="left">
+			   <?php $this->load->view('admin/common/menu_report.tpl.php');	?>
+			</td>
+			<td style="width:75%;" valign="top" align="center">
+				<table width="90%" border="0" cellspacing="0" cellpadding="0" style="margin-top:40px;">
+					  <tr>
+						<td width="110" class="td_tab_main" align="center" valign="middle">Compose</td>
+						<td>&nbsp;</td>
+					  </tr>
+				</table>
+			    <table width="90%" border="0" cellspacing="0" cellpadding="10" style="border:1px solid #999999;">
+					  <tr>
+						<td align="center" valign="middle">
+                            <form id="frm_message" name="frm_message" method="post" action="<?=base_url().'admin/message/send_compose'?>" onsubmit="return change_validate()">
+							<table width="100%" border="0" cellspacing="0" cellpadding="7">
+                                <tr>
+								<td width="140" align="right" valign="middle" class="field_title">&nbsp;<strong>Name : </strong></td>
+								<td align="left" valign="middle"><input id="name" name="name" type="text" class="textfield" style="width:200px;" value="<?=$message[0]['m_name']?>" /></td>
+							  </tr>
+                                <tr>
+								<td width="140" align="right" valign="middle" class="field_title"><span style="color:#8B0000;">*</span>&nbsp;<strong>Message To : </strong></td>
+								<td align="left" valign="middle"><input id="email" name="email" type="text" class="textfield" style="width:200px;" value="<?=$message[0]['m_email']?>" /></td>
+							  </tr>
+							  
+							  <tr>
+								<td width="140" align="right" valign="top" class="field_title"><span style="color:#8B0000;">*</span>&nbsp;<strong>Message Body : </strong></td>
+								<td align="left" valign="middle">
+									<textarea rows="10" cols="30" name="message" id="message"></textarea>
+								</td>
+							  </tr>
+							  </table>
+							<table width="100%" border="0" cellspacing="0" cellpadding="7">
+							  <tr>
+								<td width="140" align="right" valign="middle">&nbsp;</td>
+								<td width="80" align="left" valign="middle">
+                                    <input type="hidden" id="id" name="id" value="<?=$message[0]['m_id']?>">
+                                    <input name="change_id" type="button" class="button" value="Submit" onclick="ck_page()" /></td>
+                                <td align="left" valign="middle"><input name="reset1" type="reset" class="button" value="Back" onclick="window.location.href='<?=$redirect_url?>';" /></td>
+							  </tr>
+							</table>
+                            <script type="text/javascript">
+                                function ck_page()
+                                {
+                                    var cntrlArr    = new Array('email','message');
+                                    var cntrlMsg    = new Array('Please give the email address','Please give the message body');
+                                    if(ck_blank(cntrlArr,cntrlMsg)==true)
+                                    {
+                                        cntrlArr    = new Array('email');
+                                        cntrlMsg    = new Array('Please give a proper admin email ID');
+                                        if(validateEmail(cntrlArr,cntrlMsg)==true)
+                                        {
+                                            document.frm_message.submit();//it will submit the form if responce true
+                                        }
+                                    }
+                                }
+                             </script>
+						  </form>
+									</td>
+					  </tr>
+					</table>
+			</td>
+		  </tr>
+		 </table>
+	  </td>
+    </tr>
+	<tr><td height="1px;"></td></tr>
+  </table>

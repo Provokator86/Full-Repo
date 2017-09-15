@@ -1,0 +1,495 @@
+@charset "iso-8859-1";
+/*	---------------------------------------------------------------	*/
+/*	-------------	CSS - HEADER + FOOTER SECTIONS	----------------	*/
+/*	---------------------------------------------------------------	*/
+body {
+	font-size:11px;
+	text-align:center;
+	font-family: Tahoma, Verdana, Arial;
+	margin:0px;
+	padding:2px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	background-color: #ffffff;
+}
+form	{
+	padding: 0px;
+	margin: 0px;
+}
+#tbl_header {
+	height: 60px;
+	background-color: #484848;
+}
+#tbl_footer {
+	background-color: #484848;
+	padding: 5px;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+#tbl_welcome	{
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 3px;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	
+}
+.header_caption	{
+	font-family: "Trebuchet MS", Tahoma, Verdana, Arial;
+	font-size: 36px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-left: 20px;
+	
+}
+a.headerLinks	{
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: underline;	
+}
+a.headerLinks:hover	{
+	text-decoration: none;
+	font-size: 11px;
+	font-weight:bold;
+	color: #ffffff;
+}
+
+/*	---------------------------------------------------------------	*/
+/*	--------------------	CSS - LEFT MENU PANEL	-------------------	*/
+/*	---------------------------------------------------------------	*/
+#td_menu_panel	{
+	width: 200px;
+	background-color: #CCCCCC;
+	text-align: left;
+	vertical-align: top;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #666666;
+	
+}
+/*	---------------------------------------------------------------	*/
+/*	--------------------	CSS - GENERAL LINKS	-------------------	*/
+/*	---------------------------------------------------------------	*/
+a.generalLink	{
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: underline;
+}
+a.generalLink:hover	{
+	text-decoration: none;
+	color: #ffffff;
+	font-weight:bold;
+	text-decoration: underline;
+}
+/*	---------------------------------------------------------------	*/
+/*	--------------------------	CSS - GENERAL	---------------------	*/
+/*	---------------------------------------------------------------	*/
+.td_tab_left	{
+	width: 10px;
+	border-left-color: #000000;
+	background-color: #666666;
+	border-bottom-color: #000000;
+	border-right-color: #000000;
+}
+.td_tab_main{
+	font-family: "Trebuchet MS", Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #484848;
+	padding-left:50px;
+	text-align:center;
+}
+.tblContainer{
+padding:7px;
+border:#484848 solid 3px;
+width:400px;
+}
+.tbl_contain{
+ background: #484848;
+}
+.field_title_login {
+ color:#FFFFFF;
+ font-weight:bold;
+}
+.field_title {
+ color:#000000;
+ font-weight:bold;
+}
+.textfield	{
+	border: 1px solid #999999;
+	height: 15px;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	padding-top: 1px;
+	padding-right: 2px;
+	padding-bottom: 1px;
+	padding-left: 2px;
+}
+.textfield_login	{
+	border: 1px solid #999999;
+	height: 15px;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	padding-top: 1px;
+	padding-right: 2px;
+	padding-bottom: 1px;
+	padding-left: 12px;
+	background: url(../images/admin/login.jpg) no-repeat center left #FFFFFF;
+}
+
+.textfield_login_pass	{
+	border: 1px solid #999999;
+	height: 15px;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	padding-top: 1px;
+	padding-right: 2px;
+	padding-bottom: 1px;
+	padding-left: 12px;
+	background: url(../images/admin/key.jpg) no-repeat center left #FFFFFF;
+}
+
+.text_area{
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #999999;
+	padding: 2px;
+}
+.combobox	{
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #333333;
+}
+.button	{
+	background-image: url(../images/admin/button_bg.gif);
+	height: 20px;
+	width: 80px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.button_small	{
+	background-image: url(../images/admin/button_bg_small.gif);
+	height: 20px;
+	width: 40px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 9px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/*	---------------------------------------------------------------	*/
+/*	-------------------------	CSS - MESSAGES	---------------------	*/
+/*	---------------------------------------------------------------	*/
+.msg_error	{
+	background-color: #F8F8F8;
+	text-align: left;
+	vertical-align: middle;
+	border: 1px solid #E2E2E2;
+	background-image: url(../images/admin/icon_error.gif);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	font-family: "Trebuchet MS", Tahoma, Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0000;
+	margin: 5px;
+	text-indent: 20px;
+}
+.msg_success	{
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	border: 1px solid #F4F4F4;
+	background-image: url(../images/admin/icon_success.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	font-family: "Trebuchet MS", Tahoma, Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #990000;
+	margin: 5px;
+	text-indent: 20px;
+}
+.msg_no_data	{
+}
+/*	---------------------------------------------------------------	*/
+/*	-------------------------	CSS - MESSAGES	---------------------	*/
+/*	---------------------------------------------------------------	*/
+.pageCaption	{
+	font-family: "Trebuchet MS", Tahoma, Verdana, Arial;
+	font-size: 22px;
+	font-weight: bold;
+	color: #000000;
+}
+.columnHeadings	{
+	font-family: "Trebuchet MS", Tahoma, Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #333333;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #4F4F4F;
+}
+.columnDataGrey	{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+	background-color: #F9F9F9;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.columnDataWhite	{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+	background-color: #FFFFFF;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+a.optionLink{
+	font-family: "Trebuchet MS", Tahoma, Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+}
+a.optionLink:hover{
+	text-decoration: underline;
+}
+a.paging{
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #990000;
+	text-decoration:underline;
+}
+a.paging:hover{
+	text-decoration:none;
+}
+
+
+#pointermenu{
+border-top: 7px solid black; /*optional border across top*/
+margin: 0;
+padding: 0;
+width:700px;
+}
+
+#pointermenu ul{
+margin: 0;
+margin-left: 15px; /*menu offset from left edge of window*/
+float: left;
+padding-left: 8px;
+font: bold 13px Verdana;
+background-color: black;
+background: black url(../images/admin/leftround.gif) bottom left no-repeat; /*optional left round corner*/
+}
+
+* html #pointermenu ul{ /*IE6 only rule. Decrease ul left margin and add 1em bottom margin*/
+margin-bottom: 1em;
+margin-left: 7px; /*menu offset from left edge of window in IE*/
+}
+
+#pointermenu ul li{
+display: inline;
+}
+
+
+#pointermenu ul li a{
+float: left;
+color: white;
+font-weight: bold;
+padding: 2px 11px 7px 7px;
+text-decoration: none;
+background: url(../images/admin/pointer.gif) bottom center no-repeat;
+}
+
+#pointermenu ul li a:visited{
+color: white;
+}
+
+
+#pointermenu ul li a:hover, #pointermenu ul li a#selected{ /*hover and selected link*/
+color: white;
+background-color: darkred;
+}
+
+#pointermenu ul li a#rightcorner{
+padding-right: 0;
+padding-left: 2px;
+background: url(../images/admin/rightround.gif) bottom right no-repeat; /*optional right round corner*/
+}
+.heading{
+background:url(../images/admin/setting.jpg) no-repeat left center;
+color:#666666;
+font-size:15px;
+font-weight:bold;
+width:30px;
+height:31px;
+padding-left:30px;
+margin-left:10px;
+width:75%;
+}
+.sub_heading{
+font-size:13px;
+font-weight:bold;
+color:#8B0000;
+padding-left:50px;
+margin-top:5px;
+}
+.sub_heading a{
+font-size:13px;
+font-weight:bold;
+color:#8B0000;
+text-decoration:none;
+}
+.sub_heading ul {
+   /*margin:5px;*/
+   }
+.sub_heading ul li a{
+font-size:11px;
+color:#999999;
+}
+.sub_heading ul li a:hover{
+font-size:11px;
+color:#000000;
+}
+sub_heading img {
+vertical-align:middle;
+}
+.subMenuHeading{
+color:#666666;
+font-size:15px;
+font-weight:bold;
+width:30px;
+height:31px;
+margin-left:15px;
+margin-top:10px;
+width:75%;
+}
+
+
+.member_level {width:1000px; margin:0 auto; background:#FFFFFF; padding-bottom:20px; padding-top:20px; padding-left:1px; padding-right:1px;}
+.member_level p { text-align:center; font-size:12px; color:#000000;}
+.member_level .level_04 { background:url(../images/admin/tree_3.png) no-repeat center top; padding-top:30px;}
+.member_level .level_04 .cell_01 { width:110px; float:left; text-align:center;}
+.member_level .level_04 .cell_02 { width:110px; float:right; text-align:center;}
+.member_level .level_03 { background:url(../images/admin/tree_2.png) no-repeat center top; padding-top:30px;}
+.member_level .level_03 .cell_03 {width:240px; float:left; text-align:center; padding-left:10px;}
+.member_level .level_03 .cell_04 {width:240px; float:right; text-align:center; padding-right:10px;}
+.member_level .level_02 {background:url(../images/admin/tree_1.png) no-repeat center top; padding-top:30px;}
+.member_level .level_02 .cell_05 {width:490px; float:left; text-align:center; padding-left:10px;}
+.member_level .level_02 .cell_06 {width:490px; float:right; text-align:center; padding-right:10px;}
+.member_level .level_01 { text-align:center;}
+
+
+
+edit_details {}
+.edit_details h1 {font-family:"Helvetica 45 Light"; font-size:20px; color:#2a4b48; font-weight:normal; text-transform:uppercase; border-bottom:1px dotted #cccccc; padding-bottom:10px;}
+.edit_details .back_btn { width:80px; font-size:12px; float:right; text-align:right; padding-top:5px;}
+.edit_details h1 .back_btn a { color:#273d3b; text-decoration:none;}
+.edit_details h1 .back_btn a:hover { text-decoration:underline;}
+.edit_details h2 {font-family:"Helvetica 45 Light"; font-size:20px; color:#2a4b48; font-weight:normal; text-transform:uppercase;}
+.edit_details p { font-size:12px; color:#545454;}
+.edit_details h5 {font-size:12px; color:#ff790a; text-transform:uppercase;}
+.edit_details h6 {font-size:11px; color:#eb1018; font-weight:normal; }
+.edit_details table td { padding:3px 10px 3px 10px; font-size:12px; color:#545454;}
+.edit_details table td span { color:#eb1018; font-weight:bold;}
+.edit_details table td strong  { color:#eb1018; font-weight:normal; color:#545454; font-size:11px;}
+.edit_details table td strong a { color:#eb1018;}
+.edit_details table td strong a:hover {text-decoration:none;}
+.edit_details table td input[type="text"] { background:url(../images/front/input_bg2.png) repeat-x; height:22px; border:1px solid #dfdfdf; width:380px;}
+.edit_details table td select { background:url(../images/front/input_bg2.png) repeat-x; height:22px; border:1px solid #dfdfdf; width:382px;}
+.edit_details table td input[type="file"] { background:url(../images/front/input_bg2.png) repeat-x; height:22px; border:1px solid #dfdfdf; width:380px;}
+.edit_details table td textarea {border:1px solid #dfdfdf; width:380px; height:112px;}
+
+
+
+.sign_up { width:700px;}
+.sign_up h1 {font-family:"Helvetica 45 Light"; font-size:20px; color:#2a4b48; font-weight:normal; text-transform:uppercase; border-bottom:1px dotted #cccccc; padding-bottom:10px;}
+.sign_up h1 .back_btn { width:80px; font-size:12px; float:right; text-align:right; padding-top:5px;}
+.sign_up h1 .back_btn a { color:#273d3b; text-decoration:none;}
+.sign_up h1 .back_btn a:hover { text-decoration:underline;}
+.sign_up h2 {font-family:"Helvetica 45 Light"; font-size:20px; color:#2a4b48; font-weight:normal; text-transform:uppercase;}
+.sign_up p { font-size:12px; color:#545454;}
+.sign_up .signup_left { float:left;}
+.sign_up .signup_left h3 { color:#ff790a; font-size:12px; text-transform:uppercase;}
+.sign_up .signup_left h6 { font-size:11px; color:#eb1018; font-weight:normal; padding-top:10px;}
+.sign_up .signup_left h6 a {font-size:11px; color:#eb1018; font-weight:bold; text-decoration:none;}
+.sign_up .signup_left h6 a:hover { text-decoration:underline;}
+.sign_up  h5 {font-size:12px; color:#eb1018; padding-bottom:15px;}
+.sign_up .signup_left table td { padding:3px 10px 3px 10px; font-size:12px; color:#545454;}
+.sign_up .signup_left table td span { color:#eb1018; font-weight:bold;}
+.sign_up .signup_left table td input[type="text"] { background:url(../images/front/input_bg2.png) repeat-x; height:22px; width:290px; border:1px solid #dfdfdf; }
+.sign_up .signup_left table td input[type="password"] { background:url(../images/front/input_bg2.png) repeat-x; height:22px; width:290px; border:1px solid #dfdfdf; }
+.sign_up .signup_left table td select { background:url(../images/front/input_bg2.png) repeat-x; height:22px; border:1px solid #dfdfdf;}
+.sign_up .signup_left table td input[type="file"] { background:url(../images/front/input_bg2.png) repeat-x; height:22px; border:1px solid #dfdfdf; width:290px;}
+.sign_up .signup_left table td textarea { width:290px;border:1px solid #dfdfdf; height:92px; background:url(../images/front/textarea_bg.png) repeat-x;}
+.sign_up .signup_right { width:270px;float:right; text-align:center}
+.sign_up .signup_right h3 { color:#ff790a; font-size:12px; text-transform:uppercase;}
+.sign_up .upload_picture { border-bottom:1px dotted #cccccc; margin-bottom:20px;}
+.sign_up .upload_picture td { font-size:12px; color:#545454; padding:3px 10px 3px 10px;}
+.sign_up .upload_picture input[type="text"] { background:url(../images/front/input_bg2.png) repeat-x; height:22px; width:290px; border:1px solid #dfdfdf; }
+.sign_up .upload_picture input[type="password"] { background:url(../images/front/input_bg2.png) repeat-x; height:22px; width:290px; border:1px solid #dfdfdf; }
+.sign_up .upload_picture input[type="file"] { background:url(../images/front/input_bg2.png) repeat-x; height:22px; border:1px solid #dfdfdf; width:290px;}
+.sign_up .upload_picture textarea { width:290px;border:1px solid #dfdfdf; height:92px; background:url(../images/front/textarea_bg.png) repeat-x;}
+.sign_up .upload_picture td strong { color:#FF0000;}
+.sign_up .upload_picture span { font-size:11px;}
+.sign_up .upload_picture span a { color:#eb1018; text-decoration:underline;}
+.sign_up .upload_picture h3 { color:#ff790a; font-size:12px; text-transform:uppercase;}
+.sign_up .upload_picture h6  {font-size:11px; font-weight:normal; color:#eb1018; text-decoration:none;}
+.sign_up .upload_picture select { background:url(../images/front/input_bg2.png) repeat-x; height:22px; border:1px solid #dfdfdf;}
