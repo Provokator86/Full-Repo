@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<tmx version="1.4">
+ <header creationtool="TMXWriter" creationtoolversion="0.1" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="en" o-tmf="ABCTransMem"></header>
+ <body>
+  <tu tuid="Home" datatype="plaintext">
+   <prop type="page">/views/fe/common/header.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>SG9tZQ==</seg>
+   </tuv>
+  </tu>
+  <tu tuid="Post a Job" datatype="plaintext">
+   <prop type="page">/views/fe/common/header.tpl.php</prop>
+   <tuv xml:lang="en">
+    <seg>UG9zdCBhIEpvYg==</seg>
+   </tuv>
+  </tu>
+ </body>
+</tmx>
