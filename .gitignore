@@ -8,19 +8,20 @@ bin-release/
 # Other files and folders
 .settings/
 /All-SQL-8FEB-2016
-/AMS+WSDL
+# /AMS+WSDL
 /client.entrustgroup.com
 /cnp
-/eshoppinx
-/guru
-/hizmetuzmani
-/jae
-/jobshoppa
-/mydealfound
+# /eshoppinx
+# /guru
+# /hizmetuzmani
+# /jae
+# /jobshoppa
+# /mydealfound
 /mydirection
-/quoteurjob
-/tripezi
-/urbanzing
+# /quoteurjob
+# /tripezi
+# /urbanzing
+/business
 /zeevant.zip
 
 # Executables

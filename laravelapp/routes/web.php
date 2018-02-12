@@ -38,6 +38,10 @@ Route::get('/tasks/{task}', function ($id) {
 });
 */
 
+// ajax call
+Route::get('manage-item-ajax', 'ItemAjaxController@manageItemAjax');
+Route::resource('item-ajax', 'ItemAjaxController');
+
 // how to use with controllers
 Route::get('/task-list', 'TasksController@showList');
 Route::get('/tasks/{task}', 'TasksController@showDetails');

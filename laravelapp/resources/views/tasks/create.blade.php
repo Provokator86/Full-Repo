@@ -10,7 +10,7 @@
 			<div class="col-md-4">
 				<div class="form-group row">
 					<label for="formGroupTitle">Title</label>
-					<input type="text" class="form-control" id="formGroupTitle" name="formGroupTitle" placeholder="Title">
+					<input type="text" class="form-control" id="formGroupTitle" name="formGroupTitle" value="{{ old('formGroupTitle')}}" placeholder="Title">
 				</div>
 				
 				<div class="form-group row">
