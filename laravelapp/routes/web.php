@@ -38,6 +38,13 @@ Route::get('/tasks/{task}', function ($id) {
 });
 */
 
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/', function () {	return view('welcome');	});
+
+
 // ajax call
 Route::get('manage-item-ajax', 'ItemAjaxController@manageItemAjax');
 Route::resource('item-ajax', 'ItemAjaxController');
@@ -52,17 +59,37 @@ Route::post('/task/update/{id}', 'TasksController@update');
 Route::get('/task/delete/{id}', 'TasksController@delete');
 
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/about', function () {
 	$name = 'Laravel';
-    //return view('about', ['name' => 'Mrinmoy']);
-    //return view('about', ['name' => $name]);
+	//return view('about', ['name' => 'Mrinmoy']);
+	//return view('about', ['name' => $name]);
    // return view('about', compact('name'));
    
-    $names = ['Jajabor Samanta', 'Mrinmoy Mondal', 'Nabarun S. Sarkar'];
-    return view('about', compact('names', 'name'));
+	$names = ['Jajabor Samanta', 'Mrinmoy Mondal', 'Nabarun S. Sarkar'];
+	return view('about', compact('names', 'name'));
 });
+
+
+/// middleware
+Route::get('/admin', function () {	return redirect('admin/login');	});
+
+Route::get('/admin/login', 'admin\LoginController@index');
+Route::post('/admin/login/admin-authenticate-AJAX', 'admin\LoginController@authenticate_AJAX');
+Route::get('/admin/logout', 'admin\LoginController@logout');
+
+//Route::get('/admin/dashboard', ['as'=> 'home', 'uses'=>'admin\DashboardController@index']);
+
+// for logged-in page(s)...
+Route::group(['prefix'=>'admin',
+			  'namespace'=>'admin',
+			  'middleware'=>['chk_admin']], function () {
+
+	// Admin Route(s)...
+	Route::get('/dashboard', ['as'=> 'home', 'uses'=>'DashboardController@index']);
+	
+});
+
+
+
+	
+	

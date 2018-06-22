@@ -227,5 +227,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    
+    'salt' => 'my_app',     // for SHA1 hash key
 
 ];
